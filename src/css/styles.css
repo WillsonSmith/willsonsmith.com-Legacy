@@ -33,7 +33,7 @@ body {
 @font-face {
   font-family: 'Toronto Subway';
   src: url('../fonts/licensed/toronto_subway_bold-web.woff2') format('woff2'),
-    /* url('fonts/licensed/toront_subway_bold-web.woff') format('woff'), */
+    url('../fonts/licensed/toronto_subway_bold-web.woff') format('woff'),
     url('../fonts/licensed/toronto_subway_bold-web.ttf');
   font-display: swap;
 }
