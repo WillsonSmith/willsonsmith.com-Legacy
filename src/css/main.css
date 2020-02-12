@@ -1,0 +1,26 @@
+/* colors */
+
+/* may use script to generate a pallette as part of build step */
+:root {
+  --animation: 'some';
+  --color-green: #bbeaa6;
+  --color-yellow: #e3c878;
+  --color-orange: #ed9a73;
+  --color-pink: #e688a1;
+}
+
+@media (prefers-color-scheme: light) {
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animation: none;
+  }
+}
+
+body {
+  color: var(--color-pink);
+}

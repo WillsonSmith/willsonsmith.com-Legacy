@@ -1,36 +1,24 @@
 {
   "name": "willsonsmith.com",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "author": "Willson Smith",
-  "license": "MIT",
   "scripts": {
-    "serve": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir build/",
-    "test": "mocha --opts mocha.opts && rm -rf test",
-    "test:auto": "mocha --opts mocha.opts --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillsonSmith/Personal-Website.git"
+  },
+  "author": "= <=> (https://willsonsmith.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillsonSmith/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/WillsonSmith/Personal-Website#readme",
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/sinon": "^2.3.3",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.5.0",
-    "mocha": "^6.0.2",
-    "parcel-plugin-sw-precache": "^1.0.4",
-    "postcss": "^6.0.9",
-    "postcss-cli": "^6.1.2",
-    "postcss-import": "^10.0.0",
-    "postcss-loader": "^2.0.6",
-    "postcss-nested": "^2.1.2",
-    "postcss-preset-env": "^6.6.0",
-    "sinon": "^7.2.6",
-    "sugarcss": "^1.0.3",
-    "ts-loader": "^2.3.3",
-    "ts-node": "^3.3.0",
-    "typescript": "^2.4.2",
-    "webpack": "^3.5.5"
-  },
-  "dependencies": {
-    "parcel-bundler": "^1.11.0"
+    "@11ty/eleventy": "^0.10.0"
   }
 }
