@@ -3,10 +3,13 @@
 /* may use script to generate a pallette as part of build step */
 :root {
   --animation: 'some';
-  --color-green: #bbeaa6;
-  --color-yellow: #e3c878;
-  --color-orange: #ed9a73;
-  --color-pink: #e688a1;
+  --color-red: hsl(6, 78%, 70%);
+  --color-orange: hsla(28, 80%, 70%, 1);
+  --color-yellow: hsla(48, 89%, 70%, 1);
+  --color-green: hsla(145, 63%, 70%, 1);
+  --color-blue: hsla(204, 70%, 70%, 1);
+  --color-indigo: hsla(283, 39%, 70%, 1);
+  --color-violet: hsla(307, 29%, 28%, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -22,5 +25,6 @@
 }
 
 body {
-  color: var(--color-pink);
+  /* color: var(--color-pink); */
+  background-color: var(--color-blue);
 }
