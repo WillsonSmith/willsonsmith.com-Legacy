@@ -1,5 +1,4 @@
 :root {
-  --animation: 'some';
   --color-red: hsl(6, 78%, 70%); /*p*/
   --color-orange: hsla(28, 80%, 70%, 1);
   --color-yellow: hsla(48, 89%, 70%, 1); /*t*/
@@ -13,18 +12,21 @@
   --shadow-y-offset: 0.4vw;
 
   --name-drop-animation: drop 0.5s cubic-bezier(0.6, -0.28, 0.57, 1.27);
+
+  --background-color: var(--color-blue);
 }
 
 @media (prefers-color-scheme: light) {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #22292c;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   :root {
-    --animation: none;
-
     --name-drop-animation: none;
   }
 }
@@ -56,8 +58,9 @@
   }
 }
 
+/* styles */
 body {
-  background-color: var(--color-blue);
+  background-color: var(--background-color);
 }
 
 .NameDropContainer {
