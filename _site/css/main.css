@@ -11,8 +11,8 @@
   --color-dark-grey: hsla(198, 13%, 15%, 1);
 
   /* name drop shadow offsets */
-  --shadow-x-offset: 0.1rem;
-  --shadow-y-offset: 0.1rem;
+  --shadow-x-offset: 0.2rem;
+  --shadow-y-offset: 0.2rem;
 
   --name-drop-animation: drop 0.5s cubic-bezier(0.6, -0.28, 0.57, 1.27);
 
@@ -151,8 +151,14 @@ main {
 .NameDrop {
   margin: 0;
 
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: 2rem;
   font-family: var(--fredoka-font);
+}
+
+@media (min-width: 500px) {
+  .NameDrop {
+    font-size: 3rem;
+  }
 }
 
 .NameDrop-color {
