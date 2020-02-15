@@ -1,5 +1,5 @@
 :root {
-  --color-red: hsl(6, 78%, 70%); /*p*/
+  --color-red: hsla(6, 78%, 70%, 1); /*p*/
   --color-orange: hsla(28, 80%, 70%, 1);
   --color-yellow: hsla(48, 89%, 70%, 1); /*t*/
   --color-green: hsla(145, 63%, 70%, 1);
@@ -7,16 +7,26 @@
   --color-indigo: hsla(283, 39%, 70%, 1);
   --color-violet: hsla(307, 22%, 38%, 1);
 
+  --color-white: hsla(0, 0%, 93%, 1);
+  --color-dark-grey: hsla(198, 13%, 15%, 1);
+
   /* name drop shadow offsets */
-  --shadow-x-offset: 0.8vw;
-  --shadow-y-offset: 0.4vw;
+  --shadow-x-offset: 0.1rem;
+  --shadow-y-offset: 0.1rem;
 
   --name-drop-animation: drop 0.5s cubic-bezier(0.6, -0.28, 0.57, 1.27);
 
-  --light-mode-background: var(--color-blue);
-  --dark-mode-background: #22292c;
+  --fredoka-font: 'Fredoka One', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  --light-mode-background: var(--color-white);
+  --light-mode-text-color: var(--color-dark-grey);
+
+  --dark-mode-background: var(--color-dark-grey);
+  --dark-mode-text-color: var(--color-white);
 
   --background-color: var(--light-mode-background);
+  --text-color: var(--light-mode-text-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,6 +35,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--dark-mode-background);
+    --text-color: var(--dark-mode-text-color);
   }
 }
 
@@ -36,9 +47,17 @@
 
 /* fonts */
 @font-face {
-  font-family: 'Toronto Subway';
-  src: url('../fonts/toronto_subway_bold-web-subset.woff2') format('woff2'),
-    url('../fonts/toronto_subway_bold-web-subset.ttf');
+  font-family: 'Fredoka One';
+  src: url('../fonts/fredoka-one/fredokaone-regular-webfont.woff2')
+      format('woff2'),
+    url('../fonts/fredoka-one/FredokaOne-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+    url('../fonts/raleway/Raleway-Regular.ttf');
   font-display: swap;
 }
 
@@ -72,25 +91,63 @@
 /* styles */
 body {
   background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-family: 'Raleway', cursive;
 }
 
-.NameDropContainer {
+.MainNav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
 
-  animation: var(--name-drop-animation);
+  font-family: var(--fredoka-font);
+  font-size: 1.5rem;
+}
+
+.NavLink {
+  position: relative;
+  color: var(--color-violet);
+  text-decoration: none;
+}
+
+.NavLink::after {
+  content: '';
+  background: var(--color-violet);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.3rem;
+
+  height: 0.3rem;
+  border-radius: 3px;
+}
+
+.NavLink + .NavLink {
+  margin-left: 1rem;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.Intro {
+  font-size: 1.5rem;
+  /* max-width: 60rem; */
 }
 
 .NameDrop {
-  color: #fff;
-  font-weight: 500;
-
   margin: 0;
 
-  font-size: 18vw;
-  font-family: 'Toronto Subway', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-family: var(--fredoka-font);
+}
+
+.NameDrop-color {
+  display: inline-block;
+  animation: var(--name-drop-animation);
 }
 
 .NameDrop-color > span:nth-child(1) {
