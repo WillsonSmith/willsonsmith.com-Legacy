@@ -86,10 +86,14 @@
 
 [data-color-scheme-override='light'] {
   --background-color: var(--light-mode-background);
+  --text-color: var(--light-mode-text-color);
+  --link-color: var(--light-mode-link-color);
 }
 
 [data-color-scheme-override='dark'] {
   --background-color: var(--dark-mode-background);
+  --text-color: var(--dark-mode-text-color);
+  --link-color: var(--dark-mode-link-color);
 }
 
 /* styles */
