@@ -13,7 +13,10 @@
 
   --name-drop-animation: drop 0.5s cubic-bezier(0.6, -0.28, 0.57, 1.27);
 
-  --background-color: var(--color-blue);
+  --light-mode-background: var(--color-blue);
+  --dark-mode-background: #22292c;
+
+  --background-color: var(--light-mode-background);
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,7 +24,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #22292c;
+    --background-color: var(--dark-mode-background);
   }
 }
 
@@ -56,6 +59,14 @@
   100% {
     transform: scale(1);
   }
+}
+
+[data-color-scheme-override='light'] {
+  --background-color: var(--light-mode-background);
+}
+
+[data-color-scheme-override='dark'] {
+  --background-color: var(--dark-mode-background);
 }
 
 /* styles */
