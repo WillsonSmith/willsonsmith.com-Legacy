@@ -29,7 +29,6 @@
 
   --background-color: var(--light-mode-background);
   --text-color: var(--light-mode-text-color);
-
   --link-color: var(--light-mode-link-color);
 }
 
@@ -87,24 +86,10 @@
 
 [data-color-scheme-override='light'] {
   --background-color: var(--light-mode-background);
-  --text-color: var(--light-mode-text-color);
-  --link-color: var(--light-mode-link-color);
 }
 
 [data-color-scheme-override='dark'] {
   --background-color: var(--dark-mode-background);
-  --text-color: var(--dark-mode-text-color);
-  --link-color: var(--dark-mode-link-color);
-}
-
-html {
-  box-sizing: border-box;
-}
-
-html *,
-html *::before,
-html *::after {
-  box-sizing: inherit;
 }
 
 /* styles */
@@ -113,18 +98,15 @@ body {
   color: var(--text-color);
 
   font-family: 'Raleway', cursive;
-
-  margin: 0 1rem;
 }
 
 .MainNav {
   display: flex;
-  padding: 1rem 0;
+  padding: 1rem 1.5rem;
   justify-content: space-between;
 
   font-family: var(--fredoka-font);
   font-size: 1.5rem;
-  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .NavLink {
@@ -152,17 +134,17 @@ body {
 main {
   max-width: 60rem;
   margin: 0 auto;
-  margin-top: 3vmin;
+  margin-top: 6rem;
 }
 
 .Intro {
   font-size: 1.5rem;
+  /* max-width: 60rem; */
 }
 
 .NameDrop {
   margin: 0;
 
-  font-size: 3rem;
   font-size: clamp(1.5rem, 5vw, 3rem);
   font-family: var(--fredoka-font);
 }
