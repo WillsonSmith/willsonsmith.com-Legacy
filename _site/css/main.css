@@ -102,11 +102,13 @@ body {
   color: var(--text-color);
 
   font-family: 'Raleway', cursive;
+
+  margin: 0 1rem;
 }
 
 .MainNav {
   display: flex;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   justify-content: space-between;
 
   font-family: var(--fredoka-font);
@@ -138,7 +140,7 @@ body {
 main {
   max-width: 60rem;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 5vmin;
 }
 
 .Intro {
