@@ -101,7 +101,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 
-  font-family: 'Raleway', cursive;
+  font-family: 'Raleway', sans-serif;
 
   margin: 0 1rem;
 }

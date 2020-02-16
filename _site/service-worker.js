@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "css/main.css",
-    "revision": "f6a31eb11c3dc03ffb39aa461f968cda"
+    "revision": "383b4452d482a9f4a930d1f139def340"
   },
   {
     "url": "css/styles.css",
@@ -324,7 +324,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b3d0980d1627835490122137f0376ad0"
+    "revision": "44c7503f6ebc048e298ee665948980f5"
   },
   {
     "url": "js/index.js",
