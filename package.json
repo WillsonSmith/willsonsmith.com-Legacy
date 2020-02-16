@@ -20,5 +20,8 @@
   "homepage": "https://github.com/WillsonSmith/Personal-Website#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-pwa": "^1.0.8"
   }
 }
