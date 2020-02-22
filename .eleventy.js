@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
       const newCode = await minify.css(content);
       return newCode;
     }
+    return content;
   });
 
   return {
