@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "css/main.css",
-    "revision": "2f2973ca3a3e6bb5dd6b6816646c7423"
+    "revision": "14d95a3586af66845e760a0460cb3958"
   },
   {
     "url": "fonts/fredoka-one/fredokaone-regular-webfont.woff",
@@ -160,7 +160,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2fc3c6fe27b25b29c1a8aae3d9f25ad1"
+    "revision": "919e11cf0d99737804c8ac13b680c4e4"
   },
   {
     "url": "js/index.js",
