@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "css/main.css",
-    "revision": "14d95a3586af66845e760a0460cb3958"
+    "revision": "57883402cdc316584de3edbfc710b956"
   },
   {
     "url": "fonts/fredoka-one/fredokaone-regular-webfont.woff",

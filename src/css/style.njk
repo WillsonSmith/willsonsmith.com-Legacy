@@ -1,5 +1,9 @@
 ---
 permalink: "css/main.css"
 ---
-{% include "src/css/variables.css" %}
-{% include "src/css/main.css" %}
+{% set css %}
+  {% include "src/css/variables.css" %}
+  {% include "src/css/main.css" %}
+{% endset %}
+
+{{ css | cssmin | safe }}

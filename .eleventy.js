@@ -8,12 +8,9 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginPWA);
 
-  eleventyConfig.addTransform('processCSS', async (content, outputPath) => {
-    if (outputPath.endsWith('.css')) {
-      const newCode = await minify.css(content);
-      return newCode;
-    }
-    return content;
+  eleventyConfig.addNunjucksAsyncFilter('cssmin', async (code, callback) => {
+    const newCode = await minify.css(code);
+    callback(null, newCode);
   });
 
   eleventyConfig.addWatchTarget('./src/css');
