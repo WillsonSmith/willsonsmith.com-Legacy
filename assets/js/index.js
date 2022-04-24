@@ -1,1 +1,1 @@
-import './components/RainWindow.js';
+import './components/RainWindow';

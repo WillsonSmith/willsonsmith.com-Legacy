@@ -5,9 +5,12 @@ class RainWindow extends LitElement {
   static get styles() {
     return css`
       :host {
-        pointer-events: none;
+      }
+      button {
+        position: absolute;
       }
       .Canvas {
+        pointer-events: none;
         width: 100%;
         height: 100%;
       }
@@ -19,22 +22,25 @@ class RainWindow extends LitElement {
       rainColor: { type: String, attribute: 'rain-color' },
       width: { type: Number },
       height: { type: Number },
+      playing: { type: Boolean, attribute: 'playing' },
     };
   }
 
   constructor() {
     super();
+    this.playing = true;
     this.width = this.clientWidth * window.devicePixelRatio;
     this.height = this.clientHeight * window.devicePixelRatio;
+    this.rainColor = `'#fff'`;
 
-    this.rain = Array.from({ length: 100 }, () => {
+    this.splash = [];
+
+    this.rain = Array.from({ length: 10 }, () => {
       return {
         x: Math.random() * this.width,
-        y: Math.random() * this.height,
-        vx: Math.random() * -1 - 1,
-        vy: Math.random() * 1 + 1,
+        y: Math.random() * this.height - this.height,
         size: Math.random() * 10 + 2,
-        length: Math.random() * 80 + 2,
+        active: false,
       };
     });
 
@@ -66,70 +72,78 @@ class RainWindow extends LitElement {
   }
 
   render() {
-    return html`<canvas
-      width=${this.width}
-      height=${this.height}
-      class="Canvas"
-    ></canvas>`;
+    return html` <button @click=${() => (this.playing = !this.playing)}>
+        Go
+      </button>
+      <canvas
+        width=${this.width}
+        height=${this.height}
+        class="Canvas"
+      ></canvas>`;
   }
 
-  _draw() {
-    /**
-     * This is extremely rudimentary right now
-     * The plan:
-     * - Set a raindrop as active
-     * - If it's active, move it
-     * - Move it X distance, reduce velocity, change direction to go down
-     * - Simulate rain hitting a window
-     * OR
-     * - Make rain fall straight down
-     * - When rain hits the bottom, make it split and bounce
-     */
+  _draw(dt) {
+    const delta = dt - (this.lastCalled || 0);
+    if (delta < 13 || !this.playing) {
+      return requestAnimationFrame((dt) => this._draw(dt));
+    }
+
+    this.lastCalled = dt;
 
     const ctx = this.ctx;
     ctx.clearRect(0, 0, this.width, this.height);
     ctx.fillStyle = this.rainColor;
-    // ctx.fillRect(0, 0, this.width, this.height);
 
-    //advance each raindrop by its velocity
+    const gravity = 9.8;
+
+    const inactive = this.rain.filter(({ active }) => !active);
+    const rando = inactive?.[Math.floor(Math.random() * inactive.length)];
+    if (rando) rando.active = true;
+
+    const remainingSplashes = this.splash.filter(({ tick }) => tick > 0);
+    remainingSplashes.forEach((splash) => (splash.tick = splash.tick - 1));
+    this.splash = remainingSplashes;
+    this.splash.forEach((splash) => {
+      ctx.fillStyle = this.rainColor;
+      const s1Size = splash.size * Math.random();
+      const s2Size = splash.size * Math.random();
+      ctx.fillRect(
+        splash.x - splash.size,
+        this.height - splash.size - s1Size,
+        s1Size,
+        s1Size
+      );
+      ctx.fillRect(
+        splash.x + splash.size,
+        this.height - splash.size - s2Size,
+        s2Size,
+        s2Size
+      );
+    });
+
+    const active = this.rain.filter(({ active }) => active);
+
+    active.forEach((drop) => {
+      drop.y += gravity;
+      if (drop.y > this.height) {
+        this.splash.push({
+          x: drop.x,
+          y: this.height,
+          size: drop.size,
+          tick: 3,
+        });
+        drop.x = Math.random() * this.width;
+        drop.y = 0;
+        drop.active = false;
+      }
+    });
+
     this.rain.forEach((raindrop) => {
-      raindrop.x += raindrop.vx;
-      raindrop.y += raindrop.vy;
-    });
-
-    // if the raindrop has moved off the screen, reset it
-    const offScreen = this.rain.filter((raindrop) => {
-      if (raindrop.y > this.height && raindrop.x < 0) return true;
-    });
-    offScreen.forEach((raindrop) => {
-      raindrop.x = Math.random() * this.width;
-      raindrop.y = 0;
-
-      // set x above top or set y to the right
-    });
-
-    // for each of the raindrops in the array draw line from position with velocity
-
-    this.rain.forEach((raindrop) => {
-      ctx.strokeStyle = this.rainColor;
-      ctx.beginPath();
-      ctx.moveTo(raindrop.x, raindrop.y);
       ctx.fillStyle = this.rainColor;
       ctx.fillRect(raindrop.x, raindrop.y, raindrop.size, raindrop.size);
-
-      // draw a line from the raindrop along negative velocity of length
-      // stroke width of size
-      ctx.lineWidth = raindrop.size;
-      ctx.lineTo(
-        raindrop.x - raindrop.vx * raindrop.length,
-        raindrop.y - raindrop.vy * raindrop.length
-      );
-      ctx.strokeStyle = this.rainColor;
-      ctx.stroke();
-
-      // draw the raindrop at the new position
     });
-    requestAnimationFrame(() => this._draw());
+
+    requestAnimationFrame((dt) => this._draw(dt));
   }
 
   _handleResize() {
