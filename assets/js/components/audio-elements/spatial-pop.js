@@ -37,14 +37,9 @@ class SpatialPop extends LitElement {
 
   updated(changedProperties) {
     if (changedProperties.has('src')) {
-      console.log('src changed');
-      console.log(this.src);
       this.playing = false;
       this.audio = new Howl({
-        src: this.src,
-        sprite: {
-          pop: [500, 1000],
-        },
+        src: [this.src],
         onplay: () => {
           this.playing = true;
         },
@@ -81,16 +76,18 @@ class SpatialPop extends LitElement {
     const { target } = event;
     if (!this.contains(target)) return;
 
-    // get the relative position of the centre of the target to the centre of the container
-    // get number between -1 and 1 for each axis
-    const x =
-      (target.offsetLeft + target.offsetWidth / 2) / this.offsetWidth - 1;
-    const y =
-      (target.offsetTop + target.offsetHeight / 2) / this.offsetHeight - 1;
-    console.log(x, y);
+    const targetCentre = {
+      x: target.offsetLeft + target.offsetWidth / 2,
+      y: target.offsetTop + target.offsetHeight / 2,
+    };
 
-    this.audio.orientation(x, y, 0);
-    this.audio?.play('pop');
+    const relativeCentre = {
+      x: Math.min((targetCentre.x / this.scrollWidth) * 2 - 1, 1),
+      y: Math.min((targetCentre.y / this.scrollHeight) * 2 - 1, 1),
+    };
+    const { x, y } = relativeCentre;
+    this.audio.pos(x, y, 0);
+    this.audio.play();
   }
 }
 

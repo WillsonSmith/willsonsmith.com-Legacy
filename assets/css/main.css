@@ -25,6 +25,7 @@ rain-window {
 
 .item {
   background: grey;
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
+  aspect-ratio: 1;
 }
