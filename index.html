@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Willson Smith is a front-end developer based in Ottawa Ontario, Canada.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Willson Smith is a front-end developer based in Ottawa Ontario, Canada."
+    />
     <title>Willson Smith • Front-End Developer</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body w-des-sys>
-    <div class="Page container">
-      <header>
-        <h1>Willson Smith</h1>
-        <nav>Some navigation items</nav>
-      </header>
-      <main style="height: 840px">
-        <p>Some of the content</p>
-      </main>
-      <aside>
-        Some social links
-      </aside>
-      <footer>
-        Some footer content
-      </footer>
-    </div>
-    <rain-window></rain-window>
+    <spatial-pop>
+      <div class="Page container">
+        <header>
+          <h1>Willson Smith</h1>
+          <nav>Some navigation items</nav>
+        </header>
+        <main>
+          <div class="grid">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </main>
+        <aside>Some social links</aside>
+        <footer>Some footer content</footer>
+      </div>
+    </spatial-pop>
+    <!-- <rain-window></rain-window> -->
     <script type="module" src="./assets/js/index.js"></script>
+    <script>
+      document.querySelector('spatial-pop').events = ['click'];
+    </script>
   </body>
 </html>

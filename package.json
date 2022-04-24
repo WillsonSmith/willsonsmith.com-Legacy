@@ -30,6 +30,7 @@
     "http-server": "^14.1.0"
   },
   "dependencies": {
+    "howler": "^2.2.3",
     "lit": "^2.2.1",
     "tiny-glob": "^0.2.9"
   }
