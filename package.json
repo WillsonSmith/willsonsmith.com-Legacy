@@ -1,36 +1,37 @@
 {
   "name": "willsonsmith.com",
   "version": "1.0.0",
+  "description": "",
+  "type": "module",
   "main": "index.js",
-  "author": "Willson Smith",
-  "license": "MIT",
   "scripts": {
-    "serve": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir build/",
-    "test": "mocha --opts mocha.opts && rm -rf test",
-    "test:auto": "mocha --opts mocha.opts --watch"
+    "serve": "http-server web/",
+    "serve:netlify": "netlify dev",
+    "build": "node bin/build.js",
+    "html": "node bin/build.js build html",
+    "build:prod": "npm run build build js; npm run build build css; npm run build build html; npm run build build static",
+    "dev": "concurrently \"npm run serve:netlify\" \"npm run build watch js\" \"npm run build watch css\" \"npm run build watch html\" \"npm run build watch static\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillsonSmith/willsonsmith.com.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillsonSmith/willsonsmith.com/issues"
+  },
+  "homepage": "https://github.com/WillsonSmith/willsonsmith.com#readme",
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/sinon": "^2.3.3",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.5.0",
-    "mocha": "^6.0.2",
-    "parcel-plugin-sw-precache": "^1.0.4",
-    "postcss": "^6.0.9",
-    "postcss-cli": "^6.1.2",
-    "postcss-import": "^10.0.0",
-    "postcss-loader": "^2.0.6",
-    "postcss-nested": "^2.1.2",
-    "postcss-preset-env": "^6.6.0",
-    "sinon": "^7.2.6",
-    "sugarcss": "^1.0.3",
-    "ts-loader": "^2.3.3",
-    "ts-node": "^3.3.0",
-    "typescript": "^2.4.2",
-    "webpack": "^3.5.5"
+    "chokidar": "^3.5.3",
+    "concurrently": "^7.0.0",
+    "esbuild": "^0.14.28",
+    "fs-extra": "^10.0.1",
+    "http-server": "^14.1.0"
   },
   "dependencies": {
-    "parcel-bundler": "^1.11.0"
+    "@shoelace-style/shoelace": "^2.0.0-beta.73",
+    "lit": "^2.2.3"
   }
 }
