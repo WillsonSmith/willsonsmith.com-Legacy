@@ -6,6 +6,11 @@ html *, html *::before, html *::after {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: 'Fredoka';
+  src: url('/assets/static/fonts/Fredoka-Medium.ttf');
+}
+
 body {
   margin: 0;
   font-family: var(--sl-font-sans);
@@ -14,7 +19,7 @@ body {
   letter-spacing: var(--sl-letter-spacing-normal);
   background-color: var(--sl-color-neutral-0);
   color: var(--sl-color-neutral-900);
-  line-height: var(--sl-line-height-normal);
+  line-height: var(--sl-line-height-dense);
 }
 
 header {
@@ -33,7 +38,13 @@ header {
 
 header h1 {
   margin: 0;
+  font-family: 'Fredoka', var(--sl-font-sans);
   font-size: var(--sl-font-size-x-large);
+  line-height: var(--sl-line-height-normal);
   font-weight: var(--sl-font-weight-semibold);
   color: var(--sl-color-neutral-900);
+}
+
+colorize-word {
+  font-family: 'Fredoka', var(--sl-font-sans);
 }

@@ -47,6 +47,7 @@ const builds = {
       outfile: './web/assets/css/main.css',
       minify: !watch,
       watch,
+      external: ['*.ttf'],
     });
   },
 };
