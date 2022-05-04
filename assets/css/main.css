@@ -39,12 +39,116 @@ header {
 header h1 {
   margin: 0;
   font-family: 'Fredoka', var(--sl-font-sans);
-  font-size: var(--sl-font-size-x-large);
+  font-size: var(--sl-font-size-2x-large);
   line-height: var(--sl-line-height-normal);
   font-weight: var(--sl-font-weight-semibold);
   color: var(--sl-color-neutral-900);
 }
 
+header h1 a {
+  text-decoration: none;
+  color: var(--sl-color-neutral-900);
+}
+
 colorize-word {
   font-family: 'Fredoka', var(--sl-font-sans);
+}
+
+main > * + * {
+  margin-top: var(--sl-spacing-medium);
+}
+
+
+.title {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title h2 {
+  font-family: var(--sl-font-sans);
+  font-weight: var(--sl-font-weight-semibold);
+  font-size: var(--sl-font-size-x-large);
+  margin: 0;
+  padding-left: var(--sl-spacing-large);
+}
+
+.aboot {
+  background-color: var(--sl-color-neutral-100);
+  padding: var(--sl-font-size-2x-large);
+
+  border-bottom: 1px solid var(--sl-color-neutral-300);
+}
+
+.aboot sl-avatar {
+  --size: 100px;
+}
+
+.aboot p {
+  margin: 0;
+}
+
+.aboot p:first-child {
+  font-size: var(--sl-font-size-large);
+}
+
+.aboot p + p {
+  margin-top: var(--sl-spacing-x-small);
+}
+
+.aboot__content {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: var(--sl-spacing-medium);
+}
+
+.aboot__details {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sl-spacing-small) 0;
+}
+
+.feature {
+  background-color: var(--sl-color-neutral-100);
+  padding: var(--sl-spacing-large) var(--sl-spacing-x-large);
+
+  border-radius: var(--sl-border-radius-small);
+
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature h3, .feature p {
+  margin: 0;
+}
+
+.feature h3 {
+  font-size: var(--sl-font-size-large);
+  font-weight: var(--sl-font-weight-normal);
+  padding-bottom: var(--sl-spacing-small);
+  border-bottom: 1px solid var(--sl-color-neutral-300);
+}
+
+.feature p {
+  padding: var(--sl-spacing-medium) 0;
+  font-size: var(--sl-font-size-medium);
+}
+
+.feature footer {
+  padding-top: var(--sl-spacing-small);
+  border-top: 1px solid var(--sl-color-neutral-300);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.feature__link {
+  color: var(--sl-color-neutral-900);
+  text-decoration: underline;
+  text-underline-offset: var(--sl-spacing-2x-small);
 }

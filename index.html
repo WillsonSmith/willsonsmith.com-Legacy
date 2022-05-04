@@ -49,7 +49,7 @@
 
   <body>
     <header>
-      <h1><colorize-word>Willson</colorize-word></h1>
+      <h1><a href="/"><colorize-word>Willson</colorize-word></a></h1>
       <nav>
         <div class="Social">
         <sl-tooltip content="Twitter">
@@ -71,10 +71,26 @@
       </nav>
     </header>
     <main>
-      <p>Some website content</p>
+      <article class="aboot">
+        <div class="aboot__content">
+          <sl-avatar label="it's me! :)" image="/assets/static/images/me.jpg"></sl-avatar>
+          <div class="aboot__details">
+          <p>Willson Smith • Design Technologist • Shopify</p>
+          <p>Ottawa • Ontario • Canada</p>
+          </div>
+        </div>
+      </article>
+      <div class="title">
+        <h2>For funsies</h2>
+      </div>
+      <article class="feature">
+        <h3><a class="feature__link" href="https://gifit.pics" target="_blank">Gifit.pics</a></h2>
+        <p>
+          Gifit is a front-end web app that converts videos into animated gifs and webps.
+        </p>
+        <footer>application • web</footer>
+      </article>
     </main>
-    <aside>Some additional content</aside>
-    <footer>Some footer content</footer>
 
     <script type="module" src="./assets/js/index.js"></script>
   </body>
