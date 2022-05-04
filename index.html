@@ -2,14 +2,40 @@
 <html class="sl-theme-dark" lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>willsonsmith.com</title>
+    <meta
+      name="description"
+      content="Willson Smith • Front end developer • Design Technologist • Tinkerer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My website description" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>My website</title>
 
-    <link rel="apple-touch-icon" href="/assets/static/icon.png" />
-    <link rel="icon" type="image/png" href="/assets/static/icon.png" />
+    <meta name="msapplication-TileColor" content="#21282b" />
+    <meta name="theme-color" content="#21282b" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/static/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/safari-pinned-tab.svg"
+      color="#21282b"
+    />
     <link
       rel="stylesheet"
       href="/assets/vendor/shoelace/dist/themes/light.css"
@@ -23,7 +49,25 @@
 
   <body>
     <header>
-      <h1>My website header</h1>
+      <h1>Willson</h1>
+      <nav class="Social">
+        <sl-tooltip content="Twitter">
+          <sl-icon-button
+            name="twitter"
+            label="Twitter"
+            href="https://twitter.com/modfox"
+            target="_blank"
+          ></sl-icon-button>
+        </sl-tooltip>
+        <sl-tooltip content="GitHub">
+          <sl-icon-button
+            name="github"
+            label="GitHub"
+            href="https://github.com/willsonsmith"
+            target="_blank"
+          ></sl-icon-button>
+        </sl-tooltip>
+      </nav>
     </header>
     <main>
       <p>Some website content</p>

@@ -23,6 +23,7 @@ const builds = {
       .on('unlink', (path) => {});
   },
   html: (watch = false) => {
+    copy('./site.webmanifest', './web/site.webmanifest');
     copy('./index.html', './web/index.html');
     if (!watch) return;
     chokidar.watch('./index.html').on('change', () => {
