@@ -75,7 +75,15 @@ main > * + * {
   max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--sl-spacing-medium);
 }
+
+@media (min-width: 400) {
+  .title {
+    padding-left: 0;
+  }
+}
+
 .title h2 {
   font-family: var(--sl-font-sans);
   font-weight: var(--sl-font-weight-semibold);
@@ -90,6 +98,13 @@ main > * + * {
   border-bottom: 1px solid var(--sl-color-neutral-300);
 }
 
+@media (min-width: 400px) {
+  .aboot {
+    padding: var(--sl-font-size-2x-large);
+  }
+}
+
+
 .aboot sl-avatar {
   --size: 100px;
 }
@@ -99,11 +114,11 @@ main > * + * {
 }
 
 .aboot p:first-child {
-  font-size: var(--sl-font-size-large);
+  font-size: var(--sl-font-size-x-large);
 }
 
-.aboot p + p {
-  margin-top: var(--sl-spacing-2x-small);
+.aboot p:nth-child(2) {
+  font-size: var(--sl-font-size-medium);
 }
 
 .aboot__location {
@@ -116,8 +131,14 @@ main > * + * {
   margin-right: auto;
 
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: var(--sl-spacing-large);
+}
+
+@media (min-width: 400px) {
+  .aboot__content {
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .aboot__details {
@@ -128,13 +149,19 @@ main > * + * {
 
 .feature {
   background-color: var(--sl-color-neutral-100);
-  padding: var(--sl-spacing-large) var(--sl-spacing-x-large);
-
-  border-radius: var(--sl-border-radius-small);
+  padding: var(--sl-spacing-small) var(--sl-spacing-medium);
 
   max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 400px) {
+  .feature {
+    border-radius: var(--sl-border-radius-small);
+  padding: var(--sl-spacing-large) var(--sl-spacing-x-large);
+    
+  }
 }
 
 .feature h3, .feature p {
@@ -149,11 +176,12 @@ main > * + * {
 }
 
 .feature p {
-  padding: var(--sl-spacing-medium) 0;
+  margin-top: var(--sl-spacing-medium);
   font-size: var(--sl-font-size-medium);
 }
 
 .feature footer {
+  margin-top: var(--sl-spacing-medium);
   padding-top: var(--sl-spacing-small);
   border-top: 1px solid var(--sl-color-neutral-300);
 
