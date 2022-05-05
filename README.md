@@ -3,4 +3,3 @@
 ## My personal website
 
 Open development of my personal website [willsonsmith.com](https://willsonsmith.com)
-
