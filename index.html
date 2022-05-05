@@ -46,8 +46,15 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script>
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.querySelector('html').classList.add("sl-theme-dark");
+
+      switch(localStorage.getItem('preferred-theme')) {
+        case 'dark':
+          document.documentElement.classList.add('sl-theme-dark');
+          break;
+        case 'light':
+          break;
+        default:
+          window.matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.classList.add('sl-theme-dark');
       }
     </script>
   </head>
@@ -61,10 +68,10 @@
             <sl-button slot="trigger" pill size="small" caret>
               <sl-icon name="moon" label="Select theme"></sl-icon>
             </sl-button>
-            <sl-menu>
-              <sl-menu-item>Light</sl-menu-item>
-              <sl-menu-item>Dark</sl-menu-item>
-              <sl-menu-item>Automatic</sl-menu-item>
+            <sl-menu value="automatic">
+              <sl-menu-item value="light">Light</sl-menu-item>
+              <sl-menu-item value="dark">Dark</sl-menu-item>
+              <sl-menu-item value="automatic">Automatic</sl-menu-item>
             </sl-menu>
           </sl-dropdown>
         <sl-tooltip content="Twitter">
@@ -126,5 +133,19 @@
     </main>
 
     <script type="module" src="./assets/js/index.js"></script>
+    <script>
+      const menu = document.querySelector("sl-menu");
+      const html = document.documentElement;
+      menu.addEventListener('sl-select', (event) => {
+        const theme = event.detail.item.value;
+        const matchesDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        localStorage.setItem('preferred-theme', theme);
+        if (theme === 'dark' || (theme === 'automatic' && matchesDark)) {
+          html.classList.add("sl-theme-dark");
+        } else {
+          html.classList.remove("sl-theme-dark");
+        }
+      });
+    </script>
   </body>
 </html>
