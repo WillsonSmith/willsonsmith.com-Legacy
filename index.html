@@ -135,16 +135,16 @@
     <script type="module" src="./assets/js/index.js"></script>
     <script>
       const menu = document.querySelector("sl-menu");
-      const html = document.documentElement;
       menu.addEventListener('sl-select', (event) => {
         const theme = event.detail.item.value;
-        const matchesDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         localStorage.setItem('preferred-theme', theme);
-        if (theme === 'dark' || (theme === 'automatic' && matchesDark)) {
-          html.classList.add("sl-theme-dark");
-        } else {
-          html.classList.remove("sl-theme-dark");
+        let dark;
+        switch(theme) {
+          case 'light': dark = false; break;
+          case 'dark': dark = true; break;
+          default: dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         }
+        document.documentElement.classList.toggle('sl-theme-dark', dark);
       });
     </script>
   </body>
