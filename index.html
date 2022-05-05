@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="sl-theme-dark" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>willsonsmith.com</title>
@@ -45,6 +45,11 @@
       href="/assets/vendor/shoelace/dist/themes/dark.css"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script>
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('html').classList.add("sl-theme-dark");
+      }
+    </script>
   </head>
 
   <body>
