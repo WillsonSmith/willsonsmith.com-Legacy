@@ -50,6 +50,10 @@ header h1 a {
   color: var(--sl-color-neutral-900);
 }
 
+header sl-dropdown {
+  margin-right: var(--sl-spacing-2x-small);
+}
+
 colorize-word {
   font-family: 'Fredoka', var(--sl-font-sans);
 }
