@@ -57,10 +57,10 @@ colorize-word {
 main {
   padding-bottom: var(--sl-spacing-medium);
 }
-
+/* 
 main > * + * {
   margin-top: var(--sl-spacing-medium);
-}
+} */
 
 .social {
   display: flex;
@@ -73,6 +73,7 @@ main > * + * {
 
 .title {
   max-width: 60ch;
+  margin-top: var(--sl-spacing-2x-large);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--sl-spacing-medium);
@@ -107,6 +108,8 @@ main > * + * {
 
 .aboot sl-avatar {
   --size: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .aboot p {
@@ -156,6 +159,14 @@ main > * + * {
   margin-right: auto;
 }
 
+.title + .feature {
+  margin-top: var(--sl-spacing-x-small);
+}
+
+.feature + .feature {
+  margin-top: var(--sl-spacing-large);
+}
+
 @media (min-width: 400px) {
   .feature {
     border-radius: var(--sl-border-radius-small);
@@ -193,5 +204,11 @@ main > * + * {
 .feature__link {
   color: var(--sl-color-neutral-900);
   text-decoration: underline;
-  text-underline-offset: var(--sl-spacing-2x-small);
+  text-underline-offset: var(--sl-spacing-3x-small);
+}
+
+.feature__link sl-icon {
+  font-size: var(--sl-font-size-x-small);
+  margin-left: var(--sl-spacing-2x-small);
+  transform: translateY(-50%);
 }
