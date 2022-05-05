@@ -54,10 +54,22 @@ colorize-word {
   font-family: 'Fredoka', var(--sl-font-sans);
 }
 
+main {
+  padding-bottom: var(--sl-spacing-medium);
+}
+
 main > * + * {
   margin-top: var(--sl-spacing-medium);
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social sl-menu {
+  margin-top: var(--sl-spacing-2x-small);
+}
 
 .title {
   max-width: 60ch;
@@ -69,7 +81,6 @@ main > * + * {
   font-weight: var(--sl-font-weight-semibold);
   font-size: var(--sl-font-size-x-large);
   margin: 0;
-  padding-left: var(--sl-spacing-large);
 }
 
 .aboot {
@@ -92,7 +103,11 @@ main > * + * {
 }
 
 .aboot p + p {
-  margin-top: var(--sl-spacing-x-small);
+  margin-top: var(--sl-spacing-2x-small);
+}
+
+.aboot__location {
+  font-size: var(--sl-font-size-small);
 }
 
 .aboot__content {
@@ -102,7 +117,7 @@ main > * + * {
 
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-column-gap: var(--sl-spacing-medium);
+  grid-column-gap: var(--sl-spacing-large);
 }
 
 .aboot__details {

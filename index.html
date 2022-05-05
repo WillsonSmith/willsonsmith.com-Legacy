@@ -51,7 +51,17 @@
     <header>
       <h1><a href="/"><colorize-word>Willson</colorize-word></a></h1>
       <nav>
-        <div class="Social">
+        <div class="social">
+          <sl-dropdown>
+            <sl-button slot="trigger" pill size="small" caret>
+              <sl-icon name="moon" label="Select theme"></sl-icon>
+            </sl-button>
+            <sl-menu>
+              <sl-menu-item>Light</sl-menu-item>
+              <sl-menu-item>Dark</sl-menu-item>
+              <sl-menu-item>Automatic</sl-menu-item>
+            </sl-menu>
+          </sl-dropdown>
         <sl-tooltip content="Twitter">
           <sl-icon-button
             name="twitter"
@@ -75,18 +85,36 @@
         <div class="aboot__content">
           <sl-avatar label="it's me! :)" image="/assets/static/images/me.jpg"></sl-avatar>
           <div class="aboot__details">
-          <p>Willson Smith • Design Technologist • Shopify</p>
-          <p>Ottawa • Ontario • Canada</p>
+            <p>Willson Smith • Design Technologist • Shopify</p>
+            <p class="aboot__location">Ottawa • Ontario • Canada</p>
+            <sl-divider></sl-divider>
+          <p>Building rich experiences for merchants at Shopify <br> Building silly gimmicks at home</p>
           </div>
         </div>
       </article>
       <div class="title">
-        <h2>For funsies</h2>
+        <h2>Some projects</h2>
       </div>
       <article class="feature">
         <h3><a class="feature__link" href="https://gifit.pics" target="_blank">Gifit.pics</a></h2>
         <p>
           Gifit is a front-end web app that converts videos into animated gifs and webps.
+        </p>
+        <footer>application • web</footer>
+      </article>
+
+      <article class="feature">
+        <h3><a class="feature__link" href="https://voice-clips.netlify.app" target="_blank">voice clips</a></h2>
+        <p>
+          A work-in-progress front-end web app for recording voice clips in your browser.
+        </p>
+        <footer>application • web</footer>
+      </article>
+
+      <article class="feature">
+        <h3><a class="feature__link" href="https://migrate-music.glitch.me" target="_blank">migrate music</a></h2>
+        <p>
+          A scrappy web application for migrating music from Spotify to Apple Music.
         </p>
         <footer>application • web</footer>
       </article>
