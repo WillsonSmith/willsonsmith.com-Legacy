@@ -71,10 +71,6 @@ star-sheet {
 main {
   padding-bottom: var(--sl-spacing-medium);
 }
-/* 
-main > * + * {
-  margin-top: var(--sl-spacing-medium);
-} */
 
 .social {
   display: flex;
@@ -166,7 +162,7 @@ main > * + * {
 
 .feature {
   background-color: var(--sl-color-neutral-100);
-  padding: var(--sl-spacing-small) var(--sl-spacing-medium);
+  padding: var(--sl-spacing-medium) var(--sl-spacing-medium);
 
   max-width: 60ch;
   margin-left: auto;
@@ -184,8 +180,7 @@ main > * + * {
 @media (min-width: 400px) {
   .feature {
     border-radius: var(--sl-border-radius-small);
-  padding: var(--sl-spacing-large) var(--sl-spacing-x-large);
-    
+    padding: var(--sl-spacing-large) var(--sl-spacing-x-large);
   }
 }
 
