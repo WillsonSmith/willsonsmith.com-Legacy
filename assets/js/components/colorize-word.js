@@ -1,6 +1,5 @@
 import Gradient from 'javascript-color-gradient';
 import { LitElement, html, css } from 'lit';
-// import lit classmap directive
 import { classMap } from 'lit/directives/class-map.js';
 
 import '@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden.js';
