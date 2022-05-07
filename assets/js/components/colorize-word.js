@@ -1,8 +1,19 @@
+import Gradient from 'javascript-color-gradient';
 import { LitElement, html, css } from 'lit';
 // import lit classmap directive
 import { classMap } from 'lit/directives/class-map.js';
 
 import '@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden.js';
+
+const COLORS = [
+  '#e74c3c',
+  '#e67e22',
+  '#f1c40f',
+  '#2ecc71',
+  '#3498db',
+  '#9b59b6',
+  '#5b3256',
+];
 
 class ColorizeWord extends LitElement {
   static get properties() {
@@ -13,17 +24,6 @@ class ColorizeWord extends LitElement {
 
   static get styles() {
     return css`
-      :host {
-        display: inline-block;
-        --color-0: #e74c3c;
-        --color-1: #e67e22;
-        --color-2: #f1c40f;
-        --color-3: #2ecc71;
-        --color-4: #3498db;
-        --color-5: #9b59b6;
-        --color-6: #5b3256;
-      }
-
       .split-word {
         display: flex;
       }
@@ -48,6 +48,10 @@ class ColorizeWord extends LitElement {
     super.connectedCallback();
     const text = this.textContent;
     this.letters = text.split('');
+    this.colors = new Gradient()
+      .setColorGradient(...COLORS)
+      .setMidpoint(this.letters.length)
+      .getColors();
   }
 
   render() {
@@ -58,7 +62,7 @@ class ColorizeWord extends LitElement {
       >
         ${this.letters.map((letter, index) => {
           return html`
-            <span style=${`--color: var(--color-${index}`}> ${letter} </span>
+            <span style=${`--color: ${this.colors[index]}`}> ${letter} </span>
           `;
         })}
         <sl-visually-hidden>
