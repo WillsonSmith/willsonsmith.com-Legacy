@@ -22,19 +22,72 @@
   </head>
 
   <body>
-    <web-application></web-application>
-    <script type="module" src="/boot.js"></script>
+    <page-header>
+      <a href="/" slot="title">
+        <colorize-word rainbow>Willson</colorize-word>
+      </a>
+    </page-header>
 
-    <!-- Add a Service Worker -->
-    <!-- <script type="text/javascript">
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then((registration) => {
-          console.log('Service worker registered.', registration);
-        })
-        .catch((error) => {
-          console.log('Service worker registration failed.', error);
-        });
-    </script> -->
+    <main>
+      <article class="aboot">
+        <div class="aboot__content">
+          <sl-avatar label="it's me! :)" image="/static/images/me.jpg"></sl-avatar>
+          <div class="aboot__details">
+            <p>Willson Smith</p><p>Design Technologist • Shopify</p>
+            <p class="aboot__location">Ottawa • Ontario • Canada</p>
+            <sl-divider></sl-divider>
+          <p>Hi! It's me, Willson! I'm a front end web developer and design 
+            technologist at Shopify focused on building rapid prototypes to enable rich user experiences.</p>
+          </div>
+        </div>
+      </article>
+      <div class="title">
+        <h2>Projects</h2>
+      </div>
+      <article class="feature">
+        <h3><a class="feature__link" href="https://gifit.pics" target="_blank">Gifit.pics<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
+        <p>
+          Gifit is a front-end web app that converts videos into animated gifs and webps.
+        </p>
+      </article>
+
+      <article class="feature">
+        <h3><a class="feature__link" href="https://voice-clips.netlify.app" target="_blank">voice clips<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
+        <p>
+          A work-in-progress front-end web app for recording voice clips in your browser.
+        </p>
+      </article>
+
+      <article class="feature">
+        <h3><a class="feature__link" href="https://62734d3d7a65ec00096531e7--willsonsmith.netlify.app" target="_blank">old willsonsmith.com<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
+        <p>
+          A historical archive of my old website. The new website carries remnants of the old one. 
+        </p>
+        <footer><a class="feature__link" href="https://github.com/willsonsmith/willsonsmith.com/tree/master" target="_blank">Source</a></footer>
+      </article>
+
+      <article class="feature">
+        <h3><a class="feature__link" href="https://migrate-music.glitch.me" target="_blank">migrate music<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
+        <p>
+          A scrappy web application for migrating music from Spotify to Apple Music.
+        </p>
+        <footer><a class="feature__link" href="https://glitch.com/edit/#!/migrate-music" target="_blank">Source</a></footer>
+      </article>
+    </main>
+
+    <script type="module" src="/boot.js"></script>
+    <script>
+      const header = document.querySelector('page-header');
+      header.addEventListener('theme-change', (event) => {
+        const theme = event.detail.theme;
+        localStorage.setItem('preferred-theme', theme);
+        let dark = false;
+        if (theme === 'dark') dark = true;
+        if (theme === 'automatic') {
+          dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+        document.documentElement.classList.toggle('sl-theme-dark', dark);
+      });
+    </script>
   </body>
 </html>
