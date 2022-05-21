@@ -8,18 +8,16 @@
     "serve": "http-server web/",
     "serve:netlify": "netlify dev",
     "dev": "npm run web:watch",
-
     "web:build:prod": "concurrently \"node web/build/index.js --minify \"",
     "web:build": "concurrently \"node web/build/index.js\"",
     "web:watch": "concurrently \"npm run serve:netlify\" \"node web/build/index.js --watch\"",
-
     "extension:build:distribution": "concurrently \"node extension/build/index.js --minify\"",
     "extension:build": "concurrently \"node extension/build/index.js\"",
     "extension:watch": "concurrently \"node extension/build/index.js --watch\"",
-
     "application:build": "concurrently \"npm run application:build:js\" \"npm run application:build:css\" \"npm run application:build:html\" \"npm run application:copy:static\"",
     "build:components:library": "",
-    "test": "web-test-runner **/tests/*.test.js --config web-dev-server.config.js"
+    "test": "web-test-runner **/tests/*.test.js --config web-dev-server.config.js",
+    "blog:watch": "npx @11ty/eleventy --config .eleventy.cjs --quiet --watch"
   },
   "repository": {
     "type": "git",
@@ -32,6 +30,7 @@
   },
   "homepage": "https://github.com/WillsonSmith/willsonsmith.com#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
     "@open-wc/testing": "^3.0.0-next.5",
     "@web/test-runner": "^0.13.27",
     "chokidar": "^3.5.3",
@@ -46,7 +45,9 @@
     "jsdoc": "^3.6.10"
   },
   "dependencies": {
+    "@lit-labs/eleventy-plugin-lit": "^0.2.1",
     "@shoelace-style/shoelace": "^2.0.0-beta.73",
+    "@webcomponents/template-shadowroot": "^0.1.0",
     "javascript-color-gradient": "^2.4.4",
     "lit": "^2.2.3"
   }
