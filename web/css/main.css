@@ -2,19 +2,18 @@
 
 page-header {
   --border-width: 0;
-  --background: transparent;
-  -webkit-backdrop-filter: blur(6px) brightness(0.5);
-  backdrop-filter: blur(6px) brightness(0.5);
+  --background: var(--sl-color-neutral-50);
+  box-shadow: 0 4px 0 0 var(--sl-color-neutral-0), var(--sl-shadow-x-large);
   position: fixed;
   display: block;
   width: 100%;
   top: 0;
   z-index: 1;
 
-  box-shadow: var(--sl-shadow-medium);
 }
 
 body {
+  background: var(--sl-color-neutral-50);
   position: relative;
   font-size: var(--sl-font-size-large);
   text-shadow: 2px 2px var(--sl-color-neutral-0);
