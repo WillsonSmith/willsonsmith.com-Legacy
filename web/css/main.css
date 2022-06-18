@@ -169,9 +169,7 @@ stacking-scroller > * {
 }
 
 .feature footer {
-  margin-top: var(--sl-spacing-medium);
   padding-top: var(--sl-spacing-small);
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
