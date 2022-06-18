@@ -7,3 +7,5 @@ import "@shoelace-style/shoelace/dist/components/divider/divider.js";
 
 import "../../shared/web-components/page-header/page-header.js";
 import "../../shared/web-components/colorize-word/colorize-word.js";
+
+import "./components/stacking-scroller.js";

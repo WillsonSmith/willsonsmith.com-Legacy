@@ -58,6 +58,7 @@
     <star-sheet class="background-stars"></star-sheet>
 
     <main>
+      <stacking-scroller offset="30" stack-offset="50">
       <article class="aboot">
         <div class="aboot__content">
           <sl-avatar label="it's me! :)" image="/static/images/me.jpg"></sl-avatar>
@@ -70,20 +71,24 @@
         <p>Hi! It's me, Willson! I'm a front end web developer and design 
           technologist at Shopify focused on building rapid prototypes to enable rich user experiences.</p>
       </article>
+      <div class="feature-wrapper">
       <article class="feature">
         <h3><a class="feature__link" href="https://gifit.pics" target="_blank">Gifit.pics<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
         <p>
           Gifit is a front-end web app that converts videos into animated gifs and webps.
         </p>
       </article>
+    </div>
 
+    <div class="feature-wrapper">
       <article class="feature">
         <h3><a class="feature__link" href="https://voice-clips.netlify.app" target="_blank">voice clips<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
         <p>
           A work-in-progress front-end web app for recording voice clips in your browser.
         </p>
       </article>
-
+    </div>
+    <div class="feature-wrapper">
       <article class="feature">
         <h3><a class="feature__link" href="https://62734d3d7a65ec00096531e7--willsonsmith.netlify.app" target="_blank">old willsonsmith.com<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
         <p>
@@ -91,7 +96,8 @@
         </p>
         <footer><a class="feature__link" href="https://github.com/willsonsmith/willsonsmith.com/tree/master" target="_blank">Source</a></footer>
       </article>
-
+    </div>
+    <div class="feature-wrapper">
       <article class="feature">
         <h3><a class="feature__link" href="https://migrate-music.glitch.me" target="_blank">migrate music<sl-icon name="box-arrow-up-right"></sl-icon></a></h2>
         <p>
@@ -99,6 +105,8 @@
         </p>
         <footer><a class="feature__link" href="https://glitch.com/edit/#!/migrate-music" target="_blank">Source</a></footer>
       </article>
+    </div>
+    </stacking-scroller>
     </main>
 
     <script type="module" src="/boot.js"></script>
