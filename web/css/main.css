@@ -64,13 +64,8 @@ main {
   padding: var(--sl-font-size-2x-large);
 }
 
-.aboot__content {
+.aboot > * {
   transform: skew(-2deg);
-}
-
-@media (min-width: 400px) {
-  .aboot {
-  }
 }
 
 
@@ -88,19 +83,11 @@ main {
   font-size: var(--sl-font-size-x-large);
 }
 
-.aboot p:nth-child(2) {
-  font-size: var(--sl-font-size-medium);
-}
-
 .aboot__location {
   font-size: var(--sl-font-size-small);
 }
 
 .aboot__content {
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: var(--sl-spacing-large);
