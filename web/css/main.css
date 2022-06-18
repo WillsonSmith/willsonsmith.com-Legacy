@@ -16,22 +16,20 @@ body {
   background: var(--sl-color-neutral-50);
   position: relative;
   font-size: var(--sl-font-size-large);
-  text-shadow: 2px 2px var(--sl-color-neutral-0);
 }
 
 main {
   position: relative;
   padding: var(--sl-spacing-medium);
   padding-top: 100px;
-  line-height: var(--sl-line-height-dense);
-
   max-width: calc(60ch + var(--sl-spacing-medium));
   margin: 0 auto;
+
+  line-height: var(--sl-line-height-dense);
+  text-shadow: 1px 1px var(--sl-color-neutral-0), 2px 2px var(--sl-color-neutral-0);
 }
 
 stacking-scroller > * {
-  /* box-shadow: var(--sl-shadow-x-large); */
-  /* box-shadow: 2px 2px 0 0 var(--sl-color-neutral-0), -2px -2px 0 0 var(--sl-color-neutral-0); */
   box-shadow: 2px 2px 0 2px var(--sl-color-neutral-0), inset 2px 2px 0 2px var(--sl-color-neutral-0), var(--sl-shadow-x-large);
 }
 
