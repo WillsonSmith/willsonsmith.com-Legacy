@@ -2,6 +2,9 @@
 
 page-header {
   --border-width: 0;
+  --background: transparent;
+  -webkit-backdrop-filter: blur(6px) brightness(0.5);
+  backdrop-filter: blur(6px) brightness(0.5);
   position: fixed;
   display: block;
   width: 100%;
