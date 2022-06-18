@@ -107,6 +107,7 @@ main {
 
 .feature {
   background: var(--sl-color-neutral-200);
+  border-radius: var(--sl-border-radius-small);
   padding: var(--sl-spacing-large) var(--sl-spacing-large);
 
   max-width: 60ch;
