@@ -129,9 +129,6 @@ stacking-scroller > * {
   backdrop-filter: blur(6px) brightness(0.5);
 }
 
-.feature-wrapper + .feature-wrapper {
-}
-
 .feature-wrapper:nth-child(even) {
   transform: skew(-3deg);
 }
