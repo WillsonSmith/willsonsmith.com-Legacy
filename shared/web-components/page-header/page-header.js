@@ -96,10 +96,7 @@ class PageHeader extends LitElement {
   render() {
     const starSheet = this.noStars
       ? ``
-      : html`<star-sheet
-          star-color=${ifDefined(this.starColor)}
-          star-density="2"
-        ></star-sheet>`;
+      : html`<star-sheet star-density="2" part="star-sheet"></star-sheet>`;
     return html`
       <header class="header">
         ${starSheet}

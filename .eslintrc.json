@@ -6,8 +6,7 @@
   "extends": ["plugin:lit/recommended", "plugin:lit-a11y/recommended"],
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["error", "backtick"],
-    "indent": ["error", 2]
+    "quotes": ["error", "backtick"]
   },
   "parserOptions": {
     "ecmaVersion": "latest",

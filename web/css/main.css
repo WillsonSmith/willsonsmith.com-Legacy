@@ -15,6 +15,10 @@ page-header {
   box-shadow: 0 4px 0 0 var(--sl-color-neutral-0), var(--sl-shadow-x-large);
 }
 
+:not(.sl-theme-dark) page-header::part(star-sheet) {
+  --star-color: var(--sl-color-violet-950);
+}
+
 page-header a {
   color: var(--sl-color-neutral-950);
 }
@@ -53,6 +57,10 @@ main {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+:not(.sl-theme-dark) .background-stars {
+  --star-color: var(--sl-color-violet-950);
 }
 
 yz-block-card {

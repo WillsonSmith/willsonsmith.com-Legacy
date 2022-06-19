@@ -1,85 +1,55 @@
-import { LitElement, html } from "lit";
+import { LitElement, html, svg, css } from "lit";
 
 class StarSheet extends LitElement {
   static get properties() {
     return {
-      seed: { type: Number },
-      starDensity: { type: Number, attribute: `star-density` },
-      starCount: { type: Number },
       stars: { type: Array },
-      starColor: { type: String, attribute: `star-color` },
+      starCount: { type: Number },
+      starDensity: { type: Number, attribute: `star-density` },
     };
+  }
+  static get styles() {
+    return css`
+      :host {
+        --star-color: #fff;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    `;
   }
 
   constructor() {
     super();
-    this.starColor = `#fff`;
     this.seed = Date.now();
-    this.rng = seededPseudoRandom(this.seed);
+    this.stars = [];
     this.starDensity = 20;
   }
 
   firstUpdated() {
-    this.canvas = this.shadowRoot.querySelector(`canvas`);
-    this.context = this.canvas.getContext(`2d`);
-    this.context.scale(window.devicePixelRatio, window.devicePixelRatio);
-    this.canvas.width = this.offsetWidth * window.devicePixelRatio;
-    this.canvas.height = this.offsetHeight * window.devicePixelRatio;
-    this.canvas.style.width = `${this.offsetWidth}px`;
-    this.canvas.style.height = `${this.offsetHeight}px`;
-    this._generateStars();
-    this.renderStars();
-  }
-
-  updated(changedProperties) {
-    if (
-      changedProperties.has(`starCount`) ||
-      changedProperties.has(`starColor`)
-    ) {
-      this.renderStars();
-    }
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-    this.resizeObserver = new ResizeObserver((entries) => {
-      this.canvas.width = this.offsetWidth * window.devicePixelRatio;
-      this.canvas.height = this.offsetHeight * window.devicePixelRatio;
-      this.canvas.style.width = `${this.offsetWidth}px`;
-      this.canvas.style.height = `${this.offsetHeight}px`;
-      this.rng = seededPseudoRandom(this.seed);
-      this._generateStars();
-
-      requestAnimationFrame(() => {
-        this.renderStars();
-      });
-    });
+    this.resizeObserver = new ResizeObserver(() => this._generateStars());
     this.resizeObserver.observe(this);
+    this._generateStars();
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
-    this.resizeObserver.unobserve(this);
+    this.resizeObserver.disconnect();
   }
 
   render() {
-    return html` <canvas></canvas> `;
-  }
-
-  renderStars() {
-    this.context.fillStyle = `#000`;
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.context.fillStyle = this.starColor;
-    this.stars.forEach((star) => {
-      this.context.beginPath();
-      this.context.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
-      this.context.fill();
-    });
+    return svg`<svg>
+      ${this.stars.map((star) => {
+        return svg`<circle cx="${star.x}" cy="${star.y}" r="${star.radius}" fill="var(--star-color)"></circle>`;
+      })}
+    </svg>`;
   }
 
   _generateStars() {
+    const rng = seededPseudoRandom(this.seed);
     this.starCount = (this.offsetWidth / 100) * this.starDensity;
-    this.stars = [];
+    let stars = [];
     for (let i = 0; i < this.starCount; i++) {
       stars.push({
         x: rng.next() * this.offsetWidth,
@@ -87,8 +57,10 @@ class StarSheet extends LitElement {
         radius: rng.next() * 4,
       });
     }
+    this.stars = stars;
   }
 }
+customElements.define(`star-sheet`, StarSheet);
 
 function seededPseudoRandom(initSeed) {
   let seed = initSeed % 2147483647;
@@ -104,5 +76,3 @@ function seededPseudoRandom(initSeed) {
     },
   };
 }
-
-customElements.define(`star-sheet`, StarSheet);
