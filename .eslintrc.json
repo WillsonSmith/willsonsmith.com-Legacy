@@ -3,13 +3,10 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:lit/recommended",
-    "plugin:lit-a11y/recommended"
-  ],
+  "extends": ["plugin:lit/recommended", "plugin:lit-a11y/recommended"],
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["error", "backtick"], // I'm a bit of a weirdo
+    "quotes": ["error", "backtick"],
     "indent": ["error", 2]
   },
   "parserOptions": {

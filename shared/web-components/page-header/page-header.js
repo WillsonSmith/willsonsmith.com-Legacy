@@ -1,14 +1,15 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from "lit";
+import { ifDefined } from "lit/directives/if-defined.js";
 
-import '@shoelace-style/shoelace/dist/components/dropdown/dropdown.js';
-import '@shoelace-style/shoelace/dist/components/icon/icon.js';
-import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js';
-import '@shoelace-style/shoelace/dist/components/tooltip/tooltip.js';
-import '@shoelace-style/shoelace/dist/components/button/button.js';
-import '@shoelace-style/shoelace/dist/components/menu/menu.js';
-import '@shoelace-style/shoelace/dist/components/menu-item/menu-item.js';
+import "@shoelace-style/shoelace/dist/components/dropdown/dropdown.js";
+import "@shoelace-style/shoelace/dist/components/icon/icon.js";
+import "@shoelace-style/shoelace/dist/components/icon-button/icon-button.js";
+import "@shoelace-style/shoelace/dist/components/tooltip/tooltip.js";
+import "@shoelace-style/shoelace/dist/components/button/button.js";
+import "@shoelace-style/shoelace/dist/components/menu/menu.js";
+import "@shoelace-style/shoelace/dist/components/menu-item/menu-item.js";
 
-import '../star-sheet/star-sheet.js';
+import "../star-sheet/star-sheet.js";
 
 class PageHeader extends LitElement {
   static get properties() {
@@ -16,13 +17,14 @@ class PageHeader extends LitElement {
       title: { type: String },
       githubLink: { type: String, attribute: `github-link` },
       noStars: { type: Boolean, attribute: `no-stars` },
+      starColor: { type: String, attribute: `star-color` },
     };
   }
 
   static get styles() {
     return css`
       :host {
-        --font-family: 'Fredoka', var(--sl-font-sans), sans-serif;
+        --font-family: "Fredoka", var(--sl-font-sans), sans-serif;
         --border-width: 1px;
         --background: var(--sl-color-neutral-0);
       }
@@ -62,7 +64,7 @@ class PageHeader extends LitElement {
       }
 
       colorize-word {
-        font-family: 'Fredoka', var(--sl-font-sans);
+        font-family: "Fredoka", var(--sl-font-sans);
       }
 
       star-sheet {
@@ -92,7 +94,12 @@ class PageHeader extends LitElement {
   }
 
   render() {
-    const starSheet = this.noStars ? `` : html`<star-sheet star-density="2"></star-sheet>`;
+    const starSheet = this.noStars
+      ? ``
+      : html`<star-sheet
+          star-color=${ifDefined(this.starColor)}
+          star-density="2"
+        ></star-sheet>`;
     return html`
       <header class="header">
         ${starSheet}

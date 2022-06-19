@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html } from "lit";
 
 class StarSheet extends LitElement {
   static get properties() {
@@ -7,11 +7,13 @@ class StarSheet extends LitElement {
       starDensity: { type: Number, attribute: `star-density` },
       starCount: { type: Number },
       stars: { type: Array },
+      starColor: { type: String, attribute: `star-color` },
     };
   }
 
   constructor() {
     super();
+    this.starColor = `#fff`;
     this.seed = Date.now();
     this.rng = seededPseudoRandom(this.seed);
     this.starDensity = 20;
@@ -30,7 +32,10 @@ class StarSheet extends LitElement {
   }
 
   updated(changedProperties) {
-    if (changedProperties.has(`starCount`)) {
+    if (
+      changedProperties.has(`starCount`) ||
+      changedProperties.has(`starColor`)
+    ) {
       this.renderStars();
     }
   }
@@ -64,7 +69,7 @@ class StarSheet extends LitElement {
   renderStars() {
     this.context.fillStyle = `#000`;
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.context.fillStyle = `#fff`;
+    this.context.fillStyle = this.starColor;
     this.stars.forEach((star) => {
       this.context.beginPath();
       this.context.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);

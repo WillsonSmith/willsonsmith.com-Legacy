@@ -2,20 +2,30 @@
 
 page-header {
   --border-width: 0;
-  --background: var(--sl-color-neutral-50);
-  box-shadow: 0 4px 0 0 var(--sl-color-neutral-0), var(--sl-shadow-x-large);
+  --background: var(--sl-color-violet-50);
   position: fixed;
   display: block;
   width: 100%;
   top: 0;
   z-index: 1;
+  box-shadow: 0 4px 0 0 var(--sl-color-violet-950), var(--sl-shadow-x-large);
+}
+.sl-theme-dark page-header {
+  --background: var(--sl-color-neutral-50);
+  box-shadow: 0 4px 0 0 var(--sl-color-neutral-0), var(--sl-shadow-x-large);
+}
 
+page-header a {
+  color: var(--sl-color-neutral-950);
 }
 
 body {
   position: relative;
-  background: var(--sl-color-neutral-50);
   font-size: var(--sl-font-size-large);
+  background: var(--sl-color-violet-50);
+}
+.sl-theme-dark body {
+  background: var(--sl-color-neutral-50);
 }
 
 main {
@@ -41,9 +51,14 @@ main {
 }
 
 yz-block-card {
-  --yz-block-card-background: var(--sl-color-neutral-200);
-  --yz-shadow-color: var(--sl-color-neutral-0);
+  --yz-shadow-color: var(--sl-color-violet-950);
+  --yz-block-card-background: var(--sl-color-yellow-50);
 }
+.sl-theme-dark yz-block-card {
+  --yz-shadow-color: var(--sl-color-neutral-0);
+  --yz-block-card-background: var(--sl-color-neutral-200);
+}
+
 
 yz-block-card:nth-child(even) {
   --skew: -3deg;
@@ -112,7 +127,6 @@ yz-block-card:nth-child(odd) {
 }
 
 .feature-project-link {
-  background: var(--sl-color-neutral-200);
   color: var(--sl-color-neutral-900);
   padding: var(--sl-spacing-2x-small) var(--sl-spacing-x-small);
 

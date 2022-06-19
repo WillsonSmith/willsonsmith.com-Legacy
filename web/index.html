@@ -227,32 +227,6 @@
         </yz-block-card>
       </stacking-scroller>
     </main>
-
     <script type="module" src="/javascript/(._.).js"></script>
-    <script>
-      const header = document.querySelector("page-header");
-      header.addEventListener("theme-change", (event) => {
-        const theme = event.detail.theme;
-        localStorage.setItem("preferred-theme", theme);
-        let dark = false;
-        if (theme === "dark") dark = true;
-        if (theme === "automatic") {
-          dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        }
-        document.documentElement.classList.toggle("sl-theme-dark", dark);
-      });
-    </script>
-
-    <!-- Add a Service Worker -->
-    <!-- <script type="text/javascript">
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then((registration) => {
-          console.log('Service worker registered.', registration);
-        })
-        .catch((error) => {
-          console.log('Service worker registration failed.', error);
-        });
-    </script> -->
   </body>
 </html>
