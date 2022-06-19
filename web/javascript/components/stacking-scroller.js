@@ -6,9 +6,6 @@ class StackingScroller extends LitElement {
       .stackable {
         position: relative;
       }
-      .stackable::slotted(.stackable-element) {
-        position: fixed;
-      }
     `;
   }
 
