@@ -1,7 +1,7 @@
-import { buildHtml } from './html/index.js';
-import { buildCss } from './css/index.js';
-import { copyStatic } from './static/index.js';
-import { buildJavascript } from './javascript/index.js';
+import { buildHtml } from "./html/index.js";
+import { buildCss } from "./css/index.js";
+import { copyStatic } from "./static/index.js";
+import { buildJavascript } from "./javascript/index.js";
 
 let [...flags] = process.argv;
 flags = {
@@ -13,20 +13,26 @@ const webPath = `./web`;
 const distPath = `./web/dist`;
 
 console.log(`BUILD • HTML • ${flags.watch ? `WATCHING` : `BUILDING`}`);
-buildHtml([
-  {
-    location: `${webPath}/index.html`,
-    destination: `${distPath}/index.html`,
-    ...{ flags },
-  },
-].map((config) => ({ ...config, ...flags })));
+buildHtml(
+  [
+    {
+      location: `${webPath}/index.html`,
+      destination: `${distPath}/index.html`,
+      ...{ flags },
+    },
+  ].map((config) => ({ ...config, ...flags }))
+);
 
 // Javascript
 const jsConfig = [
   {
+    location: `${webPath}/javascript/components/app-shell.js`,
+    destination: `${distPath}/javascript/components/app-shell.js`,
+  },
+  {
     location: `${webPath}/javascript/(._.).js`,
     destination: `${distPath}/javascript/(._.).js`,
-  }
+  },
 ].map((config) => ({ ...config, ...flags }));
 
 console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
@@ -37,6 +43,10 @@ const staticConfig = [
   {
     location: `./node_modules/@shoelace-style/shoelace`,
     destination: `${distPath}/vendor/modules/shoelace`,
+  },
+  {
+    location: `./node_modules/@webcomponents/template-shadowroot`,
+    destination: `${distPath}/vendor/@webcomponents/template-shadowroot`,
   },
   {
     location: `${webPath}/service-worker.js`,
@@ -53,7 +63,7 @@ const staticConfig = [
   {
     location: `${webPath}/site.webmanifest`,
     destination: `${distPath}/site.webmanifest`,
-  }
+  },
 ].map((config) => ({ ...config, ...flags }));
 
 console.log(`BUILD • STATIC • ${flags.watch ? `WATCHING` : `BUILDING`}`);

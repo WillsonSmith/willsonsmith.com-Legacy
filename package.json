@@ -16,7 +16,8 @@
     "extension:watch": "concurrently \"node extension/build/index.js --watch\"",
     "application:build": "concurrently \"npm run application:build:js\" \"npm run application:build:css\" \"npm run application:build:html\" \"npm run application:copy:static\"",
     "build:components:library": "",
-    "test": "web-test-runner **/tests/*.test.js --config web-dev-server.config.js"
+    "test": "web-test-runner **/tests/*.test.js --config web-dev-server.config.js",
+    "lit-ssr": "node  --experimental-vm-modules ./web/scripts/lit-ssr.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/WillsonSmith/willsonsmith.com#readme",
   "devDependencies": {
+    "@lit-labs/ssr": "^2.2.0",
     "@open-wc/testing": "^3.0.0-next.5",
     "@web/test-runner": "^0.13.27",
     "chokidar": "^3.5.3",
@@ -45,6 +47,7 @@
   },
   "dependencies": {
     "@shoelace-style/shoelace": "^2.0.0-beta.76",
+    "@webcomponents/template-shadowroot": "^0.1.0",
     "javascript-color-gradient": "^2.4.4",
     "lit": "^2.2.4"
   }

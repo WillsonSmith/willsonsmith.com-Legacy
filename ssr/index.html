@@ -1,0 +1,749 @@
+<!--lit-part If0mwmhBMS0=-->
+  <!DOCTYPE html>
+  <html lang="en" class="sl-theme-dark">
+    <head>
+      <meta charset="UTF-8" />
+      <title>willsonsmith.com</title>
+      <meta
+        name="description"
+        content="Willson Smith • Front end developer • Design Technologist • Tinkerer"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      <meta name="msapplication-TileColor" content="#1a1a1e" />
+      <meta name="theme-color" content="#1a1a1e" />
+
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/static/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/static/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/static/favicon-16x16.png"
+      />
+      <link rel="manifest" href="site.webmanifest" />
+      <link
+        rel="mask-icon"
+        href="/static/safari-pinned-tab.svg"
+        color="#1a1a1e"
+      />
+      <link
+        rel="stylesheet"
+        href="/vendor/modules/shoelace/dist/themes/light.css"
+      />
+      <link
+        rel="stylesheet"
+        href="/vendor/modules/shoelace/dist/themes/dark.css"
+      />
+      <link rel="stylesheet" href="/css/main.css" />
+
+      <script type="module">
+        const root = document.documentElement;
+        const theme = localStorage.getItem("preferred-theme") || "automatic";
+        let dark = false;
+        if (theme === "dark") dark = true;
+        if (theme === "automatic") {
+          dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        }
+        document.documentElement.classList.toggle("sl-theme-dark", dark);
+      </script>
+    </head>
+
+    <body>
+      <page-header>
+        <a href="/" slot="title">
+          <colorize-word rainbow>Willson</colorize-word>
+          <span class="visually-hidden">Home page</span>
+        </a>
+      </page-header>
+      <star-sheet class="background-stars"></star-sheet>
+
+      <app-shell><template shadowroot="open"><style>
+      :host {
+      }
+    </style><!--lit-part yDmlg2KWdps=-->
+      <main>
+        <stacking-scroller   offset="30" stack-offset="30" defer-hydration><!--lit-node 1--><template shadowroot="open"><style>
+      .stackable {
+        position: relative;
+      }
+      .stackable::slotted(.stackable-element) {
+        position: fixed;
+      }
+    </style><!--lit-part n5mKHtdV7y0=-->
+      <div class="stackable">
+        <slot ><!--lit-node 1--></slot>
+      </div>
+    <!--/lit-part--></template>
+          <yz-block-card defer-hydration><!--lit-node 2--><template shadowroot="open"><style>
+      :host {
+        display: block;
+        --yz-block-card-background: hsla(0, 0%, 100%, 1);
+        --yz-block-card-padding: calc(4px * 8);
+        --yz-shadow-width: 2;
+        --yz-shadow-color: hsla(0, 0%, 0%, 1);
+        --skew: 0;
+      }
+      .yz-block-card {
+        background: var(--yz-block-card-background);
+        box-shadow: 2px 2px 0 2px var(--yz-shadow-color),
+          inset 2px 2px 0 2px var(--yz-shadow-color);
+
+        padding: var(--yz-block-card-padding);
+        transform: skew(var(--skew));
+      }
+
+      .yz-block-card-content {
+        transform: skew(calc(var(--skew) * -1));
+      }
+    </style><!--lit-part 8Oz6WdHBjEI=-->
+      <div class="yz-block-card" style="[object Object]"><!--lit-node 0-->
+        <div class="yz-block-card-content">
+          <slot></slot>
+        </div>
+      </div>
+    <!--/lit-part--></template>
+            <article class="about-me">
+              <div class="about-me-content">
+                <sl-avatar
+                  
+                  
+                  
+                 class="about-me-avatar" label="it&#39;s me! :)" image="/static/images/me.jpg" shape="circle" defer-hydration><!--lit-node 5--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+
+    --size: 3rem;
+  }
+
+  .avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--sl-color-neutral-400);
+    font-family: var(--sl-font-sans);
+    font-size: calc(var(--size) * 0.5);
+    font-weight: var(--sl-font-weight-normal);
+    color: var(--sl-color-neutral-0);
+    user-select: none;
+    vertical-align: middle;
+  }
+
+  .avatar--circle,
+  .avatar--circle .avatar__image {
+    border-radius: var(--sl-border-radius-circle);
+  }
+
+  .avatar--rounded,
+  .avatar--rounded .avatar__image {
+    border-radius: var(--sl-border-radius-medium);
+  }
+
+  .avatar--square {
+    border-radius: 0;
+  }
+
+  .avatar__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .avatar__initials {
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .avatar__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+</style><!--lit-part abzHHo0arJk=-->
+      <div
+        part="base"
+        class=" avatar avatar--circle "
+        role="img"
+        aria-label="it&#39;s me! :)"
+      ><!--lit-node 0-->
+        <!--lit-part OxYUivD0WnE=-->
+              <div part="icon" class="avatar__icon" aria-hidden="true">
+                <slot name="icon">
+                  <sl-icon   name="person-fill" library="system" defer-hydration><!--lit-node 2--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    contain: strict;
+    box-sizing: content-box !important;
+  }
+
+  .icon,
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style><!--lit-part oWnZEIwfJXo=--> <div
+      part="base"
+      class="icon"
+      
+      
+      aria-hidden="true"
+    ><!--lit-node 0-->
+      <!--lit-part BRUAAAUVAAA=--><svg><?></svg><!--/lit-part-->
+    </div><!--/lit-part--></template></sl-icon>
+                </slot>
+              </div>
+            <!--/lit-part-->
+        <!--lit-part 8smCSerla74=-->
+              <img
+                part="image"
+                class="avatar__image"
+                src="/static/images/me.jpg"
+                alt=""
+                
+              /><!--lit-node 0-->
+            <!--/lit-part-->
+      </div>
+    <!--/lit-part--></template></sl-avatar>
+                <div class="about-me-details">
+                  <p class="about-me-name">Willson Smith</p>
+                  <p class="about-me-title">Design Technologist • Shopify</p>
+                  <p class="about-me-location">Ottawa • Ontario • Canada</p>
+                </div>
+              </div>
+              <p>
+                Hi! I'm a front-end web developer and Design Technologist at
+                Shopify.
+              </p>
+              <p
+                style="text-align: center; margin-top: var(--sl-spacing-small)"
+              >
+                <span
+                  style="
+                  display: inline-block;
+                  transform: translateY(30%) scaleX(-1);
+                "
+                  >↴</span
+                >Look at some of the dumb things I made
+                <span style="display: inline-block; transform: translateY(30%)"
+                  >↴</span
+                >
+              </p>
+            </article>
+          </yz-block-card>
+          <yz-block-card defer-hydration><!--lit-node 14--><template shadowroot="open"><style>
+      :host {
+        display: block;
+        --yz-block-card-background: hsla(0, 0%, 100%, 1);
+        --yz-block-card-padding: calc(4px * 8);
+        --yz-shadow-width: 2;
+        --yz-shadow-color: hsla(0, 0%, 0%, 1);
+        --skew: 0;
+      }
+      .yz-block-card {
+        background: var(--yz-block-card-background);
+        box-shadow: 2px 2px 0 2px var(--yz-shadow-color),
+          inset 2px 2px 0 2px var(--yz-shadow-color);
+
+        padding: var(--yz-block-card-padding);
+        transform: skew(var(--skew));
+      }
+
+      .yz-block-card-content {
+        transform: skew(calc(var(--skew) * -1));
+      }
+    </style><!--lit-part 8Oz6WdHBjEI=-->
+      <div class="yz-block-card" style="[object Object]"><!--lit-node 0-->
+        <div class="yz-block-card-content">
+          <slot></slot>
+        </div>
+      </div>
+    <!--/lit-part--></template>
+            <article class="feature-project">
+              <h3 class="feature-project-header">Gifit</h3>
+              <p>
+                Gifs are far from perfect, but there is beauty in imperfection.
+                For years I've been creating gifs for any number of scenarios: a
+                silly meme, a product demo, a Dragon Ball Z gif for geocities,
+                and in that time I've converted hundreds of videos into gifs.
+              </p>
+              <p>
+                This website provides a quick and easy process for converting
+                videos: pick a video, pick the settings, convert the video,
+                download the converted gif.
+              </p>
+              <footer class="feature-project-footer">
+                <a
+                  class="feature-project-link"
+                  href="https://gifit.pics"
+                  target="_blank"
+                  >gifit.pics<sl-icon
+                    
+                    
+                   class="feature-project-link-icon" name="box-arrow-up-right" library="default" defer-hydration><!--lit-node 21--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    contain: strict;
+    box-sizing: content-box !important;
+  }
+
+  .icon,
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style><!--lit-part oWnZEIwfJXo=--> <div
+      part="base"
+      class="icon"
+      
+      
+      aria-hidden="true"
+    ><!--lit-node 0-->
+      <!--lit-part BRUAAAUVAAA=--><svg><?></svg><!--/lit-part-->
+    </div><!--/lit-part--></template></sl-icon
+                ></a>
+              </footer>
+            </article>
+          </yz-block-card>
+
+          <yz-block-card defer-hydration><!--lit-node 22--><template shadowroot="open"><style>
+      :host {
+        display: block;
+        --yz-block-card-background: hsla(0, 0%, 100%, 1);
+        --yz-block-card-padding: calc(4px * 8);
+        --yz-shadow-width: 2;
+        --yz-shadow-color: hsla(0, 0%, 0%, 1);
+        --skew: 0;
+      }
+      .yz-block-card {
+        background: var(--yz-block-card-background);
+        box-shadow: 2px 2px 0 2px var(--yz-shadow-color),
+          inset 2px 2px 0 2px var(--yz-shadow-color);
+
+        padding: var(--yz-block-card-padding);
+        transform: skew(var(--skew));
+      }
+
+      .yz-block-card-content {
+        transform: skew(calc(var(--skew) * -1));
+      }
+    </style><!--lit-part 8Oz6WdHBjEI=-->
+      <div class="yz-block-card" style="[object Object]"><!--lit-node 0-->
+        <div class="yz-block-card-content">
+          <slot></slot>
+        </div>
+      </div>
+    <!--/lit-part--></template>
+            <article class="feature-project">
+              <h3 class="feature-project-header">orbiting.earth</h3>
+              <p>
+                A poorly scaled, but time-accurate simulation of our solar
+                system. It's rough, I may never make it better, but it's pretty
+                and I like it.
+              </p>
+              <footer class="feature-project-footer">
+                <a
+                  class="feature-project-link"
+                  href="https://orbiting.earth"
+                  target="_blank"
+                  >orbiting.earth<sl-icon
+                    
+                    
+                   class="feature-project-link-icon" name="box-arrow-up-right" library="default" defer-hydration><!--lit-node 28--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    contain: strict;
+    box-sizing: content-box !important;
+  }
+
+  .icon,
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style><!--lit-part oWnZEIwfJXo=--> <div
+      part="base"
+      class="icon"
+      
+      
+      aria-hidden="true"
+    ><!--lit-node 0-->
+      <!--lit-part BRUAAAUVAAA=--><svg><?></svg><!--/lit-part-->
+    </div><!--/lit-part--></template></sl-icon>
+                </a>
+              </footer>
+            </article>
+          </yz-block-card>
+
+          <yz-block-card defer-hydration><!--lit-node 29--><template shadowroot="open"><style>
+      :host {
+        display: block;
+        --yz-block-card-background: hsla(0, 0%, 100%, 1);
+        --yz-block-card-padding: calc(4px * 8);
+        --yz-shadow-width: 2;
+        --yz-shadow-color: hsla(0, 0%, 0%, 1);
+        --skew: 0;
+      }
+      .yz-block-card {
+        background: var(--yz-block-card-background);
+        box-shadow: 2px 2px 0 2px var(--yz-shadow-color),
+          inset 2px 2px 0 2px var(--yz-shadow-color);
+
+        padding: var(--yz-block-card-padding);
+        transform: skew(var(--skew));
+      }
+
+      .yz-block-card-content {
+        transform: skew(calc(var(--skew) * -1));
+      }
+    </style><!--lit-part 8Oz6WdHBjEI=-->
+      <div class="yz-block-card" style="[object Object]"><!--lit-node 0-->
+        <div class="yz-block-card-content">
+          <slot></slot>
+        </div>
+      </div>
+    <!--/lit-part--></template>
+            <article class="feature-project">
+              <h3 class="feature-project-header">Voice clips</h3>
+              <p>
+                Searching for a new project to build, an idea came to mind,
+                “What if maybe I could record audio clips?” To which my brain
+                responded with “Uh, you have an iPhone with the voice memos
+                app.” I swiftly ignored my brain and built this website.
+              </p>
+              <footer class="feature-project-footer">
+                <a
+                  class="feature-project-link"
+                  href="https://voice-clips.netlify.app"
+                  target="_blank"
+                  >voice-clips.netlify.app<sl-icon
+                    
+                    
+                   class="feature-project-link-icon" name="box-arrow-up-right" library="default" defer-hydration><!--lit-node 35--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    contain: strict;
+    box-sizing: content-box !important;
+  }
+
+  .icon,
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style><!--lit-part oWnZEIwfJXo=--> <div
+      part="base"
+      class="icon"
+      
+      
+      aria-hidden="true"
+    ><!--lit-node 0-->
+      <!--lit-part BRUAAAUVAAA=--><svg><?></svg><!--/lit-part-->
+    </div><!--/lit-part--></template></sl-icon>
+                </a>
+              </footer>
+            </article>
+          </yz-block-card>
+
+          <yz-block-card defer-hydration><!--lit-node 36--><template shadowroot="open"><style>
+      :host {
+        display: block;
+        --yz-block-card-background: hsla(0, 0%, 100%, 1);
+        --yz-block-card-padding: calc(4px * 8);
+        --yz-shadow-width: 2;
+        --yz-shadow-color: hsla(0, 0%, 0%, 1);
+        --skew: 0;
+      }
+      .yz-block-card {
+        background: var(--yz-block-card-background);
+        box-shadow: 2px 2px 0 2px var(--yz-shadow-color),
+          inset 2px 2px 0 2px var(--yz-shadow-color);
+
+        padding: var(--yz-block-card-padding);
+        transform: skew(var(--skew));
+      }
+
+      .yz-block-card-content {
+        transform: skew(calc(var(--skew) * -1));
+      }
+    </style><!--lit-part 8Oz6WdHBjEI=-->
+      <div class="yz-block-card" style="[object Object]"><!--lit-node 0-->
+        <div class="yz-block-card-content">
+          <slot></slot>
+        </div>
+      </div>
+    <!--/lit-part--></template>
+            <article class="feature-project">
+              <h3 class="feature-project-header">Legacy willsonsmith.com</h3>
+              <p>
+                It's no longer in use, but it is a glimpse into the history of
+                my personal website. I like having an archive of the old site,
+                it is pleasing to reflect on the remnants of that website that
+                have carried through to this newest version.
+              </p>
+              <footer class="feature-project-footer">
+                <a
+                  class="feature-project-link"
+                  href="https://62734d3d7a65ec00096531e7--willsonsmith.netlify.app"
+                  target="_blank"
+                  >old.willsonsmith.com<sl-icon
+                    
+                    
+                   class="feature-project-link-icon" name="box-arrow-up-right" library="default" defer-hydration><!--lit-node 42--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    contain: strict;
+    box-sizing: content-box !important;
+  }
+
+  .icon,
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style><!--lit-part oWnZEIwfJXo=--> <div
+      part="base"
+      class="icon"
+      
+      
+      aria-hidden="true"
+    ><!--lit-node 0-->
+      <!--lit-part BRUAAAUVAAA=--><svg><?></svg><!--/lit-part-->
+    </div><!--/lit-part--></template></sl-icon>
+                </a>
+              </footer>
+            </article>
+          </yz-block-card>
+
+          <yz-block-card defer-hydration><!--lit-node 43--><template shadowroot="open"><style>
+      :host {
+        display: block;
+        --yz-block-card-background: hsla(0, 0%, 100%, 1);
+        --yz-block-card-padding: calc(4px * 8);
+        --yz-shadow-width: 2;
+        --yz-shadow-color: hsla(0, 0%, 0%, 1);
+        --skew: 0;
+      }
+      .yz-block-card {
+        background: var(--yz-block-card-background);
+        box-shadow: 2px 2px 0 2px var(--yz-shadow-color),
+          inset 2px 2px 0 2px var(--yz-shadow-color);
+
+        padding: var(--yz-block-card-padding);
+        transform: skew(var(--skew));
+      }
+
+      .yz-block-card-content {
+        transform: skew(calc(var(--skew) * -1));
+      }
+    </style><!--lit-part 8Oz6WdHBjEI=-->
+      <div class="yz-block-card" style="[object Object]"><!--lit-node 0-->
+        <div class="yz-block-card-content">
+          <slot></slot>
+        </div>
+      </div>
+    <!--/lit-part--></template>
+            <article class="feature-project">
+              <h3 class="feature-project-header">Migrate music</h3>
+              <p>
+                I have used Apple Music since launch, and in the beginning there
+                were very few playlists to choose from. I had a series of
+                playlists in Spotify, but did not want to manually create them.
+                I built this website to migrate those playlists to Apple Music.
+              </p>
+              <p>
+                Years later there was an exodus from Spotify to Apple Music, and
+                this found a new audience beyond myself.
+              </p>
+              <footer class="feature-project-footer">
+                <a
+                  class="feature-project-link"
+                  href="https://migrate-music.glitch.me"
+                  target="_blank"
+                  >migrate-music.glitch.me<sl-icon
+                    
+                    
+                   class="feature-project-link-icon" name="box-arrow-up-right" library="default" defer-hydration><!--lit-node 50--><template shadowroot="open"><style>
+  
+  :host {
+    box-sizing: border-box;
+  }
+
+  :host *,
+  :host *::before,
+  :host *::after {
+    box-sizing: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+
+  :host {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    contain: strict;
+    box-sizing: content-box !important;
+  }
+
+  .icon,
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style><!--lit-part oWnZEIwfJXo=--> <div
+      part="base"
+      class="icon"
+      
+      
+      aria-hidden="true"
+    ><!--lit-node 0-->
+      <!--lit-part BRUAAAUVAAA=--><svg><?></svg><!--/lit-part-->
+    </div><!--/lit-part--></template></sl-icon>
+                </a>
+              </footer>
+            </article>
+          </yz-block-card>
+        </stacking-scroller>
+      </main>
+    <!--/lit-part--></template></app-shell>
+      <script type="module" src="/javascript/(._.).js"></script>
+    </body>
+  </html>
+<!--/lit-part-->
