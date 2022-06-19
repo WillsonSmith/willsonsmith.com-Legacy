@@ -32,7 +32,7 @@ class YZBlockCard extends LitElement {
     `;
   }
 
-  skew = "";
+  skew = ``;
   render() {
     let styles = {};
     if (this.skew) {
@@ -50,4 +50,4 @@ class YZBlockCard extends LitElement {
   }
 }
 
-customElements.define("yz-block-card", YZBlockCard);
+customElements.define(`yz-block-card`, YZBlockCard);

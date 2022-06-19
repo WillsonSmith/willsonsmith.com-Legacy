@@ -12,17 +12,17 @@ import "../../shared/web-components/page-header/page-header.js";
 import "../../shared/web-components/colorize-word/colorize-word.js";
 import "../../shared/web-components/yz-block-card/yz-block-card.js";
 
-const header = document.querySelector("page-header");
-header.addEventListener("theme-change", (event) => {
+const header = document.querySelector(`page-header`);
+header.addEventListener(`theme-change`, (event) => {
   const theme = event.detail.theme;
-  localStorage.setItem("preferred-theme", theme);
+  localStorage.setItem(`preferred-theme`, theme);
   let dark = false;
-  if (theme === "dark") dark = true;
-  if (theme === "automatic") {
-    dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (theme === `dark`) dark = true;
+  if (theme === `automatic`) {
+    dark = window.matchMedia(`(prefers-color-scheme: dark)`).matches;
   }
 
-  document.documentElement.classList.toggle("sl-theme-dark", dark);
+  document.documentElement.classList.toggle(`sl-theme-dark`, dark);
   recolorStars();
 });
 
@@ -30,12 +30,12 @@ recolorStars();
 function recolorStars() {
   const header = document.querySelector(`page-header`);
   const stars = document.querySelector(`.background-stars`);
-  if (!document.documentElement.classList.contains("sl-theme-dark")) {
-    const color = "hsl(265.1 61.5% 21.4%)";
-    header.setAttribute("star-color", color);
-    stars.setAttribute("star-color", color);
+  if (!document.documentElement.classList.contains(`sl-theme-dark`)) {
+    const color = `hsl(265.1 61.5% 21.4%)`;
+    header.setAttribute(`star-color`, color);
+    stars.setAttribute(`star-color`, color);
     return;
   }
-  header.setAttribute("star-color", `#fff`);
-  stars.setAttribute("star-color", `#fff`);
+  header.setAttribute(`star-color`, `#fff`);
+  stars.setAttribute(`star-color`, `#fff`);
 }
