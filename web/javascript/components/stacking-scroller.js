@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit';
+import { LitElement, html, css } from "lit";
 
 class StackingScroller extends LitElement {
   static get styles() {
@@ -35,7 +35,6 @@ class StackingScroller extends LitElement {
 
   _slotChange() {
     const stackableElements = Array.from(this.children);
-    console.log(stackableElements);
     stackableElements.forEach((element, index) => {
       element.style.position = `sticky`;
       element.style.top = `${this.offset + index * this.stackOffset}px`;
