@@ -1,10 +1,9 @@
-import { LitElement, html, svg, css } from "lit";
+import { LitElement, svg, css } from "lit";
 
 class StarSheet extends LitElement {
   static get properties() {
     return {
       stars: { type: Array },
-      starCount: { type: Number },
       starDensity: { type: Number, attribute: `star-density` },
     };
   }
@@ -48,31 +47,26 @@ class StarSheet extends LitElement {
 
   _generateStars() {
     const rng = seededPseudoRandom(this.seed);
-    this.starCount = (this.offsetWidth / 100) * this.starDensity;
-    let stars = [];
-    for (let i = 0; i < this.starCount; i++) {
-      stars.push({
-        x: rng.next() * this.offsetWidth,
-        y: rng.next() * this.offsetHeight,
-        radius: rng.next() * 4,
-      });
-    }
-    this.stars = stars;
+    const width = this.offsetWidth;
+    const height = this.offsetHeight;
+    const starCount = (width / 100) * this.starDensity;
+
+    this.stars = Array.from({ length: starCount }, () => {
+      const x = rng.next().value * width;
+      const y = rng.next().value * height;
+      const radius = rng.next().value * 2;
+      return { x, y, radius };
+    });
   }
 }
 customElements.define(`star-sheet`, StarSheet);
 
-function seededPseudoRandom(initSeed) {
-  let seed = initSeed % 2147483647;
+function* seededPseudoRandom(initial) {
+  let seed = initial % 2147483647;
   if (seed <= 0) seed += 2147483646;
 
-  function next() {
-    return (seed = (seed * 16807) % 2147483647);
+  while (true) {
+    seed = (seed * 16807) % 2147483647;
+    yield (seed - 1) / 2147483647;
   }
-
-  return {
-    next() {
-      return (next() - 1) / 2147483646;
-    },
-  };
 }
