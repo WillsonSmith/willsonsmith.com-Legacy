@@ -24,11 +24,13 @@ web-application {
   font-family: 'Fredoka';
   src: url('/fonts/Fredoka-Medium.ttf');
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Fredoka';
   src: url('/fonts/Fredoka-Regular.ttf');
   font-weight: normal;
+  font-display: swap;
 }
 
 
