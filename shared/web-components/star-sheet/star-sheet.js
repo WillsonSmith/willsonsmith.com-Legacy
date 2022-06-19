@@ -54,7 +54,7 @@ class StarSheet extends LitElement {
     this.stars = Array.from({ length: starCount }, () => {
       const x = rng.next().value * width;
       const y = rng.next().value * height;
-      const radius = rng.next().value * 2;
+      const radius = rng.next().value * 3;
       return { x, y, radius };
     });
   }
