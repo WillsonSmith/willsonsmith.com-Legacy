@@ -9,6 +9,12 @@ html *, html *::before, html *::after {
 @font-face {
   font-family: 'Fredoka';
   src: url('/fonts/Fredoka-Medium.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Fredoka';
+  src: url('/fonts/Fredoka-Regular.ttf');
+  font-weight: normal;
 }
 
 

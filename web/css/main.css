@@ -22,10 +22,15 @@ page-header a {
 body {
   position: relative;
   font-size: var(--sl-font-size-large);
+  font-family: fredoka, var(--sl-font-sans);
   background: var(--sl-color-violet-50);
 }
 .sl-theme-dark body {
   background: var(--sl-color-neutral-50);
+}
+
+colorize-word {
+  font-weight: bold;
 }
 
 main {
