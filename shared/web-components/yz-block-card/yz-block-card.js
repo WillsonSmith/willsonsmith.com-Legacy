@@ -32,7 +32,7 @@ class YZBlockCard extends LitElement {
     `;
   }
 
-  skew = null;
+  skew = "";
   render() {
     let styles = {};
     if (this.skew) {
