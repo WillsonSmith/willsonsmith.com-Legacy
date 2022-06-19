@@ -1,4 +1,5 @@
 import { LitElement, html } from "lit";
+
 class StarSheet extends LitElement {
   static get properties() {
     return {
