@@ -81,10 +81,10 @@ class StarSheet extends LitElement {
     this.starCount = (this.offsetWidth / 100) * this.starDensity;
     this.stars = [];
     for (let i = 0; i < this.starCount; i++) {
-      this.stars.push({
-        x: this.rng.next() * this.canvas.width,
-        y: this.rng.next() * this.canvas.height,
-        radius: this.rng.next() * 5,
+      stars.push({
+        x: rng.next() * this.offsetWidth,
+        y: rng.next() * this.offsetHeight,
+        radius: rng.next() * 4,
       });
     }
   }
