@@ -1,9 +1,6 @@
 import { LitElement, html, css } from "lit";
-import { classMap } from "lit/directives/class-map.js";
 import { styleMap } from "lit/directives/style-map.js";
-
 import { visuallyHidden } from "../_system/util.js";
-import { spacing } from "../_system/tokens/spacing.js";
 
 import Gradient from "javascript-color-gradient";
 const COLOR_DEFAULTS = [
@@ -28,17 +25,20 @@ class ColorizeWord extends LitElement {
 
   static get styles() {
     return [
-      spacing,
       visuallyHidden,
       css`
-        .split-word {
-          display: flex;
+        .wrap {
+          position: relative;
+          display: inline-block;
         }
-        .split-word span {
-          text-shadow: 2px 2px var(--color);
-        }
-        .split-word span:not(:first-child) {
-          margin-left: var(--yz-spacing-01);
+        .shadow {
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          z-index: -1;
         }
 
         .uppercase {
@@ -50,8 +50,10 @@ class ColorizeWord extends LitElement {
 
   constructor() {
     super();
-    this.letters = this.textContent.split(``);
-    this.colors = [...new Array(this.letters.length)].map(() => `#000000`);
+    this.letters = this.textContent;
+    this.colors = [...new Array(this.letters.split(``).length)].map(
+      () => `#000000`
+    );
   }
 
   firstUpdated() {
@@ -65,24 +67,26 @@ class ColorizeWord extends LitElement {
   }
 
   render() {
-    const splitWordClasses = classMap({
-      "split-word": true,
-      uppercase: this.uppercase,
-    });
-
-    const splitWord = this.letters.map((letter, index) => {
-      const color = this.colors[index];
-      return html`<span style=${styleMap({ "--color": color })}
-        >${letter}</span
-      >`;
-    });
-
+    const gradientList = this.colors
+      .map((color, index) => {
+        const percent = ((index + 1) / this.colors.length) * 100;
+        return `${color} ${percent}% `;
+      })
+      .join(`, `);
+    const gradient = `linear-gradient(90deg, ${gradientList})`;
     return html`
-      <span class=${splitWordClasses} aria-hidden="true">
-        ${splitWord}
-        <div class="visually-hidden">
+      <span class="wrap">
+        <span>${this.letters}</span>
+        <span
+          class="shadow"
+          style=${styleMap({
+            backgroundImage: gradient,
+          })}
+          >${this.letters}</span
+        >
+        <span class="visually-hidden">
           <slot @slotchange=${this._handleSlotChange}></slot>
-        </div>
+        </span>
       </span>
     `;
   }
@@ -95,7 +99,7 @@ class ColorizeWord extends LitElement {
   }
 
   _handleSlotChange() {
-    this.letters = this.textContent.split(``);
+    this.letters = this.textContent;
   }
 }
 
