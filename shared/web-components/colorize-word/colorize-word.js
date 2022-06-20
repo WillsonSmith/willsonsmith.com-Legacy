@@ -1,8 +1,8 @@
-import Gradient from 'javascript-color-gradient';
-import { LitElement, html, css } from 'lit';
-import { classMap } from 'lit/directives/class-map.js';
+import Gradient from "javascript-color-gradient";
+import { LitElement, html, css } from "lit";
+import { classMap } from "lit/directives/class-map.js";
 
-import '@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden.js';
+import "@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden.js";
 
 const COLOR_DEFAULTS = [
   `#e74c3c`,
@@ -61,14 +61,14 @@ class ColorizeWord extends LitElement {
   render() {
     return html`
       <span
-        class=${classMap({ 'split-word': true, uppercase: this.uppercase })}
+        class=${classMap({ "split-word": true, uppercase: this.uppercase })}
         aria-hidden="true"
       >
         ${this.letters.map((letter, index) => {
-    return html`
+          return html`
             <span style=${`--color: ${this.colors[index]}`}>${letter}</span>
           `;
-  })}
+        })}
         <sl-visually-hidden>
           <slot @slotchange=${this._handleSlotChange}></slot>
         </sl-visually-hidden>
@@ -78,7 +78,7 @@ class ColorizeWord extends LitElement {
 
   _gradient() {
     return new Gradient()
-      .setColorGradient(...this.rainbow ? COLOR_DEFAULTS : this.colors)
+      .setColorGradient(...(this.rainbow ? COLOR_DEFAULTS : this.colors))
       .setMidpoint(this.letters.length)
       .getColors();
   }
