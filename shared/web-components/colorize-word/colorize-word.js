@@ -1,9 +1,11 @@
-import Gradient from "javascript-color-gradient";
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
+import { styleMap } from "lit-html/directives/style-map.js";
 
-import "@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden.js";
+import { visuallyHidden } from "../_system/util.js";
+import { spacing } from "../_system/tokens/spacing.js";
 
+import Gradient from "javascript-color-gradient";
 const COLOR_DEFAULTS = [
   `#e74c3c`,
   `#e67e22`,
@@ -25,21 +27,25 @@ class ColorizeWord extends LitElement {
   }
 
   static get styles() {
-    return css`
-      .split-word {
-        display: flex;
-      }
-      .split-word span {
-        text-shadow: 2px 2px var(--color);
-      }
-      .split-word span:not(:first-child) {
-        margin-left: var(--sl-spacing-2x-small);
-      }
+    return [
+      spacing,
+      visuallyHidden,
+      css`
+        .split-word {
+          display: flex;
+        }
+        .split-word span {
+          text-shadow: 2px 2px var(--color);
+        }
+        .split-word span:not(:first-child) {
+          margin-left: var(--yz-spacing-01);
+        }
 
-      .uppercase {
-        text-transform: uppercase;
-      }
-    `;
+        .uppercase {
+          text-transform: uppercase;
+        }
+      `,
+    ];
   }
 
   constructor() {
@@ -59,19 +65,24 @@ class ColorizeWord extends LitElement {
   }
 
   render() {
+    const splitWordClasses = classMap({
+      "split-word": true,
+      uppercase: this.uppercase,
+    });
+
+    const splitWord = this.letters.map((letter, index) => {
+      const color = this.colors[index];
+      return html`<span style=${styleMap({ "--color": color })}
+        >${letter}</span
+      >`;
+    });
+
     return html`
-      <span
-        class=${classMap({ "split-word": true, uppercase: this.uppercase })}
-        aria-hidden="true"
-      >
-        ${this.letters.map((letter, index) => {
-          return html`
-            <span style=${`--color: ${this.colors[index]}`}>${letter}</span>
-          `;
-        })}
-        <sl-visually-hidden>
+      <span class=${splitWordClasses} aria-hidden="true">
+        ${splitWord}
+        <div class="visually-hidden">
           <slot @slotchange=${this._handleSlotChange}></slot>
-        </sl-visually-hidden>
+        </div>
       </span>
     `;
   }

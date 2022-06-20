@@ -17,7 +17,6 @@ class PageHeader extends LitElement {
       title: { type: String },
       githubLink: { type: String, attribute: `github-link` },
       noStars: { type: Boolean, attribute: `no-stars` },
-      starColor: { type: String, attribute: `star-color` },
     };
   }
 
