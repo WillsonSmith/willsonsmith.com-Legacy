@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
-import { styleMap } from "lit-html/directives/style-map.js";
+import { styleMap } from "lit/directives/style-map.js";
 
 import { visuallyHidden } from "../_system/util.js";
 import { spacing } from "../_system/tokens/spacing.js";
