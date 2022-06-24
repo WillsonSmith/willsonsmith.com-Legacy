@@ -64,12 +64,12 @@ main {
 }
 
 yz-block-card {
-  --yz-shadow-color: var(--sl-color-violet-950);
-  --yz-block-card-background: var(--sl-color-yellow-50);
+  --shadow-color: var(--sl-color-violet-950);
+  --block-card-background: var(--sl-color-yellow-50);
 }
 .sl-theme-dark yz-block-card {
-  --yz-shadow-color: var(--sl-color-neutral-0);
-  --yz-block-card-background: var(--sl-color-neutral-200);
+  --shadow-color: var(--sl-color-neutral-0);
+  --block-card-background: var(--sl-color-neutral-200);
 }
 
 
