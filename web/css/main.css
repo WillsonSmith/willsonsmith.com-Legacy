@@ -2,17 +2,12 @@
 
 page-header {
   --border-width: 0;
-  --background: var(--sl-color-violet-50);
+  --background: transparent;
   position: fixed;
   display: block;
   width: 100%;
   top: 0;
   z-index: 1;
-  box-shadow: 0 4px 0 0 var(--sl-color-violet-950), var(--sl-shadow-x-large);
-}
-.sl-theme-dark page-header {
-  --background: var(--sl-color-neutral-50);
-  box-shadow: 0 4px 0 0 var(--sl-color-neutral-0), var(--sl-shadow-x-large);
 }
 
 :not(.sl-theme-dark) page-header::part(star-sheet) {
@@ -41,7 +36,7 @@ main {
   position: relative;
 
   padding: var(--sl-spacing-medium);
-  padding-top: 100px;
+  padding-top: 70px;
   margin: 0 auto;  
 
   max-width: calc(60ch + var(--sl-spacing-medium));
