@@ -3,6 +3,9 @@ import { LitElement, html, css } from "lit";
 class StackingScroller extends LitElement {
   static get styles() {
     return css`
+      :host {
+        display: block;
+      }
       .stackable {
         position: relative;
       }

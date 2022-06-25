@@ -12,7 +12,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <meta name="msapplication-TileColor" content="#1a1a1e" />
-    <meta name="theme-color" content="#1a1a1e" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="hsl(240 5.1% 15%)"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="hsl(250 100% 97.6%)"
+    />
 
     <link
       rel="apple-touch-icon"
@@ -60,7 +69,7 @@
   </head>
 
   <body>
-    <page-header>
+    <page-header no-stars>
       <a href="/" slot="title">
         <colorize-word rainbow>Willson</colorize-word>
         <span class="visually-hidden">Home page</span>
@@ -69,7 +78,7 @@
     <yz-star-sheet class="background-stars"></yz-star-sheet>
 
     <main>
-      <stacking-scroller offset="30" stack-offset="30">
+      <stacking-scroller offset="15" stack-offset="30">
         <yz-block-card>
           <article class="about-me">
             <div class="about-me-content">
