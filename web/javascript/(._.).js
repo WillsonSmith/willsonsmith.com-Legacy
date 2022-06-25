@@ -23,19 +23,4 @@ header.addEventListener(`theme-change`, (event) => {
   }
 
   document.documentElement.classList.toggle(`sl-theme-dark`, dark);
-  recolorStars();
 });
-
-recolorStars();
-function recolorStars() {
-  const header = document.querySelector(`page-header`);
-  const stars = document.querySelector(`.background-stars`);
-  if (!document.documentElement.classList.contains(`sl-theme-dark`)) {
-    const color = `hsl(265.1 61.5% 21.4%)`;
-    header.setAttribute(`star-color`, color);
-    stars.setAttribute(`star-color`, color);
-    return;
-  }
-  header.setAttribute(`star-color`, `#fff`);
-  stars.setAttribute(`star-color`, `#fff`);
-}
