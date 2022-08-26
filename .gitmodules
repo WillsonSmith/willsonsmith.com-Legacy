@@ -1,0 +1,3 @@
+[submodule "yuzu-components"]
+	path = yuzu-components
+	url = https://github.com/WillsonSmith/yuzu-components.git

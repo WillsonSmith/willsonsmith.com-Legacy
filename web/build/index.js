@@ -1,32 +1,34 @@
-import { buildHtml } from './html/index.js';
-import { buildCss } from './css/index.js';
-import { copyStatic } from './static/index.js';
-import { buildJavascript } from './javascript/index.js';
+import { buildHtml } from "./html/index.js";
+import { buildCss } from "./css/index.js";
+import { copyStatic } from "./static/index.js";
+import { buildJavascript } from "./javascript/index.js";
 
-let [...flags] = process.argv;
-flags = {
-  watch: flags.includes(`--watch`),
-  minify: flags.includes(`--minify`),
+let [...argus] = process.argv;
+let flags = {
+  watch: argus.includes(`--watch`),
+  minify: argus.includes(`--minify`),
 };
 
 const webPath = `./web`;
 const distPath = `./web/dist`;
 
 console.log(`BUILD • HTML • ${flags.watch ? `WATCHING` : `BUILDING`}`);
-buildHtml([
-  {
-    location: `${webPath}/index.html`,
-    destination: `${distPath}/index.html`,
-    ...{ flags },
-  },
-].map((config) => ({ ...config, ...flags })));
+buildHtml(
+  [
+    {
+      location: `${webPath}/index.html`,
+      destination: `${distPath}/index.html`,
+      ...{ flags },
+    },
+  ].map((config) => ({ ...config, ...flags }))
+);
 
 // Javascript
 const jsConfig = [
   {
-    location: `${webPath}/javascript/(._.).js`,
-    destination: `${distPath}/javascript/(._.).js`,
-  }
+    location: `${webPath}/javascript/boot.js`,
+    destination: `${distPath}/javascript/boot.js`,
+  },
 ].map((config) => ({ ...config, ...flags }));
 
 console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
