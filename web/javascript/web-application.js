@@ -40,11 +40,17 @@ class WebApplication extends LitElement {
   firstUpdated() {
     const darkMode = localStorage.getItem(`darkMode`);
     this.darkMode = darkMode === `true`;
+    document
+      .querySelector(`html`)
+      .classList.toggle(`sl-theme-dark`, this.darkMode);
   }
 
   updated(changedProperties) {
     if (changedProperties.has(`darkMode`)) {
       this.class = this.darkMode ? `sl-theme-dark` : ``;
+      document
+        .querySelector(`html`)
+        .classList.toggle(`sl-theme-dark`, this.darkMode);
     }
   }
 
