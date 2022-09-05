@@ -1,6 +1,8 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 
+import "./routes/home-page.js";
+
 class WebApplication extends LitElement {
   static styles = [
     css`
@@ -29,7 +31,17 @@ class WebApplication extends LitElement {
             <colorize-word rainbow>Home</colorize-word>
           </a>
         </page-header>
-        <main></main>
+        <main>
+          <slot></slot>
+          <yz-router>
+            <yz-route path="/">
+              <home-page></home-page>
+            </yz-route>
+            <yz-route path="/about">
+              <about-page></about-page>
+            </yz-route>
+          </yz-router>
+        </main>
       </div>
     `;
   }
