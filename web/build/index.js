@@ -2,7 +2,6 @@ import { build as esbuild } from "esbuild";
 import { buildHtml } from "./html/index.js";
 import { buildCss } from "./css/index.js";
 import { copyStatic } from "./static/index.js";
-import { buildJavascript } from "./javascript/index.js";
 
 import { readdir } from "fs/promises";
 
@@ -27,7 +26,6 @@ buildHtml(
 );
 
 // Javascript
-
 readdir(`${webPath}/javascript/routes`).then((files) => {
   const bundles = files
     .filter((file) => file.endsWith(`.js`))
