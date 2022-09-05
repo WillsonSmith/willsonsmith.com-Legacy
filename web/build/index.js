@@ -3,6 +3,8 @@ import { buildCss } from "./css/index.js";
 import { copyStatic } from "./static/index.js";
 import { buildJavascript } from "./javascript/index.js";
 
+import { readdir } from "fs/promises";
+
 let [...argus] = process.argv;
 let flags = {
   watch: argus.includes(`--watch`),
@@ -25,23 +27,23 @@ buildHtml(
 
 // Javascript
 
-const jsConfig = [
-  {
-    location: `${webPath}/javascript/boot.js`,
-    destination: `${distPath}/javascript/boot.js`,
-  },
-  {
-    location: `${webPath}/javascript/routes/home-page.js`,
-    destination: `${distPath}/routes/home-page.js`,
-  },
-  {
-    location: `${webPath}/javascript/routes/about-page.js`,
-    destination: `${distPath}/routes/about-page.js`,
-  },
-].map((config) => ({ ...config, ...flags }));
+readdir(`${webPath}/javascript/routes`).then((files) => {
+  console.log(files);
 
-console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
-buildJavascript(jsConfig);
+  const jsConfig = [
+    {
+      location: `${webPath}/javascript/boot.js`,
+      destination: `${distPath}/javascript/boot.js`,
+    },
+    ...files.map((file) => ({
+      location: `${webPath}/javascript/routes/${file}`,
+      destination: `${distPath}/routes/${file}`,
+    })),
+  ].map((config) => ({ ...config, ...flags }));
+
+  console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
+  buildJavascript(jsConfig);
+});
 
 // Static assets
 const staticConfig = [
