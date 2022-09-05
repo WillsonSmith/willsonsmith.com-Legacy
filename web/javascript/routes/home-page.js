@@ -4,7 +4,10 @@ class HomePage extends LitElement {
   static styles = [css``];
 
   render() {
-    return html`hello<slot></slot>`;
+    return html`
+      <h1>Home</h1>
+      <p>This is the home page.</p>
+    `;
   }
 }
 

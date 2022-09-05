@@ -8,6 +8,12 @@ class WebApplication extends LitElement {
     css`
       :host {
         background: var(--sl-color-neutral-0);
+        color: var(--sl-color-neutral-900);
+      }
+      .page-header {
+        position: fixed;
+        inset: 0 0 auto auto;
+        padding: var(--sl-spacing-medium);
       }
     `,
   ];
@@ -23,14 +29,17 @@ class WebApplication extends LitElement {
     }
   }
 
+  handleThemeChange(event) {
+    this.darkMode = !event.target.checked;
+  }
   render() {
     return html`
       <div class=${classMap({ "sl-theme-dark": this.darkMode })}>
-        <page-header @theme-change=${this.handleThemeChange}>
-          <a class="page-header-link" href="/" slot="title">
-            <colorize-word rainbow>Home</colorize-word>
-          </a>
-        </page-header>
+        <div class="page-header">
+          <sl-switch checked @sl-change=${this.handleThemeChange}>
+            <sl-icon name=${this.darkMode ? `moon` : `sun`}></sl-icon>
+          </sl-switch>
+        </div>
         <main>
           <slot></slot>
           <yz-router>
@@ -46,10 +55,6 @@ class WebApplication extends LitElement {
     `;
   }
 
-  handleThemeChange(event) {
-    this.darkMode = event.detail.theme === `dark`;
-  }
-
   constructor() {
     super();
     this.darkMode = false;
@@ -57,3 +62,5 @@ class WebApplication extends LitElement {
 }
 
 customElements.define(`web-application`, WebApplication);
+import "@shoelace-style/shoelace/dist/components/icon/icon.js";
+import "@shoelace-style/shoelace/dist/components/switch/switch.js";
