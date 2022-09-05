@@ -1,7 +1,6 @@
 import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 
-import "./routes/home-page.js";
 import "../../yuzu-components/components/yz-router/yz-router.js";
 
 class WebApplication extends LitElement {
