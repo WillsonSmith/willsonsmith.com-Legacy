@@ -2,3 +2,7 @@
   publish = "web/dist"
   command = "npm run web:build:prod"
   functions = "./web/functions"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 302
