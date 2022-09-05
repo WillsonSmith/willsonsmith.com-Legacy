@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="sl-theme-dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,42 +19,11 @@
       href="/vendor/modules/shoelace/dist/themes/dark.css"
     />
     <link rel="stylesheet" href="/css/main.css" />
-
-    <script type="module">
-      const root = document.documentElement;
-      const theme = localStorage.getItem("preferred-theme") || "automatic";
-      let dark = false;
-      if (theme === "dark") dark = true;
-      if (theme === "automatic") {
-        dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      }
-      document.documentElement.classList.toggle("sl-theme-dark", dark);
-    </script>
   </head>
 
   <body>
-    <page-header>
-      <a class="page-header-link" href="/" slot="title">
-        <colorize-word rainbow>Home</colorize-word>
-      </a>
-    </page-header>
-
-    <main></main>
-
+    <web-application></web-application>
     <script type="module" src="/javascript/boot.js"></script>
-    <script>
-      const header = document.querySelector("page-header");
-      header.addEventListener("theme-change", (event) => {
-        const theme = event.detail.theme;
-        localStorage.setItem("preferred-theme", theme);
-        let dark = false;
-        if (theme === "dark") dark = true;
-        if (theme === "automatic") {
-          dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        }
-        document.documentElement.classList.toggle("sl-theme-dark", dark);
-      });
-    </script>
 
     <!-- Add a Service Worker -->
     <!-- <script type="text/javascript">

@@ -6,6 +6,20 @@ html *, html *::before, html *::after {
   box-sizing: inherit;
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+web-application {
+  flex: 1;
+}
+
 @font-face {
   font-family: 'Fredoka';
   src: url('/fonts/Fredoka-Medium.ttf');
@@ -21,35 +35,4 @@ body {
   font-weight: var(--sl-font-weight-normal);
   line-height: var(--sl-line-height-normal);
   letter-spacing: var(--sl-letter-spacing-normal);
-}
-
-main {
-  padding: var(--sl-spacing-large);
-}
-
-page-header::part(star-sheet) {
-  --star-color: var(--sl-color-neutral-900);
-}
-
-.page-header-link {
-  color: var(--sl-color-neutral-900);
-  margin: 0;
-  font-family: 'Fredoka', var(--sl-font-sans);
-  font-size: var(--sl-font-size-2x-large);
-  font-weight: var(--sl-font-weight-semibold);
-  line-height: var(--sl-line-height-normal);
-  text-decoration: none;
-}
-
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
