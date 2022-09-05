@@ -1,17 +1,1 @@
 @import '../../shared/css/main.css';
-
-main {
-  padding: var(--sl-spacing-large);
-}
-
-main sl-card {
-  display: block;
-
-  max-width: 60ch;
-  margin: 0 auto;
-}
-
-main sl-card h2 {
-  margin: 0;
-}
-

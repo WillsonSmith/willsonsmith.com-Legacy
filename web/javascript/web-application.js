@@ -2,6 +2,7 @@ import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 
 import "../../yuzu-components/components/yz-router/yz-router.js";
+import "../../yuzu-components/components/yz-router/yz-link.js";
 
 class WebApplication extends LitElement {
   static styles = [
@@ -21,6 +22,11 @@ class WebApplication extends LitElement {
 
         font-size: var(--sl-font-size-2x-large);
         line-height: var(--sl-line-height-denser);
+      }
+
+      .missing-page {
+        max-width: 60ch;
+        margin: 0 auto;
       }
     `,
   ];
@@ -66,6 +72,13 @@ class WebApplication extends LitElement {
           <yz-router>
             <yz-route path="/" component="/routes/home-page"></yz-route>
             <yz-route path="/about" component="/routes/about-page"></yz-route>
+            <div slot="warning" class="missing-page">
+              <sl-alert variant="warning" open>
+                <sl-icon slot="icon" name="exclamation-diamond"></sl-icon>
+                <p>404: Page not found</p>
+                <yz-link to="/">Go home</yz-link>
+              </sl-alert>
+            </div>
           </yz-router>
         </main>
       </div>
@@ -82,3 +95,4 @@ class WebApplication extends LitElement {
 customElements.define(`web-application`, WebApplication);
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
+import "@shoelace-style/shoelace/dist/components/alert/alert.js";
