@@ -1,3 +1,4 @@
+import { build as esbuild } from "esbuild";
 import { buildHtml } from "./html/index.js";
 import { buildCss } from "./css/index.js";
 import { copyStatic } from "./static/index.js";
@@ -28,24 +29,41 @@ buildHtml(
 // Javascript
 
 readdir(`${webPath}/javascript/routes`).then((files) => {
-  console.log(files);
+  const bundles = files
+    .filter((file) => file.endsWith(`.js`))
+    .map((file) => {
+      return `${webPath}/javascript/routes/${file}`;
+    });
 
-  const jsConfig = [
-    {
-      location: `${webPath}/javascript/boot.js`,
-      destination: `${distPath}/javascript/boot.js`,
-    },
-    ...files
-      .map((file) => ({
-        location: `${webPath}/javascript/routes/${file}`,
-        destination: `${distPath}/routes/${file}`,
-      }))
-      .filter((config) => config.location.endsWith(`.js`)),
-  ].map((config) => ({ ...config, ...flags }));
-
-  console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
-  buildJavascript(jsConfig);
+  esbuild({
+    bundle: true,
+    entryPoints: [`${webPath}/javascript/boot.js`, ...bundles],
+    outdir: distPath,
+    format: `esm`,
+    minify: true,
+    watch: flags.watch,
+    sourcemap: true,
+  });
 });
+// readdir(`${webPath}/javascript/routes`).then((files) => {
+//   console.log(files);
+
+//   const jsConfig = [
+//     {
+//       location: `${webPath}/javascript/boot.js`,
+//       destination: `${distPath}/javascript/boot.js`,
+//     },
+//     ...files
+//       .map((file) => ({
+//         location: `${webPath}/javascript/routes/${file}`,
+//         destination: `${distPath}/routes/${file}`,
+//       }))
+//       .filter((config) => config.location.endsWith(`.js`)),
+//   ].map((config) => ({ ...config, ...flags }));
+
+//   console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
+//   buildJavascript(jsConfig);
+// });
 
 // Static assets
 const staticConfig = [
