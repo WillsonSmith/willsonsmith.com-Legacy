@@ -1,20 +1,13 @@
 import { LitElement, html, css } from "lit";
 
+import { PageMixin } from "./mixins/PageMixin.js";
+
 import "../../../yuzu-components/components/yz-router/yz-link.js";
 export const HANDLE = `home-page`;
-export class HomePage extends LitElement {
+export class HomePage extends PageMixin(LitElement) {
+  title = `Home`;
   static styles = [css``];
 
-  connectedCallback() {
-    super.connectedCallback();
-    const titleChangeEvent = new CustomEvent(`title-change`, {
-      detail: {
-        title: `Home`,
-      },
-      bubbles: true,
-    });
-    this.dispatchEvent(titleChangeEvent);
-  }
   render() {
     return html`
       <p>This is the home page.</p>
@@ -24,5 +17,6 @@ export class HomePage extends LitElement {
 }
 
 if (customElements.get(HANDLE) === undefined) {
+  //@ts-ignore
   customElements.define(HANDLE, HomePage);
 }

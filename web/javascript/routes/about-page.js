@@ -3,7 +3,9 @@ import { LitElement, html, css } from "lit";
 import "../../../yuzu-components/components/yz-router/yz-link.js";
 
 export const HANDLE = `abut-page`;
-class AboutPage extends LitElement {
+import { PageMixin } from "./mixins/PageMixin.js";
+class AboutPage extends PageMixin(LitElement) {
+  title = `About`;
   static styles = [css``];
 
   render() {
@@ -15,5 +17,6 @@ class AboutPage extends LitElement {
 }
 
 if (customElements.get(HANDLE) === undefined) {
+  //@ts-ignore
   customElements.define(HANDLE, AboutPage);
 }

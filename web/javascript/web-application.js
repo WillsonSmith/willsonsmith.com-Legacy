@@ -47,11 +47,14 @@ class WebApplication extends LitElement {
     localStorage.setItem(`darkMode`, this.darkMode.toString());
   }
 
+  handleTitleChange(event) {
+    this.title = event.detail.title;
+  }
   render() {
     return html`
       <div class=${classMap({ "sl-theme-dark": this.darkMode })}>
         <div class="page-header">
-          <h1>Home</h1>
+          <h1>${this.title}</h1>
           <sl-switch
             .checked=${this.darkMode}
             @sl-change=${this.handleThemeChange}
@@ -59,7 +62,7 @@ class WebApplication extends LitElement {
             <sl-icon name=${this.darkMode ? `moon` : `sun`}></sl-icon>
           </sl-switch>
         </div>
-        <main>
+        <main @title-change=${this.handleTitleChange}>
           <yz-router>
             <yz-route path="/" component="/routes/home-page"></yz-route>
             <yz-route path="/about" component="/routes/about-page"></yz-route>
