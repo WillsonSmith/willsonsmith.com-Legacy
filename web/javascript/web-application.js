@@ -2,6 +2,7 @@ import { LitElement, html, css } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 
 import "./routes/home-page.js";
+import "../../yuzu-components/components/yz-router/yz-router.js";
 
 class WebApplication extends LitElement {
   static styles = [
@@ -11,9 +12,16 @@ class WebApplication extends LitElement {
         color: var(--sl-color-neutral-900);
       }
       .page-header {
-        position: fixed;
-        inset: 0 0 auto auto;
+        display: flex;
+        align-items: center;
         padding: var(--sl-spacing-medium);
+      }
+      .page-header h1 {
+        flex: 1;
+        margin: 0;
+
+        font-size: var(--sl-font-size-2x-large);
+        line-height: var(--sl-line-height-denser);
       }
     `,
   ];
@@ -21,6 +29,7 @@ class WebApplication extends LitElement {
   static properties = {
     class: { type: String, reflect: true },
     darkMode: { type: Boolean },
+    title: { type: String },
   };
 
   updated(changedProperties) {
@@ -36,6 +45,7 @@ class WebApplication extends LitElement {
     return html`
       <div class=${classMap({ "sl-theme-dark": this.darkMode })}>
         <div class="page-header">
+          <h1>Home</h1>
           <sl-switch checked @sl-change=${this.handleThemeChange}>
             <sl-icon name=${this.darkMode ? `moon` : `sun`}></sl-icon>
           </sl-switch>
@@ -43,12 +53,8 @@ class WebApplication extends LitElement {
         <main>
           <slot></slot>
           <yz-router>
-            <yz-route path="/">
-              <home-page></home-page>
-            </yz-route>
-            <yz-route path="/about">
-              <about-page></about-page>
-            </yz-route>
+            <yz-route active path="/" component="/routes/home-page"></yz-route>
+            <yz-route path="/about"></yz-route>
           </yz-router>
         </main>
       </div>
@@ -58,6 +64,7 @@ class WebApplication extends LitElement {
   constructor() {
     super();
     this.darkMode = false;
+    this.title = ``;
   }
 }
 

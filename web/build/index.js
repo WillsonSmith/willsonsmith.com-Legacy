@@ -29,6 +29,10 @@ const jsConfig = [
     location: `${webPath}/javascript/boot.js`,
     destination: `${distPath}/javascript/boot.js`,
   },
+  {
+    location: `${webPath}/javascript/routes/home-page.js`,
+    destination: `${distPath}/routes/home-page.js`,
+  },
 ].map((config) => ({ ...config, ...flags }));
 
 console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
