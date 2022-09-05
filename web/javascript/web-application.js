@@ -41,6 +41,7 @@ class WebApplication extends LitElement {
   handleThemeChange(event) {
     this.darkMode = !event.target.checked;
   }
+
   render() {
     return html`
       <div class=${classMap({ "sl-theme-dark": this.darkMode })}>
@@ -51,10 +52,10 @@ class WebApplication extends LitElement {
           </sl-switch>
         </div>
         <main>
-          <slot></slot>
           <yz-router>
             <yz-route active path="/" component="/routes/home-page"></yz-route>
-            <yz-route path="/about"></yz-route>
+            <yz-route path="/about" component="/routes/about-page"></yz-route>
+            <!-- <slot></slot> -->
           </yz-router>
         </main>
       </div>

@@ -1,5 +1,6 @@
 import { LitElement, html, css } from "lit";
 
+import "../../../yuzu-components/components/yz-router/yz-link.js";
 export const HANDLE = `home-page`;
 export class HomePage extends LitElement {
   static styles = [css``];
@@ -15,9 +16,13 @@ export class HomePage extends LitElement {
     this.dispatchEvent(titleChangeEvent);
   }
   render() {
-    return html` <p>This is the home page.</p> `;
+    return html`
+      <p>This is the home page.</p>
+      <yz-link to="/about">Go to about page</yz-link>
+    `;
   }
 }
 
-if (customElements.get(`home-page`) === undefined)
-  customElements.define(`home-page`, HomePage);
+if (customElements.get(HANDLE) === undefined) {
+  customElements.define(HANDLE, HomePage);
+}
