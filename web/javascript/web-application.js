@@ -55,7 +55,6 @@ class WebApplication extends LitElement {
           <yz-router>
             <yz-route active path="/" component="/routes/home-page"></yz-route>
             <yz-route path="/about" component="/routes/about-page"></yz-route>
-            <!-- <slot></slot> -->
           </yz-router>
         </main>
       </div>
