@@ -45,25 +45,6 @@ readdir(`${webPath}/javascript/routes`).then((files) => {
     sourcemap: true,
   });
 });
-// readdir(`${webPath}/javascript/routes`).then((files) => {
-//   console.log(files);
-
-//   const jsConfig = [
-//     {
-//       location: `${webPath}/javascript/boot.js`,
-//       destination: `${distPath}/javascript/boot.js`,
-//     },
-//     ...files
-//       .map((file) => ({
-//         location: `${webPath}/javascript/routes/${file}`,
-//         destination: `${distPath}/routes/${file}`,
-//       }))
-//       .filter((config) => config.location.endsWith(`.js`)),
-//   ].map((config) => ({ ...config, ...flags }));
-
-//   console.log(`BUILD • JAVASCRIPT • ${flags.watch ? `WATCHING` : `BUILDING`}`);
-//   buildJavascript(jsConfig);
-// });
 
 // Static assets
 const staticConfig = [
