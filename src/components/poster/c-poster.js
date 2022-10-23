@@ -4,6 +4,14 @@ export const HANDLE = `c-poster`;
 class Poster extends LitElement {
   static styles = [
     css`
+      :host {
+        display: block;
+      }
+      a {
+        display: block;
+        border-radius: 9px;
+        overflow: hidden;
+      }
       img {
         display: block;
         width: 100%;

@@ -7,9 +7,12 @@ stylesheets:
 <main>
   <c-layout>
     {{ content }}
+    <div class="movies-title">
+      <h2>Movies</h2>
+      <p>What I've been watching</p>
+    </div>
     <c-layout-item type="full">
-      <h2>What I'm watching</h2>
-      <c-poster-list>
+      <c-poster-list class="poster-carousel">
         {% for poster in letterboxd.recentlyWatched %}
           <c-poster src="{{ poster.src }}" alt="{{ poster.alt }}" url="{{ poster.url }}"></c-poster>
         {% endfor %}

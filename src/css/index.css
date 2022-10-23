@@ -5,3 +5,17 @@ ul {
   margin-top: var(--c-spacing-xs);
   padding-left: var(--c-spacing-m);
 }
+
+.movies-title {
+  margin-top: var(--c-spacing-m);
+  text-align: center;
+}
+
+.movies-title p {
+  margin: 0;
+  margin-top: var(--c-spacing-sm);
+}
+
+.poster-carousel {
+  margin-top: var(--c-spacing-m);
+}
