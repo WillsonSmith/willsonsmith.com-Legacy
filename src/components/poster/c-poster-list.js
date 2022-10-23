@@ -29,9 +29,9 @@ class PosterList extends LitElement {
         );
       }
 
-      .scroll-container:hover .poster-list {
+      /* .scroll-container:hover .poster-list {
         animation-play-state: paused;
-      }
+      } */
       .poster-list {
         display: flex;
         flex-shrink: 0;

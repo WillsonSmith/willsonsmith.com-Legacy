@@ -28,7 +28,9 @@ class Poster extends LitElement {
 
   render() {
     return html`
-      <a href=${this.url}><img src="${this.src}" alt="${this.alt}" /></a>
+      <a href=${this.url} title=${this.alt}
+        ><img src="${this.src}" alt="${this.alt}"
+      /></a>
     `;
   }
 }
