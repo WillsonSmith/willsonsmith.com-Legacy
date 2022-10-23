@@ -2,6 +2,10 @@ const litPlugin = require('@lit-labs/eleventy-plugin-lit');
 const { asyncGlob, syncGlob } = require('./util/async-glob.cjs');
 const { build: esbuild } = require('esbuild');
 
+const { recentlyWatched } = require('./util/letterboxd.cjs');
+
+const Image = require('@11ty/eleventy-img');
+
 module.exports = function (eleventyConfig) {
   const componentModules = syncGlob('./src/components/**/*.js');
   eleventyConfig.addPlugin(litPlugin, {
@@ -53,6 +57,25 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget('src/css');
   eleventyConfig.addPassthroughCopy('src/css');
+
+  eleventyConfig.addWatchTarget('src/img');
+  eleventyConfig.addPassthroughCopy('src/img');
+
+  eleventyConfig.addGlobalData('letterboxd', async () => {
+    const { posters } = await recentlyWatched('willsonsmith');
+    for (const poster of posters) {
+      let stats = await Image(poster.src, {
+        widths: [300],
+        urlPath: '/img/movie-posters',
+        outputDir: './_site/img/movie-posters',
+      });
+      poster.src = stats.jpeg[0].url;
+    }
+
+    return {
+      recentlyWatched: posters.slice(0, 11),
+    };
+  });
 
   return {
     dir: {

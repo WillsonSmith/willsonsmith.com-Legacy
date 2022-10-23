@@ -7,14 +7,13 @@ stylesheets:
 <main>
   <c-layout>
     {{ content }}
-    <h2>Posts</h2>
-    <ul>
-      {%- for post in collections.post -%}
-        <li>
-          <a href="{{ post.url }}">{{ post.data.title }}
-          </a>
-        </li>
-      {%- endfor -%}
-    </ul>
+    <c-layout-item type="full">
+      <h2>What I'm watching</h2>
+      <c-poster-list>
+        {% for poster in letterboxd.recentlyWatched %}
+          <c-poster src="{{ poster.src }}" alt="{{ poster.alt }}" url="{{ poster.url }}"></c-poster>
+        {% endfor %}
+      </c-poster-list>
+    </c-layout-item>
   </c-layout>
 </main>
