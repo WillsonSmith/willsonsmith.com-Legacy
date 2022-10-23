@@ -9,8 +9,6 @@ class Poster extends LitElement {
       }
       a {
         display: block;
-        border-radius: 9px;
-        overflow: hidden;
       }
       img {
         display: block;

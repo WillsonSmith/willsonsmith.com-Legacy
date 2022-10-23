@@ -7,13 +7,22 @@ stylesheets:
 <main>
   <c-layout>
 
-    {{ content }}
+    <c-layout-item type="full">
+      <div class="about">
+        <div class="about-image">
+          <img src="/img/man.jpg" />
+        </div>
+        <div class="about-content">
+          {{ content }}
+        </div>
+      </div>
+    </c-layout-item>
 
     <div class="movies-title">
       <h2>Movies</h2>
       <p>What I've been watching</p>
     </div>
-    <c-layout-item type="full">
+    <c-layout-item type="full" class="poster-carousel-wrap">
       <c-poster-list class="poster-carousel">
         {% for poster in letterboxd.recentlyWatched %}
           <c-poster

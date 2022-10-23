@@ -1,3 +1,10 @@
+html {
+  background-image: linear-gradient(
+    to-bottom,
+    var(--theme-color-red),
+    var(--theme-color-grey-dark)
+  );
+}
 ul {
   margin: 0;
   padding: 0;
@@ -17,5 +24,54 @@ ul {
 }
 
 .poster-carousel {
-  margin-top: var(--c-spacing-m);
+  --container-padding: var(--c-spacing-m) 0;
+}
+
+header {
+  padding: var(--c-spacing-m) var(--c-spacing-l);
+}
+
+.about {
+  background: var(--theme-color-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  -webkit-mask-image: linear-gradient(
+    var(--mask-direction, to bottom),
+    hsl(0 0% 0% / 1),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 50%,
+    hsl(0 0% 0% / 0)
+  );
+  mask-image: linear-gradient(
+    var(--mask-direction, to bottom),
+    hsl(0 0% 0% / 1),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 50%,
+    hsl(0 0% 0% / 0) 90%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.about-image {
+  aspect-ratio: 4/5;
+}
+
+.about-content {
+  padding: var(--c-spacing-m);
+}
+
+.about-content h2 {
+  margin: 0;
+  margin-bottom: var(--c-spacing-s);
+}
+
+.about-content p + p {
+  margin-top: var(--c-spacing-xs);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -7,10 +7,12 @@ class PosterList extends LitElement {
     css`
       :host {
         display: block;
+        --container-padding: 0;
       }
       .scroll-container {
         display: flex;
         gap: var(--c-spacing-m);
+        padding: var(--container-padding);
         overflow-x: hidden;
         max-width: 100%;
         -webkit-mask-image: linear-gradient(
@@ -60,6 +62,7 @@ class PosterList extends LitElement {
         flex: 1 0 150px;
         width: 150px;
         border-radius: 9px;
+        overflow: hidden;
       }
     `,
   ];

@@ -5,7 +5,8 @@ class Highlight extends LitElement {
   static styles = [
     css`
       :host {
-        --highlight-color: var(--theme-color-primary);
+        --highlight-color: var(--theme-color-red);
+        color: var(--theme-color-white);
         background-color: var(--highlight-color);
         padding: var(--c-spacing-xxs);
       }

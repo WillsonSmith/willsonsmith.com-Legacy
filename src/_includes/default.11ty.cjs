@@ -26,7 +26,7 @@ module.exports = async function ({ content, stylesheets, title = 'Eleventy' }) {
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>${title}</title>
     
     <!-- As an optimization, immediately begin fetching the JavaScript modules
