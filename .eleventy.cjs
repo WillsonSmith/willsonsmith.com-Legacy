@@ -65,13 +65,21 @@ module.exports = function (eleventyConfig) {
     const { posters } = await recentlyWatched('willsonsmith');
     for (const poster of posters) {
       let stats = await Image(poster.src, {
+        formats: ['avif', 'webp', 'jpeg'],
         widths: [300],
         urlPath: '/img/movie-posters',
         outputDir: './_site/img/movie-posters',
       });
       poster.src = stats.jpeg[0].url;
+      const sources = Image.generateObject(stats, {
+        alt: poster.alt,
+        loading: 'lazy',
+        decoding: 'async',
+      })
+        .picture.filter((item) => Boolean(item.source))
+        .map(({ source }) => ({ type: source.type, srcset: source.srcset }));
+      poster.sources = sources;
     }
-
     return {
       recentlyWatched: posters.slice(0, 11),
     };

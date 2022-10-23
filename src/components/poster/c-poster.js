@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, render } from 'lit';
 
 export const HANDLE = `c-poster`;
 class Poster extends LitElement {
@@ -15,6 +15,7 @@ class Poster extends LitElement {
       img {
         display: block;
         width: 100%;
+        height: auto;
       }
     `,
   ];
@@ -26,12 +27,19 @@ class Poster extends LitElement {
     url: { type: String },
   };
 
-  render() {
-    return html`
-      <a href=${this.url} title=${this.alt}
-        ><img src="${this.src}" alt="${this.alt}"
-      /></a>
+  firstUpdated() {
+    const sources = Array.from(this.querySelectorAll('source'));
+    const pictureElement = html`
+      <picture>
+        ${sources}
+        <img src="${this.src}" alt="${this.alt}" />
+      </picture>
     `;
+    render(pictureElement, this.shadowRoot.querySelector('a'));
+  }
+
+  render() {
+    return html` <a href=${this.url} title=${this.alt}></a> `;
   }
 }
 

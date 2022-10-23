@@ -48,10 +48,10 @@ class PosterList extends LitElement {
 
       @keyframes scroll {
         0% {
-          transform: translateX(0);
+          transform: translate3d(0);
         }
         100% {
-          transform: translateX(calc(-100% - var(--c-spacing-m)));
+          transform: translate3d(calc(-100% - var(--c-spacing-m)), 0, 0);
         }
       }
 
