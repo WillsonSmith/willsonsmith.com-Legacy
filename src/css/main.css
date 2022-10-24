@@ -29,13 +29,18 @@ h6 {
   --theme-color-red: #9e4654;
 }
 
-html {
+html,
+body {
+  height: 100%;
+}
+
+/* body {
   background: linear-gradient(
     var(--theme-color-white) 0%,
     var(--theme-color-white) 200px,
     #fff 201px
   );
-}
+} */
 
 body {
   /* background-image: linear-gradient(

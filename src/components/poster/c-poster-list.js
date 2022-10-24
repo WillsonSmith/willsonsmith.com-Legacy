@@ -1,5 +1,4 @@
-import { LitElement, html, css } from 'lit';
-import { styleMap } from 'lit/directives/style-map.js';
+import { LitElement, html, css, render } from 'lit';
 
 export const HANDLE = `c-poster-list`;
 class PosterList extends LitElement {
@@ -8,61 +7,36 @@ class PosterList extends LitElement {
       :host {
         display: block;
         --container-padding: 0;
+        --edge-mask: linear-gradient(
+          to right,
+          hsl(0 0% 0% / 0),
+          hsl(0 0% 0% / 1) 10%,
+          hsl(0 0% 0% / 1) 90%,
+          hsl(0 0% 0% / 0)
+        );
       }
       .scroll-container {
         display: flex;
         gap: var(--c-spacing-m);
-        padding: var(--container-padding);
+        width: 100%;
         overflow-x: hidden;
-        max-width: 100%;
-        -webkit-mask-image: linear-gradient(
-          var(--mask-direction, to right),
-          hsl(0 0% 0% / 0),
-          hsl(0 0% 0% / 1) 20%,
-          hsl(0 0% 0% / 1) 80%,
-          hsl(0 0% 0% / 0)
-        );
-        mask-image: linear-gradient(
-          var(--mask-direction, to right),
-          hsl(0 0% 0% / 0),
-          hsl(0 0% 0% / 1) 20%,
-          hsl(0 0% 0% / 1) 80%,
-          hsl(0 0% 0% / 0)
-        );
+        padding: var(--container-padding);
+        -webkit-mask-image: var(--edge-mask);
+        mask-image: var(--edge-mask);
       }
 
-      /* .scroll-container:hover .poster-list {
-        animation-play-state: paused;
-      } */
       .poster-list {
         display: flex;
         flex-shrink: 0;
-        justify-content: center;
         gap: var(--c-spacing-m);
-        animation: scroll 40s linear infinite;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .poster-list {
-          animation: none;
-        }
-      }
-
-      @keyframes scroll {
-        0% {
-          transform: translate3d(0);
-        }
-        100% {
-          transform: translate3d(calc(-100% - var(--c-spacing-m)), 0, 0);
-        }
       }
 
       c-poster,
       ::slotted(c-poster) {
         flex: 1 0 150px;
         width: 150px;
-        border-radius: 9px;
         overflow: hidden;
+        border-radius: 9px;
       }
     `,
   ];
@@ -73,12 +47,29 @@ class PosterList extends LitElement {
 
   firstUpdated() {
     const items = Array.from(this.querySelectorAll('c-poster'));
-
-    const fragment = document.createDocumentFragment();
-    for (const item of items) {
-      fragment.appendChild(item.cloneNode(true));
+    const clones = items.map((item) => item.cloneNode(true));
+    for (const clone of clones) {
+      clone.setAttribute('slot', 'poster-list-2');
     }
-    this.shadowRoot.querySelector('#second-list').appendChild(fragment);
+    const markup = html`
+      ${items.map((item) => item)} ${clones.map((item) => item)}
+    `;
+    render(markup, this);
+
+    const animations = [
+      { transform: 'translate3d(0, 0, 0)' },
+      { transform: 'translate3d(calc(-100% - var(--c-spacing-m)), 0, 0)' },
+    ];
+    const animationTiming = {
+      duration: 10000 * items.length, // 1 second per item
+      iterations: Infinity,
+    };
+    const posterLists = Array.from(
+      this.shadowRoot.querySelectorAll('.poster-list')
+    );
+    for (const posterList of posterLists) {
+      posterList.animate(animations, animationTiming);
+    }
   }
 
   render() {
@@ -87,7 +78,9 @@ class PosterList extends LitElement {
         <div class="poster-list">
           <slot></slot>
         </div>
-        <div id="second-list" class="poster-list" aria-hidden="true"></div>
+        <div class="poster-list" aria-hidden="true">
+          <slot name="poster-list-2"></slot>
+        </div>
       </div>
     `;
   }
