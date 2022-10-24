@@ -4,6 +4,8 @@ const { build: esbuild } = require('esbuild');
 
 const { recentlyWatched } = require('./util/letterboxd.cjs');
 
+const { writeFile, readFile } = require('fs/promises');
+
 const Image = require('@11ty/eleventy-img');
 
 module.exports = function (eleventyConfig) {
@@ -21,7 +23,7 @@ module.exports = function (eleventyConfig) {
     minify: false,
     allowOverwrite: true,
   };
-  eleventyConfig.on('afterBuild', async () => {
+  eleventyConfig.on('eleventy.after', async () => {
     const files = await asyncGlob('src/components/**/*.js');
     esbuild({
       entryPoints: files,
@@ -62,6 +64,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/img');
 
   eleventyConfig.addGlobalData('letterboxd', async () => {
+    const cachedData = await readFile('.cache/letterboxd.json', 'utf-8').catch(
+      () => null
+    );
+
+    if (cachedData) {
+      console.log('Using cached data');
+      if (cachedData.date < Date.now() - 1000 * 60 * 60 * 24) {
+        return JSON.parse(cachedData);
+      }
+    }
+
     const { posters } = await recentlyWatched('willsonsmith');
     for (const poster of posters) {
       let stats = await Image(poster.src, {
@@ -80,9 +93,15 @@ module.exports = function (eleventyConfig) {
         .map(({ source }) => ({ type: source.type, srcset: source.srcset }));
       poster.sources = sources;
     }
-    return {
+
+    const result = {
       recentlyWatched: posters.slice(0, 11),
+      date: Date.now(),
     };
+
+    await writeFile('./.cache/letterboxd.json', JSON.stringify(result));
+
+    return result;
   });
 
   return {
