@@ -18,6 +18,7 @@ class Poster extends LitElement {
     `,
   ];
 
+  sources = [];
   static properties = {
     name: { type: String },
     src: { type: String },
