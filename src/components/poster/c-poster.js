@@ -23,21 +23,23 @@ class Poster extends LitElement {
     src: { type: String },
     alt: { type: String },
     url: { type: String },
+    sources: { type: Array },
   };
 
-  firstUpdated() {
-    const sources = Array.from(this.querySelectorAll('source'));
-    const pictureElement = html`
-      <picture>
-        ${sources}
-        <img src="${this.src}" alt="${this.alt}" />
-      </picture>
-    `;
-    render(pictureElement, this.shadowRoot.querySelector('a'));
-  }
-
   render() {
-    return html` <a href=${this.url} title=${this.alt}></a> `;
+    return html`
+      <a href=${this.url} title=${this.alt}>
+        <picture>
+          ${this.sources.map((source) => {
+            return html`<source
+              srcset=${source.srcset}
+              media=${source.media}
+            />`;
+          })}
+          <img src=${this.src} alt=${this.alt} />
+        </picture>
+      </a>
+    `;
   }
 }
 

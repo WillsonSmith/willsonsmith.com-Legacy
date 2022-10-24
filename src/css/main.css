@@ -22,31 +22,12 @@ h6 {
 /* Theme */
 :root,
 :host {
-  --theme-color-black: #040404;
-  --theme-color-white: #ebe6e0;
-  --theme-color-grey: #b9b8b8;
-  --theme-color-grey-dark: #3f3f3e;
-  --theme-color-red: #9e4654;
+  --theme-color-primary: var(--c-color-green-4);
+  --theme-color-text: var(--c-color-gray-9);
 }
 
 html,
 body {
   height: 100%;
-}
-
-/* body {
-  background: linear-gradient(
-    var(--theme-color-white) 0%,
-    var(--theme-color-white) 200px,
-    #fff 201px
-  );
-} */
-
-body {
-  /* background-image: linear-gradient(
-    to-bottom,
-    var(--theme-color-red),
-    var(--theme-color-grey-dark)
-  ); */
-  color: var(--theme-color-black);
+  color: var(--theme-color-text);
 }

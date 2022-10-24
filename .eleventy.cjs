@@ -63,15 +63,29 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('src/img');
   eleventyConfig.addPassthroughCopy('src/img');
 
+  eleventyConfig.addShortcode('cPoster', (poster) => {
+    const sourcesToString = JSON.stringify(poster.sources);
+    return `
+    <c-poster
+      src="${poster.src}"
+      alt="${poster.alt}"
+      url="${poster.url}"
+      sources='${sourcesToString}'
+      >
+    </c-poster>
+    `;
+  });
+
   eleventyConfig.addGlobalData('letterboxd', async () => {
     const cachedData = await readFile('.cache/letterboxd.json', 'utf-8').catch(
       () => null
     );
 
     if (cachedData) {
-      console.log('Using cached data');
-      if (cachedData.date < Date.now() - 1000 * 60 * 60 * 24) {
-        return JSON.parse(cachedData);
+      const json = JSON.parse(cachedData);
+      if (json.date < Date.now() - 1000 * 60 * 60 * 24) {
+        console.log('Using cached data');
+        return json;
       }
     }
 

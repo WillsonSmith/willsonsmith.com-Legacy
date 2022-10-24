@@ -1,11 +1,13 @@
 import { LitElement, html, css, render } from 'lit';
+import { styleMap } from 'lit/directives/style-map.js';
 
 export const HANDLE = `c-poster-list`;
 class PosterList extends LitElement {
   static styles = [
     css`
       :host {
-        display: block;
+        display: flex;
+        justify-content: center;
         --container-padding: 0;
         --edge-mask: linear-gradient(
           to right,
@@ -43,10 +45,12 @@ class PosterList extends LitElement {
 
   static properties = {
     center: { type: Boolean },
+    items: { type: Array },
   };
 
   firstUpdated() {
     const items = Array.from(this.querySelectorAll('c-poster'));
+    this.items = items;
     const clones = items.map((item) => item.cloneNode(true));
     for (const clone of clones) {
       clone.setAttribute('slot', 'poster-list-2');
@@ -74,7 +78,12 @@ class PosterList extends LitElement {
 
   render() {
     return html`
-      <div class="scroll-container">
+      <div
+        class="scroll-container"
+        style=${styleMap({
+          maxWidth: `calc(${this.items?.length} * (var(--c-spacing-m) + 150px))`,
+        })}
+      >
         <div class="poster-list">
           <slot></slot>
         </div>
