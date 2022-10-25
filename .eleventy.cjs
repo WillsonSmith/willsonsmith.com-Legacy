@@ -63,18 +63,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('src/img');
   eleventyConfig.addPassthroughCopy('src/img');
 
-  eleventyConfig.addShortcode('cPoster', (poster) => {
-    const sourcesToString = JSON.stringify(poster.sources);
-    return `
-    <c-poster
-      src="${poster.src}"
-      alt="${poster.alt}"
-      url="${poster.url}"
-      sources='${sourcesToString}'
-      >
-    </c-poster>
-    `;
-  });
+  eleventyConfig.addFilter('JSONStringify', (value) => JSON.stringify(value));
 
   eleventyConfig.addGlobalData('letterboxd', async () => {
     const cachedData = await readFile('.cache/letterboxd.json', 'utf-8').catch(

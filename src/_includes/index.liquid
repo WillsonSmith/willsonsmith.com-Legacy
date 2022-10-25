@@ -23,7 +23,7 @@ stylesheets:
       </div>
       <c-poster-list class="poster-carousel">
         {% for poster in letterboxd.recentlyWatched %}
-          {% cPoster poster %}
+          <c-poster src="{{poster.src}}" alt="{{poster.alt}}" url="{{poster.url}}" sources='{{ poster.sources | JSONStringify }}'></c-poster>
         {% endfor %}
       </c-poster-list>
     </c-layout-item>
