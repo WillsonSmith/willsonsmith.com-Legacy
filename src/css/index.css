@@ -28,6 +28,7 @@ main {
 }
 
 .project-container {
+  max-width: 80rem;
   display: flex;
   gap: var(--c-spacing-m);
   padding: var(--c-spacing-m);
@@ -37,11 +38,14 @@ main {
 }
 
 .project {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  color: #fff;
+  position: relative;
   border-radius: 9px;
   overflow: hidden;
-
+  max-width: 25rem;
+  aspect-ratio: 16 / 9;
   flex: 1 0 95%;
 
   --shadow-color: 0deg 0% 63%;
@@ -54,12 +58,18 @@ main {
   box-shadow: var(--shadow-elevation-medium);
 }
 
+.project a {
+  color: #fff;
+}
+
 .project-hero {
   display: flex;
 }
 
 .project-hero picture {
   display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .project-hero img {
@@ -69,5 +79,14 @@ main {
 }
 
 .project-description {
+  background: linear-gradient(to bottom, transparent, black);
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: var(--c-spacing-m);
 }
