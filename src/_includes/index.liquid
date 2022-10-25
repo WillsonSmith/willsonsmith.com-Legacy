@@ -6,7 +6,6 @@ stylesheets:
 
 <main>
   <c-layout>
-
     <c-layout-item type="full" class="about-container">
       <div class="about">
         <c-layout>
@@ -17,15 +16,33 @@ stylesheets:
       </div>
     </c-layout-item>
 
+    <div class="movies-title">
+      <h2>What I'm watching</h2>
+    </div>
     <c-layout-item type="full" class="poster-carousel-wrap">
-      <div class="movies-title">
-        <h2>What I'm watching</h2>
-      </div>
       <c-poster-list class="poster-carousel">
         {% for poster in letterboxd.recentlyWatched %}
           <c-poster src="{{poster.src}}" alt="{{poster.alt}}" url="{{poster.url}}" sources='{{ poster.sources | JSONStringify }}'></c-poster>
         {% endfor %}
       </c-poster-list>
+    </c-layout-item>
+
+    <c-layout-item>
+      <h2>What I'm working on</h2>
+      {%- for project in collections.project -%}
+        <div class="project">
+          <div class="project-hero">
+            {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+          </div>
+          <div class="project-description">
+            <h3>{{ project.data.title }}
+            </h3>
+            <p>{{ project.data.description }}
+            </p>
+            <a href="{{ project.data.projectUrl }}">View website</a>
+          </div>
+        </div>
+      {%- endfor -%}
     </c-layout-item>
   </c-layout>
 </main>

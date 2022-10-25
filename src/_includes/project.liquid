@@ -1,0 +1,14 @@
+---
+layout: default
+stylesheets:
+  - /css/project.css
+---
+
+<c-layout>
+  <c-layout-item type="full">
+    <div class="hero">
+      {% heroImage hero, title, "(min-width: 30rem) 30vw, 50vw, 100vw" %}
+    </div>
+  </c-layout-item>
+  {{content}}
+</c-layout>

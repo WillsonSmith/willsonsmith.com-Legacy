@@ -65,6 +65,24 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('JSONStringify', (value) => JSON.stringify(value));
 
+  eleventyConfig.addShortcode('heroImage', async (source, alt, sizes) => {
+    const metadata = await Image(source, {
+      widths: [640, 1280, 1920],
+      formats: ['avif', 'webp', 'jpeg'],
+      urlPath: '/img/projects/',
+      outputDir: './_site/img/projects/',
+    });
+
+    const imageAttributes = {
+      alt,
+      sizes,
+      loading: 'lazy',
+      decoding: 'async',
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
   eleventyConfig.addGlobalData('letterboxd', async () => {
     const cachedData = await readFile('.cache/letterboxd.json', 'utf-8').catch(
       () => null
