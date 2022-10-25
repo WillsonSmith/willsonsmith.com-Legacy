@@ -10,17 +10,56 @@ main {
   padding: var(--c-spacing-m) 0;
 }
 
+.page-heading {
+  position: sticky;
+  top: -200px;
+  z-index: 0;
+}
+
+.page-content {
+  padding-top: var(--c-spacing-l);
+  position: relative;
+  background: #fff;
+  z-index: 1;
+}
+
 .poster-carousel {
   --container-padding: var(--c-spacing-m) 0;
 }
 
+.project-container {
+  display: flex;
+  gap: var(--c-spacing-m);
+  padding: var(--c-spacing-m);
+  overflow-x: scroll;
+
+  box-sizing: border-box;
+}
+
 .project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 9px;
   overflow: hidden;
+
+  flex: 1 0 95%;
+
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-medium: 0.1px 0.3px 0.3px hsl(var(--shadow-color) / 0.35),
+    0.2px 0.6px 0.7px -0.7px hsl(var(--shadow-color) / 0.32),
+    0.5px 1.2px 1.4px -1.5px hsl(var(--shadow-color) / 0.3),
+    1px 2.6px 2.9px -2.2px hsl(var(--shadow-color) / 0.28),
+    1.9px 5.1px 5.7px -3px hsl(var(--shadow-color) / 0.25);
+
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.project-hero {
+  display: flex;
 }
 
 .project-hero picture {
   display: flex;
-  height: 200px;
 }
 
 .project-hero img {

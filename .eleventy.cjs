@@ -90,10 +90,10 @@ module.exports = function (eleventyConfig) {
 
     if (cachedData) {
       const json = JSON.parse(cachedData);
-      if (json.date < Date.now() - 1000 * 60 * 60 * 24) {
-        console.log('Using cached data');
-        return json;
-      }
+      console.log(json.date);
+      // if (json.date < Date.now() - 1000 * 60 * 60 * 24) {
+      return json;
+      // }
     }
 
     const { posters } = await recentlyWatched('willsonsmith');
