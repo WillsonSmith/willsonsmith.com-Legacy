@@ -12,16 +12,25 @@ stylesheets:
           <div class="about">
             <c-layout>
               <div class="about-content">
+                <h1 class="name">Willson</h1>
+                <p class="fed">Front-end developer</p>
+                <p class="dt">Design Technologist
+                  <a class="sh-link" href="https://shopify.ca">@Shopify</a>
+                </p>
                 {{ content }}
               </div>
             </c-layout>
           </div>
         </c-layout-item>
-
-        <div class="movies-title">
-          <h2>What I'm watching</h2>
-        </div>
-        <c-layout-item type="full" class="poster-carousel-wrap">
+        <c-layout-item type="full">
+          <film-strip style="transform: translateZ(0);" color="var(--theme-color-black)"></film-strip>
+        </c-layout-item>
+        <c-layout-item type="full" class="highlight">
+          <c-layout>
+            <div class="movies-title">
+              <h2>What I'm watching</h2>
+            </div>
+          </c-layout>
           <c-poster-list class="poster-carousel">
             {% for poster in letterboxd.recentlyWatched %}
               <c-poster src="{{poster.src}}" alt="{{poster.alt}}" url="{{poster.url}}" sources='{{ poster.sources | JSONStringify }}'></c-poster>
@@ -30,7 +39,10 @@ stylesheets:
         </c-layout-item>
       </c-layout>
     </c-layout-item>
-    <c-layout-item type="full" class="page-content">
+    <c-layout-item type="full">
+      <film-strip color="var(--theme-color-black)"></film-strip>
+    </c-layout-item>
+    <c-layout-item type="full" class="page-content highlight">
       <c-layout>
         <h2>What I'm working on</h2>
         <p>Turn this into swipe panels using component from other project</p>
@@ -51,8 +63,44 @@ stylesheets:
               </div>
             {%- endfor -%}
           </div>
+          <div class="project-container">
+            {%- for project in collections.project -%}
+              <div class="project">
+                <div class="project-hero">
+                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+                </div>
+                <div class="project-description">
+                  <h3>{{ project.data.title }}
+                  </h3>
+                  <p>{{ project.data.description }}
+                  </p>
+                  <a href="{{ project.data.projectUrl }}">View website</a>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+          <div class="project-container">
+            {%- for project in collections.project -%}
+              <div class="project">
+                <div class="project-hero">
+                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+                </div>
+                <div class="project-description">
+                  <h3>{{ project.data.title }}
+                  </h3>
+                  <p>{{ project.data.description }}
+                  </p>
+                  <a href="{{ project.data.projectUrl }}">View website</a>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
         </c-layout-item>
       </c-layout>
+    </c-layout-item>
+
+    <c-layout-item type="full">
+      <film-strip color="var(--theme-color-black)"></film-strip>
     </c-layout-item>
   </c-layout>
 </main>

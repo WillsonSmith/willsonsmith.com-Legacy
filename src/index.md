@@ -3,13 +3,6 @@ layout: index
 title: "Home"
 ---
 
-## Who I am
-
-**Willson**
-
-Front-end developer
-
-Design Technologist @ Shopify
 
 <!-- 🙋‍♂️ I'm Willson! I'm a front-end web developer and Design Technologist at [Shopify](https://shopify.com). I'm passionate about building accessible, performant, and delightful web experiences.
 

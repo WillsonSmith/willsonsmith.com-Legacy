@@ -1,5 +1,5 @@
 import { LitElement, html, css, render } from 'lit';
-
+import { classMap } from 'lit/directives/class-map.js';
 export const HANDLE = `c-poster`;
 class Poster extends LitElement {
   static styles = [
@@ -10,6 +10,25 @@ class Poster extends LitElement {
       a {
         display: block;
       }
+
+      .film-strip-mask {
+        position: relative;
+      }
+
+      .film-strip-mask::before {
+        content: '';
+        background: var(--theme-color-black);
+        -webkit-mask-image: url(/img/film-strip-mask.svg);
+        mask-image: url(/img/film-strip-mask.svg);
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
       img {
         display: block;
         width: 100%;
@@ -25,12 +44,17 @@ class Poster extends LitElement {
     alt: { type: String },
     url: { type: String },
     sources: { type: Array },
+    film: { type: Boolean },
   };
 
   render() {
     return html`
       <a href=${this.url} title=${this.alt}>
-        <picture>
+        <picture
+          class=${classMap({
+            'film-strip-mask': this.film,
+          })}
+        >
           ${this.sources.map((source) => {
             return html`<source
               srcset=${source.srcset}

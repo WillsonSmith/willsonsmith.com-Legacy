@@ -5,22 +5,66 @@ ul {
   margin-top: var(--c-spacing-xs);
   padding-left: var(--c-spacing-m);
 }
+p {
+  margin: 0;
+}
 
-main {
+body {
+  background: var(--theme-color-white);
+  /* background: var(--theme-color-orange-yellow); */
+}
+
+.highlight {
+  background: var(--theme-color-black);
+  color: var(--theme-color-white);
+}
+
+.about-content {
+  display: grid;
   padding: var(--c-spacing-m) 0;
+}
+
+.name {
+  line-height: 0.75;
+}
+
+.sh-link {
+  color: var(--theme-color-black);
+}
+
+.shopify-link {
+  /* grid-area: sh; */
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-content p:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about-content p:nth-child(2) {
+  font-size: 1.5rem;
 }
 
 .page-heading {
   position: sticky;
-  top: -200px;
+  top: -350px;
   z-index: 0;
 }
 
+film-strip {
+  transform: translateZ(0);
+}
+
 .page-content {
-  padding-top: var(--c-spacing-l);
+  color: var(--theme-color-white);
   position: relative;
-  background: #fff;
   z-index: 1;
+  transform: translateZ(0);
 }
 
 .poster-carousel {
@@ -29,6 +73,7 @@ main {
 
 .project-container {
   max-width: 80rem;
+  margin: 0 auto;
   display: flex;
   gap: var(--c-spacing-m);
   padding: var(--c-spacing-m);
@@ -38,8 +83,6 @@ main {
 }
 
 .project {
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
   color: #fff;
   position: relative;
   border-radius: 9px;
@@ -55,7 +98,7 @@ main {
     1px 2.6px 2.9px -2.2px hsl(var(--shadow-color) / 0.28),
     1.9px 5.1px 5.7px -3px hsl(var(--shadow-color) / 0.25);
 
-  box-shadow: var(--shadow-elevation-medium);
+  /* box-shadow: var(--shadow-elevation-medium); */
 }
 
 .project a {
