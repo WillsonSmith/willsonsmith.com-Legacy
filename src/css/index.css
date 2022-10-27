@@ -49,17 +49,10 @@ body {
   background: #fff;
 }
 
-.film-strip-segment film-strip {
+film-strip {
   width: 200%;
-}
-
-film-strip.left {
-  transform: rotate(-3deg);
-  transform-origin: left center;
-}
-
-film-strip.right {
   transform: rotate(3deg);
+  transform-origin: center center;
 }
 
 .header {
@@ -67,10 +60,20 @@ film-strip.right {
 }
 
 .highlight {
-  background: var(--theme-color-black);
+  /* background: var(--theme-color-black); */
   /* color: var(--theme-color-white); */
 
-  box-shadow: 0-3px 5px -3px var(--theme-color-dark-blue-grey);
+  /* box-shadow: 0-3px 5px -3px var(--theme-color-dark-blue-grey); */
+}
+
+c-poster {
+  box-shadow: 0px 0 6px -3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+c-poster-list {
+  transform: rotate(3deg);
 }
 
 .about {

@@ -61,7 +61,7 @@ class TextStyle extends LitElement {
 
   render() {
     return html`
-      <div
+      <span
         class=${classMap({
           body: true,
           title: this.title,
@@ -74,7 +74,7 @@ class TextStyle extends LitElement {
         })}
       >
         <slot></slot>
-      </div>
+      </span>
     `;
   }
 }

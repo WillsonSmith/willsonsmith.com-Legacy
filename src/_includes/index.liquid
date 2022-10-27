@@ -7,14 +7,14 @@ stylesheets:
 <main>
   <c-layout>
     <header class="header">
-      <screen-play rotate="-1deg">
-        <h1>
-          <text-style title>Willson</text-style>
-        </h1>
-        <div>Front-end developer</div>
-        <div>Design Technologist at
-          <a class="sh-link" href="https://shopify.ca">Shopify</a>
-        </div>
+      <screen-play shadow class="about">
+        <text-style display>About me</text-style>
+        <text-style>
+          <p>Hey there! I'm
+            <text-style subheading>Willson.</text-style>
+            I'm a front-end web developer and Design Technologist at Shopify.</p>
+          <p>I like movies, anime, videogames, and long walks off short piers.</p>
+        </text-style>
       </screen-play>
     </header>
     <c-layout-item type="full">
@@ -24,9 +24,11 @@ stylesheets:
         </div>
       </div>
       <c-layout>
-        <screen-play class="what-title" style="color: var(--theme-color-black)">
+        {%- comment -%}
+          <screen-play class="what-title" style="color: var(--theme-color-black)">
           <text-style display>What I'm watching</text-style>
-        </screen-play>
+          </screen-play>
+        {%- endcomment -%}
         <c-layout-item type="full" class="highlight">
           <c-poster-list class="poster-carousel">
             {% for poster in letterboxd.recentlyWatched %}
@@ -36,27 +38,22 @@ stylesheets:
         </c-layout-item>
       </c-layout>
     </c-layout-item>
-    <screen-play shadow class="about">
-      <text-style title>About me</text-style>
-      <text-style>
-        <p>Hey there! I'm Willson. I'm a front-end web developer and Design Technologist at Shopify.</p>
-        <p>I like movies, anime, videogames, and long walks off short piers.</p>
-      </text-style>
-    </screen-play>
   </div>
   <c-layout-item type="full">
     <div class="film-strip-segment">
       <div class="film-strip-segment__content">
-        <film-strip class="left" color="var(--theme-color-black)"></film-strip>
+        <film-strip class="left" color="var(--theme-color-black)">What I'm watching</film-strip>
       </div>
     </div>
   </c-layout-item>
-  <screen-play class="what-title">
+  {%- comment -%}
+    <screen-play class="what-title">
     <h2>
-      <text-style display>What I'm working on</text-style>
+    <text-style display>What I'm working on</text-style>
     </h2>
     <p>Turn this into swipe panels using component from other project</p>
-  </screen-play>
+    </screen-play>
+  {%- endcomment -%}
   <c-layout-item type="full" class="page-content highlight">
 
     <div class="project-container">

@@ -21,8 +21,8 @@ class PosterList extends LitElement {
         display: flex;
         gap: var(--c-spacing-m);
         overflow-x: hidden;
-        -webkit-mask-image: var(--edge-mask);
-        mask-image: var(--edge-mask);
+        /* -webkit-mask-image: var(--edge-mask);
+        mask-image: var(--edge-mask); */
         padding: var(--container-padding);
         width: 100%;
       }
@@ -35,8 +35,6 @@ class PosterList extends LitElement {
 
       ::slotted(c-poster) {
         flex: 1 0 150px;
-        border-radius: 9px;
-        overflow: hidden;
         width: 150px;
       }
     `,
