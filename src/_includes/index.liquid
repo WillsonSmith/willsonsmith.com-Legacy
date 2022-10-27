@@ -6,31 +6,33 @@ stylesheets:
 
 <main>
   <c-layout>
-    <c-layout-item type="full" class="page-heading">
+    <header class="header">
+      <screen-play rotate="-1deg">
+        <h1>
+          <text-style title>Willson</text-style>
+        </h1>
+        <div>Front-end developer</div>
+        <div>Design Technologist at
+          <a class="sh-link" href="https://shopify.ca">Shopify</a>
+        </div>
+      </screen-play>
+    </header>
+    <c-layout-item type="full">
       <c-layout>
-        <c-layout-item type="full" class="about-container">
-          <div class="about">
-            <c-layout>
-              <div class="about-content">
-                <h1 class="name">Willson</h1>
-                <p class="fed">Front-end developer</p>
-                <p class="dt">Design Technologist
-                  <a class="sh-link" href="https://shopify.ca">@Shopify</a>
-                </p>
-                {{ content }}
-              </div>
-            </c-layout>
-          </div>
-        </c-layout-item>
-        <c-layout-item type="full">
-          <film-strip style="transform: translateZ(0);" color="var(--theme-color-black)"></film-strip>
-        </c-layout-item>
+        <screen-play class="what-title" style="color: var(--theme-color-black)">
+          <text-style title>What I'm watching</text-style>
+        </screen-play>
         <c-layout-item type="full" class="highlight">
-          <c-layout>
+          {%- comment -%}
+            <c-layout>
             <div class="movies-title">
-              <h2>What I'm watching</h2>
-            </div>
-          </c-layout>
+            <h2>
+            <text-style display>What I'm watching</text-style>
+            </h2>
+            </div>            
+            </c-layout>
+          {%- endcomment -%}
+
           <c-poster-list class="poster-carousel">
             {% for poster in letterboxd.recentlyWatched %}
               <c-poster src="{{poster.src}}" alt="{{poster.alt}}" url="{{poster.url}}" sources='{{ poster.sources | JSONStringify }}'></c-poster>
@@ -39,68 +41,46 @@ stylesheets:
         </c-layout-item>
       </c-layout>
     </c-layout-item>
-    <c-layout-item type="full">
-      <film-strip color="var(--theme-color-black)"></film-strip>
-    </c-layout-item>
-    <c-layout-item type="full" class="page-content highlight">
-      <c-layout>
-        <h2>What I'm working on</h2>
-        <p>Turn this into swipe panels using component from other project</p>
-        <c-layout-item type="full">
-          <div class="project-container">
-            {%- for project in collections.project -%}
-              <div class="project">
-                <div class="project-hero">
-                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
-                </div>
-                <div class="project-description">
-                  <h3>{{ project.data.title }}
-                  </h3>
-                  <p>{{ project.data.description }}
-                  </p>
-                  <a href="{{ project.data.projectUrl }}">View website</a>
-                </div>
-              </div>
-            {%- endfor -%}
-          </div>
-          <div class="project-container">
-            {%- for project in collections.project -%}
-              <div class="project">
-                <div class="project-hero">
-                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
-                </div>
-                <div class="project-description">
-                  <h3>{{ project.data.title }}
-                  </h3>
-                  <p>{{ project.data.description }}
-                  </p>
-                  <a href="{{ project.data.projectUrl }}">View website</a>
-                </div>
-              </div>
-            {%- endfor -%}
-          </div>
-          <div class="project-container">
-            {%- for project in collections.project -%}
-              <div class="project">
-                <div class="project-hero">
-                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
-                </div>
-                <div class="project-description">
-                  <h3>{{ project.data.title }}
-                  </h3>
-                  <p>{{ project.data.description }}
-                  </p>
-                  <a href="{{ project.data.projectUrl }}">View website</a>
-                </div>
-              </div>
-            {%- endfor -%}
-          </div>
-        </c-layout-item>
-      </c-layout>
-    </c-layout-item>
+    <screen-play class="about" rotate="-1deg">
+      <text-style display>More about me</text-style>
+      <text-style>
+        <p>Hey there! I'm Willson. I'm a front-end web developer and Design Technologist at Shopify.</p>
+        <p>I like movies, anime, videogames, and long walks off short piers.</p>
+      </text-style>
+    </screen-play>
+  </div>
+  <screen-play class="what-title">
+    <h2>
+      <text-style display>What I'm working on</text-style>
+    </h2>
+    <p>Turn this into swipe panels using component from other project</p>
+  </screen-play>
+  <c-layout-item type="full" class="page-content highlight">
 
+    <div class="project-container">
+      {%- for project in collections.project -%}
+        <div class="project">
+          <div class="project-hero">
+            {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+          </div>
+          <div class="project-description">
+            <h3>{{ project.data.title }}
+            </h3>
+            <p>{{ project.data.description }}
+            </p>
+            <a href="{{ project.data.projectUrl }}">View website</a>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+
+    SCRIPT TYPOGRAPHY ABOUT ME. :)
+  </c-layout-item>
+  {%- comment -%}
     <c-layout-item type="full">
-      <film-strip color="var(--theme-color-black)"></film-strip>
+    <film-strip color="var(--theme-color-black)"></film-strip>
     </c-layout-item>
-  </c-layout>
+  {%- endcomment -%}
+
 </main>

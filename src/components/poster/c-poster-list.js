@@ -20,11 +20,11 @@ class PosterList extends LitElement {
       .scroll-container {
         display: flex;
         gap: var(--c-spacing-m);
-        width: 100%;
         overflow-x: hidden;
-        padding: var(--container-padding);
         -webkit-mask-image: var(--edge-mask);
         mask-image: var(--edge-mask);
+        padding: var(--container-padding);
+        width: 100%;
       }
 
       .poster-list {
@@ -33,18 +33,16 @@ class PosterList extends LitElement {
         gap: var(--c-spacing-m);
       }
 
-      c-poster,
       ::slotted(c-poster) {
         flex: 1 0 150px;
-        width: 150px;
-        overflow: hidden;
         border-radius: 9px;
+        overflow: hidden;
+        width: 150px;
       }
     `,
   ];
 
   static properties = {
-    center: { type: Boolean },
     items: { type: Array },
   };
 
@@ -55,9 +53,7 @@ class PosterList extends LitElement {
     for (const clone of clones) {
       clone.setAttribute('slot', 'poster-list-2');
     }
-    const markup = html`
-      ${items.map((item) => item)} ${clones.map((item) => item)}
-    `;
+    const markup = html` ${items} ${clones} `;
     render(markup, this);
 
     const animations = [
