@@ -41,6 +41,11 @@ class TextStyle extends LitElement {
         font-weight: 400;
         line-height: 1.2;
       }
+
+      .underline {
+        text-decoration: underline;
+        text-underline-position: 3px;
+      }
     `,
   ];
 
@@ -49,7 +54,9 @@ class TextStyle extends LitElement {
     display: { type: Boolean },
     headline: { type: Number },
     italic: { type: Boolean },
+    subheading: { type: Boolean },
     monospace: { type: Boolean },
+    underline: { type: Boolean },
   };
 
   render() {
@@ -61,7 +68,9 @@ class TextStyle extends LitElement {
           display: this.display,
           headline: this.headline,
           monospace: this.monospace,
+          subheading: this.subheading,
           italic: this.italic,
+          underline: this.underline,
         })}
       >
         <slot></slot>
