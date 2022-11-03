@@ -38,7 +38,7 @@ stylesheets:
     </c-layout-item>
 
     <c-layout-item type="full">
-      <infinite-carousel duration="2" itemWidth="300">
+      <infinite-carousel duration="2" item-width="300">
         {% for game in games %}
           <infinite-carousel-item>
             <a target="_blank" href="{{game.website}}" class="game-image">
@@ -54,7 +54,7 @@ stylesheets:
     </c-layout-item>
 
     <c-layout-item type="full">
-      <infinite-carousel direction="left">
+      <infinite-carousel direction="left" item-width="200">
         {% for poster in letterboxd.recentlyWatched %}
           <infinite-carousel-item>
             {% picture poster.src, poster.alt %}

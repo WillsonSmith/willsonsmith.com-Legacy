@@ -32,7 +32,7 @@ class InfiniteCarousel extends LitElement {
 
   static properties = {
     items: { type: Array },
-    itemWidth: { type: Number },
+    itemWidth: { type: Number, attribute: 'item-width' },
     direction: { type: String },
     duration: { type: Number },
   };
