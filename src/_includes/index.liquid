@@ -22,22 +22,21 @@ stylesheets:
       <div class="project-container">
         {%- for project in collections.project -%}
           <div class="project">
-            <div class="game-image">
+            <a href="{{ project.data.projectUrl }}" class="game-image">
               <div class="game-image__name">
                 <text-style display>{{project.data.title}}</text-style>
               </div>
-              <a href="{{ project.data.projectUrl }}">
-                <div class="project-hero">
-                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
-                </div>
-              </a>
-            </div>
+              <div class="project-hero">
+                {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+              </div>
+            </a>
           </div>
         {%- endfor -%}
       </div>
     </c-layout-item>
     <c-layout-item type="full" class="rotate-left">
-      <infinite-carousel direction="left" item-width="200">
+      <film-strip background-color="var(--theme-color-white)" color="var(--theme-color-black)"></film-strip>
+      <infinite-carousel class="film-list" direction="left" item-width="200">
         {% for poster in letterboxd.recentlyWatched %}
           <infinite-carousel-item>
             <a href="{{poster.url}}">
@@ -46,6 +45,9 @@ stylesheets:
           </infinite-carousel-item>
         {% endfor %}
       </infinite-carousel>
+      <film-strip background-color="var(--theme-color-white)" color="var(--theme-color-black)"></film-strip>
+
+
     </c-layout-item>
     <c-layout-item type="full">
       <infinite-carousel duration="2" item-width="300">

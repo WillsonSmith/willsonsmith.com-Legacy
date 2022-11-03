@@ -180,8 +180,8 @@ body {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
-  /* opacity: 0; */
-  /* transition: opacity 200ms ease-in-out; */
+  /* opacity: 0;
+  transition: opacity 200ms ease-in-out; */
 }
 
 .game-image:hover .game-image__name {
@@ -190,4 +190,8 @@ body {
 
 c-layout-item + c-layout-item {
   margin-top: var(--c-spacing-xl);
+}
+
+.film-list {
+  margin: var(--c-spacing-m) 0;
 }

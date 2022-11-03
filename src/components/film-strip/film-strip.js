@@ -8,6 +8,7 @@ class FilmStrip extends LitElement {
       :host {
         display: flex;
         height: 100px;
+        position: relative;
       }
 
       .film-strip-mask {
@@ -22,23 +23,36 @@ class FilmStrip extends LitElement {
         -webkit-mask-size: contain;
         mask-size: contain;
       }
+
+      .film-strip-background {
+        position: absolute;
+        inset: 15% 0 15% 0;
+        background: var(--film-strip-background);
+      }
     `,
   ];
 
   static properties = {
     color: { type: String },
+    backgroundColor: { type: String, attribute: 'background-color' },
   };
 
   render() {
     return html`
       <div
-        class="film-strip-mask"
+        class="film-strip-background"
         style=${styleMap({
-          'background-color': this.color,
+          '--film-strip-background': this.backgroundColor,
         })}
       >
         <slot></slot>
       </div>
+      <div
+        class="film-strip-mask"
+        style=${styleMap({
+          'background-color': this.color,
+        })}
+      ></div>
     `;
   }
 }
