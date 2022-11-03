@@ -108,7 +108,7 @@ body {
   gap: var(--c-spacing-m);
   overflow-x: scroll;
   box-sizing: border-box;
-  padding: 0 var(--c-spacing-m);
+  /* padding: 0 var(--c-spacing-m); */
 }
 
 .project {

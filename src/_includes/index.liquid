@@ -18,21 +18,24 @@ stylesheets:
       </screen-play>
     </header>
 
-    <c-layout-item type="full">
-      <div class="project-container">
-        {%- for project in collections.project -%}
-          <div class="project">
-            <a href="{{ project.data.projectUrl }}" class="game-image">
-              <div class="game-image__name">
-                <text-style display>{{project.data.title}}</text-style>
-              </div>
-              <div class="project-hero">
-                {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
-              </div>
-            </a>
-          </div>
-        {%- endfor -%}
-      </div>
+    <c-layout-item type="feature">
+      <screen-play shadow>
+        <text-style display>Projects</text-style>
+        <div class="project-container">
+          {%- for project in collections.project -%}
+            <div class="project">
+              <a href="{{ project.data.projectUrl }}" class="game-image">
+                <div class="game-image__name">
+                  <text-style display>{{project.data.title}}</text-style>
+                </div>
+                <div class="project-hero">
+                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+                </div>
+              </a>
+            </div>
+          {%- endfor -%}
+        </div>
+      </screen-play>
     </c-layout-item>
     <c-layout-item type="full" class="rotate-left">
       <film-strip background-color="var(--theme-color-white)" color="var(--theme-color-black)"></film-strip>
