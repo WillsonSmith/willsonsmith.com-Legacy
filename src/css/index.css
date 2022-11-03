@@ -114,7 +114,7 @@ body {
 .project {
   position: relative;
   overflow: hidden;
-  max-width: 25rem;
+  /* max-width: 25rem; */
   aspect-ratio: 16 / 9;
   flex: 1 0 95%;
 }

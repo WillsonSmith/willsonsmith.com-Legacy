@@ -18,23 +18,31 @@ stylesheets:
       </screen-play>
     </header>
 
-    <c-layout-item type="feature">
+    <c-layout-item type="popout">
       <screen-play shadow>
         <text-style display>Projects</text-style>
-        <div class="project-container">
+        {%- comment -%}
+          <div class="project-container">
+        {%- endcomment -%}
+        <page-swipe indicator>
           {%- for project in collections.project -%}
-            <div class="project">
-              <a href="{{ project.data.projectUrl }}" class="game-image">
-                <div class="game-image__name">
-                  <text-style display>{{project.data.title}}</text-style>
-                </div>
-                <div class="project-hero">
-                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
-                </div>
-              </a>
-            </div>
+            <swipable-page>
+              <div class="project">
+                <a href="{{ project.data.projectUrl }}" class="game-image">
+                  <div class="game-image__name">
+                    <text-style display>{{project.data.title}}</text-style>
+                  </div>
+                  <div class="project-hero">
+                    {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+                  </div>
+                </a>
+              </div>
+            </swipable-page>
           {%- endfor -%}
-        </div>
+        </page-swipe>
+        {%- comment -%}
+          </div>
+        {%- endcomment -%}
       </screen-play>
     </c-layout-item>
     <c-layout-item type="full" class="rotate-left">
