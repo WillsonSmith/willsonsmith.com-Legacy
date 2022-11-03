@@ -36,7 +36,17 @@ stylesheets:
         {%- endfor -%}
       </div>
     </c-layout-item>
-
+    <c-layout-item type="full" class="rotate-left">
+      <infinite-carousel direction="left" item-width="200">
+        {% for poster in letterboxd.recentlyWatched %}
+          <infinite-carousel-item>
+            <a href="{{poster.url}}">
+              {% picture poster.src, poster.alt %}
+            </a>
+          </infinite-carousel-item>
+        {% endfor %}
+      </infinite-carousel>
+    </c-layout-item>
     <c-layout-item type="full">
       <infinite-carousel duration="2" item-width="300">
         {% for game in games %}
@@ -48,16 +58,6 @@ stylesheets:
               {% assign screenshot = game.screenshots[0].path_full %}
               {% picture screenshot, game.name %}
             </a>
-          </infinite-carousel-item>
-        {% endfor %}
-      </infinite-carousel>
-    </c-layout-item>
-
-    <c-layout-item type="full">
-      <infinite-carousel direction="left" item-width="200">
-        {% for poster in letterboxd.recentlyWatched %}
-          <infinite-carousel-item>
-            {% picture poster.src, poster.alt %}
           </infinite-carousel-item>
         {% endfor %}
       </infinite-carousel>

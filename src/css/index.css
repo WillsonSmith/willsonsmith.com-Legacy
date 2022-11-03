@@ -7,7 +7,6 @@ ul {
 }
 
 body {
-  /* background: var(--theme-color-white); */
   background: var(--theme-color-orange-yellow);
 }
 
@@ -107,20 +106,17 @@ body {
   margin: 0 auto;
   display: flex;
   gap: var(--c-spacing-m);
-  /* padding: var(--c-spacing-m); */
   overflow-x: scroll;
-
   box-sizing: border-box;
+  padding: 0 var(--c-spacing-m);
 }
 
 .project {
   position: relative;
-  /* border-radius: 3px; */
   overflow: hidden;
   max-width: 25rem;
   aspect-ratio: 16 / 9;
   flex: 1 0 95%;
-  /* box-shadow: var(--shadow-elevation-medium); */
 }
 
 .project__title {
@@ -161,16 +157,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--c-spacing-m);
-}
-
-infinite-carousel {
-  /* --container-padding: var(--c-spacing-m) 0; */
-}
-
-infinite-carousel-item {
-  /* border-radius: 3px; */
-  /* overflow: hidden; */
-  /* box-shadow: var(--shadow-elevation-medium); */
 }
 
 .screenplay-details {
