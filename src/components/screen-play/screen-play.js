@@ -8,7 +8,6 @@ class ScreenPlay extends LitElement {
     css`
       :host {
         --background-color: var(--theme-color-white, HSLA(100, 0%, 100%, 1));
-
         --box-shadow: -1px 1px 0 var(--theme-color-black, rgba(0, 0, 0, 1)),
           -2px 2px 0 var(--theme-color-black, rgba(0, 0, 0, 1)),
           -3px 3px 0px var(--theme-color-black, rgba(0, 0, 0, 1)),
@@ -34,6 +33,7 @@ class ScreenPlay extends LitElement {
   static properties = {
     rotate: { type: String },
     shadow: { type: Boolean },
+    noPadding: { type: Boolean, attribute: 'no-padding' },
   };
 
   render() {
@@ -43,7 +43,10 @@ class ScreenPlay extends LitElement {
         paper: true,
         shadow: this.shadow,
       })}
-      style=${styleMap({ transform: `rotate(${this.rotate})` })}
+      style=${styleMap({
+        transform: `rotate(${this.rotate})`,
+        '--padding': this.noPadding && '0',
+      })}
     >
       <div
         class="content"

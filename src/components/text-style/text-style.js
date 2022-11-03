@@ -46,6 +46,10 @@ class TextStyle extends LitElement {
         text-decoration: underline;
         text-underline-position: 3px;
       }
+
+      ::slotted(p) {
+        margin: 0;
+      }
     `,
   ];
 

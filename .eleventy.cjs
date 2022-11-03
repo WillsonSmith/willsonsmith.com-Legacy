@@ -1,10 +1,11 @@
+require('dotenv').config();
 const litPlugin = require('@lit-labs/eleventy-plugin-lit');
 const { asyncGlob, syncGlob } = require('./util/async-glob.cjs');
 const { build: esbuild } = require('esbuild');
 
 const { recentlyWatched } = require('./util/letterboxd.cjs');
 
-const { writeFile, readFile } = require('fs/promises');
+const { writeFile, readFile, stat, mkdir } = require('fs/promises');
 
 const Image = require('@11ty/eleventy-img');
 
@@ -83,46 +84,66 @@ module.exports = function (eleventyConfig) {
     return Image.generateHTML(metadata, imageAttributes);
   });
 
-  eleventyConfig.addGlobalData('letterboxd', async () => {
-    const cachedData = await readFile('.cache/letterboxd.json', 'utf-8').catch(
-      () => null
-    );
-
-    if (cachedData) {
-      const json = JSON.parse(cachedData);
-      console.log(json.date);
-      // if (json.date < Date.now() - 1000 * 60 * 60 * 24) {
-      return json;
-      // }
-    }
-
-    const { posters } = await recentlyWatched('willsonsmith');
-    for (const poster of posters) {
-      let stats = await Image(poster.src, {
+  eleventyConfig.addShortcode(
+    'picture',
+    async (
+      source,
+      alt = '',
+      sizes = '(min-width: 30rem) 30vw, 50vw, 100vw'
+    ) => {
+      const metadata = await Image(source, {
+        widths: [640, 1280, 1920],
         formats: ['avif', 'webp', 'jpeg'],
-        widths: [300],
-        urlPath: '/img/movie-posters',
-        outputDir: './_site/img/movie-posters',
+        urlPath: '/img',
+        outputDir: './_site/img',
       });
-      poster.src = stats.jpeg[0].url;
-      const sources = Image.generateObject(stats, {
-        alt: poster.alt,
-        loading: 'lazy',
-        decoding: 'async',
-      })
-        .picture.filter((item) => Boolean(item.source))
-        .map(({ source }) => ({ type: source.type, srcset: source.srcset }));
-      poster.sources = sources;
+
+      const imageAttributes = {
+        alt,
+        sizes,
+        // loading: 'lazy',
+        // decoding: 'async',
+      };
+
+      return Image.generateHTML(metadata, imageAttributes);
     }
+  );
 
-    const result = {
-      recentlyWatched: posters.slice(0, 11),
-      date: Date.now(),
-    };
+  eleventyConfig.addGlobalData('letterboxd', async () => {
+    try {
+      await stat('.cache/letterboxd.json');
+      const cachedData = await readFile('.cache/letterboxd.json', 'utf-8');
+      return JSON.parse(cachedData);
+    } catch (e) {
+      const { posters } = await recentlyWatched('willsonsmith');
+      // for (const poster of posters) {
+      //   let stats = await Image(poster.src, {
+      //     formats: ['avif', 'webp', 'jpeg'],
+      //     widths: [300],
+      //     urlPath: '/img/movie-posters',
+      //     outputDir: './_site/img/movie-posters',
+      //   });
+      //   poster.src = stats.jpeg[0].url;
+      //   const sources = Image.generateObject(stats, {
+      //     alt: poster.alt,
+      //     loading: 'lazy',
+      //     decoding: 'async',
+      //   })
+      //     .picture.filter((item) => Boolean(item.source))
+      //     .map(({ source }) => ({ type: source.type, srcset: source.srcset }));
+      //   poster.sources = sources;
+      // }
 
-    await writeFile('./.cache/letterboxd.json', JSON.stringify(result));
+      const result = {
+        recentlyWatched: posters.slice(0, 11),
+        date: Date.now(),
+      };
 
-    return result;
+      await mkdir('.cache', { recursive: true });
+      await writeFile('.cache/letterboxd.json', JSON.stringify(result));
+
+      return result;
+    }
   });
 
   return {

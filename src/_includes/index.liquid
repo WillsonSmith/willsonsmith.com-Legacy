@@ -4,7 +4,7 @@ stylesheets:
   - /css/index.css
 ---
 
-<main>
+<main class="index">
   <c-layout>
     <header class="header">
       <screen-play shadow class="about">
@@ -17,64 +17,50 @@ stylesheets:
         </text-style>
       </screen-play>
     </header>
-    <c-layout-item type="full">
-      <div class="film-strip-segment">
-        <div class="film-strip-segment__content">
-          <film-strip class="right" color="var(--theme-color-black)"></film-strip>
-        </div>
-      </div>
-      <c-layout>
-        {%- comment -%}
-          <screen-play class="what-title" style="color: var(--theme-color-black)">
-          <text-style display>What I'm watching</text-style>
-          </screen-play>
-        {%- endcomment -%}
-        <c-layout-item type="full" class="highlight">
-          <c-poster-list class="poster-carousel">
-            {% for poster in letterboxd.recentlyWatched %}
-              <c-poster src="{{poster.src}}" alt="{{poster.alt}}" url="{{poster.url}}" sources='{{ poster.sources | JSONStringify }}'></c-poster>
-            {% endfor %}
-          </c-poster-list>
-        </c-layout-item>
-      </c-layout>
-    </c-layout-item>
-  </div>
-  <c-layout-item type="full">
-    <div class="film-strip-segment">
-      <div class="film-strip-segment__content">
-        <film-strip class="left" color="var(--theme-color-black)">What I'm watching</film-strip>
-      </div>
-    </div>
-  </c-layout-item>
-  {%- comment -%}
-    <screen-play class="what-title">
-    <h2>
-    <text-style display>What I'm working on</text-style>
-    </h2>
-    <p>Turn this into swipe panels using component from other project</p>
-    </screen-play>
-  {%- endcomment -%}
-  <c-layout-item type="full" class="page-content highlight">
 
-    <div class="project-container">
-      {%- for project in collections.project -%}
-        <div class="project">
-          <div class="project__title">
-            <text-style underline subheading>{{project.data.title}}</text-style>
-          </div>
-          <a href="{{ project.data.projectUrl }}">
-            <div class="project-hero">
-              {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+    <c-layout-item type="full">
+      <div class="project-container">
+        {%- for project in collections.project -%}
+          <div class="project">
+            <div class="game-image">
+              <div class="game-image__name">
+                <text-style display>{{project.data.title}}</text-style>
+              </div>
+              <a href="{{ project.data.projectUrl }}">
+                <div class="project-hero">
+                  {% heroImage project.data.hero, "project preview", "(min-width: 30rem) 10vw, 30vw, 50vw" %}
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-      {%- endfor -%}
-    </div>
-  </c-layout-item>
-  {%- comment -%}
-    <c-layout-item type="full">
-    <film-strip color="var(--theme-color-black)"></film-strip>
+          </div>
+        {%- endfor -%}
+      </div>
     </c-layout-item>
-  {%- endcomment -%}
 
+    <c-layout-item type="full">
+      <infinite-carousel duration="2" itemWidth="300">
+        {% for game in games %}
+          <infinite-carousel-item>
+            <a target="_blank" href="{{game.website}}" class="game-image">
+              <div class="game-image__name">
+                <text-style display>{{game.name}}</text-style>
+              </div>
+              {% assign screenshot = game.screenshots[0].path_full %}
+              {% picture screenshot, game.name %}
+            </a>
+          </infinite-carousel-item>
+        {% endfor %}
+      </infinite-carousel>
+    </c-layout-item>
+
+    <c-layout-item type="full">
+      <infinite-carousel direction="left">
+        {% for poster in letterboxd.recentlyWatched %}
+          <infinite-carousel-item>
+            {% picture poster.src, poster.alt %}
+          </infinite-carousel-item>
+        {% endfor %}
+      </infinite-carousel>
+    </c-layout-item>
+  </c-layout>
 </main>
