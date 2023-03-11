@@ -9,5 +9,6 @@ export default css`
   h6 {
     margin: 0;
     overflow-wrap: break-word;
+    line-height: var(--w-line-height-dense);
   }
 `;

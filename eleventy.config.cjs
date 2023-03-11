@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addExtension('html.js', {
       compile: async (content, inputPath) => {
         const { collectResult } = await import('@lit-labs/ssr/lib/render-result.js');
+
         const { renderPage } = await import('./renderer/renderer.js');
         const {
           default: template,
@@ -15,6 +16,7 @@ module.exports = function (eleventyConfig) {
           styles,
           hydratedComponents,
           meta,
+          // This import is cached and therefore this doesn't work as expected.
         } = await import(inputPath);
 
         return async (data) => {

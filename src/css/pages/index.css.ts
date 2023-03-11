@@ -1,5 +1,7 @@
 import { css } from 'lit';
-import resets from '../literals/resets/global.css.js';
+import propsCss from '../literals/props/props.css.js';
+import resetsCss from '../literals/resets/global.css.js';
 export default css`
-  ${resets}
+  ${propsCss}
+  ${resetsCss}
 `;
