@@ -9,7 +9,13 @@ module.exports = function (eleventyConfig) {
       compile: async (content, inputPath) => {
         const { collectResult } = await import('@lit-labs/ssr/lib/render-result.js');
         const { renderPage } = await import('./renderer/renderer.js');
-        const { default: template, title, styles, hydratedComponents } = await import(inputPath);
+        const {
+          default: template,
+          title,
+          styles,
+          hydratedComponents,
+          meta,
+        } = await import(inputPath);
 
         return async (data) => {
           const composedData = {
@@ -17,6 +23,7 @@ module.exports = function (eleventyConfig) {
             title,
             styles,
             hydratedComponents,
+            meta,
           };
 
           const templateGenerator = await renderPage(template, composedData);
@@ -51,6 +58,26 @@ module.exports = function (eleventyConfig) {
 
 function injectData(str, data) {
   const imports = data.hydratedComponents?.map((script) => `import('${script}');`).join('\n') || '';
-  console.log(imports);
-  return str.replace('<!-- inject:scripts -->', imports);
+  let output = str;
+
+  if (data.meta) {
+    output = str.replace('<!-- inject:meta -->', stringFromMetaObject(data.meta));
+  }
+
+  if (data.styles) {
+    output = output.replace('<!-- inject:styles -->', data.styles);
+  }
+
+  return output.replace('<!-- inject:scripts -->', imports);
+}
+
+function stringFromMetaObject(meta) {
+  return `
+  <meta
+  ${meta.map((metaObject) => {
+    return Object.entries(metaObject)
+      .map(([key, value]) => `${key}="${value}"`)
+      .join(' ');
+  })}
+  />`;
 }
