@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "ESNext",
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "inlineSources": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false
+  },
+  "include": ["**/*.ts", "**/**/*.ts"],
+  "exclude": ["node_modules", "**/**/*.d.ts"]
+}

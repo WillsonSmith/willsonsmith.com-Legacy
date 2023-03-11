@@ -1,0 +1,64 @@
+{
+  "name": "2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "wireit",
+    "build": "wireit",
+    "tsc": "wireit",
+    "tsc:watch": "wireit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "wireit": {
+    "start": {
+      "env": {
+        "NODE_OPTIONS": "--experimental-vm-modules"
+      },
+      "command": "concurrently \"npm run tsc:watch\" \"eleventy --serve\"",
+      "dependencies": [
+        "tsc"
+      ]
+    },
+    "build": {
+      "env": {
+        "NODE_OPTIONS": "--experimental-vm-modules"
+      },
+      "command": "eleventy",
+      "dependencies": [
+        "tsc"
+      ]
+    },
+    "tsc": {
+      "command": "tsc"
+    },
+    "tsc:watch": {
+      "command": "tsc --watch"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@lit-labs/eleventy-plugin-lit": "^1.0.0",
+    "@lit-labs/ssr": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@web/test-runner": "^0.15.1",
+    "concurrently": "^7.6.0",
+    "esbuild": "^0.17.11",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-lit": "^1.8.2",
+    "glob": "^9.2.1",
+    "lit": "^2.6.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5",
+    "wireit": "^0.9.5"
+  },
+  "dependencies": {
+    "@webcomponents/template-shadowroot": "^0.2.1"
+  }
+}
