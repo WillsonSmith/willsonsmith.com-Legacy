@@ -1,4 +1,4 @@
-import { html } from 'lit';
+import { html, css } from 'lit';
 
 import './components/counter.js';
 import '../components/layout/two-column.js';
@@ -20,11 +20,20 @@ export default (data: Data) => {
       <two-column>
         <main>This is my blog :)</main>
         <aside slot="secondary">
-          ${data.collections.published?.map((item: any) => {
-            return html`<a href="${item.url}">${item.data.title}</a>`;
-          })}
+          <nav class="blog-post-list">
+            ${data.collections.published?.map((item: any) => {
+              return html`<a href="${item.url}">${item.data.title}</a>`;
+            })}
+          </nav>
         </aside>
       </two-column>
     </main-page>
   `;
 };
+
+export const styles = css`
+  .blog-post-list {
+    display: grid;
+    gap: 0.6rem;
+  }
+`;
