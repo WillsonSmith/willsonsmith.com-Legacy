@@ -3,12 +3,7 @@ import { html, css } from 'lit';
 import './components/counter.js';
 import '../components/layout/two-column.js';
 
-type Post = {
-  url: string;
-  data: {
-    title: string;
-  };
-};
+import type { Post } from '../../types/collections/Post.js';
 
 type Data = {
   [key: string]: unknown;

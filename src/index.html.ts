@@ -7,8 +7,8 @@ export const meta = [
 ];
 
 export { default as styles } from './css/pages/index.css.js';
-import './components/layout/main-page.js';
 
+import './components/layout/main-page.js';
 export default () =>
   html`
     <main-page>

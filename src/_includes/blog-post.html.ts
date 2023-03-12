@@ -1,6 +1,8 @@
 import { html, css } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
+import type { Post } from '../../types/collections/Post.js';
+
 type Data = {
   [key: string]: unknown;
   title: string;
@@ -8,7 +10,7 @@ type Data = {
     url: string;
   };
   collections: {
-    published?: any[];
+    published?: Post[];
   };
 };
 
@@ -36,8 +38,8 @@ export default (data: Data) => {
           <ul role="list" class="recent-posts">
             ${publishedList
               .filter((post) => pageUrl !== post.url)
-              .map((item: any) => {
-                return html`<li><a href="${item.url}">${item.data.title}</a></li>`;
+              .map((post) => {
+                return html`<li><a href="${post.url}">${post.data.title}</a></li>`;
               })}
           </ul>
         </aside>
@@ -46,11 +48,11 @@ export default (data: Data) => {
   `;
 };
 
-function recentlyPublished(collection: any[] = []) {
-  return collection
-    .filter((item: any) => item.data.published)
-    .sort((a: any, b: any) => {
-      return new Date(b.data.published).getTime() - new Date(a.data.published).getTime();
-    })
-    .slice(0, 5);
+function recentlyPublished(posts: Post[] = []) {
+  const published = posts.filter((item) => item.data.published);
+  const sorted = published.sort((a, b) => {
+    if (!a.data.published || !b.data.published) return 0;
+    return new Date(b.data.published).getTime() - new Date(a.data.published).getTime();
+  });
+  return sorted.slice(0, 5);
 }
