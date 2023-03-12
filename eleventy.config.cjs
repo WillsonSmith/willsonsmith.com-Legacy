@@ -6,6 +6,7 @@ const { resolve: resolvePath } = require('path');
 const { writeFile } = require('fs/promises');
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
+
   eleventyConfig.addPlugin((eleventyConfig) => {
     eleventyConfig.addTemplateFormats('html.js');
     eleventyConfig.addExtension('html.js', {
@@ -25,7 +26,12 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addWatchTarget('./src/js');
+
+  eleventyConfig.addWatchTarget('./src/**/components');
+
   eleventyConfig.on('afterBuild', async () => {
+    console.log('afterBuild');
     const files = (await glob('src/**/*.ts')).filter((file) => !file.includes('html.ts'));
     await esbuild({
       entryPoints: files,

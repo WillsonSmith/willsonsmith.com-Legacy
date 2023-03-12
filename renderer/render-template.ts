@@ -37,18 +37,27 @@ export function* renderTemplate(template: (data: Data) => RenderResult, data: Da
     <!-- inject:meta -->
 
     <!-- inject:links -->
+
+    <style>
+      body[dsd-pending] {
+        display: none;
+      }
+    </style>
   </head>
-  <body>
-    <template shadowroot="open" shadowrootmode="open">
+  <body dsd-pending>
+    <script>
+        if (HTMLTemplateElement.prototype.hasOwnProperty('shadowRoot')) {
+          document.body.removeAttribute('dsd-pending');
+        }
+    </script>
       <style>
         ${styles}
       </style>`;
   yield* render(template(data));
   yield `
-    </template>
     <script type="module">
-      import { hydrateShadowRoots } from "/js/hydrate.js";
-      await hydrateShadowRoots();
+      import { hsr } from "/js/hydrate.js";
+      await hsr();
       <!-- inject:scripts -->
     </script>
   </body>
