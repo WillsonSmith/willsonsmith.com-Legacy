@@ -11,20 +11,11 @@ export async function createTempalteGenerator(
   data: Data;
   template: RenderResult;
 }> {
-  const {
-    default: template,
-    title = 'Document',
-    styles,
-    hydratedComponents,
-    meta,
-  } = await import(modulePath);
+  const { default: template, ...rest } = await import(modulePath);
 
   const composedData = {
     ...data,
-    title,
-    styles,
-    hydratedComponents,
-    meta,
+    ...rest,
   };
 
   return {
@@ -36,28 +27,30 @@ export async function createTempalteGenerator(
 export function* renderTemplate(template: (data: Data) => RenderResult, data: Data) {
   const { title = 'Document', styles } = data;
   yield `
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-      <title>${title}</title>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- inject:meta -->
-      </head>
-      <body>
-        <template shadowroot="open" shadowrootmode="open">
-          <style>
-            ${styles}
-          </style>`;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>${title}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- inject:meta -->
+
+    <!-- inject:links -->
+  </head>
+  <body>
+    <template shadowroot="open" shadowrootmode="open">
+      <style>
+        ${styles}
+      </style>`;
   yield* render(template(data));
   yield `
-        </template>
-        <script type="module">
-          import { hydrateShadowRoots } from "/js/hydrate.js";
-          await hydrateShadowRoots();
-          <!-- inject:scripts -->
-        </script>
-      </body>
-    </html>`;
+    </template>
+    <script type="module">
+      import { hydrateShadowRoots } from "/js/hydrate.js";
+      await hydrateShadowRoots();
+      <!-- inject:scripts -->
+    </script>
+  </body>
+</html>`;
 }

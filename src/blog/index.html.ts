@@ -5,7 +5,11 @@ type Data = {
   [key: string]: unknown;
 };
 
-export default (data: Data) => html`
-  <h1>Blog</h1>
-  <main>${unsafeHTML(data.content as string)}</main>
-`;
+export default (data: Data) => {
+  console.log(data);
+  return html`
+    <h1>Blog</h1>
+    <main>${unsafeHTML(data.content as string)}</main>
+    <aside></aside>
+  `;
+};

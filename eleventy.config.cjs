@@ -3,45 +3,22 @@ const { glob } = require('glob');
 
 const { resolve: resolvePath } = require('path');
 
+const { writeFile } = require('fs/promises');
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin((eleventyConfig) => {
     eleventyConfig.addTemplateFormats('html.js');
     eleventyConfig.addExtension('html.js', {
-      compile: async (content, inputPath) => {
+      compile: async (_, inputPath) => {
         const { collectResult } = await import('@lit-labs/ssr/lib/render-result.js');
-
         const { renderPage } = await import('./renderer/renderer.js');
-        // const {
-        //   default: template,
-        //   title,
-        //   styles,
-        //   hydratedComponents,
-        //   meta,
-        //   // This import is cached and therefore this doesn't work as expected.
-        // } = await import(inputPath);
-
         return async (data) => {
-          // const composedData = {
-          //   ...data,
-          //   title,
-          //   styles,
-          //   hydratedComponents,
-          //   meta,
-          // };
-
           const { data: composedData, template: templateGenerator } = await renderPage(
             resolvePath(inputPath),
             data,
           );
-          // const templateGenerator = await renderPage(resolvePath(inputPath), data);
-          let str = '';
 
-          // for await (const chunk of templateGenerator) {
-          //   str += chunk;
-          // }
           const html = await collectResult(templateGenerator);
-          // return injectData(html, data);
           return injectData(html, composedData);
         };
       },
@@ -60,6 +37,14 @@ module.exports = function (eleventyConfig) {
       format: 'esm',
       allowOverwrite: true,
     });
+
+    const cssFiles = await glob('src/**/*.css.js');
+    for (const file of cssFiles) {
+      const path = `./${file}`;
+      const { default: css } = await import(path);
+      const output = path.replace('src', '_site').replace('.js', '');
+      await writeFile(output, css.cssText, 'utf-8');
+    }
   });
 
   return {
@@ -74,8 +59,12 @@ function injectData(str, data) {
   const imports = data.hydratedComponents?.map((script) => `import('${script}');`).join('\n') || '';
   let output = str;
 
+  if (data.links) {
+    output = output.replace('<!-- inject:links -->', stringsFromLinks(data.links));
+  }
+
   if (data.meta) {
-    output = str.replace('<!-- inject:meta -->', stringFromMetaObject(data.meta));
+    output = output.replace('<!-- inject:meta -->', stringsFromMeta(data.meta));
   }
 
   if (data.styles) {
@@ -85,13 +74,28 @@ function injectData(str, data) {
   return output.replace('<!-- inject:scripts -->', imports);
 }
 
-function stringFromMetaObject(meta) {
-  return `
-  <meta
-  ${meta.map((metaObject) => {
-    return Object.entries(metaObject)
+function stringsFromLinks(links) {
+  return links
+    .map((link) => {
+      return `
+    <link
+    ${Object.entries(link)
       .map(([key, value]) => `${key}="${value}"`)
-      .join(' ');
-  })}
-  />`;
+      .join(' ')}
+    />`;
+    })
+    .join('\n');
+}
+
+function stringsFromMeta(links) {
+  return links
+    .map((link) => {
+      return `
+    <meta
+    ${Object.entries(link)
+      .map(([key, value]) => `${key}="${value}"`)
+      .join(' ')}
+    />`;
+    })
+    .join('\n');
 }
