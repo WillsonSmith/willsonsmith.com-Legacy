@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement } from 'lit/decorators.js';
 
 import headingsCss from '../../css/literals/resets/headings.css';
 
@@ -9,7 +9,7 @@ export class MainNav extends LitElement {
     return html`
       <header class="main-nav">
         <div><slot name="title"></slot></div>
-        <nav>
+        <nav class="main-nav__nav">
           <a href="/">Home</a>
           <a href="/blog">Blog</a>
         </nav>
@@ -31,6 +31,11 @@ export class MainNav extends LitElement {
         align-items: center;
         padding: 1rem 1.5rem;
         border-bottom: 1px solid grey;
+      }
+
+      .main-nav__nav {
+        display: flex;
+        gap: 1rem;
       }
     `,
   ];

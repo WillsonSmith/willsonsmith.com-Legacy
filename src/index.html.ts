@@ -7,7 +7,12 @@ export const meta = [
 ];
 
 export { default as styles } from './css/pages/index.css.js';
+import './components/layout/main-page.js';
 
 export default () =>
-  html` <h1>Willson Smith</h1>
-    <a href="/blog">Blog</a>`;
+  html`
+    <main-page>
+      <h1>Willson Smith</h1>
+      <p>Software Engineer and Writer</p>
+    </main-page>
+  `;

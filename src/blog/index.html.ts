@@ -1,4 +1,4 @@
-import { html, css } from 'lit';
+import { html } from 'lit';
 
 import './components/counter.js';
 import '../components/layout/two-column.js';
@@ -10,22 +10,13 @@ type Data = {
   };
 };
 
-export const styles = css`
-  :root,
-  :host {
-    --reading-column-width: 60ch;
-    --aside-column-width: 20ch;
-  }
-  .blog-page {
-    max-width: calc(var(--reading-column-width) + var(--aside-column-width));
-    margin: 0 auto;
-  }
-`;
+export const links = [{ rel: 'stylesheet', href: '/css/pages/blog.css' }];
+
+import '../components/layout/main-page.js';
 
 export default (data: Data) => {
   return html`
-    <div class="blog-page">
-      <h1>Blog</h1>
+    <main-page>
       <two-column>
         <main>This is my blog :)</main>
         <aside slot="secondary">
@@ -34,8 +25,6 @@ export default (data: Data) => {
           })}
         </aside>
       </two-column>
-    </div>
+    </main-page>
   `;
 };
-
-// export const hydratedComponents = ['../components/layout/two-column.js'];

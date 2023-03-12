@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/js');
 
   eleventyConfig.addWatchTarget('./src/**/components');
+  eleventyConfig.addWatchTarget('./src/css');
 
   eleventyConfig.on('afterBuild', async () => {
     console.log('afterBuild');
