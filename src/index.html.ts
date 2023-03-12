@@ -8,5 +8,4 @@ export const meta = [
 ];
 
 export { default as styles } from './css/pages/index.css.js';
-
 export default () => html` <h1>Willson Smith</h1> `;

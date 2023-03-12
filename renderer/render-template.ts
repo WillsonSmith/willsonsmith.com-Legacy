@@ -1,9 +1,39 @@
-import type { HTMLTemplateResult } from 'lit';
+import type { RenderResult } from '@lit-labs/ssr';
 
 type Data = Record<string, unknown>;
 
 import { render } from '@lit-labs/ssr';
-export function* renderTemplate(template: (data: Data) => HTMLTemplateResult, data: Data) {
+
+export async function createTempalteGenerator(
+  modulePath: string,
+  data: Data,
+): Promise<{
+  data: Data;
+  template: RenderResult;
+}> {
+  const {
+    default: template,
+    title = 'Document',
+    styles,
+    hydratedComponents,
+    meta,
+  } = await import(modulePath);
+
+  const composedData = {
+    ...data,
+    title,
+    styles,
+    hydratedComponents,
+    meta,
+  };
+
+  return {
+    data: composedData,
+    template: renderTemplate(template, composedData),
+  };
+}
+
+export function* renderTemplate(template: (data: Data) => RenderResult, data: Data) {
   const { title = 'Document', styles } = data;
   yield `
     <!DOCTYPE html>

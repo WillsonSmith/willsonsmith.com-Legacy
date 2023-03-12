@@ -1,6 +1,8 @@
 const { build: esbuild } = require('esbuild');
 const { glob } = require('glob');
 
+const { resolve: resolvePath } = require('path');
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin((eleventyConfig) => {
@@ -10,26 +12,36 @@ module.exports = function (eleventyConfig) {
         const { collectResult } = await import('@lit-labs/ssr/lib/render-result.js');
 
         const { renderPage } = await import('./renderer/renderer.js');
-        const {
-          default: template,
-          title,
-          styles,
-          hydratedComponents,
-          meta,
-          // This import is cached and therefore this doesn't work as expected.
-        } = await import(inputPath);
+        // const {
+        //   default: template,
+        //   title,
+        //   styles,
+        //   hydratedComponents,
+        //   meta,
+        //   // This import is cached and therefore this doesn't work as expected.
+        // } = await import(inputPath);
 
         return async (data) => {
-          const composedData = {
-            ...data,
-            title,
-            styles,
-            hydratedComponents,
-            meta,
-          };
+          // const composedData = {
+          //   ...data,
+          //   title,
+          //   styles,
+          //   hydratedComponents,
+          //   meta,
+          // };
 
-          const templateGenerator = await renderPage(template, composedData);
+          const { data: composedData, template: templateGenerator } = await renderPage(
+            resolvePath(inputPath),
+            data,
+          );
+          // const templateGenerator = await renderPage(resolvePath(inputPath), data);
+          let str = '';
+
+          // for await (const chunk of templateGenerator) {
+          //   str += chunk;
+          // }
           const html = await collectResult(templateGenerator);
+          // return injectData(html, data);
           return injectData(html, composedData);
         };
       },
