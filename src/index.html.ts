@@ -6,8 +6,6 @@ export const meta = [
   { name: 'description', content: 'Willson Smith is a software engineer and writer.' },
 ];
 
-export { default as styles } from './css/pages/index.css.js';
-
 import './components/layout/main-page.js';
 export default () =>
   html`

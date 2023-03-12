@@ -1,23 +1,13 @@
-import { html, css } from 'lit';
+import { html } from 'lit';
+import type { GlobalData } from '../../types/GlobalData.js';
 
-import './components/counter.js';
 import '../components/layout/two-column.js';
 import './components/post-list.js';
-
-import type { Post } from '../../types/collections/Post.js';
-
-type Data = {
-  [key: string]: unknown;
-  collections: {
-    published?: Post[];
-  };
-};
 
 export const links = [{ rel: 'stylesheet', href: '/css/pages/blog.css' }];
 
 import '../components/layout/main-page.js';
-
-export default (data: Data) => {
+export default (data: GlobalData) => {
   const posts = data.collections.published || [];
   return html`
     <main-page>
@@ -30,10 +20,3 @@ export default (data: Data) => {
     </main-page>
   `;
 };
-
-export const styles = css`
-  .blog-post-list {
-    display: grid;
-    gap: 0.6rem;
-  }
-`;

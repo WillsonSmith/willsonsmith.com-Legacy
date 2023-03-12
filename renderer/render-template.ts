@@ -26,6 +26,12 @@ export async function createTempalteGenerator(
 
 export function* renderTemplate(template: (data: Data) => RenderResult, data: Data) {
   const { title = 'Document', styles } = data;
+
+  let stylesString = '';
+  if (styles) {
+    stylesString = `<style>${styles}</style>`;
+  }
+
   yield `
 <!DOCTYPE html>
 <html lang="en">
@@ -50,11 +56,11 @@ export function* renderTemplate(template: (data: Data) => RenderResult, data: Da
           document.body.removeAttribute('dsd-pending');
         }
     </script>
-      <style>
-        ${styles}
-      </style>`;
+    <!-- <template shadowroot="open" shadowrootmode="open"> -->
+      ${stylesString}`;
   yield* render(template(data));
   yield `
+    <!-- </template> -->
     <script type="module">
       import { hsr } from "/js/hydrate.js";
       await hsr();

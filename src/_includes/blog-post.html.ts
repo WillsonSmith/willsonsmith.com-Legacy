@@ -2,17 +2,7 @@ import { html, css } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 import type { Post } from '../../types/collections/Post.js';
-
-type Data = {
-  [key: string]: unknown;
-  title: string;
-  page: {
-    url: string;
-  };
-  collections: {
-    published?: Post[];
-  };
-};
+import type { GlobalData } from '../../types/GlobalData.js';
 
 import '../components/layout/main-page.js';
 import '../components/layout/two-column.js';
@@ -27,7 +17,7 @@ export const styles = css`
 `;
 
 export const links = [{ rel: 'stylesheet', href: '/css/pages/blog-post.css' }];
-export default (data: Data) => {
+export default (data: GlobalData) => {
   const publishedList = recentlyPublished(data.collections.published);
   const pageUrl = data.page.url;
   return html`
