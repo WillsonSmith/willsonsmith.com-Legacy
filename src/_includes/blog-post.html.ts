@@ -16,6 +16,7 @@ type Data = {
 
 import '../components/layout/main-page.js';
 import '../components/layout/two-column.js';
+import '../blog/components/post-list.js';
 
 export const styles = css`
   .recent-posts {
@@ -35,13 +36,7 @@ export default (data: Data) => {
         <main>${unsafeHTML(data.content as string)}</main>
         <aside slot="secondary">
           <h2>More posts</h2>
-          <ul role="list" class="recent-posts">
-            ${publishedList
-              .filter((post) => pageUrl !== post.url)
-              .map((post) => {
-                return html`<li><a href="${post.url}">${post.data.title}</a></li>`;
-              })}
-          </ul>
+          <post-list .posts=${publishedList} current-post=${pageUrl}></post-list>
         </aside>
       </two-column>
     </main-page>

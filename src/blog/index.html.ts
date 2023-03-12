@@ -2,6 +2,7 @@ import { html, css } from 'lit';
 
 import './components/counter.js';
 import '../components/layout/two-column.js';
+import './components/post-list.js';
 
 import type { Post } from '../../types/collections/Post.js';
 
@@ -23,11 +24,7 @@ export default (data: Data) => {
       <two-column>
         <main>This is my blog :)</main>
         <aside slot="secondary">
-          <nav class="blog-post-list">
-            ${posts.map((post) => {
-              return html`<a href="${post.url}">${post.data.title}</a>`;
-            })}
-          </nav>
+          <post-list .posts=${posts}></post-list>
         </aside>
       </two-column>
     </main-page>
