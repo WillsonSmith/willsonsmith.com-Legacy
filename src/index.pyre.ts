@@ -46,17 +46,15 @@ export const styles = css`
     line-height: var(--line-height-xs);
   }
 
-  .section__article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .page {
     margin-block-start: var(--spacing-lg);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
+  }
+
+  a {
+    color: var(--color-text-body);
   }
 `;
 
@@ -69,23 +67,41 @@ import './components/site-header/site-header.js';
 import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
 
+export const initialData = {
+  // timeSinceShopify calculate from June 2015 until now
+  timeSinceShopify: Math.floor((Date.now() - new Date(2015, 6, 1).getTime()) / 1000),
+};
+
 import type { SteamGameDetails } from 'functions/SteamAPI.js';
-export default async () => {
+export default async (data = initialData) => {
+  const timeSinceShopify = Number(data.timeSinceShopify);
   let games: SteamGameDetails[] = [];
   let movies: any[] = [];
   if (isServer) {
     const { fetchSteamGames } = await import('functions/steam/steamGames.js');
     games = await fetchSteamGames();
 
-    const { LetterboxdAPI } = await import('functions/LetterboxdAPI/LetterboxdAPI.js');
-    const letterboxd = new LetterboxdAPI();
-    movies = await letterboxd.getWatchedFilms('willsonsmith');
-    console.log(movies);
+    // const { LetterboxdAPI } = await import('functions/LetterboxdAPI/LetterboxdAPI.js');
+    // const letterboxd = new LetterboxdAPI();
+    // movies = await letterboxd.getWatchedFilms('willsonsmith');
+    // console.log(movies);
   }
 
   return html`
     <site-header></site-header>
     <main class="page">
+    <section class="section">
+        <reading-column>
+          <header><span>Who I am</span></header>
+        </reading-column>
+        <reading-column>
+          <article>
+            <p>
+              I'm Willson, a front-end developer and Design Technologist at <a href="https://shopify.ca">Shopify</a>.
+            I've been working at Shopify for ${timeSinceToYearsAndMonths(timeSinceShopify)}.
+        </reading-column>
+      </section>
+
       <section class="section">
         <reading-column>
           <header><span>What I'm watching</span></header>
@@ -121,3 +137,17 @@ export default async () => {
     </main>
   `;
 };
+
+export const update = async () => {
+  return {
+    timeSinceShopify: Math.floor((Date.now() - new Date(2015, 6, 1).getTime()) / 1000),
+  };
+};
+
+function timeSinceToYearsAndMonths(timeSince: number) {
+  const secondsInYear = 60 * 60 * 24 * 365;
+  const secondsInMonth = 60 * 60 * 24 * 30;
+  const years = Math.floor(timeSince / secondsInYear);
+  const months = Math.floor((timeSince % secondsInYear) / secondsInMonth);
+  return `${years} years and ${months} months`;
+}
