@@ -16,6 +16,19 @@ export const styles = css`
     padding-inline: var(--spacing-lg);
     padding-block: var(--spacing);
     /* background: var(--sl-color-orange-200); */
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+    // background is linear gradient from 30% white to 100% transparent
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3) 30%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
   }
 
   .section {
@@ -59,9 +72,15 @@ import './components/games-block/games-block.js';
 import type { SteamGameDetails } from 'functions/SteamAPI.js';
 export default async () => {
   let games: SteamGameDetails[] = [];
+  let movies: any[] = [];
   if (isServer) {
-    const { fetchSteamGames } = await import('functions/steamGames.js');
+    const { fetchSteamGames } = await import('functions/steam/steamGames.js');
     games = await fetchSteamGames();
+
+    const { LetterboxdAPI } = await import('functions/LetterboxdAPI/LetterboxdAPI.js');
+    const letterboxd = new LetterboxdAPI();
+    movies = await letterboxd.getWatchedFilms('willsonsmith');
+    console.log(movies);
   }
 
   return html`
@@ -69,7 +88,7 @@ export default async () => {
     <main class="page">
       <section class="section">
         <reading-column>
-          <header><span>Watching</span></header>
+          <header><span>What I'm watching</span></header>
         </reading-column>
         <reading-column>
           <movies-block
@@ -82,11 +101,21 @@ export default async () => {
       </section>
       <section class="section">
         <reading-column>
-          <header><span>Playing</span></header>
+          <header><span>What I'm playing</span></header>
         </reading-column>
 
         <reading-column>
-          <games-block .games=${games}></games-block>
+          <games-block>
+            ${games.map(
+              (game) => html`
+                <game-card
+                  title="${game.name}"
+                  poster="${game.header_image}"
+                  link="${game.steam_appid}"
+                ></game-card>
+              `,
+            )}
+          </games-block>
         </reading-column>
       </section>
     </main>

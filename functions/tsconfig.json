@@ -2,7 +2,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "emitDeclarationOnly": false,
-    "outDir": "./functions"
+    "outDir": "./"
   },
   "include": ["src/**/*.ts"]
 }

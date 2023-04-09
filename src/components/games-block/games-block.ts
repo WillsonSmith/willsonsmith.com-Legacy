@@ -1,12 +1,10 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement } from 'lit/decorators.js';
 
-import type { SteamGameDetails } from 'functions/SteamAPI';
+import './game-card.js';
 
 @customElement('games-block')
 export class GamesBlock extends LitElement {
-  @property({ type: Array }) games: SteamGameDetails[] = [];
-
   static styles = css`
     :host {
       display: block;
@@ -14,7 +12,7 @@ export class GamesBlock extends LitElement {
     .games-block {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: var(--spacing-lg);
+      gap: var(--spacing-sm);
     }
 
     ul {
@@ -30,16 +28,9 @@ export class GamesBlock extends LitElement {
 
   render() {
     return html`
-      <ul role="list" class="games-block">
-        ${this.games.map(
-          (game) => html`
-            <li class="games-block__item">
-              <img src=${game.header_image} alt="" />
-              ${game.name}
-            </li>
-          `,
-        )}
-      </ul>
+      <div class="games-block">
+        <slot></slot>
+      </div>
     `;
   }
 }
