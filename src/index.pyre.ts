@@ -54,6 +54,7 @@ if (!isServer) {
 import 'components/reading-column.js';
 import './components/site-header/site-header.js';
 import './components/movies-block/movies-block.js';
+import './components/games-block/games-block.js';
 
 import type { SteamGameDetails } from 'functions/SteamAPI.js';
 export default async () => {
@@ -85,9 +86,7 @@ export default async () => {
         </reading-column>
 
         <reading-column>
-          <ul role="list">
-            ${games.map((game) => html` <li>${game.name}</li> `)}
-          </ul>
+          <games-block .games=${games}></games-block>
         </reading-column>
       </section>
     </main>
