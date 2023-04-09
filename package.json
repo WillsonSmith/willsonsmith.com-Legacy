@@ -21,7 +21,7 @@
       ]
     },
     "dev": {
-      "command": "concurrently \"npm run components:watch\" \" wds \" \"pyre watch\""
+      "command": "concurrently \"npm run watch -w functions\" \"npm run components:watch\" \" wds \" \"pyre watch\""
     },
     "components:watch": {
       "dependencies": [
@@ -59,6 +59,7 @@
     "wireit": "^0.9.5"
   },
   "workspaces": [
-    "components"
+    "components",
+    "functions"
   ]
 }

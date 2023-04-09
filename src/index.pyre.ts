@@ -15,22 +15,28 @@ export const styles = css`
     display: block;
     padding-inline: var(--spacing-lg);
     padding-block: var(--spacing);
-    background: var(--sl-color-orange-200);
+    /* background: var(--sl-color-orange-200); */
   }
 
   .section {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-sm);
     align-items: center;
+    padding: var(--spacing);
   }
 
   .section header {
     font-family: 'Lilita One', var(--font-system-sans);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xxl);
-    margin: 0;
     line-height: var(--line-height-xs);
+  }
+
+  .section__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .page {
@@ -48,13 +54,23 @@ if (!isServer) {
 import 'components/reading-column.js';
 import './components/site-header/site-header.js';
 import './components/movies-block/movies-block.js';
+
+import type { SteamGameDetails } from 'functions/SteamAPI.js';
 export default async () => {
+  let games: SteamGameDetails[] = [];
+  if (isServer) {
+    const { fetchSteamGames } = await import('functions/steamGames.js');
+    games = await fetchSteamGames();
+  }
+
   return html`
     <site-header></site-header>
     <main class="page">
       <section class="section">
         <reading-column>
-          <header>What I'm watching</header>
+          <header><span>Watching</span></header>
+        </reading-column>
+        <reading-column>
           <movies-block
             title="Rye Lane"
             description="Two twenty-somethings, both reeling from bad break-ups, connect over the course of an eventful day in South London – helping each other deal with their nightmare exes, and potentially restoring their faith in romance."
@@ -65,9 +81,15 @@ export default async () => {
       </section>
       <section class="section">
         <reading-column>
-          <header>What I'm playing</header>
-          <div>game</div>
+          <header><span>Playing</span></header>
         </reading-column>
+
+        <reading-column>
+          <ul role="list">
+            ${games.map((game) => html` <li>${game.name}</li> `)}
+          </ul>
+        </reading-column>
+      </section>
     </main>
   `;
 };
