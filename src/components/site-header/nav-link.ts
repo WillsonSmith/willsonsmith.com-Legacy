@@ -15,6 +15,10 @@ export class NavLink extends LitElement {
       color: var(--color-text-body);
       text-decoration: none;
     }
+
+    sl-icon {
+      width: 16px;
+    }
   `;
 
   render() {
