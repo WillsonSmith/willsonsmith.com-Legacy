@@ -1,0 +1,54 @@
+{
+  "name": "@willson/pyre-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wireit",
+    "dev": "wireit",
+    "watch": "pyre watch",
+    "components:watch": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "pyre build",
+      "dependencies": [
+        "./components:build"
+      ]
+    },
+    "dev": {
+      "command": "concurrently \"npm run components:watch\" \" wds \" \"pyre watch\""
+    },
+    "components:watch": {
+      "dependencies": [
+        "./components:watch"
+      ]
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@lit-labs/ssr-client": "^1.1.1",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "components": "^1.0.0",
+    "lit": "^2.7.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@web/dev-server": "^0.1.38",
+    "@willson/pyre": "^0.0.1",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "typescript": "^5.0.4",
+    "wireit": "^0.9.5"
+  },
+  "workspaces": [
+    "components"
+  ]
+}

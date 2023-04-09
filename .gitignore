@@ -1,0 +1,10 @@
+.DS_Store
+.env
+
+.wireit/
+
+node_modules/
+pyre/
+
+**/*/*.d.ts
+**/*/*.js

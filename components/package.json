@@ -1,0 +1,25 @@
+{
+  "name": "components",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "Global components for Pyre template.",
+  "main": "main.js",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "wireit"
+  },
+  "wireit": {
+    "watch": {
+      "command": "tsc -w"
+    }
+  },
+  "files": [
+    "components"
+  ],
+  "author": "Willson Smith <me@willsonsmith.com>"
+}
