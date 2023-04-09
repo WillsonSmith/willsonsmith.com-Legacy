@@ -8,8 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "wireit",
     "dev": "wireit",
+    "clean": "wireit",
     "watch": "pyre watch",
-    "components:watch": "wireit"
+    "components:watch": "wireit",
+    "copy-shoelace-assets": "wireit"
   },
   "wireit": {
     "build": {
@@ -25,6 +27,12 @@
       "dependencies": [
         "./components:watch"
       ]
+    },
+    "clean": {
+      "command": "rimraf ./pyre"
+    },
+    "copy-shoelace-assets": {
+      "command": "cp -r ./node_modules/@shoelace-style/shoelace/dist/assets ./pyre/assets"
     }
   },
   "keywords": [],
@@ -32,6 +40,7 @@
   "license": "MIT",
   "dependencies": {
     "@lit-labs/ssr-client": "^1.1.1",
+    "@shoelace-style/shoelace": "^2.3.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
     "components": "^1.0.0",
     "lit": "^2.7.2"
@@ -45,6 +54,7 @@
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
+    "rimraf": "^4.4.1",
     "typescript": "^5.0.4",
     "wireit": "^0.9.5"
   },
