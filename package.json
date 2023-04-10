@@ -34,7 +34,7 @@
       "command": "rimraf ./pyre"
     },
     "copy-shoelace-assets": {
-      "command": "cp -r ./node_modules/@shoelace-style/shoelace/dist/assets ./pyre/assets"
+      "command": "mkdir ./pyre/public && mkdir ./pyre/public/assets && cp -r ./node_modules/@shoelace-style/shoelace/dist/assets ./pyre/public/assets"
     }
   },
   "keywords": [],

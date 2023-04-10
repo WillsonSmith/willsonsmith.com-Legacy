@@ -10,3 +10,6 @@ web/
 
 **/*/*.d.ts
 **/*/*.js
+
+# Local Netlify folder
+.netlify
