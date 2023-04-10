@@ -29,7 +29,7 @@ export class SiteHeader extends LitElement {
   render() {
     return html`
       <header class="site-header">
-        <h1>Willson</h1>
+        <h1 part="heading">Willson</h1>
         <nav class="social">
           <nav-link href="https://github.com/willsonsmith" icon="github">Github</nav-link>
           <nav-link href="https://twitter.com/modfox" icon="twitter">Twitter</nav-link>

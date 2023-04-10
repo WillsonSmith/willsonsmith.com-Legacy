@@ -11,6 +11,7 @@ export class MoviesBlock extends LitElement {
   static styles = css`
     :host {
       display: block;
+      line-height: var(--line-height-sm);
     }
     .movies-block {
       display: grid;
@@ -19,7 +20,6 @@ export class MoviesBlock extends LitElement {
     }
 
     .movies-block-section {
-      padding-block-start: var(--spacing);
       box-sizing: border-box;
     }
 

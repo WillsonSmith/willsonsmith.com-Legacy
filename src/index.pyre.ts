@@ -1,6 +1,7 @@
 import { css, html, isServer } from 'lit';
 
 export const title = "Willson's fun times website place";
+export const description = 'Willson is a front-end developer who likes to make fun things.';
 
 export const links = [
   {
@@ -11,16 +12,17 @@ export const links = [
 
 export const styles = css`
   @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+  body {
+    line-height: var(--line-height-small);
+  }
   site-header {
     display: block;
     padding-inline: var(--spacing-lg);
     padding-block: var(--spacing);
-    /* background: var(--sl-color-orange-200); */
     position: sticky;
     width: 100%;
     top: 0;
 
-    // background is linear gradient from 30% white to 100% transparent
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.3) 30%,
@@ -31,6 +33,10 @@ export const styles = css`
     backdrop-filter: blur(1px);
   }
 
+  site-header::part(heading) {
+    font-family: 'Lilita One', var(--font-system-sans);
+  }
+
   .section {
     display: flex;
     flex-direction: column;
@@ -39,7 +45,7 @@ export const styles = css`
     padding: var(--spacing);
   }
 
-  .section header {
+  .section header h2 {
     font-family: 'Lilita One', var(--font-system-sans);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xxl);
@@ -56,11 +62,35 @@ export const styles = css`
   .bio {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+
+    line-height: var(--line-height-sm);
+  }
+
+  .bio > * + * {
+    margin-block-start: var(--spacing-sm);
   }
 
   a {
     color: var(--color-text-body);
+  }
+
+  .project-list {
+    background: var(--sl-color-neutral-100);
+    padding: var(--spacing-sm);
+    line-height: var(--line-height);
+  }
+
+  .project-list__heading {
+    line-height: var(--line-height);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+  }
+
+  ul[role='list'].project-list__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    line-height: var(--line-height-sm);
   }
 `;
 
@@ -76,7 +106,6 @@ import './components/time-since/time-since.js';
 
 import type { SteamGameDetails } from 'functions/SteamAPI.js';
 export default async () => {
-  const timeSinceShopify = Math.floor((Date.now() - new Date(2015, 6, 1).getTime()) / 1000);
   let games: SteamGameDetails[] = [];
   let movies: any[] = [];
   if (isServer) {
@@ -94,32 +123,62 @@ export default async () => {
     <main class="page">
       <section class="section">
         <reading-column>
-          <header><span>Who I am</span></header>
+          <header><h2>Who I am</h2></header>
         </reading-column>
         <reading-column>
-          <article class="bio">
+          <section class="bio">
             <p>
               I'm Willson, a front-end developer and Design Technologist at
               <a href="https://shopify.ca">Shopify</a>. I've been working at Shopify for
               <time-since date="2015-06-01"></time-since>.
             </p>
             <p>
-              I am passionate about building accessible, performant, and delightful web experiences.
-              <!-- something about using web standards and that this site is built with web components -->
-
+              I'm passionate about building accessible, performant, and delightful web experiences.
               I'm also a big fan of the web platform and the open web. This website is built with
               <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components"
                 >Web Components</a
               >
               and <a href="https://lit.dev">Lit</a>.
             </p>
-          </article>
+
+            <section class="project-list">
+              <header>
+                <h3 class="project-list__heading">Passion projects</h3>
+              </header>
+              <ul class="project-list__list" role="list">
+                <li>
+                  <a href="https://word.lol">Word.lol</a>
+                  <div>
+                    A fun little word definition generator that utilizes
+                    <a href="https://openai.com">OpenAI's GPT-3</a> API.
+                  </div>
+                </li>
+                <li>
+                  <a href="https://github.com/WillsonSmith/Pyre">Pyre</a>
+                  <div>
+                    A static site generator built with
+                    <a href="https://github.com/lit/lit/tree/main/packages/labs/ssr"
+                      ><code>@lit-labs/ssr</code></a
+                    >.
+                  </div>
+                </li>
+                <li>
+                  <a href="https://gifit.pics">Gifit.pics</a>
+                  <div>
+                    An in-browsers gif-to-video converter that uses
+                    <a href="https://github.com/ffmpegwasm/ffmpeg.wasm"><code>ffmpeg.wasm</code></a
+                    >.
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </section>
         </reading-column>
       </section>
 
       <section class="section">
         <reading-column>
-          <header><span>What I'm watching</span></header>
+          <header><h2>What I'm watching</h2></header>
         </reading-column>
         <reading-column>
           <movies-block
@@ -132,7 +191,7 @@ export default async () => {
       </section>
       <section class="section">
         <reading-column>
-          <header><span>What I'm playing</span></header>
+          <header><h2>What I'm playing</h2></header>
         </reading-column>
 
         <reading-column>
