@@ -98,7 +98,7 @@ if (!isServer) {
   await import('./index.js');
 }
 
-import 'components/reading-column.js';
+import './components/reading-column.js';
 import './components/site-header/site-header.js';
 import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
