@@ -65,5 +65,8 @@
   "workspaces": [
     "components",
     "functions"
-  ]
+  ],
+  "engines": {
+    "node": ">=19.0.0"
+  }
 }
