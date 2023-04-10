@@ -43,7 +43,6 @@
     "@lit-labs/ssr-client": "^1.1.1",
     "@shoelace-style/shoelace": "^2.3.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
-    "components": "^1.0.0",
     "lit": "^2.7.2"
   },
   "devDependencies": {

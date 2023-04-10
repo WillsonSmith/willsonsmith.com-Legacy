@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [topLevelAwait()],
   build: {
     outDir: '../web',
+    emptyOutDir: true,
     target: 'es2020',
     rollupOptions: {
       input: Object.fromEntries(htmlFiles.map((file) => [file, file])),
