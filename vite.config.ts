@@ -7,6 +7,7 @@ console.log(Object.fromEntries(htmlFiles.map((file) => [file, file])));
 
 export default defineConfig({
   root: 'pyre',
+  publicDir: 'assets',
   plugins: [topLevelAwait()],
   build: {
     outDir: '../web',
