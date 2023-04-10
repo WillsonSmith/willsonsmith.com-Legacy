@@ -104,12 +104,12 @@ import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
-import type { SteamGameDetails } from 'functions/SteamAPI.js';
+import type { SteamGameDetails } from '../functions/SteamAPI.js';
 export default async () => {
   let games: SteamGameDetails[] = [];
   let movies: any[] = [];
   if (isServer) {
-    const { fetchSteamGames } = await import('functions/steam/steamGames.js');
+    const { fetchSteamGames } = await import('../functions/steam/steamGames.js');
     games = await fetchSteamGames();
 
     // const { LetterboxdAPI } = await import('functions/LetterboxdAPI/LetterboxdAPI.js');
