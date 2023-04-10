@@ -53,6 +53,12 @@ export const styles = css`
     gap: var(--spacing-lg);
   }
 
+  .bio {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
   a {
     color: var(--color-text-body);
   }
@@ -66,15 +72,11 @@ import 'components/reading-column.js';
 import './components/site-header/site-header.js';
 import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
-
-export const initialData = {
-  // timeSinceShopify calculate from June 2015 until now
-  timeSinceShopify: Math.floor((Date.now() - new Date(2015, 6, 1).getTime()) / 1000),
-};
+import './components/time-since/time-since.js';
 
 import type { SteamGameDetails } from 'functions/SteamAPI.js';
-export default async (data = initialData) => {
-  const timeSinceShopify = Number(data.timeSinceShopify);
+export default async () => {
+  const timeSinceShopify = Math.floor((Date.now() - new Date(2015, 6, 1).getTime()) / 1000);
   let games: SteamGameDetails[] = [];
   let movies: any[] = [];
   if (isServer) {
@@ -90,15 +92,28 @@ export default async (data = initialData) => {
   return html`
     <site-header></site-header>
     <main class="page">
-    <section class="section">
+      <section class="section">
         <reading-column>
           <header><span>Who I am</span></header>
         </reading-column>
         <reading-column>
-          <article>
+          <article class="bio">
             <p>
-              I'm Willson, a front-end developer and Design Technologist at <a href="https://shopify.ca">Shopify</a>.
-            I've been working at Shopify for ${timeSinceToYearsAndMonths(timeSinceShopify)}.
+              I'm Willson, a front-end developer and Design Technologist at
+              <a href="https://shopify.ca">Shopify</a>. I've been working at Shopify for
+              <time-since date="2015-06-01"></time-since>.
+            </p>
+            <p>
+              I am passionate about building accessible, performant, and delightful web experiences.
+              <!-- something about using web standards and that this site is built with web components -->
+
+              I'm also a big fan of the web platform and the open web. This website is built with
+              <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components"
+                >Web Components</a
+              >
+              and <a href="https://lit.dev">Lit</a>.
+            </p>
+          </article>
         </reading-column>
       </section>
 
@@ -137,17 +152,3 @@ export default async (data = initialData) => {
     </main>
   `;
 };
-
-export const update = async () => {
-  return {
-    timeSinceShopify: Math.floor((Date.now() - new Date(2015, 6, 1).getTime()) / 1000),
-  };
-};
-
-function timeSinceToYearsAndMonths(timeSince: number) {
-  const secondsInYear = 60 * 60 * 24 * 365;
-  const secondsInMonth = 60 * 60 * 24 * 30;
-  const years = Math.floor(timeSince / secondsInYear);
-  const months = Math.floor((timeSince % secondsInYear) / secondsInMonth);
-  return `${years} years and ${months} months`;
-}

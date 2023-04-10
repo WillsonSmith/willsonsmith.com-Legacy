@@ -37,6 +37,11 @@ export class MoviesBlock extends LitElement {
     }
   `;
   render() {
+    // Make this take a series of movies and render them in a grid
+    // The grid will have one row at the top that spans the entire width
+    // below that will be a grid of movies
+    // The movie component will set its layout based on the size of the container
+    // This way we can have a single movie component that can be used in a variably-sized grid
     return html`
       <div class="movies-block">
         <section class="movies-block-section">
