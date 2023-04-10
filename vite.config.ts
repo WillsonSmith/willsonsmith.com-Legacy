@@ -6,11 +6,11 @@ const htmlFiles = await glob('pyre/**/*.html');
 
 export default defineConfig({
   root: 'pyre',
-  plugins: [topLevelAwait()],
+  plugins: [],
   build: {
     outDir: '../web',
     emptyOutDir: true,
-    target: 'es2020',
+    target: 'es2022',
     rollupOptions: {
       input: Object.fromEntries(htmlFiles.map((file) => [file, file])),
     },

@@ -26,6 +26,7 @@ export class SiteHeader extends LitElement {
       gap: var(--spacing-sm);
     }
   `;
+
   render() {
     return html`
       <header class="site-header">
