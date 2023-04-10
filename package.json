@@ -18,7 +18,8 @@
       "command": "pyre build && npm run copy-shoelace-assets && vite build",
       "dependencies": [
         "clean",
-        "./components:build"
+        "./components:build",
+        "./functions:build"
       ]
     },
     "dev": {
