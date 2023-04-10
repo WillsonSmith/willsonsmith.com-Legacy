@@ -147,7 +147,7 @@ export default async () => {
               </header>
               <ul class="project-list__list" role="list">
                 <li>
-                  <a href="https://word.lol">Word.lol</a>
+                  <a href="https://word.lol">Wordlol</a>
                   <div>
                     A fun little word definition generator that utilizes
                     <a href="https://openai.com">OpenAI's GPT-3</a> API.
@@ -163,7 +163,7 @@ export default async () => {
                   </div>
                 </li>
                 <li>
-                  <a href="https://gifit.pics">Gifit.pics</a>
+                  <a href="https://gifit.pics">Gifit</a>
                   <div>
                     An in-browsers gif-to-video converter that uses
                     <a href="https://github.com/ffmpegwasm/ffmpeg.wasm"><code>ffmpeg.wasm</code></a
