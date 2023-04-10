@@ -11,7 +11,7 @@ export class TimeSince extends LitElement {
 
   render() {
     const timeSince = Math.floor((new Date().getTime() - new Date(this.date).getTime()) / 1000);
-    return html` <span>${this.timeSinceToYearsAndMonths(timeSince)}</span> `;
+    return html`<span>${this.timeSinceToYearsAndMonths(timeSince)}</span>`;
   }
 
   updateTime() {
