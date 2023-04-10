@@ -1,3 +1,4 @@
 [build]
 publish = "web/"
 command = "npm run build"
+functions = "none/"

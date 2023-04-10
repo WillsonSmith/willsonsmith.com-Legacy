@@ -104,7 +104,7 @@ import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
-import type { SteamGameDetails } from '../functions/SteamAPI.js';
+import type { SteamGameDetails } from '../functions/steam/SteamAPI.js';
 export default async () => {
   let games: SteamGameDetails[] = [];
   let movies: any[] = [];
