@@ -1,5 +1,5 @@
 import { html, isServer } from 'lit';
-
+import { map } from 'lit/directives/map.js';
 export const title = "Willson's fun times website place";
 export const description = 'Willson is a front-end developer who likes to make fun things.';
 
@@ -12,6 +12,11 @@ export const links = [
 
 export const styles = isServer ? (await import('./index.css.js')).styles : undefined;
 
+const { movies } = await import('./data/movies.js');
+export const initialData = {
+  movies,
+};
+
 if (!isServer) {
   await import('./index.js');
 }
@@ -23,13 +28,14 @@ import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
 import type { SteamGameDetails } from '../functions/steam/SteamAPI.js';
-export default async () => {
+export default async (data = initialData) => {
+  const movies = data.movies;
+  // console.log(movies, data);
   let games: SteamGameDetails[] = [];
   // let movies: any[] = [];
   if (isServer) {
-    const { fetchSteamGames } = await import('../functions/steam/steamGames.js');
-    games = await fetchSteamGames();
-
+    // const { fetchSteamGames } = await import('../functions/steam/steamGames.js');
+    // games = await fetchSteamGames();
     // const { LetterboxdAPI } = await import('functions/LetterboxdAPI/LetterboxdAPI.js');
     // const letterboxd = new LetterboxdAPI();
     // movies = await letterboxd.getWatchedFilms('willsonsmith');
@@ -105,6 +111,12 @@ export default async () => {
             poster="https://a.ltrbxd.com/resized/film-poster/9/4/6/6/0/7/946607-rye-lane-0-600-0-900-crop.jpg?v=a6f1287aac"
           >
           </movies-block>
+          ${movies.map((movie) => {
+            const image = movie.image.jpeg[0];
+            return html`
+              <img src=${image.url} width=${image.width} height=${image.height} alt=${movie.alt} />
+            `;
+          })}
         </reading-column>
       </section>
       <section class="section">
