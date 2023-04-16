@@ -5,10 +5,11 @@ import { cwd } from 'process';
 
 export const saveWatchedFilms = async (username: string) => {
   const films = await getWatchedFilms(username);
-  const outputPath = join(cwd(), 'src', 'data', 'movies.ts');
+  const outputPath = join(cwd(), 'src', 'pyre', 'movies.js');
   const fileContent = `
 export const movies = ${JSON.stringify(films, null, 2)};
   `;
-  await outputFile(outputPath, fileContent);
+  return await outputFile(outputPath, fileContent);
+
   // return films;
 };
