@@ -12,6 +12,7 @@ export const links = [
 export const styles = isServer ? (await import('./index.css.js')).styles : undefined;
 
 const { movies } = await import('./data/movies.js');
+
 export const initialData = {
   movies,
 };
@@ -22,24 +23,17 @@ if (!isServer) {
 
 import './components/reading-column/reading-column.js';
 import './components/site-header/site-header.js';
+
 import './components/movies-block/movies-block.js';
+
+// import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
-import type { SteamGameDetails } from '../functions/steam/SteamAPI.js';
+// import type { SteamGameDetails } from '../functions/steam/SteamAPI.js';
 export default async (data = initialData) => {
   const movies = data.movies;
-  // console.log(movies, data);
-  let games: SteamGameDetails[] = [];
-  // let movies: any[] = [];
-  if (isServer) {
-    // const { fetchSteamGames } = await import('../functions/steam/steamGames.js');
-    // games = await fetchSteamGames();
-    // const { LetterboxdAPI } = await import('functions/LetterboxdAPI/LetterboxdAPI.js');
-    // const letterboxd = new LetterboxdAPI();
-    // movies = await letterboxd.getWatchedFilms('willsonsmith');
-    // console.log(movies);
-  }
+  // let games: SteamGameDetails[] = [];
 
   return html`
     <site-header></site-header>
@@ -104,18 +98,7 @@ export default async (data = initialData) => {
           <header><h2>What I'm watching</h2></header>
         </reading-column>
         <reading-column>
-          <movies-block
-            title="Rye Lane"
-            description="Two twenty-somethings, both reeling from bad break-ups, connect over the course of an eventful day in South London – helping each other deal with their nightmare exes, and potentially restoring their faith in romance."
-            poster="https://a.ltrbxd.com/resized/film-poster/9/4/6/6/0/7/946607-rye-lane-0-600-0-900-crop.jpg?v=a6f1287aac"
-          >
-          </movies-block>
-          ${movies.map((movie) => {
-            const image = movie.image.jpeg[0];
-            return html`
-              <img src=${image.url} width=${image.width} height=${image.height} alt=${movie.alt} />
-            `;
-          })}
+          <movies-block movies=${JSON.stringify(movies)}></movies-block>
         </reading-column>
       </section>
       <section class="section">
@@ -123,19 +106,7 @@ export default async (data = initialData) => {
           <header><h2>What I'm playing</h2></header>
         </reading-column>
 
-        <reading-column>
-          <games-block>
-            ${games.map(
-              (game) => html`
-                <game-card
-                  title="${game.name}"
-                  poster="${game.header_image}"
-                  link="${game.steam_appid}"
-                ></game-card>
-              `,
-            )}
-          </games-block>
-        </reading-column>
+        <reading-column> </reading-column>
       </section>
     </main>
   `;

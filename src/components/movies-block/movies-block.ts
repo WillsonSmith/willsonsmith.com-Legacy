@@ -1,12 +1,30 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+interface EleventyImage {
+  filename: string;
+  format: string;
+  height: number;
+  width: number;
+  sourceType: string;
+  srcset: string;
+  url: string;
+}
+
+interface Movie {
+  src: string;
+  alt: string;
+  url: string;
+  image: {
+    webp: EleventyImage[];
+    avif: EleventyImage[];
+    jpeg: EleventyImage[];
+  };
+}
+
 @customElement('movies-block')
 export class MoviesBlock extends LitElement {
-  @property({ type: String }) title = '';
-  @property({ type: String }) description = '';
-
-  @property({ type: String }) poster = '';
+  @property({ type: Array }) movies: Movie[] = [];
 
   static styles = css`
     :host {
@@ -14,29 +32,41 @@ export class MoviesBlock extends LitElement {
       line-height: var(--line-height-sm);
     }
     .movies-block {
-      display: grid;
-      grid-template-columns: 1fr 200px;
-      gap: var(--spacing-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing);
     }
 
-    .movies-block-section {
-      box-sizing: border-box;
-    }
-
-    .movies-block__title {
-      font-family: var(--font-system-sans);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--font-size-xl);
-      line-height: var(--line-height-sm);
-    }
-
-    .movies-block__poster img {
+    img {
       display: block;
-      width: 100%;
       max-width: 100%;
+    }
+
+    picture {
+      display: block;
+      width: 150px;
+    }
+
+    .movies-block__latest {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--spacing);
+    }
+
+    .first-image {
+      max-width: 150px;
+    }
+
+    .movies-block__list {
+      max-width: 100%;
+      overflow-x: auto;
+      display: flex;
+      gap: var(--spacing-xs);
     }
   `;
   render() {
+    if (!this.movies?.length) return;
+    const [first, ...movies] = this.movies;
     // Make this take a series of movies and render them in a grid
     // The grid will have one row at the top that spans the entire width
     // below that will be a grid of movies
@@ -44,12 +74,35 @@ export class MoviesBlock extends LitElement {
     // This way we can have a single movie component that can be used in a variably-sized grid
     return html`
       <div class="movies-block">
-        <section class="movies-block-section">
-          <div class="movies-block__title">${this.title}</div>
-          <div class="movies-block__content">${this.description}</div>
-        </section>
-        <div class="movies-block__poster">
-          <img src="${this.poster}" alt=${`${this.title} movie poster`} />
+        <div class="movies-block__latest">
+          <div class="first-image"><img src=${first.src} alt=${first.alt} /></div>
+          <div>${first.alt}</div>
+        </div>
+        <div class="movies-block__list">
+          ${movies?.map((movie) => {
+            // console.log(this.movies);
+            const picture = html`
+              <picture>
+                ${movie.image.webp.map(
+                  (image) => html`
+                    <source type="image/webp" srcset=${image.srcset} sizes=${image.width} />
+                  `,
+                )}
+                ${movie.image.avif.map(
+                  (image) => html`
+                    <source type="image/avif" srcset=${image.srcset} sizes=${image.width} />
+                  `,
+                )}
+                ${movie.image.jpeg.map(
+                  (image) => html`
+                    <source type="image/jpeg" srcset=${image.srcset} sizes=${image.width} />
+                  `,
+                )}
+                <img src=${movie.src} alt=${movie.alt} />
+              </picture>
+            `;
+            return html` <div>${picture}</div> `;
+          })}
         </div>
       </div>
     `;
