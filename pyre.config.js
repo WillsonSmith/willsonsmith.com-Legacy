@@ -1,6 +1,6 @@
 import { saveWatchedFilms } from './functions/movies/saveWatchedFilms.js';
-export default () => {
-  saveWatchedFilms('willsonsmith');
+export default async () => {
+  await saveWatchedFilms('willsonsmith');
   return {
     input: 'src',
     output: { dir: 'pyre' },
