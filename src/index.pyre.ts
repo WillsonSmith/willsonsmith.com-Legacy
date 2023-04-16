@@ -1,5 +1,4 @@
 import { html, isServer } from 'lit';
-import { map } from 'lit/directives/map.js';
 export const title = "Willson's fun times website place";
 export const description = 'Willson is a front-end developer who likes to make fun things.';
 

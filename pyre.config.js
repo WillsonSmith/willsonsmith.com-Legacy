@@ -1,4 +1,6 @@
+import { saveWatchedFilms } from './functions/movies/saveWatchedFilms.js';
 export default () => {
+  saveWatchedFilms('willsonsmith');
   return {
     input: 'src',
     output: { dir: 'pyre' },
