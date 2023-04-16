@@ -17,7 +17,9 @@ export const getWatchedFilms = async (username: string) => {
   });
 
   const films = await cache.performOperation(async () => {
-    return letterboxd.getWatchedFilms(username);
+    const films = await letterboxd.getWatchedFilms(username);
+    // return top 10 films
+    return films.slice(0, 10);
   });
 
   const filmsWithImages = await Promise.all(
