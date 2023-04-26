@@ -66,34 +66,21 @@ export class MoviesBlock extends LitElement {
   `;
   render() {
     if (!this.movies?.length) return;
-    const [first, ...movies] = this.movies;
-    // Make this take a series of movies and render them in a grid
-    // The grid will have one row at the top that spans the entire width
-    // below that will be a grid of movies
-    // The movie component will set its layout based on the size of the container
-    // This way we can have a single movie component that can be used in a variably-sized grid
+
+    const sources = this.movies?.map((movie) => {
+      return Object.entries(movie.image).map(([format, images]) => {
+        const image = images[0];
+        return html` <source type=${format} srcset=${image.srcset} sizes=${image.width} /> `;
+      });
+    });
+
     return html`
       <div class="movies-block">
         <div class="movies-block__list">
           ${this.movies?.map((movie) => {
-            // console.log(this.movies);
             const picture = html`
               <picture>
-                ${movie.image.webp.map(
-                  (image) => html`
-                    <source type="image/webp" srcset=${image.srcset} sizes=${image.width} />
-                  `,
-                )}
-                ${movie.image.avif.map(
-                  (image) => html`
-                    <source type="image/avif" srcset=${image.srcset} sizes=${image.width} />
-                  `,
-                )}
-                ${movie.image.jpeg.map(
-                  (image) => html`
-                    <source type="image/jpeg" srcset=${image.srcset} sizes=${image.width} />
-                  `,
-                )}
+                ${sources}
                 <img src=${movie.src} alt=${movie.alt} />
               </picture>
             `;
