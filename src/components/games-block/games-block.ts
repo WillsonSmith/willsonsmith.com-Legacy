@@ -1,10 +1,12 @@
 import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 
 import './game-card.js';
 
 @customElement('games-block')
 export class GamesBlock extends LitElement {
+  @property({ type: Array }) games = [];
+
   static styles = css`
     :host {
       display: block;
@@ -29,7 +31,16 @@ export class GamesBlock extends LitElement {
   render() {
     return html`
       <div class="games-block">
-        <slot></slot>
+        ${this.games.map((game) => {
+          console.log(game);
+          return html`
+            <game-card
+              title=${game.name}
+              poster=${game.header_image}
+              link=${game.website || `https://store.steampowered.com/app/${game.steam_appid}`}
+            ></game-card>
+          `;
+        })}
       </div>
     `;
   }

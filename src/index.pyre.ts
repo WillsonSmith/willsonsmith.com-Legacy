@@ -11,10 +11,11 @@ export const links = [
 
 export const styles = isServer ? (await import('./index.css.js')).styles : undefined;
 
-const { movies } = await import('./data/movies.js');
-
+import { movies } from './data/movies.js';
+import { steam } from './data/steam.js';
 export const initialData = {
   movies,
+  steam,
 };
 
 if (!isServer) {
@@ -25,6 +26,7 @@ import './components/reading-column/reading-column.js';
 import './components/site-header/site-header.js';
 
 import './components/movies-block/movies-block.js';
+import './components/games-block/games-block.js';
 
 // import './components/movies-block/movies-block.js';
 import './components/games-block/games-block.js';
@@ -33,6 +35,9 @@ import './components/time-since/time-since.js';
 // import type { SteamGameDetails } from '../functions/steam/SteamAPI.js';
 export default async (data = initialData) => {
   const movies = data.movies;
+  const steam = data.steam;
+
+  console.log(steam);
   // let games: SteamGameDetails[] = [];
 
   return html`
@@ -106,7 +111,9 @@ export default async (data = initialData) => {
           <header><h2>What I'm playing</h2></header>
         </reading-column>
 
-        <reading-column> </reading-column>
+        <reading-column>
+          <games-block games=${JSON.stringify(steam)}></games-block>
+        </reading-column>
       </section>
     </main>
   `;
