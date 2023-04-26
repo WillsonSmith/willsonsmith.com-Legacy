@@ -74,12 +74,8 @@ export class MoviesBlock extends LitElement {
     // This way we can have a single movie component that can be used in a variably-sized grid
     return html`
       <div class="movies-block">
-        <div class="movies-block__latest">
-          <div class="first-image"><img src=${first.src} alt=${first.alt} /></div>
-          <div>${first.alt}</div>
-        </div>
         <div class="movies-block__list">
-          ${movies?.map((movie) => {
+          ${this.movies?.map((movie) => {
             // console.log(this.movies);
             const picture = html`
               <picture>
