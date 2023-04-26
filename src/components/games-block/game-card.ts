@@ -29,7 +29,7 @@ export class GameCard extends LitElement {
   render() {
     return html`
       <a href=${this.link} class="game-card">
-        <img src=${this.poster} alt=${this.title} />
+        <img src=${this.poster} alt=${this.title} loading="lazy" />
 
         ${when(this.description, () => html`<p>${this.description}</p>`)}
       </a>

@@ -3,9 +3,17 @@ import { customElement, property } from 'lit/decorators.js';
 
 import './game-card.js';
 
+interface Game {
+  name: string;
+  description?: string;
+  header_image: string;
+  website?: string;
+  steam_appid: number;
+}
+
 @customElement('games-block')
 export class GamesBlock extends LitElement {
-  @property({ type: Array }) games = [];
+  @property({ type: Array }) games: Game[] = [];
 
   static styles = css`
     :host {

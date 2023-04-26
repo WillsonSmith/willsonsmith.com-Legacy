@@ -81,7 +81,7 @@ export class MoviesBlock extends LitElement {
             const picture = html`
               <picture>
                 ${sources}
-                <img src=${movie.src} alt=${movie.alt} />
+                <img src=${movie.src} alt=${movie.alt} loading="lazy" />
               </picture>
             `;
             return html` <a href=${movie.url}><div>${picture}</div></a>`;
