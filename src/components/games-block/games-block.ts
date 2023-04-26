@@ -32,7 +32,6 @@ export class GamesBlock extends LitElement {
     return html`
       <div class="games-block">
         ${this.games.map((game) => {
-          console.log(game);
           return html`
             <game-card
               title=${game.name}

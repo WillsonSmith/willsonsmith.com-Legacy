@@ -5,7 +5,6 @@ export const filmsFromProfile = async (profile: string) => {
     const browser = await playwright.chromium.launch();
     const context = await browser.newContext();
     const page = await context.newPage();
-    console.log(`https://letterboxd.com/${profile}/films/by/date/`);
     await page.goto(`https://letterboxd.com/${profile}/films/by/date/`);
 
     await page.waitForSelector('.poster');

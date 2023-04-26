@@ -84,7 +84,7 @@ export class MoviesBlock extends LitElement {
                 <img src=${movie.src} alt=${movie.alt} />
               </picture>
             `;
-            return html` <div>${picture}</div> `;
+            return html` <a href=${movie.url}><div>${picture}</div></a>`;
           })}
         </div>
       </div>

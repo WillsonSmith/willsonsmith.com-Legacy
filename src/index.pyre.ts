@@ -32,13 +32,9 @@ import './components/games-block/games-block.js';
 import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
-// import type { SteamGameDetails } from '../functions/steam/SteamAPI.js';
 export default async (data = initialData) => {
   const movies = data.movies;
   const steam = data.steam;
-
-  console.log(steam);
-  // let games: SteamGameDetails[] = [];
 
   return html`
     <site-header></site-header>
