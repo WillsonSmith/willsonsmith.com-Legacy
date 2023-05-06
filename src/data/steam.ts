@@ -2,47 +2,50 @@
 export const steam = [
   {
     "type": "game",
-    "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
-    "steam_appid": 814380,
-    "required_age": "17",
+    "name": "Escape Academy",
+    "steam_appid": 1812090,
+    "required_age": 0,
     "is_free": false,
     "controller_support": "full",
-    "detailed_description": "This Game of the Year Edition now includes bonus content*:<br />\r\n<br />\r\n- Reflection and Gauntlet of Strength - new boss challenge modes<br />\r\n- Remnants - leave messages and recordings of your actions that other players can view and rate<br />\r\n- 3 unlockable cosmetic skins<br />\r\n<br />\r\nGame of the Year  - The Game Awards 2019<br />\r\nBest Action Game of 2019 - IGN<br />\r\nOver 50 awards and nominations<br />\r\n<br />\r\nCarve your own clever path to vengeance in the critically acclaimed adventure from developer FromSoftware, creators of the Dark Souls series.<br />\r\n<br />\r\nIn Sekiro™: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.<br />\r\n<br />\r\nExplore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.<br />\r\n<br />\r\nTake Revenge. Restore Your Honor. Kill Ingeniously.<br />\r\n<br />\r\n*Download required.<br />\r\n<br />\r\nInternet connection required for asynchronous Multiplayer.",
-    "about_the_game": "This Game of the Year Edition now includes bonus content*:<br />\r\n<br />\r\n- Reflection and Gauntlet of Strength - new boss challenge modes<br />\r\n- Remnants - leave messages and recordings of your actions that other players can view and rate<br />\r\n- 3 unlockable cosmetic skins<br />\r\n<br />\r\nGame of the Year  - The Game Awards 2019<br />\r\nBest Action Game of 2019 - IGN<br />\r\nOver 50 awards and nominations<br />\r\n<br />\r\nCarve your own clever path to vengeance in the critically acclaimed adventure from developer FromSoftware, creators of the Dark Souls series.<br />\r\n<br />\r\nIn Sekiro™: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.<br />\r\n<br />\r\nExplore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.<br />\r\n<br />\r\nTake Revenge. Restore Your Honor. Kill Ingeniously.<br />\r\n<br />\r\n*Download required.<br />\r\n<br />\r\nInternet connection required for asynchronous Multiplayer.",
-    "short_description": "Game of the Year - The Game Awards 2019 Best Action Game of 2019 - IGN Carve your own clever path to vengeance in the award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously.",
-    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean, Polish, Russian, Simplified Chinese, Thai, Traditional Chinese, Portuguese - Brazil<br><strong>*</strong>languages with full audio support",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg?t=1678991267",
-    "website": "http://www.sekirothegame.com/",
+    "dlc": [
+      2023370,
+      1934530
+    ],
+    "detailed_description": "You've just arrived at Escape Academy, a school where promising students train to become the ultimate Escapist. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1812090/extras/Hand_Crafted_Puzzles__Hourglass_.gif?t=1680232484\" /><br><br>Play over a dozen masterfully hand crafted rooms, designed by experienced experts in the field of REAL LIFE escape rooms.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1812090/extras/Local_Online_Coop.gif?t=1680232484\" /><br><br>Experience the entirety of Escape Academy alone in single player OR through two player co-operative play. Available in local or online splitscreen. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1812090/extras/Meet_the_Faculty.gif?t=1680232484\" /><br><br>Explore the campus of Escape Academy and get to know the faculty, a colorful cast of characters, each an expert in the art of Escape. And some with secrets yet to be uncovered... <br><br>Featuring Music and Sound Design by the one and only doseone (Gang Beasts, SLUDGE LIFE, Disc Room, Enter the Gungeon).<br><br><strong>Escape Academy’s Respected Curriculum:</strong><br><br><ul class=\"bb_ul\"><li><strong>Attend a Tea 'N Tea Party</strong> - Can you defuse the bomb before your tranquil cup of tea gets cold? Your grade (and physical well being) depend on it!<br></li><li><strong>Hack the Professor</strong> - Solve a quantifiably feverish series of challenges to prove to the Academy’s super A.I. that you’ve got the skills to become an Escapist.<br></li><li><strong>Go for the Gold</strong> - Represent your class in everyone’s favorite sporting event, The Rival Room. Go toe-to-toe against your nemesis in a puzzle-race to prove who’s top of the class.<br></li><li><strong>Do Not Drown!</strong> - Being at the bottom of a puzzle-tower that’s rapidly filling with water is NOT ideal. Scramble to the top for that sweet, sweet oxygen.<br></li><li><strong>Spray Paint the Monument</strong> - Art class is no Easy-A at the Academy. Leave your mark on the historic Monument of Escape but uh… hurry up! The Headmaster didn’t exactly approve the lesson plan.</li></ul><br>And this is just a portion of the wacky (and often lethal) curriculum!",
+    "about_the_game": "You've just arrived at Escape Academy, a school where promising students train to become the ultimate Escapist. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1812090/extras/Hand_Crafted_Puzzles__Hourglass_.gif?t=1680232484\" /><br><br>Play over a dozen masterfully hand crafted rooms, designed by experienced experts in the field of REAL LIFE escape rooms.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1812090/extras/Local_Online_Coop.gif?t=1680232484\" /><br><br>Experience the entirety of Escape Academy alone in single player OR through two player co-operative play. Available in local or online splitscreen. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1812090/extras/Meet_the_Faculty.gif?t=1680232484\" /><br><br>Explore the campus of Escape Academy and get to know the faculty, a colorful cast of characters, each an expert in the art of Escape. And some with secrets yet to be uncovered... <br><br>Featuring Music and Sound Design by the one and only doseone (Gang Beasts, SLUDGE LIFE, Disc Room, Enter the Gungeon).<br><br><strong>Escape Academy’s Respected Curriculum:</strong><br><br><ul class=\"bb_ul\"><li><strong>Attend a Tea 'N Tea Party</strong> - Can you defuse the bomb before your tranquil cup of tea gets cold? Your grade (and physical well being) depend on it!<br></li><li><strong>Hack the Professor</strong> - Solve a quantifiably feverish series of challenges to prove to the Academy’s super A.I. that you’ve got the skills to become an Escapist.<br></li><li><strong>Go for the Gold</strong> - Represent your class in everyone’s favorite sporting event, The Rival Room. Go toe-to-toe against your nemesis in a puzzle-race to prove who’s top of the class.<br></li><li><strong>Do Not Drown!</strong> - Being at the bottom of a puzzle-tower that’s rapidly filling with water is NOT ideal. Scramble to the top for that sweet, sweet oxygen.<br></li><li><strong>Spray Paint the Monument</strong> - Art class is no Easy-A at the Academy. Leave your mark on the historic Monument of Escape but uh… hurry up! The Headmaster didn’t exactly approve the lesson plan.</li></ul><br>And this is just a portion of the wacky (and often lethal) curriculum!",
+    "short_description": "Welcome to Escape Academy. Train to become the ultimate Escapist. Solve Puzzles. Hack Servers. Meet the Faculty. Brew the perfect cup of tea. Escape Rooms in single player or co-op with a friend - local or online!",
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+    "reviews": "“...blissfully approachable”<br><a href=\"https://steamcommunity.com/linkfilter/?url=https://www.latimes.com/entertainment-arts/story/2022-07-14/surprise-one-of-this-years-more-delightful-video-games-is-an-interactive-escape-room\" target=\"_blank\" rel=\" noopener\"  >The Los Angeles Times</a><br><br>“a delightful puzzle game”<br><a href=\"https://steamcommunity.com/linkfilter/?url=https://www.gamespot.com/reviews/escape-academy-review-im-an-a-student/1900-6417914/?ftag=CAD-01-10abi2f\" target=\"_blank\" rel=\" noopener\"  >GameSpot</a><br><br>“BEST CO-OP EXPERIENCE SINCE IT TAKES TWO”<br>9 – <a href=\"https://steamcommunity.com/linkfilter/?url=https://www.inverse.com/gaming/escape-academy-review-pc\" target=\"_blank\" rel=\" noopener\"  >Inverse</a><br>",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/header.jpg?t=1680232484",
+    "website": "https://escapeacademygame.com/",
     "pc_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel Core i3-2100 | AMD FX-6300<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 760 | AMD Radeon HD 7950<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 25 GB available space<br></li><li><strong>Sound Card:</strong> DirectX 11 Compatible</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel Core i5-2500K | AMD Ryzen 5 1400<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 970 | AMD Radeon RX 570<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 25 GB available space<br></li><li><strong>Sound Card:</strong> DirectX 11 Compatible</li></ul>"
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7<br></li><li><strong>DirectX:</strong> Version 10<br></li><li><strong>Storage:</strong> 5 GB available space</li></ul>"
     },
     "mac_requirements": [],
     "linux_requirements": [],
-    "legal_notice": "©2019-2020 FromSoftware, Inc. All rights reserved. Published and distributed by Activision. ACTIVISION is a trademark of Activision Publishing Inc. All other trademarks and trade names are the properties of their respective owners.<br />\r\n<br />\r\nDark Souls is a trademark of BANDAI NAMCO Entertainment Inc. Bandai Namco is not the publisher of SEKIRO: SHADOWS DIE TWICE. Activision has no affiliation with Dark Souls.",
+    "legal_notice": "iam8bit®, iam8bit Presents™, and the related logos are trademarks of iam8bit, Inc. All rights reserved.<br />\r\nSkybound, Skybound Games and any related logos are registered or otherwise protected trademarks of Skybound, LLC, used with permission. All rights reserved.",
     "developers": [
-      "FromSoftware"
+      "Coin Crew Games"
     ],
     "publishers": [
-      "Activision (Excluding Japan and Asia)",
-      "FromSoftware (Japan)",
-      "方块游戏 (Asia)"
+      "iam8bit",
+      "Skybound Games"
     ],
     "price_overview": {
       "currency": "CAD",
-      "initial": 7999,
-      "final": 7999,
+      "initial": 2279,
+      "final": 2279,
       "discount_percent": 0,
       "initial_formatted": "",
-      "final_formatted": "CDN$ 79.99"
+      "final_formatted": "CDN$ 22.79"
     },
     "packages": [
-      298554
+      651555
     ],
     "package_groups": [
       {
         "name": "default",
-        "title": "Buy Sekiro™: Shadows Die Twice - GOTY Edition",
+        "title": "Buy Escape Academy",
         "description": "",
         "selection_text": "Select a purchase option",
         "save_text": "",
@@ -50,14 +53,14 @@ export const steam = [
         "is_recurring_subscription": "false",
         "subs": [
           {
-            "packageid": 298554,
+            "packageid": 651555,
             "percent_savings_text": " ",
             "percent_savings": 0,
-            "option_text": "Sekiro: Shadows Die Twice - CDN$ 79.99",
+            "option_text": "Escape Academy - CDN$ 22.79",
             "option_description": "",
             "can_get_free_license": "0",
             "is_free_license": false,
-            "price_in_cents_with_discount": 7999
+            "price_in_cents_with_discount": 2279
           }
         ]
       }
@@ -68,13 +71,37 @@ export const steam = [
       "linux": false
     },
     "metacritic": {
-      "score": 88,
-      "url": "https://www.metacritic.com/game/pc/sekiro-shadows-die-twice?ftag=MCD-06-10aaa1f"
+      "score": 79,
+      "url": "https://www.metacritic.com/game/pc/escape-academy?ftag=MCD-06-10aaa1f"
     },
     "categories": [
       {
         "id": 2,
         "description": "Single-player"
+      },
+      {
+        "id": 1,
+        "description": "Multi-player"
+      },
+      {
+        "id": 9,
+        "description": "Co-op"
+      },
+      {
+        "id": 38,
+        "description": "Online Co-op"
+      },
+      {
+        "id": 39,
+        "description": "Shared/Split Screen Co-op"
+      },
+      {
+        "id": 24,
+        "description": "Shared/Split Screen"
+      },
+      {
+        "id": 27,
+        "description": "Cross-Platform Multiplayer"
       },
       {
         "id": 22,
@@ -93,19 +120,11 @@ export const steam = [
         "description": "Steam Cloud"
       },
       {
-        "id": 42,
-        "description": "Remote Play on Tablet"
-      },
-      {
-        "id": 43,
-        "description": "Remote Play on TV"
+        "id": 44,
+        "description": "Remote Play Together"
       }
     ],
     "genres": [
-      {
-        "id": "1",
-        "description": "Action"
-      },
       {
         "id": "25",
         "description": "Adventure"
@@ -114,193 +133,477 @@ export const steam = [
     "screenshots": [
       {
         "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_0f7b0f8ed9ffc49aba26f9328caa9a1d59ad60f0.600x338.jpg?t=1678991267",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_0f7b0f8ed9ffc49aba26f9328caa9a1d59ad60f0.1920x1080.jpg?t=1678991267"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_2e7d265da1af9da54951bcae28c55930a999ef6a.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_2e7d265da1af9da54951bcae28c55930a999ef6a.1920x1080.jpg?t=1680232484"
       },
       {
         "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_2685dd844a2a523b6c7ec207d46a538db6a908cd.600x338.jpg?t=1678991267",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_2685dd844a2a523b6c7ec207d46a538db6a908cd.1920x1080.jpg?t=1678991267"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_0905d9b13f1b2608018b6ddf75620721234289f3.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_0905d9b13f1b2608018b6ddf75620721234289f3.1920x1080.jpg?t=1680232484"
       },
       {
         "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_15f0e9982621aed44900215ad283811af0779b1d.600x338.jpg?t=1678991267",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_15f0e9982621aed44900215ad283811af0779b1d.1920x1080.jpg?t=1678991267"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_3b686558c1b506828f139a6e225a1c9737c26739.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_3b686558c1b506828f139a6e225a1c9737c26739.1920x1080.jpg?t=1680232484"
       },
       {
         "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_1e6f5540866a5564d65df915c22fe1e57e336a6f.600x338.jpg?t=1678991267",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_1e6f5540866a5564d65df915c22fe1e57e336a6f.1920x1080.jpg?t=1678991267"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_42703ca2e8ac0a278ec0e6800fcfef70474fe34c.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_42703ca2e8ac0a278ec0e6800fcfef70474fe34c.1920x1080.jpg?t=1680232484"
       },
       {
         "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_3d6b38c382c0eafb02dc90d22f33fd292e4e5cf3.600x338.jpg?t=1678991267",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_3d6b38c382c0eafb02dc90d22f33fd292e4e5cf3.1920x1080.jpg?t=1678991267"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_4b07966a192838dce97334c62cd252cae3df5e0c.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_4b07966a192838dce97334c62cd252cae3df5e0c.1920x1080.jpg?t=1680232484"
+      },
+      {
+        "id": 5,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_fd4392f5434ad88912615c3ef601e7e2218eb60b.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_fd4392f5434ad88912615c3ef601e7e2218eb60b.1920x1080.jpg?t=1680232484"
+      },
+      {
+        "id": 6,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_2d892548e9fa35a05ae485d3a9b12c0641d03c26.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_2d892548e9fa35a05ae485d3a9b12c0641d03c26.1920x1080.jpg?t=1680232484"
+      },
+      {
+        "id": 7,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_3addc09efde6262125d3b972330e90b2686528f0.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_3addc09efde6262125d3b972330e90b2686528f0.1920x1080.jpg?t=1680232484"
+      },
+      {
+        "id": 8,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_e3f4e2fea8bf44ccf34c29dd5d24cd599094624d.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_e3f4e2fea8bf44ccf34c29dd5d24cd599094624d.1920x1080.jpg?t=1680232484"
+      },
+      {
+        "id": 9,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_73460404860f425df5d2dc94f2a32a6e6c2c5cd9.600x338.jpg?t=1680232484",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/ss_73460404860f425df5d2dc94f2a32a6e6c2c5cd9.1920x1080.jpg?t=1680232484"
       }
     ],
     "movies": [
       {
-        "id": 256806899,
-        "name": "Sekiro™: Shadows Die Twice - Game of the Year Edition",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256806899/movie.293x165.jpg?t=1603837979",
+        "id": 256901108,
+        "name": "Escape Academy Accolades Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256901108/movie.293x165.jpg?t=1660675859",
         "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie480_vp9.webm?t=1603837979",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie_max_vp9.webm?t=1603837979"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256901108/movie480_vp9.webm?t=1660675859",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256901108/movie_max_vp9.webm?t=1660675859"
         },
         "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie480.mp4?t=1603837979",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie_max.mp4?t=1603837979"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256901108/movie480.mp4?t=1660675859",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256901108/movie_max.mp4?t=1660675859"
         },
         "highlight": true
       },
       {
-        "id": 256770769,
-        "name": "Sekiro: Shadows Die Twice - Accolades Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256770769/movie.293x165.jpg?t=1576898083",
+        "id": 256896287,
+        "name": "Escape Academy Launch Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256896287/movie.293x165.jpg?t=1657811125",
         "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie480.webm?t=1576898083",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie_max.webm?t=1576898083"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256896287/movie480_vp9.webm?t=1657811125",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256896287/movie_max_vp9.webm?t=1657811125"
         },
         "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie480.mp4?t=1576898083",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie_max.mp4?t=1576898083"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256896287/movie480.mp4?t=1657811125",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256896287/movie_max.mp4?t=1657811125"
         },
         "highlight": true
       },
       {
-        "id": 256745700,
-        "name": "Sekiro: Shadows Die Twice - Gameplay 101 Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256745700/movie.293x165.jpg?t=1553549458",
+        "id": 256877471,
+        "name": "Escape Academy Announcement Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256877471/movie.293x165.jpg?t=1647452839",
         "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie480.webm?t=1553549458",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie_max.webm?t=1553549458"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256877471/movie480_vp9.webm?t=1647452839",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256877471/movie_max_vp9.webm?t=1647452839"
         },
         "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie480.mp4?t=1553549458",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie_max.mp4?t=1553549458"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256745081,
-        "name": "Sekiro: Shadows Die Twice - Launch Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256745081/movie.293x165.jpg?t=1553549470",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie480.webm?t=1553549470",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie_max.webm?t=1553549470"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie480.mp4?t=1553549470",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie_max.mp4?t=1553549470"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256742444,
-        "name": "Sekiro: Shadows Die Twice - Story Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256742444/movie.293x165.jpg?t=1553549486",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie480.webm?t=1553549486",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie_max.webm?t=1553549486"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie480.mp4?t=1553549486",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie_max.mp4?t=1553549486"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256729567,
-        "name": "Sekiro: Shadows Die Twice - TGS Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256729567/movie.293x165.jpg?t=1553549495",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie480.webm?t=1553549495",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie_max.webm?t=1553549495"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie480.mp4?t=1553549495",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie_max.mp4?t=1553549495"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256724898,
-        "name": "Sekiro: Shadows Die Twice - Reveal Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256724898/movie.293x165.jpg?t=1553099552",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie480.webm?t=1553099552",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie_max.webm?t=1553099552"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie480.mp4?t=1553099552",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie_max.mp4?t=1553099552"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256877471/movie480.mp4?t=1647452839",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256877471/movie_max.mp4?t=1647452839"
         },
         "highlight": true
       }
     ],
     "recommendations": {
-      "total": 165652
+      "total": 503
     },
     "achievements": {
-      "total": 34,
+      "total": 27,
       "highlighted": [
         {
-          "name": "Sekiro",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/5b4b096ea3b03a5d9cb1367e53d85dd4a4300dc8.jpg"
+          "name": "Next Stop: Escape Academy",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/6645deb166328e6dd04bcd3e2ab4804b3c7e745d.jpg"
         },
         {
-          "name": "Man Without Equal",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/99a3f76eb4e25f821826575f361a0b8ec4de718e.jpg"
+          "name": "Entrance Examined",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/f27cc0e4bb4ebfacb44d203dd6afd5ffbdb90661.jpg"
         },
         {
-          "name": "Ashina Traveler",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/3ff93d2915cfc175d391eeebc1780c68d0054b98.jpg"
+          "name": "Paint Outside the Box",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/983128bc913558828941f4428fd91d73eaca7910.jpg"
         },
         {
-          "name": "Master of the Prosthetic",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/183b69eaa3f8c8901a41c05959c9793f51e7d6dd.jpg"
+          "name": "Ticket to Breathin' Town",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/e6a86d3519ecd9e80912196282436b7bfda52cd4.jpg"
         },
         {
-          "name": "Height of Technique",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/81b2ef0f9c0a93ca1bcfc2ef3ad67a7001daaa2a.jpg"
+          "name": "Remote Rescue",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/45bf4b8a83127f027651b8b7ce93f5e465408610.jpg"
         },
         {
-          "name": "All Prosthetic Tools",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/e34d6e8365208a04c04ad63977c1ce39a26afe64.jpg"
+          "name": "Don't Cry Over Spilled Milkshake",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/202b4f6b766919db3fdeaeafe2ee3f51b3993a94.jpg"
         },
         {
-          "name": "All Ninjutsu Techniques",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/b8ca679e7fc6df38774f5c34263b15ace8962989.jpg"
+          "name": "Tea Hot to Handle",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/c5b17e73b9ec733e9d9698bd9a038c1bd19a9d74.jpg"
         },
         {
-          "name": "Peak Physical Strength",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/5789e9de2d292b9879077751ccc2a49144fdf3b3.jpg"
+          "name": "Machine Learning",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/cc33bfaabadffb48a22fd4910190d026a76eb284.jpg"
         },
         {
-          "name": "Ultimate Healing Gourd",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/923bc3ee8b204785cde4f5e28b659d92e62be97e.jpg"
+          "name": "Apex First Year",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/a0637769c57a5531ee4a179baefed16b1c6044bb.jpg"
         },
         {
-          "name": "Immortal Severance",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/4185b74c93880d4a7f4cb2cbf5da43a6d5fb78c2.jpg"
+          "name": "Stop, Drop, and Solve!",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1812090/b689520dfe698d74f7cbb4d3790a61d86cb7dcad.jpg"
         }
       ]
     },
     "release_date": {
       "coming_soon": false,
-      "date": "21 Mar, 2019"
+      "date": "13 Jul, 2022"
     },
     "support_info": {
-      "url": "https://support.activision.com/",
+      "url": "",
+      "email": "support@coincrew.games"
+    },
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/page_bg_generated_v6b.jpg?t=1680232484",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/page.bg.jpg?t=1680232484",
+    "content_descriptors": {
+      "ids": [],
+      "notes": null
+    }
+  },
+  {
+    "type": "game",
+    "name": "Tetris® Effect: Connected",
+    "steam_appid": 1003590,
+    "required_age": 0,
+    "is_free": false,
+    "controller_support": "full",
+    "dlc": [
+      1723660,
+      1766880
+    ],
+    "detailed_description": "<h1>Join Us On Discord</h1><p><a href=\"https://steamcommunity.com/linkfilter/?url=http://discord.gg/enhance\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/steam_discord_assets_TEC_600.png?t=1683245216\" /></a></p><br><h1>About the Game</h1><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_pharoah_code-02.gif?t=1683245216\" /><br><br>Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or felt it before—an incredibly addictive, unique, and breathtakingly gorgeous reinvention of one of the most popular puzzle games of all time, from the people who brought you the award-winning Rez Infinite and legendary puzzle game Lumines.<br><br>Music, backgrounds, sounds, special effects—everything, down to the Tetriminos themselves—pulse, dance, shimmer, and explode in perfect sync with how you're playing, making any of the game's 30+ stages and 10+ modes something you'll want to experience over and over again.<br><br>Plus cross-platform multiplayer modes for competitive and cooperative play!<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_deep.gif?t=1683245216\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_stratosphere.gif?t=1683245216\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> An exhilarating single-player experience full of surprises.<br>Over 30 different stages, each with its own music, sound effects, graphical style and background that all evolve and change as you play through them.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> The Zone is an all-new mechanic designed just for Tetris Effect: Connected!<br>Includes the all-new “Zone” mechanic, where players can stop time (and Tetriminos falling) by entering “the Zone” and either get out of a sticky situation that could otherwise lead to “Game Over,” or rack up extra Line Clears for bonus rewards.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> Cross-platform multiplayer lets you play with players from all over the world!<br>Players on different platforms can easily join Friend Match rooms with the new Room ID feature.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_connected-04.gif?t=1683245216\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> A wide variety of competitive and co-op modes!<br>Among the new modes is &quot;CONNECTED,&quot; where three players can team up and literally connect their Tetris Matrices to fight against A.I.-controlled Bosses; &quot;Zone Battle,&quot; a one-on-one match of standard competitive Tetris, but with a twist: the time-stopping Zone mechanic; and &quot;Score Attack&quot; and &quot;Classic Score Attack,” two single-player versus modes where two players compete separately to see who can get the best score.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> Join in on the fun in Spectator mode!<br>Spectator mode is available in Friend Matches. A room can contain up to 8 total people. Spectators can use emotes during the match to liven up the competition.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> Tailored for Steam, capable of running at resolutions of 4K or more with an uncapped framerate (with Vsync disabled) and includes ultra-wide monitor support as well as other expanded game and graphical options not found in the console release for both 2D and VR play (including adjustable particle volume and size, texture filtering, and more).",
+    "about_the_game": "<img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_pharoah_code-02.gif?t=1683245216\" /><br><br>Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or felt it before—an incredibly addictive, unique, and breathtakingly gorgeous reinvention of one of the most popular puzzle games of all time, from the people who brought you the award-winning Rez Infinite and legendary puzzle game Lumines.<br><br>Music, backgrounds, sounds, special effects—everything, down to the Tetriminos themselves—pulse, dance, shimmer, and explode in perfect sync with how you're playing, making any of the game's 30+ stages and 10+ modes something you'll want to experience over and over again.<br><br>Plus cross-platform multiplayer modes for competitive and cooperative play!<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_deep.gif?t=1683245216\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_stratosphere.gif?t=1683245216\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> An exhilarating single-player experience full of surprises.<br>Over 30 different stages, each with its own music, sound effects, graphical style and background that all evolve and change as you play through them.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> The Zone is an all-new mechanic designed just for Tetris Effect: Connected!<br>Includes the all-new “Zone” mechanic, where players can stop time (and Tetriminos falling) by entering “the Zone” and either get out of a sticky situation that could otherwise lead to “Game Over,” or rack up extra Line Clears for bonus rewards.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> Cross-platform multiplayer lets you play with players from all over the world!<br>Players on different platforms can easily join Friend Match rooms with the new Room ID feature.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_connected-04.gif?t=1683245216\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> A wide variety of competitive and co-op modes!<br>Among the new modes is &quot;CONNECTED,&quot; where three players can team up and literally connect their Tetris Matrices to fight against A.I.-controlled Bosses; &quot;Zone Battle,&quot; a one-on-one match of standard competitive Tetris, but with a twist: the time-stopping Zone mechanic; and &quot;Score Attack&quot; and &quot;Classic Score Attack,” two single-player versus modes where two players compete separately to see who can get the best score.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> Join in on the fun in Spectator mode!<br>Spectator mode is available in Friend Matches. A room can contain up to 8 total people. Spectators can use emotes during the match to liven up the competition.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1683245216\" /> Tailored for Steam, capable of running at resolutions of 4K or more with an uncapped framerate (with Vsync disabled) and includes ultra-wide monitor support as well as other expanded game and graphical options not found in the console release for both 2D and VR play (including adjustable particle volume and size, texture filtering, and more).",
+    "short_description": "Tetris® Effect: Connected adds an all-new robust multiplayer expansion to the huge variety of addictive and innovative single-player modes that Tetris Effect is known for, with all-new co-op and competitive online and local multiplayer modes!",
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Japanese, Korean, Simplified Chinese, Thai, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/header.jpg?t=1683245216",
+    "website": "https://tetriseffect.game",
+    "pc_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel i3-4340<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GTX 750 Ti equivalent or greater<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>VR Support:</strong> SteamVR or Oculus PC<br></li><li><strong>Additional Notes:</strong> Minimum specs for non-VR mode</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel i5-4590 (required for VR)<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GTX 970 equivalent (required for VR)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>VR Support:</strong> SteamVR or Oculus PC</li></ul>"
+    },
+    "mac_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "linux_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "legal_notice": "Tetris ® & © 1985~2023 Tetris Holding. Tetris logos, Tetris theme song and Tetriminos are trademarks of Tetris Holding. The Tetris trade dress is owned by Tetris Holding. Licensed to The Tetris Company. Tetris Game Design by Alexey Pajitnov. All Rights Reserved. Tetris Effect produced and published by Enhance Experience, Inc. Developed by Resonair, Monstars Inc. and Stage Games. All rights reserved.",
+    "developers": [
+      "Monstars Inc.",
+      "Resonair",
+      "Stage Games"
+    ],
+    "publishers": [
+      "Enhance"
+    ],
+    "price_overview": {
+      "currency": "CAD",
+      "initial": 4549,
+      "final": 4549,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "CDN$ 45.49"
+    },
+    "packages": [
+      607271,
+      666762
+    ],
+    "package_groups": [
+      {
+        "name": "default",
+        "title": "Buy Tetris® Effect: Connected",
+        "description": "",
+        "selection_text": "Select a purchase option",
+        "save_text": "",
+        "display_type": 0,
+        "is_recurring_subscription": "false",
+        "subs": [
+          {
+            "packageid": 607271,
+            "percent_savings_text": " ",
+            "percent_savings": 0,
+            "option_text": "Tetris® Effect: Connected - CDN$ 45.49",
+            "option_description": "",
+            "can_get_free_license": "0",
+            "is_free_license": false,
+            "price_in_cents_with_discount": 4549
+          }
+        ]
+      },
+      {
+        "name": "subscriptions",
+        "title": "Buy Tetris® Effect: Connected Subscription Plan",
+        "description": "To be billed on a recurring basis.",
+        "selection_text": "Starting at CDN$ 45.49 / month",
+        "save_text": "",
+        "display_type": 0,
+        "is_recurring_subscription": "true",
+        "subs": [
+          {
+            "packageid": 666762,
+            "percent_savings_text": " ",
+            "percent_savings": 0,
+            "option_text": "CDN$ 45.49 / month",
+            "option_description": "<p class=\"game_purchase_subscription\">CDN$ 45.49 at checkout, auto-renewed every 1 month(s) at CDN$ 45.49.</p>",
+            "can_get_free_license": "0",
+            "is_free_license": false,
+            "price_in_cents_with_discount": 4549
+          }
+        ]
+      }
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": false,
+      "linux": false
+    },
+    "metacritic": {
+      "score": 93,
+      "url": "https://www.metacritic.com/game/pc/tetris-effect-connected?ftag=MCD-06-10aaa1f"
+    },
+    "categories": [
+      {
+        "id": 2,
+        "description": "Single-player"
+      },
+      {
+        "id": 1,
+        "description": "Multi-player"
+      },
+      {
+        "id": 49,
+        "description": "PvP"
+      },
+      {
+        "id": 36,
+        "description": "Online PvP"
+      },
+      {
+        "id": 37,
+        "description": "Shared/Split Screen PvP"
+      },
+      {
+        "id": 9,
+        "description": "Co-op"
+      },
+      {
+        "id": 38,
+        "description": "Online Co-op"
+      },
+      {
+        "id": 39,
+        "description": "Shared/Split Screen Co-op"
+      },
+      {
+        "id": 24,
+        "description": "Shared/Split Screen"
+      },
+      {
+        "id": 27,
+        "description": "Cross-Platform Multiplayer"
+      },
+      {
+        "id": 22,
+        "description": "Steam Achievements"
+      },
+      {
+        "id": 28,
+        "description": "Full controller support"
+      },
+      {
+        "id": 52,
+        "description": "Tracked Controller Support"
+      },
+      {
+        "id": 53,
+        "description": "VR Supported"
+      },
+      {
+        "id": 23,
+        "description": "Steam Cloud"
+      },
+      {
+        "id": 25,
+        "description": "Steam Leaderboards"
+      },
+      {
+        "id": 44,
+        "description": "Remote Play Together"
+      }
+    ],
+    "genres": [
+      {
+        "id": "4",
+        "description": "Casual"
+      },
+      {
+        "id": "23",
+        "description": "Indie"
+      }
+    ],
+    "screenshots": [
+      {
+        "id": 0,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_8ba09dc00d14f6a454c5bd62e0166cd56176841a.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_8ba09dc00d14f6a454c5bd62e0166cd56176841a.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 1,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_b0ea46ab638043942f74f165a8f75ecd4a6a4a11.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_b0ea46ab638043942f74f165a8f75ecd4a6a4a11.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 2,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_f0bf29b1f32dc996dc069981e4d8ec20f4de5604.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_f0bf29b1f32dc996dc069981e4d8ec20f4de5604.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 3,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_fae1b2cc73ee2fe88009624cc3aeb7d095fcddfb.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_fae1b2cc73ee2fe88009624cc3aeb7d095fcddfb.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 4,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_84450b142fa7680b267f00c90f5bdcfef92a6ecc.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_84450b142fa7680b267f00c90f5bdcfef92a6ecc.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 5,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_5b8b182a538c785e635797df65807228a71122e4.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_5b8b182a538c785e635797df65807228a71122e4.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 6,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_025c90bd17745b4b1301bd7afc78838bacb6045b.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_025c90bd17745b4b1301bd7afc78838bacb6045b.1920x1080.jpg?t=1683245216"
+      },
+      {
+        "id": 7,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_1f88ee71d3ff41e80ec92174d002142ced82d34a.600x338.jpg?t=1683245216",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_1f88ee71d3ff41e80ec92174d002142ced82d34a.1920x1080.jpg?t=1683245216"
+      }
+    ],
+    "movies": [
+      {
+        "id": 256847227,
+        "name": "Launch Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256847227/movie.293x165.jpg?t=1629258731",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie480_vp9.webm?t=1629258731",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie_max_vp9.webm?t=1629258731"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie480.mp4?t=1629258731",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie_max.mp4?t=1629258731"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256845173,
+        "name": "Pre-launch - Coming Aug 18 Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256845173/movie.293x165.jpg?t=1628053269",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie480_vp9.webm?t=1628053269",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie_max_vp9.webm?t=1628053269"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie480.mp4?t=1628053269",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie_max.mp4?t=1628053269"
+        },
+        "highlight": true
+      }
+    ],
+    "recommendations": {
+      "total": 4963
+    },
+    "achievements": {
+      "total": 43,
+      "highlighted": [
+        {
+          "name": "Certified Platinum",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/283fcd63bb1fb236c7261da5eaa7280ef8a035df.jpg"
+        },
+        {
+          "name": "Certified Apprentice",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/78b45ad7696aa054b91736474f87dde5ab55324f.jpg"
+        },
+        {
+          "name": "Certified Expert",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/0559be446a394867e165aaf335a5f055219fc3f1.jpg"
+        },
+        {
+          "name": "Certified Master",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/644dc07c1fdfe5c949328dc51b56f51fc939505e.jpg"
+        },
+        {
+          "name": "Certified Grand Master",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/8dc077fb207df05113b1277a6fb686f4f268c227.jpg"
+        },
+        {
+          "name": "Get In Line",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/3ecf343650df2d3d196b648078071519719e93f8.jpg"
+        },
+        {
+          "name": "Next In Line",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/69db4bee951cd0431c65383d7ff86503ef186197.jpg"
+        },
+        {
+          "name": "End of the Line",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/21a21451904ff1bfcbc68def95b340789caea014.jpg"
+        },
+        {
+          "name": "Spin Artist",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/60d1a7adc308f917be98ec6e8211cd0e79da103a.jpg"
+        },
+        {
+          "name": "Just Getting Started",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/781ef700a24a5f5235cad6b97a77c9e6058c23e8.jpg"
+        }
+      ]
+    },
+    "release_date": {
+      "coming_soon": false,
+      "date": "17 Aug, 2021"
+    },
+    "support_info": {
+      "url": "https://www.tetriseffect.game/support-faq/",
       "email": ""
     },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/814380/page_bg_generated_v6b.jpg?t=1678991267",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/814380/page.bg.jpg?t=1678991267",
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/page_bg_generated_v6b.jpg?t=1683245216",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/page_bg_generated.jpg?t=1683245216",
     "content_descriptors": {
-      "ids": [
-        2,
-        5
-      ],
+      "ids": [],
       "notes": null
     }
   },
@@ -479,7 +782,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 9305
+      "total": 9394
     },
     "achievements": {
       "total": 19,
@@ -536,6 +839,555 @@ export const steam = [
     },
     "background": "https://cdn.akamai.steamstatic.com/steam/apps/1390350/page_bg_generated_v6b.jpg?t=1664335930",
     "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1390350/page.bg.jpg?t=1664335930",
+    "content_descriptors": {
+      "ids": [],
+      "notes": null
+    }
+  },
+  {
+    "type": "game",
+    "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+    "steam_appid": 814380,
+    "required_age": 0,
+    "is_free": false,
+    "controller_support": "full",
+    "detailed_description": "This Game of the Year Edition now includes bonus content*:<br />\r\n<br />\r\n- Reflection and Gauntlet of Strength - new boss challenge modes<br />\r\n- Remnants - leave messages and recordings of your actions that other players can view and rate<br />\r\n- 3 unlockable cosmetic skins<br />\r\n<br />\r\nGame of the Year  - The Game Awards 2019<br />\r\nBest Action Game of 2019 - IGN<br />\r\nOver 50 awards and nominations<br />\r\n<br />\r\nCarve your own clever path to vengeance in the critically acclaimed adventure from developer FromSoftware, creators of the Dark Souls series.<br />\r\n<br />\r\nIn Sekiro™: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.<br />\r\n<br />\r\nExplore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.<br />\r\n<br />\r\nTake Revenge. Restore Your Honor. Kill Ingeniously.<br />\r\n<br />\r\n*Download required.<br />\r\n<br />\r\nInternet connection required for asynchronous Multiplayer.",
+    "about_the_game": "This Game of the Year Edition now includes bonus content*:<br />\r\n<br />\r\n- Reflection and Gauntlet of Strength - new boss challenge modes<br />\r\n- Remnants - leave messages and recordings of your actions that other players can view and rate<br />\r\n- 3 unlockable cosmetic skins<br />\r\n<br />\r\nGame of the Year  - The Game Awards 2019<br />\r\nBest Action Game of 2019 - IGN<br />\r\nOver 50 awards and nominations<br />\r\n<br />\r\nCarve your own clever path to vengeance in the critically acclaimed adventure from developer FromSoftware, creators of the Dark Souls series.<br />\r\n<br />\r\nIn Sekiro™: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.<br />\r\n<br />\r\nExplore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.<br />\r\n<br />\r\nTake Revenge. Restore Your Honor. Kill Ingeniously.<br />\r\n<br />\r\n*Download required.<br />\r\n<br />\r\nInternet connection required for asynchronous Multiplayer.",
+    "short_description": "Game of the Year - The Game Awards 2019 Best Action Game of 2019 - IGN Carve your own clever path to vengeance in the award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously.",
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean, Polish, Russian, Simplified Chinese, Thai, Traditional Chinese, Portuguese - Brazil<br><strong>*</strong>languages with full audio support",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg?t=1678991267",
+    "website": "http://www.sekirothegame.com/",
+    "pc_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel Core i3-2100 | AMD FX-6300<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 760 | AMD Radeon HD 7950<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 25 GB available space<br></li><li><strong>Sound Card:</strong> DirectX 11 Compatible</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel Core i5-2500K | AMD Ryzen 5 1400<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 970 | AMD Radeon RX 570<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 25 GB available space<br></li><li><strong>Sound Card:</strong> DirectX 11 Compatible</li></ul>"
+    },
+    "mac_requirements": [],
+    "linux_requirements": [],
+    "legal_notice": "©2019-2020 FromSoftware, Inc. All rights reserved. Published and distributed by Activision. ACTIVISION is a trademark of Activision Publishing Inc. All other trademarks and trade names are the properties of their respective owners.<br />\r\n<br />\r\nDark Souls is a trademark of BANDAI NAMCO Entertainment Inc. Bandai Namco is not the publisher of SEKIRO: SHADOWS DIE TWICE. Activision has no affiliation with Dark Souls.",
+    "developers": [
+      "FromSoftware"
+    ],
+    "publishers": [
+      "Activision (Excluding Japan and Asia)",
+      "FromSoftware (Japan)",
+      "方块游戏 (Asia)"
+    ],
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 5980000,
+      "final": 5980000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 59,800"
+    },
+    "packages": [
+      350085
+    ],
+    "package_groups": [
+      {
+        "name": "default",
+        "title": "Buy Sekiro™: Shadows Die Twice - GOTY Edition",
+        "description": "",
+        "selection_text": "Select a purchase option",
+        "save_text": "",
+        "display_type": 0,
+        "is_recurring_subscription": "false",
+        "subs": [
+          {
+            "packageid": 350085,
+            "percent_savings_text": " ",
+            "percent_savings": 0,
+            "option_text": "Sekiro: Shadows Die Twice - ₩ 59,800",
+            "option_description": "",
+            "can_get_free_license": "0",
+            "is_free_license": false,
+            "price_in_cents_with_discount": 5980000
+          }
+        ]
+      }
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": false,
+      "linux": false
+    },
+    "metacritic": {
+      "score": 88,
+      "url": "https://www.metacritic.com/game/pc/sekiro-shadows-die-twice?ftag=MCD-06-10aaa1f"
+    },
+    "categories": [
+      {
+        "id": 2,
+        "description": "Single-player"
+      },
+      {
+        "id": 22,
+        "description": "Steam Achievements"
+      },
+      {
+        "id": 28,
+        "description": "Full controller support"
+      },
+      {
+        "id": 29,
+        "description": "Steam Trading Cards"
+      },
+      {
+        "id": 23,
+        "description": "Steam Cloud"
+      },
+      {
+        "id": 42,
+        "description": "Remote Play on Tablet"
+      },
+      {
+        "id": 43,
+        "description": "Remote Play on TV"
+      }
+    ],
+    "genres": [
+      {
+        "id": "1",
+        "description": "Action"
+      },
+      {
+        "id": "25",
+        "description": "Adventure"
+      }
+    ],
+    "screenshots": [
+      {
+        "id": 0,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_0f7b0f8ed9ffc49aba26f9328caa9a1d59ad60f0.600x338.jpg?t=1678991267",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_0f7b0f8ed9ffc49aba26f9328caa9a1d59ad60f0.1920x1080.jpg?t=1678991267"
+      },
+      {
+        "id": 1,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_2685dd844a2a523b6c7ec207d46a538db6a908cd.600x338.jpg?t=1678991267",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_2685dd844a2a523b6c7ec207d46a538db6a908cd.1920x1080.jpg?t=1678991267"
+      },
+      {
+        "id": 2,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_15f0e9982621aed44900215ad283811af0779b1d.600x338.jpg?t=1678991267",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_15f0e9982621aed44900215ad283811af0779b1d.1920x1080.jpg?t=1678991267"
+      },
+      {
+        "id": 3,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_1e6f5540866a5564d65df915c22fe1e57e336a6f.600x338.jpg?t=1678991267",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_1e6f5540866a5564d65df915c22fe1e57e336a6f.1920x1080.jpg?t=1678991267"
+      },
+      {
+        "id": 4,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_3d6b38c382c0eafb02dc90d22f33fd292e4e5cf3.600x338.jpg?t=1678991267",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_3d6b38c382c0eafb02dc90d22f33fd292e4e5cf3.1920x1080.jpg?t=1678991267"
+      }
+    ],
+    "movies": [
+      {
+        "id": 256806899,
+        "name": "Sekiro™: Shadows Die Twice - Game of the Year Edition",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256806899/movie.293x165.jpg?t=1603837979",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie480_vp9.webm?t=1603837979",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie_max_vp9.webm?t=1603837979"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie480.mp4?t=1603837979",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256806899/movie_max.mp4?t=1603837979"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256770769,
+        "name": "Sekiro: Shadows Die Twice - Accolades Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256770769/movie.293x165.jpg?t=1576898083",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie480.webm?t=1576898083",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie_max.webm?t=1576898083"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie480.mp4?t=1576898083",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256770769/movie_max.mp4?t=1576898083"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256745700,
+        "name": "Sekiro: Shadows Die Twice - Gameplay 101 Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256745700/movie.293x165.jpg?t=1553549458",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie480.webm?t=1553549458",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie_max.webm?t=1553549458"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie480.mp4?t=1553549458",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745700/movie_max.mp4?t=1553549458"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256745081,
+        "name": "Sekiro: Shadows Die Twice - Launch Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256745081/movie.293x165.jpg?t=1553549470",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie480.webm?t=1553549470",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie_max.webm?t=1553549470"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie480.mp4?t=1553549470",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256745081/movie_max.mp4?t=1553549470"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256742445,
+        "name": "Sekiro: Shadows Die Twice - Story Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256742445/movie.293x165.jpg?t=1553550374",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie480.webm?t=1553550374",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie_max.webm?t=1553550374"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie480.mp4?t=1553550374",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie_max.mp4?t=1553550374"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256729567,
+        "name": "Sekiro: Shadows Die Twice - TGS Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256729567/movie.293x165.jpg?t=1553549495",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie480.webm?t=1553549495",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie_max.webm?t=1553549495"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie480.mp4?t=1553549495",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256729567/movie_max.mp4?t=1553549495"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256724898,
+        "name": "Sekiro: Shadows Die Twice - Reveal Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256724898/movie.293x165.jpg?t=1553099552",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie480.webm?t=1553099552",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie_max.webm?t=1553099552"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie480.mp4?t=1553099552",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256724898/movie_max.mp4?t=1553099552"
+        },
+        "highlight": true
+      }
+    ],
+    "recommendations": {
+      "total": 166350
+    },
+    "achievements": {
+      "total": 34,
+      "highlighted": [
+        {
+          "name": "Sekiro",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/5b4b096ea3b03a5d9cb1367e53d85dd4a4300dc8.jpg"
+        },
+        {
+          "name": "Man Without Equal",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/99a3f76eb4e25f821826575f361a0b8ec4de718e.jpg"
+        },
+        {
+          "name": "Ashina Traveler",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/3ff93d2915cfc175d391eeebc1780c68d0054b98.jpg"
+        },
+        {
+          "name": "Master of the Prosthetic",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/183b69eaa3f8c8901a41c05959c9793f51e7d6dd.jpg"
+        },
+        {
+          "name": "Height of Technique",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/81b2ef0f9c0a93ca1bcfc2ef3ad67a7001daaa2a.jpg"
+        },
+        {
+          "name": "All Prosthetic Tools",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/e34d6e8365208a04c04ad63977c1ce39a26afe64.jpg"
+        },
+        {
+          "name": "All Ninjutsu Techniques",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/b8ca679e7fc6df38774f5c34263b15ace8962989.jpg"
+        },
+        {
+          "name": "Peak Physical Strength",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/5789e9de2d292b9879077751ccc2a49144fdf3b3.jpg"
+        },
+        {
+          "name": "Ultimate Healing Gourd",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/923bc3ee8b204785cde4f5e28b659d92e62be97e.jpg"
+        },
+        {
+          "name": "Immortal Severance",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/814380/4185b74c93880d4a7f4cb2cbf5da43a6d5fb78c2.jpg"
+        }
+      ]
+    },
+    "release_date": {
+      "coming_soon": false,
+      "date": "21 Mar, 2019"
+    },
+    "support_info": {
+      "url": "https://support.activision.com/",
+      "email": ""
+    },
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/814380/page_bg_generated_v6b.jpg?t=1678991267",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/814380/page.bg.jpg?t=1678991267",
+    "content_descriptors": {
+      "ids": [
+        2,
+        5
+      ],
+      "notes": null
+    }
+  },
+  {
+    "type": "game",
+    "name": "Vampire Survivors",
+    "steam_appid": 1794680,
+    "required_age": 0,
+    "is_free": false,
+    "controller_support": "full",
+    "dlc": [
+      2313550,
+      2230760,
+      2169090
+    ],
+    "detailed_description": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
+    "about_the_game": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
+    "short_description": "Mow down thousands of night creatures and survive until dawn! Vampire Survivors is a gothic horror casual game with rogue-lite elements, where your choices can allow you to quickly snowball against the hundreds of monsters that get thrown at you.",
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Turkish",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/header.jpg?t=1681394120",
+    "website": null,
+    "pc_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit<br></li><li><strong>Processor:</strong> Intel Pentium 4 processor or later that's SSE2 capable<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Storage:</strong> 400 MB available space</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "mac_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "linux_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "developers": [
+      "poncle"
+    ],
+    "publishers": [
+      "poncle"
+    ],
+    "price_overview": {
+      "currency": "CAD",
+      "initial": 599,
+      "final": 599,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "CDN$ 5.99"
+    },
+    "packages": [
+      644402
+    ],
+    "package_groups": [
+      {
+        "name": "default",
+        "title": "Buy Vampire Survivors",
+        "description": "",
+        "selection_text": "Select a purchase option",
+        "save_text": "",
+        "display_type": 0,
+        "is_recurring_subscription": "false",
+        "subs": [
+          {
+            "packageid": 644402,
+            "percent_savings_text": " ",
+            "percent_savings": 0,
+            "option_text": "Vampire Survivors - CDN$ 5.99",
+            "option_description": "",
+            "can_get_free_license": "0",
+            "is_free_license": false,
+            "price_in_cents_with_discount": 599
+          }
+        ]
+      }
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": true,
+      "linux": false
+    },
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/vampire-survivors?ftag=MCD-06-10aaa1f"
+    },
+    "categories": [
+      {
+        "id": 2,
+        "description": "Single-player"
+      },
+      {
+        "id": 22,
+        "description": "Steam Achievements"
+      },
+      {
+        "id": 28,
+        "description": "Full controller support"
+      },
+      {
+        "id": 23,
+        "description": "Steam Cloud"
+      }
+    ],
+    "genres": [
+      {
+        "id": "1",
+        "description": "Action"
+      },
+      {
+        "id": "4",
+        "description": "Casual"
+      },
+      {
+        "id": "23",
+        "description": "Indie"
+      },
+      {
+        "id": "3",
+        "description": "RPG"
+      }
+    ],
+    "screenshots": [
+      {
+        "id": 0,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6c55afe36be2a7784bf18cb9b3218321ae2d10e5.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6c55afe36be2a7784bf18cb9b3218321ae2d10e5.1920x1080.jpg?t=1681394120"
+      },
+      {
+        "id": 1,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6105ad3d6af52593c31d915bf39e91512611ea8e.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6105ad3d6af52593c31d915bf39e91512611ea8e.1920x1080.jpg?t=1681394120"
+      },
+      {
+        "id": 2,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_054159adc52856d066d48bda02866da524c43439.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_054159adc52856d066d48bda02866da524c43439.1920x1080.jpg?t=1681394120"
+      },
+      {
+        "id": 3,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_01ec75b8055dbaa6895a0be127508ff569917a1e.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_01ec75b8055dbaa6895a0be127508ff569917a1e.1920x1080.jpg?t=1681394120"
+      },
+      {
+        "id": 4,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bf22b444801d96026863fcf284f9f93441354035.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bf22b444801d96026863fcf284f9f93441354035.1920x1080.jpg?t=1681394120"
+      },
+      {
+        "id": 5,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bea7831ae00c044d9cd31c3f8e0fee766b4fe1c6.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bea7831ae00c044d9cd31c3f8e0fee766b4fe1c6.1920x1080.jpg?t=1681394120"
+      },
+      {
+        "id": 6,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_3e82b3bdc06e40b15252490c25a9afe09a086fdf.600x338.jpg?t=1681394120",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_3e82b3bdc06e40b15252490c25a9afe09a086fdf.1920x1080.jpg?t=1681394120"
+      }
+    ],
+    "movies": [
+      {
+        "id": 256911886,
+        "name": "Launch Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256911886/movie.293x165.jpg?t=1666779005",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie480_vp9.webm?t=1666779005",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie_max_vp9.webm?t=1666779005"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie480.mp4?t=1666779005",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie_max.mp4?t=1666779005"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256858285,
+        "name": "Early Access",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256858285/movie.293x165.jpg?t=1638003854",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie480_vp9.webm?t=1638003854",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie_max_vp9.webm?t=1638003854"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie480.mp4?t=1638003854",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie_max.mp4?t=1638003854"
+        },
+        "highlight": true
+      }
+    ],
+    "recommendations": {
+      "total": 185804
+    },
+    "achievements": {
+      "total": 184,
+      "highlighted": [
+        {
+          "name": "Wings",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/e3a90bb8e2cb0c4a81199ed0d174b11a01a426fe.jpg"
+        },
+        {
+          "name": "Crown",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/f16b40537a1b8417c00c1b92fd1ae0347b5adb2e.jpg"
+        },
+        {
+          "name": "Hollow Heart",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/219e279c2fe7559d13aae15ac6117b56ed5a8eb9.jpg"
+        },
+        {
+          "name": "Runetracer",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/7b8919c85b4340e77d4f6b18b16c4c01c22347a3.jpg"
+        },
+        {
+          "name": "Peachone",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/89cf55e47ee17d08050ee298a495f176addc362c.jpg"
+        },
+        {
+          "name": "Arca",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/cbad0ceb81d394d62b3e7fdf1153914426918c07.jpg"
+        },
+        {
+          "name": "Bracer",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/577e617702cbb9b5e8c85acf30b2f87f36090985.jpg"
+        },
+        {
+          "name": "Candelabrador",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/c798092d39e7200f19323ee67d354c20355a0b05.jpg"
+        },
+        {
+          "name": "Porta",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/7f6b5da4c56f1f3240a139408f480ac3c94e3b2b.jpg"
+        },
+        {
+          "name": "Duplicator",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/aab613221e2366c0b529cf5d28766e99c286dcfb.jpg"
+        }
+      ]
+    },
+    "release_date": {
+      "coming_soon": false,
+      "date": "20 Oct, 2022"
+    },
+    "support_info": {
+      "url": "",
+      "email": "support@poncle.co.uk"
+    },
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/page_bg_generated_v6b.jpg?t=1681394120",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/page.bg.jpg?t=1681394120",
     "content_descriptors": {
       "ids": [],
       "notes": null
@@ -801,7 +1653,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 296
+      "total": 299
     },
     "achievements": {
       "total": 22,
@@ -865,569 +1717,6 @@ export const steam = [
   },
   {
     "type": "game",
-    "name": "Vampire Survivors",
-    "steam_appid": 1794680,
-    "required_age": 0,
-    "is_free": false,
-    "controller_support": "full",
-    "dlc": [
-      2313550,
-      2230760,
-      2169090
-    ],
-    "detailed_description": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
-    "about_the_game": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
-    "short_description": "Mow down thousands of night creatures and survive until dawn! Vampire Survivors is a gothic horror casual game with rogue-lite elements, where your choices can allow you to quickly snowball against the hundreds of monsters that get thrown at you.",
-    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Turkish",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/header.jpg?t=1681394120",
-    "website": null,
-    "pc_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit<br></li><li><strong>Processor:</strong> Intel Pentium 4 processor or later that's SSE2 capable<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Storage:</strong> 400 MB available space</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "mac_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "linux_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "developers": [
-      "poncle"
-    ],
-    "publishers": [
-      "poncle"
-    ],
-    "price_overview": {
-      "currency": "CAD",
-      "initial": 599,
-      "final": 479,
-      "discount_percent": 20,
-      "initial_formatted": "CDN$ 5.99",
-      "final_formatted": "CDN$ 4.79"
-    },
-    "packages": [
-      644402
-    ],
-    "package_groups": [
-      {
-        "name": "default",
-        "title": "Buy Vampire Survivors",
-        "description": "",
-        "selection_text": "Select a purchase option",
-        "save_text": "",
-        "display_type": 0,
-        "is_recurring_subscription": "false",
-        "subs": [
-          {
-            "packageid": 644402,
-            "percent_savings_text": "-20% ",
-            "percent_savings": 0,
-            "option_text": "Vampire Survivors - <span class=\"discount_original_price\">CDN$ 5.99</span> CDN$ 4.79",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 479
-          }
-        ]
-      }
-    ],
-    "platforms": {
-      "windows": true,
-      "mac": true,
-      "linux": false
-    },
-    "metacritic": {
-      "score": 87,
-      "url": "https://www.metacritic.com/game/pc/vampire-survivors?ftag=MCD-06-10aaa1f"
-    },
-    "categories": [
-      {
-        "id": 2,
-        "description": "Single-player"
-      },
-      {
-        "id": 22,
-        "description": "Steam Achievements"
-      },
-      {
-        "id": 28,
-        "description": "Full controller support"
-      },
-      {
-        "id": 23,
-        "description": "Steam Cloud"
-      }
-    ],
-    "genres": [
-      {
-        "id": "1",
-        "description": "Action"
-      },
-      {
-        "id": "4",
-        "description": "Casual"
-      },
-      {
-        "id": "23",
-        "description": "Indie"
-      },
-      {
-        "id": "3",
-        "description": "RPG"
-      }
-    ],
-    "screenshots": [
-      {
-        "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6c55afe36be2a7784bf18cb9b3218321ae2d10e5.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6c55afe36be2a7784bf18cb9b3218321ae2d10e5.1920x1080.jpg?t=1681394120"
-      },
-      {
-        "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6105ad3d6af52593c31d915bf39e91512611ea8e.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_6105ad3d6af52593c31d915bf39e91512611ea8e.1920x1080.jpg?t=1681394120"
-      },
-      {
-        "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_054159adc52856d066d48bda02866da524c43439.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_054159adc52856d066d48bda02866da524c43439.1920x1080.jpg?t=1681394120"
-      },
-      {
-        "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_01ec75b8055dbaa6895a0be127508ff569917a1e.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_01ec75b8055dbaa6895a0be127508ff569917a1e.1920x1080.jpg?t=1681394120"
-      },
-      {
-        "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bf22b444801d96026863fcf284f9f93441354035.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bf22b444801d96026863fcf284f9f93441354035.1920x1080.jpg?t=1681394120"
-      },
-      {
-        "id": 5,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bea7831ae00c044d9cd31c3f8e0fee766b4fe1c6.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_bea7831ae00c044d9cd31c3f8e0fee766b4fe1c6.1920x1080.jpg?t=1681394120"
-      },
-      {
-        "id": 6,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_3e82b3bdc06e40b15252490c25a9afe09a086fdf.600x338.jpg?t=1681394120",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/ss_3e82b3bdc06e40b15252490c25a9afe09a086fdf.1920x1080.jpg?t=1681394120"
-      }
-    ],
-    "movies": [
-      {
-        "id": 256911886,
-        "name": "Launch Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256911886/movie.293x165.jpg?t=1666779005",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie480_vp9.webm?t=1666779005",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie_max_vp9.webm?t=1666779005"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie480.mp4?t=1666779005",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256911886/movie_max.mp4?t=1666779005"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256858285,
-        "name": "Early Access",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256858285/movie.293x165.jpg?t=1638003854",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie480_vp9.webm?t=1638003854",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie_max_vp9.webm?t=1638003854"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie480.mp4?t=1638003854",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256858285/movie_max.mp4?t=1638003854"
-        },
-        "highlight": true
-      }
-    ],
-    "recommendations": {
-      "total": 184715
-    },
-    "achievements": {
-      "total": 184,
-      "highlighted": [
-        {
-          "name": "Wings",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/e3a90bb8e2cb0c4a81199ed0d174b11a01a426fe.jpg"
-        },
-        {
-          "name": "Crown",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/f16b40537a1b8417c00c1b92fd1ae0347b5adb2e.jpg"
-        },
-        {
-          "name": "Hollow Heart",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/219e279c2fe7559d13aae15ac6117b56ed5a8eb9.jpg"
-        },
-        {
-          "name": "Runetracer",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/7b8919c85b4340e77d4f6b18b16c4c01c22347a3.jpg"
-        },
-        {
-          "name": "Peachone",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/89cf55e47ee17d08050ee298a495f176addc362c.jpg"
-        },
-        {
-          "name": "Arca",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/cbad0ceb81d394d62b3e7fdf1153914426918c07.jpg"
-        },
-        {
-          "name": "Bracer",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/577e617702cbb9b5e8c85acf30b2f87f36090985.jpg"
-        },
-        {
-          "name": "Candelabrador",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/c798092d39e7200f19323ee67d354c20355a0b05.jpg"
-        },
-        {
-          "name": "Porta",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/7f6b5da4c56f1f3240a139408f480ac3c94e3b2b.jpg"
-        },
-        {
-          "name": "Duplicator",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1794680/aab613221e2366c0b529cf5d28766e99c286dcfb.jpg"
-        }
-      ]
-    },
-    "release_date": {
-      "coming_soon": false,
-      "date": "20 Oct, 2022"
-    },
-    "support_info": {
-      "url": "",
-      "email": "support@poncle.co.uk"
-    },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/page_bg_generated_v6b.jpg?t=1681394120",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/page.bg.jpg?t=1681394120",
-    "content_descriptors": {
-      "ids": [],
-      "notes": null
-    }
-  },
-  {
-    "type": "game",
-    "name": "Tetris® Effect: Connected",
-    "steam_appid": 1003590,
-    "required_age": 0,
-    "is_free": false,
-    "controller_support": "full",
-    "dlc": [
-      1723660,
-      1766880
-    ],
-    "detailed_description": "<h1>Join Us On Discord</h1><p><a href=\"https://steamcommunity.com/linkfilter/?url=http://discord.gg/enhance\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/steam_discord_assets_TEC_600.png?t=1676505146\" /></a></p><br><h1>About the Game</h1><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_pharoah_code-02.gif?t=1676505146\" /><br><br>Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or felt it before—an incredibly addictive, unique, and breathtakingly gorgeous reinvention of one of the most popular puzzle games of all time, from the people who brought you the award-winning Rez Infinite and legendary puzzle game Lumines.<br><br>Music, backgrounds, sounds, special effects—everything, down to the Tetriminos themselves—pulse, dance, shimmer, and explode in perfect sync with how you're playing, making any of the game's 30+ stages and 10+ modes something you'll want to experience over and over again.<br><br>Plus cross-platform multiplayer modes for competitive and cooperative play!<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_deep.gif?t=1676505146\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_stratosphere.gif?t=1676505146\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> An exhilarating single-player experience full of surprises.<br>Over 30 different stages, each with its own music, sound effects, graphical style and background that all evolve and change as you play through them.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> The Zone is an all-new mechanic designed just for Tetris Effect: Connected!<br>Includes the all-new “Zone” mechanic, where players can stop time (and Tetriminos falling) by entering “the Zone” and either get out of a sticky situation that could otherwise lead to “Game Over,” or rack up extra Line Clears for bonus rewards.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> Cross-platform multiplayer lets you play with players from all over the world!<br>Players on different platforms can easily join Friend Match rooms with the new Room ID feature.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_connected-04.gif?t=1676505146\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> A wide variety of competitive and co-op modes!<br>Among the new modes is &quot;CONNECTED,&quot; where three players can team up and literally connect their Tetris Matrices to fight against A.I.-controlled Bosses; &quot;Zone Battle,&quot; a one-on-one match of standard competitive Tetris, but with a twist: the time-stopping Zone mechanic; and &quot;Score Attack&quot; and &quot;Classic Score Attack,” two single-player versus modes where two players compete separately to see who can get the best score.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> Join in on the fun in Spectator mode!<br>Spectator mode is available in Friend Matches. A room can contain up to 8 total people. Spectators can use emotes during the match to liven up the competition.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> Tailored for Steam, capable of running at resolutions of 4K or more with an uncapped framerate (with Vsync disabled) and includes ultra-wide monitor support as well as other expanded game and graphical options not found in the console release for both 2D and VR play (including adjustable particle volume and size, texture filtering, and more).",
-    "about_the_game": "<img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_pharoah_code-02.gif?t=1676505146\" /><br><br>Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or felt it before—an incredibly addictive, unique, and breathtakingly gorgeous reinvention of one of the most popular puzzle games of all time, from the people who brought you the award-winning Rez Infinite and legendary puzzle game Lumines.<br><br>Music, backgrounds, sounds, special effects—everything, down to the Tetriminos themselves—pulse, dance, shimmer, and explode in perfect sync with how you're playing, making any of the game's 30+ stages and 10+ modes something you'll want to experience over and over again.<br><br>Plus cross-platform multiplayer modes for competitive and cooperative play!<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_deep.gif?t=1676505146\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_stratosphere.gif?t=1676505146\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> An exhilarating single-player experience full of surprises.<br>Over 30 different stages, each with its own music, sound effects, graphical style and background that all evolve and change as you play through them.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> The Zone is an all-new mechanic designed just for Tetris Effect: Connected!<br>Includes the all-new “Zone” mechanic, where players can stop time (and Tetriminos falling) by entering “the Zone” and either get out of a sticky situation that could otherwise lead to “Game Over,” or rack up extra Line Clears for bonus rewards.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> Cross-platform multiplayer lets you play with players from all over the world!<br>Players on different platforms can easily join Friend Match rooms with the new Room ID feature.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/tec_connected-04.gif?t=1676505146\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> A wide variety of competitive and co-op modes!<br>Among the new modes is &quot;CONNECTED,&quot; where three players can team up and literally connect their Tetris Matrices to fight against A.I.-controlled Bosses; &quot;Zone Battle,&quot; a one-on-one match of standard competitive Tetris, but with a twist: the time-stopping Zone mechanic; and &quot;Score Attack&quot; and &quot;Classic Score Attack,” two single-player versus modes where two players compete separately to see who can get the best score.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> Join in on the fun in Spectator mode!<br>Spectator mode is available in Friend Matches. A room can contain up to 8 total people. Spectators can use emotes during the match to liven up the competition.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1003590/extras/TetrisEffect_gameicon_tetrimino_20x14px.png?t=1676505146\" /> Tailored for Steam, capable of running at resolutions of 4K or more with an uncapped framerate (with Vsync disabled) and includes ultra-wide monitor support as well as other expanded game and graphical options not found in the console release for both 2D and VR play (including adjustable particle volume and size, texture filtering, and more).",
-    "short_description": "Tetris® Effect: Connected adds an all-new robust multiplayer expansion to the huge variety of addictive and innovative single-player modes that Tetris Effect is known for, with all-new co-op and competitive online and local multiplayer modes!",
-    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Japanese, Korean, Simplified Chinese, Thai, Traditional Chinese<br><strong>*</strong>languages with full audio support",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/header.jpg?t=1676505146",
-    "website": "https://tetriseffect.game",
-    "pc_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel i3-4340<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GTX 750 Ti equivalent or greater<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>VR Support:</strong> SteamVR or Oculus PC</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel i5-4590 (required for VR)<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GTX 970 equivalent (required for VR)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 5 GB available space</li></ul>"
-    },
-    "mac_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "linux_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "legal_notice": "Tetris ® & © 1985~2023 Tetris Holding. Tetris logos, Tetris theme song and Tetriminos are trademarks of Tetris Holding. The Tetris trade dress is owned by Tetris Holding. Licensed to The Tetris Company. Tetris Game Design by Alexey Pajitnov. All Rights Reserved. Tetris Effect produced and published by Enhance Experience, Inc. Developed by Resonair, Monstars Inc. and Stage Games. All rights reserved.",
-    "developers": [
-      "Monstars Inc.",
-      "Resonair",
-      "Stage Games"
-    ],
-    "publishers": [
-      "Enhance"
-    ],
-    "price_overview": {
-      "currency": "CAD",
-      "initial": 4549,
-      "final": 2274,
-      "discount_percent": 50,
-      "initial_formatted": "CDN$ 45.49",
-      "final_formatted": "CDN$ 22.74"
-    },
-    "packages": [
-      607271,
-      666762
-    ],
-    "package_groups": [
-      {
-        "name": "default",
-        "title": "Buy Tetris® Effect: Connected",
-        "description": "",
-        "selection_text": "Select a purchase option",
-        "save_text": "",
-        "display_type": 0,
-        "is_recurring_subscription": "false",
-        "subs": [
-          {
-            "packageid": 607271,
-            "percent_savings_text": "-50% ",
-            "percent_savings": 0,
-            "option_text": "Tetris® Effect: Connected - <span class=\"discount_original_price\">CDN$ 45.49</span> CDN$ 22.74",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 2274
-          }
-        ]
-      },
-      {
-        "name": "subscriptions",
-        "title": "Buy Tetris® Effect: Connected Subscription Plan",
-        "description": "To be billed on a recurring basis.",
-        "selection_text": "Starting at CDN$ 45.49 / month",
-        "save_text": "",
-        "display_type": 0,
-        "is_recurring_subscription": "true",
-        "subs": [
-          {
-            "packageid": 666762,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "CDN$ 45.49 / month",
-            "option_description": "<p class=\"game_purchase_subscription\">CDN$ 45.49 at checkout, auto-renewed every 1 month(s) at CDN$ 45.49.</p>",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 4549
-          }
-        ]
-      }
-    ],
-    "platforms": {
-      "windows": true,
-      "mac": false,
-      "linux": false
-    },
-    "metacritic": {
-      "score": 93,
-      "url": "https://www.metacritic.com/game/pc/tetris-effect-connected?ftag=MCD-06-10aaa1f"
-    },
-    "categories": [
-      {
-        "id": 2,
-        "description": "Single-player"
-      },
-      {
-        "id": 1,
-        "description": "Multi-player"
-      },
-      {
-        "id": 49,
-        "description": "PvP"
-      },
-      {
-        "id": 36,
-        "description": "Online PvP"
-      },
-      {
-        "id": 37,
-        "description": "Shared/Split Screen PvP"
-      },
-      {
-        "id": 9,
-        "description": "Co-op"
-      },
-      {
-        "id": 38,
-        "description": "Online Co-op"
-      },
-      {
-        "id": 39,
-        "description": "Shared/Split Screen Co-op"
-      },
-      {
-        "id": 24,
-        "description": "Shared/Split Screen"
-      },
-      {
-        "id": 27,
-        "description": "Cross-Platform Multiplayer"
-      },
-      {
-        "id": 22,
-        "description": "Steam Achievements"
-      },
-      {
-        "id": 28,
-        "description": "Full controller support"
-      },
-      {
-        "id": 52,
-        "description": "Tracked Controller Support"
-      },
-      {
-        "id": 53,
-        "description": "VR Supported"
-      },
-      {
-        "id": 23,
-        "description": "Steam Cloud"
-      },
-      {
-        "id": 25,
-        "description": "Steam Leaderboards"
-      },
-      {
-        "id": 44,
-        "description": "Remote Play Together"
-      }
-    ],
-    "genres": [
-      {
-        "id": "4",
-        "description": "Casual"
-      },
-      {
-        "id": "23",
-        "description": "Indie"
-      }
-    ],
-    "screenshots": [
-      {
-        "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_8ba09dc00d14f6a454c5bd62e0166cd56176841a.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_8ba09dc00d14f6a454c5bd62e0166cd56176841a.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_b0ea46ab638043942f74f165a8f75ecd4a6a4a11.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_b0ea46ab638043942f74f165a8f75ecd4a6a4a11.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_f0bf29b1f32dc996dc069981e4d8ec20f4de5604.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_f0bf29b1f32dc996dc069981e4d8ec20f4de5604.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_fae1b2cc73ee2fe88009624cc3aeb7d095fcddfb.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_fae1b2cc73ee2fe88009624cc3aeb7d095fcddfb.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_84450b142fa7680b267f00c90f5bdcfef92a6ecc.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_84450b142fa7680b267f00c90f5bdcfef92a6ecc.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 5,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_5b8b182a538c785e635797df65807228a71122e4.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_5b8b182a538c785e635797df65807228a71122e4.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 6,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_025c90bd17745b4b1301bd7afc78838bacb6045b.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_025c90bd17745b4b1301bd7afc78838bacb6045b.1920x1080.jpg?t=1676505146"
-      },
-      {
-        "id": 7,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_1f88ee71d3ff41e80ec92174d002142ced82d34a.600x338.jpg?t=1676505146",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/ss_1f88ee71d3ff41e80ec92174d002142ced82d34a.1920x1080.jpg?t=1676505146"
-      }
-    ],
-    "movies": [
-      {
-        "id": 256847227,
-        "name": "Launch Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256847227/movie.293x165.jpg?t=1629258731",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie480_vp9.webm?t=1629258731",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie_max_vp9.webm?t=1629258731"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie480.mp4?t=1629258731",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256847227/movie_max.mp4?t=1629258731"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256845173,
-        "name": "Pre-launch - Coming Aug 18 Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256845173/movie.293x165.jpg?t=1628053269",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie480_vp9.webm?t=1628053269",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie_max_vp9.webm?t=1628053269"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie480.mp4?t=1628053269",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256845173/movie_max.mp4?t=1628053269"
-        },
-        "highlight": true
-      }
-    ],
-    "recommendations": {
-      "total": 4861
-    },
-    "achievements": {
-      "total": 43,
-      "highlighted": [
-        {
-          "name": "Certified Platinum",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/283fcd63bb1fb236c7261da5eaa7280ef8a035df.jpg"
-        },
-        {
-          "name": "Certified Apprentice",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/78b45ad7696aa054b91736474f87dde5ab55324f.jpg"
-        },
-        {
-          "name": "Certified Expert",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/0559be446a394867e165aaf335a5f055219fc3f1.jpg"
-        },
-        {
-          "name": "Certified Master",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/644dc07c1fdfe5c949328dc51b56f51fc939505e.jpg"
-        },
-        {
-          "name": "Certified Grand Master",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/8dc077fb207df05113b1277a6fb686f4f268c227.jpg"
-        },
-        {
-          "name": "Get In Line",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/3ecf343650df2d3d196b648078071519719e93f8.jpg"
-        },
-        {
-          "name": "Next In Line",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/69db4bee951cd0431c65383d7ff86503ef186197.jpg"
-        },
-        {
-          "name": "End of the Line",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/21a21451904ff1bfcbc68def95b340789caea014.jpg"
-        },
-        {
-          "name": "Spin Artist",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/60d1a7adc308f917be98ec6e8211cd0e79da103a.jpg"
-        },
-        {
-          "name": "Just Getting Started",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1003590/781ef700a24a5f5235cad6b97a77c9e6058c23e8.jpg"
-        }
-      ]
-    },
-    "release_date": {
-      "coming_soon": false,
-      "date": "17 Aug, 2021"
-    },
-    "support_info": {
-      "url": "https://www.tetriseffect.game/support-faq/",
-      "email": ""
-    },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/page_bg_generated_v6b.jpg?t=1676505146",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1003590/page_bg_generated.jpg?t=1676505146",
-    "content_descriptors": {
-      "ids": [],
-      "notes": null
-    }
-  },
-  {
-    "type": "game",
     "name": "LEGO® Bricktales",
     "steam_appid": 1898290,
     "required_age": 0,
@@ -1471,10 +1760,10 @@ export const steam = [
     "price_overview": {
       "currency": "CAD",
       "initial": 3399,
-      "final": 3399,
-      "discount_percent": 0,
-      "initial_formatted": "",
-      "final_formatted": "CDN$ 33.99"
+      "final": 2379,
+      "discount_percent": 30,
+      "initial_formatted": "CDN$ 33.99",
+      "final_formatted": "CDN$ 23.79"
     },
     "packages": [
       683700
@@ -1491,13 +1780,13 @@ export const steam = [
         "subs": [
           {
             "packageid": 683700,
-            "percent_savings_text": " ",
+            "percent_savings_text": "-30% ",
             "percent_savings": 0,
-            "option_text": "LEGO® Bricktales - CDN$ 33.99",
+            "option_text": "LEGO® Bricktales - <span class=\"discount_original_price\">CDN$ 33.99</span> CDN$ 23.79",
             "option_description": "",
             "can_get_free_license": "0",
             "is_free_license": false,
-            "price_in_cents_with_discount": 3399
+            "price_in_cents_with_discount": 2379
           }
         ]
       }
@@ -1660,7 +1949,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 467
+      "total": 474
     },
     "achievements": {
       "total": 21,
@@ -1732,11 +2021,11 @@ export const steam = [
     "dlc": [
       2021310
     ],
-    "detailed_description": "<strong>The Stanley Parable: Ultra Deluxe is a first person exploration game. It is an expanded re-imagining of the critically acclaimed, award winning indie game The Stanley Parable from 2013.</strong><br><br>When a simple-minded individual named Stanley discovers that the co-workers in his office have mysteriously vanished, he sets off to find answers.<br><br>You will play as Stanley, and you will not play as Stanley. You will make a choice, and you will have your choices taken from you. The game will end, the game will never end. Contradiction follows contradiction, the rules of how games should work are broken, then broken again. You are not here to win. The Stanley Parable is a game that plays you. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/TheEnd_scroll.gif?t=1654715052\" /><br><br><strong>What's New?</strong><br><br>Everything that was in the original Stanley Parable is here, preserved just like it was back in 2013. But The Stanley Parable: Ultra Deluxe also dramatically expands the world of the original game with new content, new choices, and new secrets to uncover. The labyrinth has just gotten bigger.<br><br>In addition, the game has been visually upgraded to reflect modern technology while faithfully preserving the tone of the original game. Accessibility features have also been added to the game, including localization of in-world text, colorblind options, and content warnings.<br><br>And just as before, the impeccable voicework of Kevan Brighting will accompany you every step of the way.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/Teasers.gif?t=1654715052\" /><br><br>In The Stanley Parable: Ultra Deluxe, everything you remember has been recreated, yet it's different somehow. We've been here before, haven't we? Is Stanley still the same as he was back then? Or is it you who has changed?",
-    "about_the_game": "<strong>The Stanley Parable: Ultra Deluxe is a first person exploration game. It is an expanded re-imagining of the critically acclaimed, award winning indie game The Stanley Parable from 2013.</strong><br><br>When a simple-minded individual named Stanley discovers that the co-workers in his office have mysteriously vanished, he sets off to find answers.<br><br>You will play as Stanley, and you will not play as Stanley. You will make a choice, and you will have your choices taken from you. The game will end, the game will never end. Contradiction follows contradiction, the rules of how games should work are broken, then broken again. You are not here to win. The Stanley Parable is a game that plays you. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/TheEnd_scroll.gif?t=1654715052\" /><br><br><strong>What's New?</strong><br><br>Everything that was in the original Stanley Parable is here, preserved just like it was back in 2013. But The Stanley Parable: Ultra Deluxe also dramatically expands the world of the original game with new content, new choices, and new secrets to uncover. The labyrinth has just gotten bigger.<br><br>In addition, the game has been visually upgraded to reflect modern technology while faithfully preserving the tone of the original game. Accessibility features have also been added to the game, including localization of in-world text, colorblind options, and content warnings.<br><br>And just as before, the impeccable voicework of Kevan Brighting will accompany you every step of the way.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/Teasers.gif?t=1654715052\" /><br><br>In The Stanley Parable: Ultra Deluxe, everything you remember has been recreated, yet it's different somehow. We've been here before, haven't we? Is Stanley still the same as he was back then? Or is it you who has changed?",
+    "detailed_description": "<strong>The Stanley Parable: Ultra Deluxe is a first person exploration game. It is an expanded re-imagining of the critically acclaimed, award winning indie game The Stanley Parable from 2013.</strong><br><br>When a simple-minded individual named Stanley discovers that the co-workers in his office have mysteriously vanished, he sets off to find answers.<br><br>You will play as Stanley, and you will not play as Stanley. You will make a choice, and you will have your choices taken from you. The game will end, the game will never end. Contradiction follows contradiction, the rules of how games should work are broken, then broken again. You are not here to win. The Stanley Parable is a game that plays you. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/TheEnd_scroll.gif?t=1682606012\" /><br><br><strong>What's New?</strong><br><br>Everything that was in the original Stanley Parable is here, preserved just like it was back in 2013. But The Stanley Parable: Ultra Deluxe also dramatically expands the world of the original game with new content, new choices, and new secrets to uncover. The labyrinth has just gotten bigger.<br><br>In addition, the game has been visually upgraded to reflect modern technology while faithfully preserving the tone of the original game. Accessibility features have also been added to the game, including localization of in-world text, colorblind options, and content warnings.<br><br>And just as before, the impeccable voicework of Kevan Brighting will accompany you every step of the way.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/Teasers.gif?t=1682606012\" /><br><br>In The Stanley Parable: Ultra Deluxe, everything you remember has been recreated, yet it's different somehow. We've been here before, haven't we? Is Stanley still the same as he was back then? Or is it you who has changed?",
+    "about_the_game": "<strong>The Stanley Parable: Ultra Deluxe is a first person exploration game. It is an expanded re-imagining of the critically acclaimed, award winning indie game The Stanley Parable from 2013.</strong><br><br>When a simple-minded individual named Stanley discovers that the co-workers in his office have mysteriously vanished, he sets off to find answers.<br><br>You will play as Stanley, and you will not play as Stanley. You will make a choice, and you will have your choices taken from you. The game will end, the game will never end. Contradiction follows contradiction, the rules of how games should work are broken, then broken again. You are not here to win. The Stanley Parable is a game that plays you. <br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/TheEnd_scroll.gif?t=1682606012\" /><br><br><strong>What's New?</strong><br><br>Everything that was in the original Stanley Parable is here, preserved just like it was back in 2013. But The Stanley Parable: Ultra Deluxe also dramatically expands the world of the original game with new content, new choices, and new secrets to uncover. The labyrinth has just gotten bigger.<br><br>In addition, the game has been visually upgraded to reflect modern technology while faithfully preserving the tone of the original game. Accessibility features have also been added to the game, including localization of in-world text, colorblind options, and content warnings.<br><br>And just as before, the impeccable voicework of Kevan Brighting will accompany you every step of the way.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1703340/extras/Teasers.gif?t=1682606012\" /><br><br>In The Stanley Parable: Ultra Deluxe, everything you remember has been recreated, yet it's different somehow. We've been here before, haven't we? Is Stanley still the same as he was back then? Or is it you who has changed?",
     "short_description": "The Stanley Parable: Ultra Deluxe is an expanded re-imagining of 2013's The Stanley Parable. You will play as Stanley, and you will not play as Stanley. You will make a choice, and you will become powerless. You are not here to win. The Stanley Parable is a game that plays you.",
-    "supported_languages": "English<strong>*</strong>, French, Italian, German, Russian, Spanish - Spain<br><strong>*</strong>languages with full audio support",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/header.jpg?t=1654715052",
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Russian, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Simplified Chinese, Ukrainian<br><strong>*</strong>languages with full audio support",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/header.jpg?t=1682606012",
     "website": "https://www.stanleyparable.com/",
     "pc_requirements": {
       "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or higher 64bit<br></li><li><strong>Processor:</strong> Intel Core i3 2.00 GHz or AMD equivalent<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce 450 or higher with 1GB Memory<br></li><li><strong>Storage:</strong> 5 GB available space</li></ul>"
@@ -1823,33 +2112,33 @@ export const steam = [
     "screenshots": [
       {
         "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_b28f3003aac31f59d469468c8c74bbe410279a21.600x338.jpg?t=1654715052",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_b28f3003aac31f59d469468c8c74bbe410279a21.1920x1080.jpg?t=1654715052"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_b28f3003aac31f59d469468c8c74bbe410279a21.600x338.jpg?t=1682606012",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_b28f3003aac31f59d469468c8c74bbe410279a21.1920x1080.jpg?t=1682606012"
       },
       {
         "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_eec7001b1e0fde761c5425bef747d17d57fec235.600x338.jpg?t=1654715052",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_eec7001b1e0fde761c5425bef747d17d57fec235.1920x1080.jpg?t=1654715052"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_eec7001b1e0fde761c5425bef747d17d57fec235.600x338.jpg?t=1682606012",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_eec7001b1e0fde761c5425bef747d17d57fec235.1920x1080.jpg?t=1682606012"
       },
       {
         "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_44c19694ab4b0300c2c51dd0b3d69320ddf6a5a1.600x338.jpg?t=1654715052",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_44c19694ab4b0300c2c51dd0b3d69320ddf6a5a1.1920x1080.jpg?t=1654715052"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_44c19694ab4b0300c2c51dd0b3d69320ddf6a5a1.600x338.jpg?t=1682606012",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_44c19694ab4b0300c2c51dd0b3d69320ddf6a5a1.1920x1080.jpg?t=1682606012"
       },
       {
         "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_a1df7d4b2546d11789b1e15a7627daccab13ff33.600x338.jpg?t=1654715052",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_a1df7d4b2546d11789b1e15a7627daccab13ff33.1920x1080.jpg?t=1654715052"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_a1df7d4b2546d11789b1e15a7627daccab13ff33.600x338.jpg?t=1682606012",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_a1df7d4b2546d11789b1e15a7627daccab13ff33.1920x1080.jpg?t=1682606012"
       },
       {
         "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_1a0059da2e4f496f313acb7c65b58294d8f539f4.600x338.jpg?t=1654715052",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_1a0059da2e4f496f313acb7c65b58294d8f539f4.1920x1080.jpg?t=1654715052"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_1a0059da2e4f496f313acb7c65b58294d8f539f4.600x338.jpg?t=1682606012",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_1a0059da2e4f496f313acb7c65b58294d8f539f4.1920x1080.jpg?t=1682606012"
       },
       {
         "id": 5,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_12cfc84d1cd91027132e8d47eb2acaf1cc069349.600x338.jpg?t=1654715052",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_12cfc84d1cd91027132e8d47eb2acaf1cc069349.1920x1080.jpg?t=1654715052"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_12cfc84d1cd91027132e8d47eb2acaf1cc069349.600x338.jpg?t=1682606012",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/ss_12cfc84d1cd91027132e8d47eb2acaf1cc069349.1920x1080.jpg?t=1682606012"
       }
     ],
     "movies": [
@@ -1911,7 +2200,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 19513
+      "total": 19966
     },
     "achievements": {
       "total": 11,
@@ -1966,8 +2255,8 @@ export const steam = [
       "url": "https://www.stanleyparable.com/",
       "email": "hello@crowscrowscrows.com"
     },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/page_bg_generated_v6b.jpg?t=1654715052",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/page_bg_generated.jpg?t=1654715052",
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/page_bg_generated_v6b.jpg?t=1682606012",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1703340/page_bg_generated.jpg?t=1682606012",
     "content_descriptors": {
       "ids": [],
       "notes": null
@@ -1983,11 +2272,11 @@ export const steam = [
     "dlc": [
       1946740
     ],
-    "detailed_description": "<h1>DEATH STRANDING Upgrade</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1850570/extras/dsdc_info_graphic_EN_US_600px.jpg?t=1649438096\" /><br><br>Please make sure you purchase right version of DEATH STRANDING DIRECTOR'S CUT.<br><br>If you already own DEATH STRANDING then you can upgrade your version of the game to DEATH STRANDING DIRECTOR'S CUT for a lower price. Please purchase the DEATH STRANDING DIRECTOR'S CUT UPGRADE. You must have previously purchased DEATH STRANDING on this platform, and have it installed on your system.<br><br>If you have not purchased DEATH STRANDING then you may purchase DEATH STRANDING DIRECTOR'S CUT at the stated full price.<br><br>We recommend you do not remove DEATH STRANDING from your PC until you have completed the download of DEATH STRANDING DIRECTOR’S CUT and you have transferred your save files to DEATH STRANDING DIRECTOR’S CUT.</p><br><h1>About the Game</h1>From legendary game creator Hideo Kojima comes a genre-defying experience, now expanded in this definitive DIRECTOR’S CUT. <br> <br>In the future, a mysterious event known as the Death Stranding has opened a doorway between the living and the dead, leading to grotesque creatures from the afterlife roaming the fallen world marred by a desolate society. <br> <br>As Sam Bridges, your mission is to deliver hope to humanity by connecting the last survivors of a decimated America. <br> <br>Can you reunite the shattered world, one step at a time? <br> <br>DEATH STRANDING DIRECTOR’S CUT on PC includes HIGH FRAME RATE, PHOTO MODE and ULTRA-WIDE MONITOR SUPPORT. Also includes cross-over content from Valve Corporation’s HALF-LIFE series and CD Projekt Red’s Cyberpunk 2077. Stay connected with players around the globe with the Social Strand System™. <br> <br>All copies of the game will also additionally include: <br>• “Selections From ‘The Art of DEATH STRANDING’” Digital Book (by Titan Books) <br>• Backpack Patches <br>• Bridges Special Delivery Team Suit (Gold) <br>• BB pod customization (Chiral Gold) <br>• Power Gloves (Gold) <br>• Bridges Special Delivery Team Suit (Silver) <br>• BB pod customization (Omnireflector) <br>• Power Gloves (Silver)",
+    "detailed_description": "<h1>DEATH STRANDING Upgrade</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1850570/extras/dsdc_info_graphic_EN_US_600px.jpg?t=1683196693\" /><br><br>Please make sure you purchase right version of DEATH STRANDING DIRECTOR'S CUT.<br><br>If you already own DEATH STRANDING then you can upgrade your version of the game to DEATH STRANDING DIRECTOR'S CUT for a lower price. Please purchase the DEATH STRANDING DIRECTOR'S CUT UPGRADE. You must have previously purchased DEATH STRANDING on this platform, and have it installed on your system.<br><br>If you have not purchased DEATH STRANDING then you may purchase DEATH STRANDING DIRECTOR'S CUT at the stated full price.<br><br>We recommend you do not remove DEATH STRANDING from your PC until you have completed the download of DEATH STRANDING DIRECTOR’S CUT and you have transferred your save files to DEATH STRANDING DIRECTOR’S CUT.</p><br><h1>About the Game</h1>From legendary game creator Hideo Kojima comes a genre-defying experience, now expanded in this definitive DIRECTOR’S CUT. <br> <br>In the future, a mysterious event known as the Death Stranding has opened a doorway between the living and the dead, leading to grotesque creatures from the afterlife roaming the fallen world marred by a desolate society. <br> <br>As Sam Bridges, your mission is to deliver hope to humanity by connecting the last survivors of a decimated America. <br> <br>Can you reunite the shattered world, one step at a time? <br> <br>DEATH STRANDING DIRECTOR’S CUT on PC includes HIGH FRAME RATE, PHOTO MODE and ULTRA-WIDE MONITOR SUPPORT. Also includes cross-over content from Valve Corporation’s HALF-LIFE series and CD Projekt Red’s Cyberpunk 2077. Stay connected with players around the globe with the Social Strand System™. <br> <br>All copies of the game will also additionally include: <br>• “Selections From ‘The Art of DEATH STRANDING’” Digital Book (by Titan Books) <br>• Backpack Patches <br>• Bridges Special Delivery Team Suit (Gold) <br>• BB pod customization (Chiral Gold) <br>• Power Gloves (Gold) <br>• Bridges Special Delivery Team Suit (Silver) <br>• BB pod customization (Omnireflector) <br>• Power Gloves (Silver)",
     "about_the_game": "From legendary game creator Hideo Kojima comes a genre-defying experience, now expanded in this definitive DIRECTOR’S CUT. <br />\r\n <br />\r\nIn the future, a mysterious event known as the Death Stranding has opened a doorway between the living and the dead, leading to grotesque creatures from the afterlife roaming the fallen world marred by a desolate society. <br />\r\n <br />\r\nAs Sam Bridges, your mission is to deliver hope to humanity by connecting the last survivors of a decimated America. <br />\r\n <br />\r\nCan you reunite the shattered world, one step at a time? <br />\r\n <br />\r\nDEATH STRANDING DIRECTOR’S CUT on PC includes HIGH FRAME RATE, PHOTO MODE and ULTRA-WIDE MONITOR SUPPORT. Also includes cross-over content from Valve Corporation’s HALF-LIFE series and CD Projekt Red’s Cyberpunk 2077. Stay connected with players around the globe with the Social Strand System™. <br />\r\n <br />\r\nAll copies of the game will also additionally include: <br />\r\n• “Selections From ‘The Art of DEATH STRANDING’” Digital Book (by Titan Books) <br />\r\n• Backpack Patches <br />\r\n• Bridges Special Delivery Team Suit (Gold) <br />\r\n• BB pod customization (Chiral Gold) <br />\r\n• Power Gloves (Gold) <br />\r\n• Bridges Special Delivery Team Suit (Silver) <br />\r\n• BB pod customization (Omnireflector) <br />\r\n• Power Gloves (Silver)",
     "short_description": "From legendary game creator Hideo Kojima comes a genre-defying experience, now expanded in this definitive DIRECTOR’S CUT. As Sam Bridges, your mission is to deliver hope to humanity by connecting the last survivors of a decimated America. Can you reunite the shattered world, one step at a time?",
     "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Arabic, Czech, Dutch, Greek<strong>*</strong>, Hungarian, Japanese<strong>*</strong>, Korean, Polish<strong>*</strong>, Portuguese - Portugal<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese, Spanish - Latin America<strong>*</strong>, Traditional Chinese, Turkish<br><strong>*</strong>languages with full audio support",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/header.jpg?t=1649438096",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/header.jpg?t=1683196693",
     "website": "http://www.kojimaproductions.jp/en/",
     "pc_requirements": {
       "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows® 10<br></li><li><strong>Processor:</strong> Intel® Core™ i5-3470 or AMD Ryzen™ 3 1200<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GeForce GTX 1050 4 GB or AMD Radeon™ RX 560 4 GB<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 80 GB available space<br></li><li><strong>Sound Card:</strong> DirectX compatible<br></li><li><strong>Additional Notes:</strong> AVX instruction set required</li></ul>",
@@ -2006,7 +2295,7 @@ export const steam = [
       "KOJIMA PRODUCTIONS"
     ],
     "publishers": [
-      "505 Games"
+      " 505 Games"
     ],
     "price_overview": {
       "currency": "CAD",
@@ -2093,157 +2382,157 @@ export const steam = [
     "screenshots": [
       {
         "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_f64a1140651ff5af30eb63bb6e5b41753d00a98e.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_f64a1140651ff5af30eb63bb6e5b41753d00a98e.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_f64a1140651ff5af30eb63bb6e5b41753d00a98e.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_f64a1140651ff5af30eb63bb6e5b41753d00a98e.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4b6d7d010d1701b2b57bf8ef1b4975a04b3d632f.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4b6d7d010d1701b2b57bf8ef1b4975a04b3d632f.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4b6d7d010d1701b2b57bf8ef1b4975a04b3d632f.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4b6d7d010d1701b2b57bf8ef1b4975a04b3d632f.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_bc8812817c074772822c1d1e8a6b016983cf05e8.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_bc8812817c074772822c1d1e8a6b016983cf05e8.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_bc8812817c074772822c1d1e8a6b016983cf05e8.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_bc8812817c074772822c1d1e8a6b016983cf05e8.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_d47bde2e349606b3ef1f641e2d8fb7ccf1adba77.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_d47bde2e349606b3ef1f641e2d8fb7ccf1adba77.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_d47bde2e349606b3ef1f641e2d8fb7ccf1adba77.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_d47bde2e349606b3ef1f641e2d8fb7ccf1adba77.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_8f0a2b1f6ea6da05c53f802034e08cbe92aaccab.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_8f0a2b1f6ea6da05c53f802034e08cbe92aaccab.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_8f0a2b1f6ea6da05c53f802034e08cbe92aaccab.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_8f0a2b1f6ea6da05c53f802034e08cbe92aaccab.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 5,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_73eb002b5070299aae3727bd07ce6d51e4a82b10.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_73eb002b5070299aae3727bd07ce6d51e4a82b10.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_73eb002b5070299aae3727bd07ce6d51e4a82b10.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_73eb002b5070299aae3727bd07ce6d51e4a82b10.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 6,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_fa063b095344e747a8920d06b5be1d99e3d8789a.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_fa063b095344e747a8920d06b5be1d99e3d8789a.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_fa063b095344e747a8920d06b5be1d99e3d8789a.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_fa063b095344e747a8920d06b5be1d99e3d8789a.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 7,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_87653eb3d360766a994adccd82767b34961b37a5.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_87653eb3d360766a994adccd82767b34961b37a5.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_87653eb3d360766a994adccd82767b34961b37a5.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_87653eb3d360766a994adccd82767b34961b37a5.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 8,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0be4ab0e4137c880b1eda9e405a77bc2e3539695.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0be4ab0e4137c880b1eda9e405a77bc2e3539695.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0be4ab0e4137c880b1eda9e405a77bc2e3539695.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0be4ab0e4137c880b1eda9e405a77bc2e3539695.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 9,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_b8461572e3737f09012decf301bf228c5dea74dd.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_b8461572e3737f09012decf301bf228c5dea74dd.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_b8461572e3737f09012decf301bf228c5dea74dd.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_b8461572e3737f09012decf301bf228c5dea74dd.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 10,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7e7e3b8e580aa46d650a6dbb5d87e3b4f61c29d3.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7e7e3b8e580aa46d650a6dbb5d87e3b4f61c29d3.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7e7e3b8e580aa46d650a6dbb5d87e3b4f61c29d3.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7e7e3b8e580aa46d650a6dbb5d87e3b4f61c29d3.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 11,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0d8ccac035eb175f8f19571c45c89be6ff46c2c6.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0d8ccac035eb175f8f19571c45c89be6ff46c2c6.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0d8ccac035eb175f8f19571c45c89be6ff46c2c6.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_0d8ccac035eb175f8f19571c45c89be6ff46c2c6.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 12,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ed01191432b0732c4d06dca776f0142bb444a78.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ed01191432b0732c4d06dca776f0142bb444a78.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ed01191432b0732c4d06dca776f0142bb444a78.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ed01191432b0732c4d06dca776f0142bb444a78.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 13,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_51aabe9065d7f899f6cc0c4fa702b2385f7d673b.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_51aabe9065d7f899f6cc0c4fa702b2385f7d673b.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_51aabe9065d7f899f6cc0c4fa702b2385f7d673b.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_51aabe9065d7f899f6cc0c4fa702b2385f7d673b.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 14,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_5b02880a924e3abccfad07b3cb28112e9926d65f.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_5b02880a924e3abccfad07b3cb28112e9926d65f.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_5b02880a924e3abccfad07b3cb28112e9926d65f.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_5b02880a924e3abccfad07b3cb28112e9926d65f.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 15,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_95b8f02fd281478626de1ad543a54203459ed5eb.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_95b8f02fd281478626de1ad543a54203459ed5eb.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_95b8f02fd281478626de1ad543a54203459ed5eb.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_95b8f02fd281478626de1ad543a54203459ed5eb.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 16,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7aa9d11bcf687722e133d83dfe325f32d5e6068c.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7aa9d11bcf687722e133d83dfe325f32d5e6068c.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7aa9d11bcf687722e133d83dfe325f32d5e6068c.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_7aa9d11bcf687722e133d83dfe325f32d5e6068c.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 17,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_48a019676cec83372dd4924e64a544ed40bf689f.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_48a019676cec83372dd4924e64a544ed40bf689f.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_48a019676cec83372dd4924e64a544ed40bf689f.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_48a019676cec83372dd4924e64a544ed40bf689f.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 18,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_2cb4d51d31830e720f038494165bfc90f019edf3.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_2cb4d51d31830e720f038494165bfc90f019edf3.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_2cb4d51d31830e720f038494165bfc90f019edf3.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_2cb4d51d31830e720f038494165bfc90f019edf3.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 19,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ce467cf4fc68f0efa4215464c3a7f84de567f47.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ce467cf4fc68f0efa4215464c3a7f84de567f47.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ce467cf4fc68f0efa4215464c3a7f84de567f47.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4ce467cf4fc68f0efa4215464c3a7f84de567f47.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 20,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4342fab99e35c9c50e01f866b676d3ab324d4015.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4342fab99e35c9c50e01f866b676d3ab324d4015.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4342fab99e35c9c50e01f866b676d3ab324d4015.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_4342fab99e35c9c50e01f866b676d3ab324d4015.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 21,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_c01508116ce0765f35fbfc4f115cd58e24d15819.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_c01508116ce0765f35fbfc4f115cd58e24d15819.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_c01508116ce0765f35fbfc4f115cd58e24d15819.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_c01508116ce0765f35fbfc4f115cd58e24d15819.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 22,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_9c2cfa431821343eb98d42808cbf0c3bd9375c73.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_9c2cfa431821343eb98d42808cbf0c3bd9375c73.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_9c2cfa431821343eb98d42808cbf0c3bd9375c73.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_9c2cfa431821343eb98d42808cbf0c3bd9375c73.1920x1080.jpg?t=1683196693"
       },
       {
         "id": 23,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_069e6370c04bdcb4a529b64e51b4eee2c5cc7562.600x338.jpg?t=1649438096",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_069e6370c04bdcb4a529b64e51b4eee2c5cc7562.1920x1080.jpg?t=1649438096"
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_069e6370c04bdcb4a529b64e51b4eee2c5cc7562.600x338.jpg?t=1683196693",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/ss_069e6370c04bdcb4a529b64e51b4eee2c5cc7562.1920x1080.jpg?t=1683196693"
       }
     ],
     "movies": [
       {
         "id": 256878921,
-        "name": "DSDC Launch Trailer ESRB",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256878921/movie.293x165.jpg?t=1648163046",
+        "name": "DEATH STRANDING DIRECTOR'S CUT Launch Trailer ESRB",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256878921/movie.293x165.jpg?t=1683196656",
         "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie480_vp9.webm?t=1648163046",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie_max_vp9.webm?t=1648163046"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie480_vp9.webm?t=1683196656",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie_max_vp9.webm?t=1683196656"
         },
         "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie480.mp4?t=1648163046",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie_max.mp4?t=1648163046"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie480.mp4?t=1683196656",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256878921/movie_max.mp4?t=1683196656"
         },
         "highlight": true
       },
       {
         "id": 256879242,
-        "name": "DSDC Photo Mode ESRB",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256879242/movie.293x165.jpg?t=1648162985",
+        "name": "DEATH STRANDING DIRECTOR'S CUT Photo Mode ESRB",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256879242/movie.293x165.jpg?t=1683196684",
         "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie480_vp9.webm?t=1648162985",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie_max_vp9.webm?t=1648162985"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie480_vp9.webm?t=1683196684",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie_max_vp9.webm?t=1683196684"
         },
         "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie480.mp4?t=1648162985",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie_max.mp4?t=1648162985"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie480.mp4?t=1683196684",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256879242/movie_max.mp4?t=1683196684"
         },
         "highlight": true
       }
     ],
     "recommendations": {
-      "total": 12866
+      "total": 13028
     },
     "achievements": {
       "total": 63,
@@ -2298,8 +2587,8 @@ export const steam = [
       "url": "https://support.505games.com/",
       "email": ""
     },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/page_bg_generated_v6b.jpg?t=1649438096",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/page.bg.jpg?t=1649438096",
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/page_bg_generated_v6b.jpg?t=1683196693",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/page.bg.jpg?t=1683196693",
     "content_descriptors": {
       "ids": [
         5
@@ -2511,7 +2800,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 71561
+      "total": 71830
     },
     "achievements": {
       "total": 79,
@@ -2568,379 +2857,6 @@ export const steam = [
     },
     "background": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/page_bg_generated_v6b.jpg?t=1667297464",
     "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/page.bg.jpg?t=1667297464",
-    "content_descriptors": {
-      "ids": [],
-      "notes": null
-    }
-  },
-  {
-    "type": "game",
-    "name": "Destiny 2",
-    "steam_appid": 1085660,
-    "required_age": 0,
-    "is_free": true,
-    "controller_support": "full",
-    "dlc": [
-      1945360,
-      1945340,
-      2266420,
-      1940230,
-      1656370,
-      1656330,
-      1314563,
-      1090200,
-      1090150,
-      1745440,
-      1569630,
-      2343180
-    ],
-    "detailed_description": "<h1>Destiny 2: Season of Defiance</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/D2_S20_First_Party_STEAM_Steam_Special_Announcement_616x347_EN.jpg?t=1680800510\" /><h2 class=\"bb_tag\">February 28 to May 22</h2><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_S17_STEAM_Special-Announcement_Divider.png?t=1680800510\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Defy-Out-End.gif?t=1680800510\" /><h2 class=\"bb_tag\">Defy Our End</h2>In the aftermath of the attack on the Traveler, the Vanguard calls upon its closest allies. Guardians must master the righteous powers of the Awoken to stand against the encroaching Shadow Legion and prove themselves as Queensguard.<br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_S17_STEAM_Special-Announcement_Divider.png?t=1680800510\" /><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Defiant-Battlegrounds.png?t=1680800510\" /><h2 class=\"bb_tag\">Defiant Battlegrounds</h2>In this new three-player matchmade activity, bypass the Shadow Legion’s security by entering their outposts from the Ascendant Plane. Navigate the abyss and rescue your captive allies by completing rituals that open gateways to safety.<br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_S17_STEAM_Special-Announcement_Divider.png?t=1680800510\" /><br><u><strong>The Queen’s Phalanx</strong></u><br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Veglas-Curve.png?t=1680800510\" /><h2 class=\"bb_tag\">Verglas Curve</h2>Interlopers carrying the promise of war have stepped into our home. Deliver them a greeting, frigid and swift.<br><br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Defiance-Incarnate.png?t=1680800510\" /><h2 class=\"bb_tag\">Defiance Incarnate</h2>In the shadow’s terrifying grip, it will find defiance. Never bending. Never breaking.<br><br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Season-Pass-Ornaments.png?t=1680800510\" /><h2 class=\"bb_tag\">Season Pass Armor Ornaments</h2>Flashes of gold catch the moonlight and assure us of the light in the darkness.<br><br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Best-Defense.png?t=1680800510\" /><h2 class=\"bb_tag\">The Best Defense</h2>The Shadow Legion will crash and break upon your wall of fire...<br><br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_s20_Steam-Special_Good_Offense.png?t=1680800510\" /><h2 class=\"bb_tag\">Is a Good Offense</h2>and when Calus understands his error, we will press the attack.<br><br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1085660/extras/d2_S17_STEAM_Special-Announcement_Divider.png?t=1680800510\" /><h2 class=\"bb_tag\">Season Pass</h2>Gear, XP, rewards! Get the Season Pass and instantly unlock the new Exotic Bow. Also get XP boosts that speed up Seasonal ranks and reward track unlocks.<h2 class=\"bb_tag\">Exotic Bow</h2>Add the catalyst and rank-100 ornament to Verglas Curve and shiver at the anticipation of your precision.<h2 class=\"bb_tag\">Universal Ornaments</h2>When Guardian inspired by your defiance remember this day, make sure that memory looks good.<h2 class=\"bb_tag\">Enhanced Progression</h2>Over 100 rewards, including XP boosts, Exotic engrams, upgrade materials, cosmetics and more</p><br><h1>About the Game</h1>Dive into the world of Destiny 2 to explore the mysteries of the solar system and experience responsive first-person shooter combat. Unlock powerful elemental abilities and collect unique gear to customize your Guardian's look and playstyle. Enjoy Destiny 2’s cinematic story, challenging co-op missions, and a variety of PvP modes alone or with friends. Download for free today and write your legend in the stars.<h2 class=\"bb_tag\">An Immersive Story</h2>You are a Guardian, defender of the Last City of humanity in a solar system under siege by infamous villains. Look to the stars and stand against the darkness. Your legend begins now.<h2 class=\"bb_tag\">Guardian Classes</h2>Choose from the armored Titan, mystic Warlock, or swift Hunter.<br><br><br><strong><u>Titan</u></strong><br>Disciplined and proud, Titans are capable of both aggressive assaults and stalwart defenses. Set your hammer ablaze, crack the sky with lightning, and go toe-to-toe with any opponent. Your team will stand tall behind the strength of your shield.<br><br><strong><u>Warlock</u></strong><br>Warlocks weaponize the mysteries of the universe to sustain themselves and destroy their foes. Rain devastation on the battlefield and clear hordes of enemies in the blink of an eye. Those who stand with you will know the true power of the Light.<br><br><strong><u>Hunter</u></strong><br>Agile and daring, Hunters are quick on their feet and quicker on the draw. Fan the hammer of your golden gun, flow through enemies like the wind, or strike from the darkness. Find the enemy, take aim, and end the fight before it starts.<h2 class=\"bb_tag\">Cooperative and Competitive Multiplayer</h2>Play with or against your friends and other Guardians in various PvE and PvP game modes.<br><br><br><strong><u>Cooperative Multiplayer</u></strong><br>Exciting co-op adventures teeming await with rare and powerful rewards. Dive into the story with missions, quests, and patrols. Put together a small fireteam and secure the chest at the end of a quick Strike. Or test your team's skill with countless hours of raid progression – the ultimate challenge for any fireteam. You decide where your legend begins.<br><br><strong><u>Competitive Multiplayer</u></strong><br>Face off against other players in fast-paced free-for-all skirmishes, team arenas, and PvE/PvP hybrid competitions. Mark special competitions like Iron Banner on your calendar and collect limited-time rewards before they're gone.<h2 class=\"bb_tag\">Exotic Weapons and Armor</h2>Thousands of weapons, millions of options. Discover new gear combinations and define your own personal style. The hunt for the perfect arsenal begins.",
-    "about_the_game": "Dive into the world of Destiny 2 to explore the mysteries of the solar system and experience responsive first-person shooter combat. Unlock powerful elemental abilities and collect unique gear to customize your Guardian's look and playstyle. Enjoy Destiny 2’s cinematic story, challenging co-op missions, and a variety of PvP modes alone or with friends. Download for free today and write your legend in the stars.<h2 class=\"bb_tag\">An Immersive Story</h2>You are a Guardian, defender of the Last City of humanity in a solar system under siege by infamous villains. Look to the stars and stand against the darkness. Your legend begins now.<h2 class=\"bb_tag\">Guardian Classes</h2>Choose from the armored Titan, mystic Warlock, or swift Hunter.<br><br><br><strong><u>Titan</u></strong><br>Disciplined and proud, Titans are capable of both aggressive assaults and stalwart defenses. Set your hammer ablaze, crack the sky with lightning, and go toe-to-toe with any opponent. Your team will stand tall behind the strength of your shield.<br><br><strong><u>Warlock</u></strong><br>Warlocks weaponize the mysteries of the universe to sustain themselves and destroy their foes. Rain devastation on the battlefield and clear hordes of enemies in the blink of an eye. Those who stand with you will know the true power of the Light.<br><br><strong><u>Hunter</u></strong><br>Agile and daring, Hunters are quick on their feet and quicker on the draw. Fan the hammer of your golden gun, flow through enemies like the wind, or strike from the darkness. Find the enemy, take aim, and end the fight before it starts.<h2 class=\"bb_tag\">Cooperative and Competitive Multiplayer</h2>Play with or against your friends and other Guardians in various PvE and PvP game modes.<br><br><br><strong><u>Cooperative Multiplayer</u></strong><br>Exciting co-op adventures teeming await with rare and powerful rewards. Dive into the story with missions, quests, and patrols. Put together a small fireteam and secure the chest at the end of a quick Strike. Or test your team's skill with countless hours of raid progression – the ultimate challenge for any fireteam. You decide where your legend begins.<br><br><strong><u>Competitive Multiplayer</u></strong><br>Face off against other players in fast-paced free-for-all skirmishes, team arenas, and PvE/PvP hybrid competitions. Mark special competitions like Iron Banner on your calendar and collect limited-time rewards before they're gone.<h2 class=\"bb_tag\">Exotic Weapons and Armor</h2>Thousands of weapons, millions of options. Discover new gear combinations and define your own personal style. The hunt for the perfect arsenal begins.",
-    "short_description": "Destiny 2 is an action MMO with a single evolving world that you and your friends can join anytime, anywhere, absolutely free.",
-    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese, Spanish - Latin America<strong>*</strong>, Traditional Chinese<br><strong>*</strong>languages with full audio support",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/header.jpg?t=1680800510",
-    "website": "https://www.bungie.net/",
-    "pc_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows® 7 / Windows® 8.1 / Windows® 10 64-bit (latest Service Pack)<br></li><li><strong>Processor:</strong> Intel® Core™ i3 3250 3.5 GHz or Intel Pentium G4560 3.5 GHz / AMD FX-4350 4.2 GHz<br></li><li><strong>Memory:</strong> 6 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA® GeForce® GTX 660 2GB or GTX 1050 2GB / AMD Radeon HD 7850 2GB<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 105 GB available space<br></li><li><strong>Additional Notes:</strong> </li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> System Windows® 7 / Windows® 8.1 / Windows® 10 64-bit (latest Service Pack)<br></li><li><strong>Processor:</strong> Processor Intel® Core™ i5 2400 3.4 GHz or i5 7400 3.5 GHz / AMD Ryzen R5 1600X 3.6 GHz<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA® GeForce® GTX 970 4GB or GTX 1060 6GB / AMD R9 390 8GB Memory 8 GB RAM<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 105 GB available space<br></li><li><strong>Additional Notes:</strong> </li></ul>"
-    },
-    "mac_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "linux_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "legal_notice": "Minimum 105 GB available hard drive storage space required as of November 10, 2020. Storage requirements subject to increase.  After November 10, 2020, see www.destinythegame.com/size-requirements for current requirements prior to purchase. May require additional storage for set-up, features and updates, including to download mandatory in-game updates to continue playing. Users responsible for fees for broadband internet, which is required. Additional charges may apply for online content and features<br />\r\n <br />\r\nDestiny 2 may contain flashing patterns and images that may produce adverse effects for a small percentage of people sensitive to them.<br />\r\n<br />\r\nUsing the software constitutes acceptance of the Destiny Software License Agreement at www.bungie.net/sla. Bungie may modify or discontinue online services without notice at any time.<br />\r\n <br />\r\n© 2023 Bungie, Inc. All rights reserved. Destiny, the Destiny Logo, Bungie and the Bungie Logo are among the trademarks of Bungie, Inc.",
-    "developers": [
-      "Bungie"
-    ],
-    "publishers": [
-      "Bungie "
-    ],
-    "packages": [
-      400554,
-      813072,
-      746030,
-      746031
-    ],
-    "package_groups": [
-      {
-        "name": "lightfalldropdown",
-        "title": "Destiny 2: Lightfall",
-        "description": "",
-        "selection_text": "Select a purchase option",
-        "save_text": "",
-        "display_type": "1",
-        "is_recurring_subscription": "false",
-        "subs": [
-          {
-            "packageid": 746030,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "Destiny 2: Lightfall - CDN$ 62.49",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 6249
-          },
-          {
-            "packageid": 746031,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "Destiny 2: Lightfall + Annual Pass - CDN$ 124.99",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 12499
-          }
-        ]
-      },
-      {
-        "name": "default",
-        "title": "Destiny 2: Beyond Light",
-        "description": "",
-        "selection_text": "Select a purchase option",
-        "save_text": "",
-        "display_type": "1",
-        "is_recurring_subscription": "false",
-        "subs": [
-          {
-            "packageid": 400554,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "Destiny 2 - Commercial License (Free) - Free",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": true,
-            "price_in_cents_with_discount": 0
-          }
-        ]
-      },
-      {
-        "name": "Legacy",
-        "title": "Buy Destiny 2",
-        "description": "",
-        "selection_text": "Select a purchase option",
-        "save_text": "",
-        "display_type": 0,
-        "is_recurring_subscription": "false",
-        "subs": [
-          {
-            "packageid": 813072,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "Destiny 2: Legacy Collection (2023) - CDN$ 74.99",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 7499
-          }
-        ]
-      }
-    ],
-    "platforms": {
-      "windows": true,
-      "mac": false,
-      "linux": false
-    },
-    "metacritic": {
-      "score": 83,
-      "url": "https://www.metacritic.com/game/pc/destiny-2?ftag=MCD-06-10aaa1f"
-    },
-    "categories": [
-      {
-        "id": 2,
-        "description": "Single-player"
-      },
-      {
-        "id": 1,
-        "description": "Multi-player"
-      },
-      {
-        "id": 49,
-        "description": "PvP"
-      },
-      {
-        "id": 36,
-        "description": "Online PvP"
-      },
-      {
-        "id": 9,
-        "description": "Co-op"
-      },
-      {
-        "id": 38,
-        "description": "Online Co-op"
-      },
-      {
-        "id": 22,
-        "description": "Steam Achievements"
-      },
-      {
-        "id": 28,
-        "description": "Full controller support"
-      },
-      {
-        "id": 35,
-        "description": "In-App Purchases"
-      },
-      {
-        "id": 41,
-        "description": "Remote Play on Phone"
-      },
-      {
-        "id": 42,
-        "description": "Remote Play on Tablet"
-      },
-      {
-        "id": 43,
-        "description": "Remote Play on TV"
-      }
-    ],
-    "genres": [
-      {
-        "id": "1",
-        "description": "Action"
-      },
-      {
-        "id": "25",
-        "description": "Adventure"
-      },
-      {
-        "id": "37",
-        "description": "Free to Play"
-      }
-    ],
-    "screenshots": [
-      {
-        "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_7fcc82f468fcf8278c7ffa95cebf949bfc6845fc.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_7fcc82f468fcf8278c7ffa95cebf949bfc6845fc.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_d923711c0eb833b1df8607fa3df4dcebbe470cf2.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_d923711c0eb833b1df8607fa3df4dcebbe470cf2.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_c142f5078ace9f5e2eb2c80aa3bf768e156b4ee9.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_c142f5078ace9f5e2eb2c80aa3bf768e156b4ee9.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_a9642404e586be28f856e8f02d038828f691a5ba.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_a9642404e586be28f856e8f02d038828f691a5ba.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_01fdd090ed1dd70112ce2c6d6fc208df0a008ac7.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_01fdd090ed1dd70112ce2c6d6fc208df0a008ac7.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 5,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_d230d30da82a7b92c842e7447ee5a8458b866251.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_d230d30da82a7b92c842e7447ee5a8458b866251.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 6,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_5065e2bb5de91535dc5e390e27e391a8b9b367ee.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_5065e2bb5de91535dc5e390e27e391a8b9b367ee.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 7,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_afc1f202f7ab71adca7d1e503138d89c5689e716.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_afc1f202f7ab71adca7d1e503138d89c5689e716.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 8,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_324e79ed624f3abd7a2eea2d187d6f616be17102.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_324e79ed624f3abd7a2eea2d187d6f616be17102.1920x1080.jpg?t=1680800510"
-      },
-      {
-        "id": 9,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_a35aaa73e605c0738a53a74abbcb53768e8f39e1.600x338.jpg?t=1680800510",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_a35aaa73e605c0738a53a74abbcb53768e8f39e1.1920x1080.jpg?t=1680800510"
-      }
-    ],
-    "movies": [
-      {
-        "id": 256877060,
-        "name": "Heroes Welcome - EN-US",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256877060/movie.293x165.jpg?t=1646776798",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256877060/movie480_vp9.webm?t=1646776798",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256877060/movie_max_vp9.webm?t=1646776798"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256877060/movie480.mp4?t=1646776798",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256877060/movie_max.mp4?t=1646776798"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256933093,
-        "name": "S20 Launch - EN-US",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256933093/movie.293x165.jpg?t=1677611642",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256933093/movie480_vp9.webm?t=1677611642",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256933093/movie_max_vp9.webm?t=1677611642"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256933093/movie480.mp4?t=1677611642",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256933093/movie_max.mp4?t=1677611642"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256902405,
-        "name": "Destiny Calls - EN-US",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256902405/movie.293x165.jpg?t=1661325652",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256902405/movie480_vp9.webm?t=1661325652",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256902405/movie_max_vp9.webm?t=1661325652"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256902405/movie480.mp4?t=1661325652",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256902405/movie_max.mp4?t=1661325652"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256902446,
-        "name": "King's Fall - EN-US",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256902446/movie.293x165.jpg?t=1661325835",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256902446/movie480_vp9.webm?t=1661325835",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256902446/movie_max_vp9.webm?t=1661325835"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256902446/movie480.mp4?t=1661325835",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256902446/movie_max.mp4?t=1661325835"
-        },
-        "highlight": true
-      }
-    ],
-    "recommendations": {
-      "total": 119860
-    },
-    "achievements": {
-      "total": 23,
-      "highlighted": [
-        {
-          "name": "Long and Winding Road",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/18c2c6e05659aed26cd374da8a75b722121b37f0.jpg"
-        },
-        {
-          "name": "Zavala's Lieutenant",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/c4b32b8cc89ee429acd52cada5520af99fd253e9.jpg"
-        },
-        {
-          "name": "Cayde's Pathfinder",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/8f23007de716cd93b5abc02560dbef7a8d2f053c.jpg"
-        },
-        {
-          "name": "Ikora's Protégé",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/a00b8c7394b8af482a2d3fea70e152310d6d8a2f.jpg"
-        },
-        {
-          "name": "Show Me What You Got",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/d79a37583b5bef753e6d17e420e558c277e391c3.jpg"
-        },
-        {
-          "name": "In A Flash",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/d5d441bce37d3997c314de2dde4155da58a45ea9.jpg"
-        },
-        {
-          "name": "The People's Hero",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/4f1d1d43b60c087bf99bba3061b375fe0f327be7.jpg"
-        },
-        {
-          "name": "Heart of Darkness",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/feacf3708386388730de45cf538e96cd90e5ec5e.jpg"
-        },
-        {
-          "name": "The Life Exotic",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/bc3b74c2422e55faae5a2fceb5c5218afd06afe5.jpg"
-        },
-        {
-          "name": "Challenge Accepted",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1085660/08c8201a669107e6ebcccb50be6e7980e2d6a1d6.jpg"
-        }
-      ]
-    },
-    "release_date": {
-      "coming_soon": false,
-      "date": "1 Oct, 2019"
-    },
-    "support_info": {
-      "url": "https://www.bungie.net/help",
-      "email": ""
-    },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/page_bg_generated_v6b.jpg?t=1680800510",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/page.bg.jpg?t=1680800510",
     "content_descriptors": {
       "ids": [],
       "notes": null

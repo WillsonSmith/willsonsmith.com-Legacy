@@ -81,4 +81,8 @@ export const styles = css`
     gap: var(--spacing-xs);
     line-height: var(--line-height-sm);
   }
+
+  movies-block {
+    max-width: 100%;
+  }
 `;

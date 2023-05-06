@@ -46,10 +46,25 @@ export default async (data = initialData) => {
         <reading-column>
           <section class="bio">
             <p>
-              I'm Willson, a front-end developer and Design Technologist at
-              <a href="https://shopify.ca">Shopify</a>. I've been working at Shopify for
-              <time-since date="2015-06-01"></time-since>.
+              Hey! I'm Willson, a front-end developer, ux developer, and former Creative
+              Technologist at Shopify. I have a passion for building high-quality, fun experiences
+              on the web. I like to experiment and build things that stretch my abilities.
             </p>
+
+            <p>
+              I worked for 8 years at Shopify where I spent my time as a Senior Creative
+              Technologist. I grew up with the company and built products that enabled people to run
+              their business on the internet. I believe what I did was important work because it
+              enables Shopify merchangs to take control of and design their own lives.
+            </p>
+
+            <p>
+              Today I'm taking a little break. I'm taking some time to figure out what I want to do
+              and who I want to be. I can be found building silly things and having fun. I'm always
+              open to new opportunities and challenges. If you'd like to chat, feel free to reach
+              out. I'm always happy to talk.
+            </p>
+
             <p>
               I'm passionate about building accessible, performant, and delightful web experiences.
               I'm also a big fan of the web platform and the open web. This website is built with
@@ -98,9 +113,7 @@ export default async (data = initialData) => {
         <reading-column>
           <header><h2>What I'm watching</h2></header>
         </reading-column>
-        <reading-column>
-          <movies-block movies=${JSON.stringify(movies)}></movies-block>
-        </reading-column>
+        <movies-block movies=${JSON.stringify(movies)}></movies-block>
       </section>
       <section class="section">
         <reading-column>
