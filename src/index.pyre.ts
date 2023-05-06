@@ -1,6 +1,6 @@
 import { html, isServer } from 'lit';
 export const title = "Willson's fun times website place";
-export const description = 'Willson is a front-end developer who likes to make fun things.';
+export const description = 'Willson is a front-end developer and likes to make fun things.';
 
 export const links = [
   {
@@ -55,7 +55,7 @@ export default async (data = initialData) => {
               I worked for 8 years at Shopify where I spent my time as a Senior Creative
               Technologist. I grew up with the company and built products that enabled people to run
               their business on the internet. I believe what I did was important work because it
-              enables Shopify merchangs to take control of and design their own lives.
+              enables Shopify merchants to take control of and design their own lives.
             </p>
 
             <p>
