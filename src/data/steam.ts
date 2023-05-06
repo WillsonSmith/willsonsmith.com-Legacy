@@ -848,7 +848,7 @@ export const steam = [
     "type": "game",
     "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
     "steam_appid": 814380,
-    "required_age": 0,
+    "required_age": "17",
     "is_free": false,
     "controller_support": "full",
     "detailed_description": "This Game of the Year Edition now includes bonus content*:<br />\r\n<br />\r\n- Reflection and Gauntlet of Strength - new boss challenge modes<br />\r\n- Remnants - leave messages and recordings of your actions that other players can view and rate<br />\r\n- 3 unlockable cosmetic skins<br />\r\n<br />\r\nGame of the Year  - The Game Awards 2019<br />\r\nBest Action Game of 2019 - IGN<br />\r\nOver 50 awards and nominations<br />\r\n<br />\r\nCarve your own clever path to vengeance in the critically acclaimed adventure from developer FromSoftware, creators of the Dark Souls series.<br />\r\n<br />\r\nIn Sekiro™: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.<br />\r\n<br />\r\nExplore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.<br />\r\n<br />\r\nTake Revenge. Restore Your Honor. Kill Ingeniously.<br />\r\n<br />\r\n*Download required.<br />\r\n<br />\r\nInternet connection required for asynchronous Multiplayer.",
@@ -873,15 +873,15 @@ export const steam = [
       "方块游戏 (Asia)"
     ],
     "price_overview": {
-      "currency": "KRW",
-      "initial": 5980000,
-      "final": 5980000,
+      "currency": "CAD",
+      "initial": 7999,
+      "final": 7999,
       "discount_percent": 0,
       "initial_formatted": "",
-      "final_formatted": "₩ 59,800"
+      "final_formatted": "CDN$ 79.99"
     },
     "packages": [
-      350085
+      298554
     ],
     "package_groups": [
       {
@@ -894,14 +894,14 @@ export const steam = [
         "is_recurring_subscription": "false",
         "subs": [
           {
-            "packageid": 350085,
+            "packageid": 298554,
             "percent_savings_text": " ",
             "percent_savings": 0,
-            "option_text": "Sekiro: Shadows Die Twice - ₩ 59,800",
+            "option_text": "Sekiro: Shadows Die Twice - CDN$ 79.99",
             "option_description": "",
             "can_get_free_license": "0",
             "is_free_license": false,
-            "price_in_cents_with_discount": 5980000
+            "price_in_cents_with_discount": 7999
           }
         ]
       }
@@ -1040,16 +1040,16 @@ export const steam = [
         "highlight": true
       },
       {
-        "id": 256742445,
+        "id": 256742444,
         "name": "Sekiro: Shadows Die Twice - Story Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256742445/movie.293x165.jpg?t=1553550374",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256742444/movie.293x165.jpg?t=1553549486",
         "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie480.webm?t=1553550374",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie_max.webm?t=1553550374"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie480.webm?t=1553549486",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie_max.webm?t=1553549486"
         },
         "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie480.mp4?t=1553550374",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742445/movie_max.mp4?t=1553550374"
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie480.mp4?t=1553549486",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742444/movie_max.mp4?t=1553549486"
         },
         "highlight": true
       },
@@ -1083,7 +1083,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 166350
+      "total": 166357
     },
     "achievements": {
       "total": 34,
@@ -2200,7 +2200,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 19966
+      "total": 19969
     },
     "achievements": {
       "total": 11,
