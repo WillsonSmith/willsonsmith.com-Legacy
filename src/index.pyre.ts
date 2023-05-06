@@ -53,9 +53,14 @@ export default async (data = initialData) => {
 
             <p>
               I worked for 8 years at Shopify where I spent my time as a Senior Creative
-              Technologist. I grew up with the company and built products that enabled people to run
-              their business on the internet. I believe what I did was important work because it
-              enables Shopify merchants to take control of and design their own lives.
+              Technologist building prototypes and custom UI that enabled my teams to make quick
+              decisions on what projects to pursue and accelerated development when projects
+              started.
+            </p>
+            <p>
+              I grew up with the company and built products that enabled people to run their
+              business on the internet. This work was important to me because it enables Shopify
+              merchants to take control of and design their own lives on their own schedule.
             </p>
 
             <p>
