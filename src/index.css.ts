@@ -42,7 +42,7 @@ export const styles = css`
   }
 
   .page {
-    margin-block-start: var(--spacing-lg);
+    /* margin-block-start: var(--spacing-lg); */
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);

@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "wireit",
+    "development": "netlify dev",
     "dev": "wireit",
     "clean": "wireit",
     "watch": "pyre watch",
@@ -47,11 +48,15 @@
   "license": "MIT",
   "dependencies": {
     "@lit-labs/ssr-client": "^1.1.1",
+    "@netlify/functions": "^1.4.0",
     "@shoelace-style/shoelace": "^2.3.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
+    "fast-xml-parser": "^4.2.2",
+    "jsdom": "^22.0.0",
     "lit": "^2.7.4"
   },
   "devDependencies": {
+    "@types/jsdom": "^21.1.1",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@web/dev-server": "^0.1.38",
@@ -61,6 +66,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "glob": "^10.0.0",
+    "netlify-cli": "^15.0.2",
     "rimraf": "^4.4.1",
     "rollup-plugin-minify-html-literals": "^1.2.6",
     "typescript": "^5.0.4",

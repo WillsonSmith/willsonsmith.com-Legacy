@@ -1,4 +1,9 @@
 [build]
 publish = "web/"
 command = "npm run build"
-functions = "none/"
+functions = "netlify-functions"
+
+[[redirects]]
+from = "/letterboxd"
+to = "/.netlify/functions/fetch-letterboxd"
+status = 200

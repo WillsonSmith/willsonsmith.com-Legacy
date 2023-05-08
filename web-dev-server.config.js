@@ -1,8 +1,9 @@
 export default {
   rootDir: 'pyre',
-  open: true,
+  // open: true,
   nodeResolve: true,
   watch: true,
+  port: 5173,
   middleware: [
     function rewriteassets(context, next) {
       if (context.url.startsWith('/assets')) {
