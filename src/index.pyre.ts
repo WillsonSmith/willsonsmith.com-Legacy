@@ -140,10 +140,10 @@ export default async (data = initialData) => {
   `;
 };
 
-export const update = async () => {
-  const movies = await fetchLetterboxd();
-  return { movies, steam: initialData.steam };
-};
+// export const update = async () => {
+//   const movies = await fetchLetterboxd();
+//   return { movies, steam: initialData.steam };
+// };
 
 async function parseXML(xmlString: string) {
   let parser: DOMParser;
