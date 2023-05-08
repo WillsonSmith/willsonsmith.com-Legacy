@@ -6,6 +6,8 @@ export const handler: Handler = async (event, context) => {
   const response = await fetch(rssFeed, {
     headers: {
       'Access-Control-Allow-Origin': '*',
+      // cache for 1 day
+      'Cache-Control': 'max-age=86400',
     },
     mode: 'no-cors',
   });
