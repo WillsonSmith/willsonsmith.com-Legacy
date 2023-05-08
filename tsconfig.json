@@ -19,8 +19,8 @@
     "useDefineForClassFields": false,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts", "src/**/*.d.ts"],
+  "include": ["src/**/*.ts", "functions/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts", "src/**/*.d.ts", "functions/**/*.d.ts"],
   "references": [
     {
       "path": "./components/tsconfig.json"
