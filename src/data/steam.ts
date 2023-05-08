@@ -2,6 +2,270 @@
 export const steam = [
   {
     "type": "game",
+    "name": "ASTRONEER",
+    "steam_appid": 361420,
+    "required_age": 0,
+    "is_free": false,
+    "controller_support": "full",
+    "dlc": [
+      571010
+    ],
+    "detailed_description": "Explore and reshape distant worlds! Astroneer is set during the 25th century Intergalactic Age of Discovery, where Astroneers explore the frontiers of outer space, risking their lives in harsh environments to unearth rare discoveries and unlock the mysteries of the universe.<br><br>In this space sandbox adventure, players can work together to build custom bases above or below ground, create vehicles to explore a vast solar system, and use terrain to create anything they can imagine. A player’s creativity and ingenuity are the key to thriving on exciting planetary adventures! In Astroneer you can:<h2 class=\"bb_tag\"><strong>Reshape the ground under your feet as though it were made of clay.</strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/deform_(3).gif?t=1656698434\" /><br>In Astroneer, players use their deform tool to dig, collect, shape and build anything they wish. Use this ability to dig to the center of the planet, build a ramp into the sky, or make megaliths just by using terrain!<h2 class=\"bb_tag\"><strong>Survive on and explore carefully crafted planets that can be entirely deformed and traversed.</strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/planets.gif?t=1656698434\" /><br>Our vast solar system includes 7 wondrous planets that players can travel between and explore every inch of, from the entire spherical surface, through treacherous layers of caves, all the way down to the mysterious core. Each of those planets has unique and challenging surface and cave biomes that offer a multitude of challenges for players on their journey.<h2 class=\"bb_tag\"><strong>Snap together components and objects to build bases and vehicles.</strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/bases.gif?t=1656698434\" /><br>Items that Astroneers craft and find in the world can all be snapped and connected together to create unique creations for any situation. Customize and decorate your bases, vehicles, and Astroneer.<h2 class=\"bb_tag\"><strong>Play with friends in 4 player online drop-in/drop-out co-op. </strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/multiplayer.gif?t=1656698434\" /><br>Astroneer is better with friends. Group up with other players and work together to create massive industrial bases or to create fun games in the extensive creative sandbox.<h2 class=\"bb_tag\"><strong>Discover and uncover the mysteries of the solar system. </strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/chambers.gif?t=1656698434\" /><br>Once Astroneers are ready, they may choose to attempt to understand and possibly harness the power behind mysterious structures found in the world.<br><br><strong><i>Astroneer began as an Early Access title on Steam and would not be here today if not for your support, feedback, and ideas throughout that process.</i></strong> Now that we have delivered our 1.0 version, we want to reiterate our pledge to continue building on the foundation that is Astroneer with free, ongoing content updates. If you're curious about the direction we're aiming for, be sure to go check out our roadmap and our development vlogs to keep updated on what we are working on!",
+    "about_the_game": "Explore and reshape distant worlds! Astroneer is set during the 25th century Intergalactic Age of Discovery, where Astroneers explore the frontiers of outer space, risking their lives in harsh environments to unearth rare discoveries and unlock the mysteries of the universe.<br><br>In this space sandbox adventure, players can work together to build custom bases above or below ground, create vehicles to explore a vast solar system, and use terrain to create anything they can imagine. A player’s creativity and ingenuity are the key to thriving on exciting planetary adventures! In Astroneer you can:<h2 class=\"bb_tag\"><strong>Reshape the ground under your feet as though it were made of clay.</strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/deform_(3).gif?t=1656698434\" /><br>In Astroneer, players use their deform tool to dig, collect, shape and build anything they wish. Use this ability to dig to the center of the planet, build a ramp into the sky, or make megaliths just by using terrain!<h2 class=\"bb_tag\"><strong>Survive on and explore carefully crafted planets that can be entirely deformed and traversed.</strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/planets.gif?t=1656698434\" /><br>Our vast solar system includes 7 wondrous planets that players can travel between and explore every inch of, from the entire spherical surface, through treacherous layers of caves, all the way down to the mysterious core. Each of those planets has unique and challenging surface and cave biomes that offer a multitude of challenges for players on their journey.<h2 class=\"bb_tag\"><strong>Snap together components and objects to build bases and vehicles.</strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/bases.gif?t=1656698434\" /><br>Items that Astroneers craft and find in the world can all be snapped and connected together to create unique creations for any situation. Customize and decorate your bases, vehicles, and Astroneer.<h2 class=\"bb_tag\"><strong>Play with friends in 4 player online drop-in/drop-out co-op. </strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/multiplayer.gif?t=1656698434\" /><br>Astroneer is better with friends. Group up with other players and work together to create massive industrial bases or to create fun games in the extensive creative sandbox.<h2 class=\"bb_tag\"><strong>Discover and uncover the mysteries of the solar system. </strong></h2><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/361420/extras/chambers.gif?t=1656698434\" /><br>Once Astroneers are ready, they may choose to attempt to understand and possibly harness the power behind mysterious structures found in the world.<br><br><strong><i>Astroneer began as an Early Access title on Steam and would not be here today if not for your support, feedback, and ideas throughout that process.</i></strong> Now that we have delivered our 1.0 version, we want to reiterate our pledge to continue building on the foundation that is Astroneer with free, ongoing content updates. If you're curious about the direction we're aiming for, be sure to go check out our roadmap and our development vlogs to keep updated on what we are working on!",
+    "short_description": "A game of aerospace industry and interplanetary exploration.",
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Dutch, Japanese, Korean, Polish, Russian, Simplified Chinese, Portuguese - Brazil, Turkish",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/361420/header.jpg?t=1656698434",
+    "website": "http://astroneer.space",
+    "pc_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 7 SP1 (64 bit only), Windows 8 (64 bit only), Windows 10 (64 bit only)<br></li><li><strong>Processor:</strong> X64 Dual Core CPU, 2+ GHz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Discrete Non Mobile GPU with 1 GB Ram<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>Additional Notes:</strong> Internet connection required for online multiplayer</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 7 SP1 (64 bit only), Windows 8 (64 bit only), Windows 10 (64 bit only)<br></li><li><strong>Processor:</strong> X64 Quad Core CPU, 3+ GHz<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Discrete Non Mobile GPU with 2 GB RAM<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 4 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>"
+    },
+    "mac_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "linux_requirements": {
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+    },
+    "legal_notice": "Copyright © 2021 System Era Softworks",
+    "developers": [
+      "System Era Softworks"
+    ],
+    "publishers": [
+      "System Era Softworks"
+    ],
+    "price_overview": {
+      "currency": "CAD",
+      "initial": 3999,
+      "final": 1799,
+      "discount_percent": 55,
+      "initial_formatted": "CDN$ 39.99",
+      "final_formatted": "CDN$ 17.99"
+    },
+    "packages": [
+      64704,
+      385368
+    ],
+    "package_groups": [
+      {
+        "name": "default",
+        "title": "Buy ASTRONEER",
+        "description": "",
+        "selection_text": "Select a purchase option",
+        "save_text": "",
+        "display_type": 0,
+        "is_recurring_subscription": "false",
+        "subs": [
+          {
+            "packageid": 64704,
+            "percent_savings_text": "-55% ",
+            "percent_savings": 0,
+            "option_text": "ASTRONEER - <span class=\"discount_original_price\">CDN$ 39.99</span> CDN$ 17.99",
+            "option_description": "",
+            "can_get_free_license": "0",
+            "is_free_license": false,
+            "price_in_cents_with_discount": 1799
+          },
+          {
+            "packageid": 385368,
+            "percent_savings_text": " ",
+            "percent_savings": 0,
+            "option_text": "ASTRONEER - Commercial License - CDN$ 34.99",
+            "option_description": "",
+            "can_get_free_license": "0",
+            "is_free_license": false,
+            "price_in_cents_with_discount": 3499
+          }
+        ]
+      }
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": false,
+      "linux": false
+    },
+    "categories": [
+      {
+        "id": 2,
+        "description": "Single-player"
+      },
+      {
+        "id": 1,
+        "description": "Multi-player"
+      },
+      {
+        "id": 9,
+        "description": "Co-op"
+      },
+      {
+        "id": 38,
+        "description": "Online Co-op"
+      },
+      {
+        "id": 22,
+        "description": "Steam Achievements"
+      },
+      {
+        "id": 28,
+        "description": "Full controller support"
+      },
+      {
+        "id": 23,
+        "description": "Steam Cloud"
+      },
+      {
+        "id": 42,
+        "description": "Remote Play on Tablet"
+      },
+      {
+        "id": 43,
+        "description": "Remote Play on TV"
+      }
+    ],
+    "genres": [
+      {
+        "id": "25",
+        "description": "Adventure"
+      },
+      {
+        "id": "23",
+        "description": "Indie"
+      }
+    ],
+    "screenshots": [
+      {
+        "id": 0,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_539bc5211ccdad2bc6cc70e4af40194d74eb0256.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_539bc5211ccdad2bc6cc70e4af40194d74eb0256.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 1,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_858b8bece04b753a6b35a009776a4de9dd6e0df7.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_858b8bece04b753a6b35a009776a4de9dd6e0df7.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 2,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_cd719a15ce46e46b78837df49f705d4dd27a2b81.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_cd719a15ce46e46b78837df49f705d4dd27a2b81.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 3,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_436f3ea0934a6ecd3fdd2f260ef535d80b8c185d.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_436f3ea0934a6ecd3fdd2f260ef535d80b8c185d.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 4,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_13682f989b3f0d68afb92d5d50185b0258dd4767.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_13682f989b3f0d68afb92d5d50185b0258dd4767.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 5,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_c7c54244add5ac921f2ae5b28f6f3efbc8470823.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_c7c54244add5ac921f2ae5b28f6f3efbc8470823.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 6,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_63402300a9d8f1eff80a3034b872995db03158ab.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_63402300a9d8f1eff80a3034b872995db03158ab.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 7,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_a1b3fd7d139ba491aba79a3731af0cf7dec04e0a.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_a1b3fd7d139ba491aba79a3731af0cf7dec04e0a.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 8,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_6b0756c148cad9b8029475d516a110dda3f3bac8.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_6b0756c148cad9b8029475d516a110dda3f3bac8.1920x1080.jpg?t=1656698434"
+      },
+      {
+        "id": 9,
+        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_0e35ef544d0f7767253e90cad603adb32a026096.600x338.jpg?t=1656698434",
+        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/361420/ss_0e35ef544d0f7767253e90cad603adb32a026096.1920x1080.jpg?t=1656698434"
+      }
+    ],
+    "movies": [
+      {
+        "id": 256742413,
+        "name": "ASTRONEER - Release Trailer",
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256742413/movie.293x165.jpg?t=1549606228",
+        "webm": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742413/movie480.webm?t=1549606228",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742413/movie_max.webm?t=1549606228"
+        },
+        "mp4": {
+          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256742413/movie480.mp4?t=1549606228",
+          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256742413/movie_max.mp4?t=1549606228"
+        },
+        "highlight": true
+      }
+    ],
+    "recommendations": {
+      "total": 90970
+    },
+    "achievements": {
+      "total": 56,
+      "highlighted": [
+        {
+          "name": "EXO Dynamics Training Seal of Approval",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/3925069b37116e3486ceb38296b44c7c72e9d33b.jpg"
+        },
+        {
+          "name": "Up By the Roots",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/86cb5ff41d6c9681476824aad330fdf7cc2c16dc.jpg"
+        },
+        {
+          "name": "Pursuit of Knowledge",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/8e191dab64b4c89a8e0497065a6bc0f0fd6d5aaa.jpg"
+        },
+        {
+          "name": "A Little Byte Goes a Long Way",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/04d430a6f04c80df44c533d81bcd610ae20fe450.jpg"
+        },
+        {
+          "name": "Dirt Don't Hurt",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/d7ca63b5aceec8b568098605f94818ae6d3a8e42.jpg"
+        },
+        {
+          "name": "Do Science To It",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/af451f4b178d8202fb436199cb88abfcee53edf8.jpg"
+        },
+        {
+          "name": "A Little Gassy",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/f59b33b115be2a1c582eed6816d4ff34bf8b68c2.jpg"
+        },
+        {
+          "name": "Sweet New Ride",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/60934dd2194d984abe430a6e10b544122b09fdd6.jpg"
+        },
+        {
+          "name": "Scrap for the Scrapper",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/220bb1838d6a9cb53f03b6bb96458f37731ca929.jpg"
+        },
+        {
+          "name": "Junk Trader",
+          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/361420/f92cc40d0aea3aef103f280d4177dfd2b294823d.jpg"
+        }
+      ]
+    },
+    "release_date": {
+      "coming_soon": false,
+      "date": "5 Feb, 2019"
+    },
+    "support_info": {
+      "url": "https://astroneer.space/support",
+      "email": "support@systemera.net"
+    },
+    "background": "https://cdn.akamai.steamstatic.com/steam/apps/361420/page_bg_generated_v6b.jpg?t=1656698434",
+    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/361420/page.bg.jpg?t=1656698434",
+    "content_descriptors": {
+      "ids": [],
+      "notes": null
+    }
+  },
+  {
+    "type": "game",
     "name": "Escape Academy",
     "steam_appid": 1812090,
     "required_age": 0,
@@ -227,7 +491,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 503
+      "total": 505
     },
     "achievements": {
       "total": 27,
@@ -545,7 +809,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 4963
+      "total": 4969
     },
     "achievements": {
       "total": 43,
@@ -782,7 +1046,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 9394
+      "total": 9408
     },
     "achievements": {
       "total": 19,
@@ -1083,7 +1347,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 166357
+      "total": 166529
     },
     "achievements": {
       "total": 34,
@@ -1160,23 +1424,23 @@ export const steam = [
       2230760,
       2169090
     ],
-    "detailed_description": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
-    "about_the_game": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
-    "short_description": "Mow down thousands of night creatures and survive until dawn! Vampire Survivors is a gothic horror casual game with rogue-lite elements, where your choices can allow you to quickly snowball against the hundreds of monsters that get thrown at you.",
-    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Turkish",
+    "detailed_description": "Réduisez des milliers de créatures de la nuit en bouillie pour survivre jusqu'à l'aurore !<br><ul class=\"bb_ul\"><li> </li></ul>Vampire Survivors est un jeu d'horreur gothique teinté d'éléments de roguelite, dans lequel vos choix vous permettent de lutter contre des hordes de monstres qui vous assaillent de toute part.<br><br><br>Vampire Survivors est un jeu de survie dans lequel chaque seconde compte, qui s'appuie sur un gameplay minimaliste semé d'éléments de roguelite.<br>Ces jours-ci, l'enfer est plutôt calme... parce que tous ses occupants sont ici ! Vous ne pouvez ni fuir ni vous cacher. Il ne vous reste plus qu'à survivre aussi longtemps que possible, jusqu'à ce que la Faucheuse vienne inexorablement mettre un terme à vos souffrances. En récupérant de l'or à chaque partie, vous pourrez acheter des améliorations qui faciliteront la tâche au prochain survivant.<br><br><i>Le phénomène indé dans lequel vous ne faites plus qu'un avec le genre bullet hell !</i><br><br><br><ul class=\"bb_ul\"><li>Les souris, claviers, manettes et écrans tactiles sont pris en charge.</li></ul><h2 class=\"bb_tag\">Astuces de base</h2><ul class=\"bb_ul\"><li>Les gemmes et les objets ne disparaissent pas ; vous pouvez prendre votre temps pour les récupérer.<br></li><li>Commencez par obtenir deux ou trois armes offensives, puis améliorez-les une par une.<br></li><li>Si vous ne savez pas quels bonus améliorer, l'armure et la chance sont de bons investissements au début du jeu.<br></li><li>Le remboursement des bonus est gratuit. N'hésitez pas à y recourir régulièrement pour tester de nouvelles combinaisons.</li></ul>",
+    "about_the_game": "Réduisez des milliers de créatures de la nuit en bouillie pour survivre jusqu'à l'aurore !<br><ul class=\"bb_ul\"><li> </li></ul>Vampire Survivors est un jeu d'horreur gothique teinté d'éléments de roguelite, dans lequel vos choix vous permettent de lutter contre des hordes de monstres qui vous assaillent de toute part.<br><br><br>Vampire Survivors est un jeu de survie dans lequel chaque seconde compte, qui s'appuie sur un gameplay minimaliste semé d'éléments de roguelite.<br>Ces jours-ci, l'enfer est plutôt calme... parce que tous ses occupants sont ici ! Vous ne pouvez ni fuir ni vous cacher. Il ne vous reste plus qu'à survivre aussi longtemps que possible, jusqu'à ce que la Faucheuse vienne inexorablement mettre un terme à vos souffrances. En récupérant de l'or à chaque partie, vous pourrez acheter des améliorations qui faciliteront la tâche au prochain survivant.<br><br><i>Le phénomène indé dans lequel vous ne faites plus qu'un avec le genre bullet hell !</i><br><br><br><ul class=\"bb_ul\"><li>Les souris, claviers, manettes et écrans tactiles sont pris en charge.</li></ul><h2 class=\"bb_tag\">Astuces de base</h2><ul class=\"bb_ul\"><li>Les gemmes et les objets ne disparaissent pas ; vous pouvez prendre votre temps pour les récupérer.<br></li><li>Commencez par obtenir deux ou trois armes offensives, puis améliorez-les une par une.<br></li><li>Si vous ne savez pas quels bonus améliorer, l'armure et la chance sont de bons investissements au début du jeu.<br></li><li>Le remboursement des bonus est gratuit. N'hésitez pas à y recourir régulièrement pour tester de nouvelles combinaisons.</li></ul>",
+    "short_description": "Réduisez des milliers de créatures de la nuit en bouillie pour survivre jusqu'à l'aurore ! Vampire Survivors est un jeu d'horreur gothique teinté d'éléments de roguelite, dans lequel vos choix vous permettent de lutter contre des hordes de monstres qui vous assaillent de toute part.",
+    "supported_languages": "Anglais, Français, Italien, Allemand, Espagnol - Espagne, Japonais, Coréen, Polonais, Portugais du Brésil, Russe, Chinois simplifié, Turc",
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/header.jpg?t=1681394120",
     "website": null,
     "pc_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit<br></li><li><strong>Processor:</strong> Intel Pentium 4 processor or later that's SSE2 capable<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Storage:</strong> 400 MB available space</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+      "minimum": "<strong>Minimale :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires<br></li><li><strong>Système d'exploitation :</strong> Windows 10 64bit<br></li><li><strong>Processeur :</strong> Intel Pentium 4 processor or later that's SSE2 capable<br></li><li><strong>Mémoire vive :</strong> 1 GB de mémoire<br></li><li><strong>Espace disque :</strong> 400 MB d'espace disque disponible</li></ul>",
+      "recommended": "<strong>Recommandée :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>"
     },
     "mac_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+      "minimum": "<strong>Minimale :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>",
+      "recommended": "<strong>Recommandée :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>"
     },
     "linux_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+      "minimum": "<strong>Minimale :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>",
+      "recommended": "<strong>Recommandée :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>"
     },
     "developers": [
       "poncle"
@@ -1185,12 +1449,12 @@ export const steam = [
       "poncle"
     ],
     "price_overview": {
-      "currency": "CAD",
-      "initial": 599,
-      "final": 599,
+      "currency": "EUR",
+      "initial": 499,
+      "final": 499,
       "discount_percent": 0,
       "initial_formatted": "",
-      "final_formatted": "CDN$ 5.99"
+      "final_formatted": "4,99€"
     },
     "packages": [
       644402
@@ -1198,9 +1462,9 @@ export const steam = [
     "package_groups": [
       {
         "name": "default",
-        "title": "Buy Vampire Survivors",
+        "title": "Acheter Vampire Survivors",
         "description": "",
-        "selection_text": "Select a purchase option",
+        "selection_text": "Option d'achat",
         "save_text": "",
         "display_type": 0,
         "is_recurring_subscription": "false",
@@ -1209,11 +1473,11 @@ export const steam = [
             "packageid": 644402,
             "percent_savings_text": " ",
             "percent_savings": 0,
-            "option_text": "Vampire Survivors - CDN$ 5.99",
+            "option_text": "Vampire Survivors - 4,99€",
             "option_description": "",
             "can_get_free_license": "0",
             "is_free_license": false,
-            "price_in_cents_with_discount": 599
+            "price_in_cents_with_discount": 499
           }
         ]
       }
@@ -1230,15 +1494,15 @@ export const steam = [
     "categories": [
       {
         "id": 2,
-        "description": "Single-player"
+        "description": "Solo"
       },
       {
         "id": 22,
-        "description": "Steam Achievements"
+        "description": "Succès Steam"
       },
       {
         "id": 28,
-        "description": "Full controller support"
+        "description": "Compat. contrôleurs complète"
       },
       {
         "id": 23,
@@ -1252,11 +1516,11 @@ export const steam = [
       },
       {
         "id": "4",
-        "description": "Casual"
+        "description": "Occasionnel"
       },
       {
         "id": "23",
-        "description": "Indie"
+        "description": "Indépendant"
       },
       {
         "id": "3",
@@ -1331,7 +1595,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 185804
+      "total": 186022
     },
     "achievements": {
       "total": 184,
@@ -1380,7 +1644,7 @@ export const steam = [
     },
     "release_date": {
       "coming_soon": false,
-      "date": "20 Oct, 2022"
+      "date": "20 oct. 2022"
     },
     "support_info": {
       "url": "",
@@ -1653,7 +1917,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 299
+      "total": 301
     },
     "achievements": {
       "total": 22,
@@ -2200,7 +2464,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 19969
+      "total": 20018
     },
     "achievements": {
       "total": 11,
@@ -2532,7 +2796,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 13028
+      "total": 13058
     },
     "achievements": {
       "total": 63,
@@ -2594,272 +2858,6 @@ export const steam = [
         5
       ],
       "notes": "This Game may contain content not appropriate for all ages. General Mature Content"
-    }
-  },
-  {
-    "type": "game",
-    "name": "Horizon Zero Dawn™ Complete Edition",
-    "steam_appid": 1151640,
-    "required_age": "12",
-    "is_free": false,
-    "controller_support": "full",
-    "detailed_description": "EARTH IS OURS NO MORE<br />\r\n<br />\r\nExperience Aloy’s entire legendary quest to unravel the mysteries of a world ruled by deadly Machines.<br />\r\n<br />\r\nAn outcast from her tribe, the young hunter fights to uncover her past, discover her destiny… and stop a catastrophic threat to the future.<br />\r\n<br />\r\nUnleash devastating, tactical attacks against unique Machines and rival tribes as you explore an open world teeming with wildlife and danger.<br />\r\n<br />\r\nHorizon Zero Dawn™ is a multi-award-winning action role-playing game – and this Complete Edition for PC includes the huge expansion The Frozen Wilds, featuring new lands, skills, weapons and Machines.<br />\r\n<br />\r\nINCLUDES:<br />\r\n• Horizon Zero Dawn<br />\r\n• The Frozen Wilds expansion<br />\r\n• Carja Storm Ranger Outfit and Carja Mighty Bow<br />\r\n• Carja Trader Pack<br />\r\n• Banuk Trailblazer Outfit and Banuk Culling Bow<br />\r\n• Banuk Traveller Pack<br />\r\n• Nora Keeper Pack<br />\r\n• Digital art book",
-    "about_the_game": "EARTH IS OURS NO MORE<br />\r\n<br />\r\nExperience Aloy’s entire legendary quest to unravel the mysteries of a world ruled by deadly Machines.<br />\r\n<br />\r\nAn outcast from her tribe, the young hunter fights to uncover her past, discover her destiny… and stop a catastrophic threat to the future.<br />\r\n<br />\r\nUnleash devastating, tactical attacks against unique Machines and rival tribes as you explore an open world teeming with wildlife and danger.<br />\r\n<br />\r\nHorizon Zero Dawn™ is a multi-award-winning action role-playing game – and this Complete Edition for PC includes the huge expansion The Frozen Wilds, featuring new lands, skills, weapons and Machines.<br />\r\n<br />\r\nINCLUDES:<br />\r\n• Horizon Zero Dawn<br />\r\n• The Frozen Wilds expansion<br />\r\n• Carja Storm Ranger Outfit and Carja Mighty Bow<br />\r\n• Carja Trader Pack<br />\r\n• Banuk Trailblazer Outfit and Banuk Culling Bow<br />\r\n• Banuk Traveller Pack<br />\r\n• Nora Keeper Pack<br />\r\n• Digital art book",
-    "short_description": "Experience Aloy’s legendary quest to unravel the mysteries of a future Earth ruled by Machines. Use devastating tactical attacks against your prey and explore a majestic open world in this award-winning action RPG!",
-    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Arabic<strong>*</strong>, Danish, Dutch, Finnish, Japanese, Korean, Norwegian, Polish<strong>*</strong>, Portuguese - Portugal<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese, Spanish - Latin America<strong>*</strong>, Swedish, Traditional Chinese<br><strong>*</strong>languages with full audio support",
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg?t=1667297464",
-    "website": null,
-    "pc_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64-bits<br></li><li><strong>Processor:</strong> Intel Core i5-2500K@3.3GHz or AMD FX 6300@3.5GHz<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GeForce GTX 780 (3 GB) or AMD Radeon R9 290 (4GB)<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 100 GB available space</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64-bits<br></li><li><strong>Processor:</strong> Intel Core i7-4770K@3.5GHz or Ryzen 5 1500X@3.5GHz<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GeForce GTX 1060 (6 GB) or AMD Radeon RX 580 (8GB)<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 100 GB available space</li></ul>"
-    },
-    "mac_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "linux_requirements": {
-      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
-      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
-    },
-    "legal_notice": "Horizon Zero Dawn™ Complete Edition ©2020 Sony Interactive Entertainment Europe. Developed by Guerrilla. “Horizon Zero Dawn” is a trademark of Sony Interactive Entertainment Europe. All rights reserved.<h2 class=\"bb_tag\">PRIVACY POLICY</h2><a href=\"https://steamcommunity.com/linkfilter/?url=https://www.playstation.com/en-us/legal/terms-of-use/op-privacy-policy/\" target=\"_blank\" rel=\" noopener\"  >https://www.playstation.com/en-us/legal/terms-of-use/op-privacy-policy/</a><h2 class=\"bb_tag\">USER AGREEMENT</h2>Software subject to license  <a href=\"https://steamcommunity.com/linkfilter/?url=https://www.playstation.com/en-us/legal/op-eula/\" target=\"_blank\" rel=\" noopener\"  >https://www.playstation.com/en-us/legal/op-eula/</a>",
-    "developers": [
-      "Guerrilla"
-    ],
-    "publishers": [
-      "PlayStation PC LLC"
-    ],
-    "price_overview": {
-      "currency": "CAD",
-      "initial": 6499,
-      "final": 6499,
-      "discount_percent": 0,
-      "initial_formatted": "",
-      "final_formatted": "CDN$ 64.99"
-    },
-    "packages": [
-      654387,
-      392522
-    ],
-    "package_groups": [
-      {
-        "name": "default",
-        "title": "Buy Horizon Zero Dawn™ Complete Edition",
-        "description": "",
-        "selection_text": "Select a purchase option",
-        "save_text": "",
-        "display_type": 0,
-        "is_recurring_subscription": "false",
-        "subs": [
-          {
-            "packageid": 654387,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "Horizon Zero Dawn - Commercial License - CDN$ 59.99",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 5999
-          },
-          {
-            "packageid": 392522,
-            "percent_savings_text": " ",
-            "percent_savings": 0,
-            "option_text": "Horizon Zero Dawn - CDN$ 64.99",
-            "option_description": "",
-            "can_get_free_license": "0",
-            "is_free_license": false,
-            "price_in_cents_with_discount": 6499
-          }
-        ]
-      }
-    ],
-    "platforms": {
-      "windows": true,
-      "mac": false,
-      "linux": false
-    },
-    "categories": [
-      {
-        "id": 2,
-        "description": "Single-player"
-      },
-      {
-        "id": 22,
-        "description": "Steam Achievements"
-      },
-      {
-        "id": 28,
-        "description": "Full controller support"
-      },
-      {
-        "id": 23,
-        "description": "Steam Cloud"
-      },
-      {
-        "id": 42,
-        "description": "Remote Play on Tablet"
-      }
-    ],
-    "genres": [
-      {
-        "id": "1",
-        "description": "Action"
-      },
-      {
-        "id": "25",
-        "description": "Adventure"
-      },
-      {
-        "id": "3",
-        "description": "RPG"
-      }
-    ],
-    "screenshots": [
-      {
-        "id": 0,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_d09106060fb7de8bf342c23df18b14debc8a15a3.600x338.jpg?t=1667297464",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_d09106060fb7de8bf342c23df18b14debc8a15a3.1920x1080.jpg?t=1667297464"
-      },
-      {
-        "id": 1,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_271f850eec3f96b22aa17be35b948268e0771c7f.600x338.jpg?t=1667297464",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_271f850eec3f96b22aa17be35b948268e0771c7f.1920x1080.jpg?t=1667297464"
-      },
-      {
-        "id": 2,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_15f5759c441e4e5f51e1a8ee333e4ab9df9aa783.600x338.jpg?t=1667297464",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_15f5759c441e4e5f51e1a8ee333e4ab9df9aa783.1920x1080.jpg?t=1667297464"
-      },
-      {
-        "id": 3,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_f7cf51f1ccd909264f2c5814f328e3f72e7b62bd.600x338.jpg?t=1667297464",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_f7cf51f1ccd909264f2c5814f328e3f72e7b62bd.1920x1080.jpg?t=1667297464"
-      },
-      {
-        "id": 4,
-        "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_9db45aa04e8c8b5043b479f42ed36296bfc3a918.600x338.jpg?t=1667297464",
-        "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/ss_9db45aa04e8c8b5043b479f42ed36296bfc3a918.1920x1080.jpg?t=1667297464"
-      }
-    ],
-    "movies": [
-      {
-        "id": 256899640,
-        "name": "2nd Anniversary Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256899640/movie.293x165.jpg?t=1659711061",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256899640/movie480_vp9.webm?t=1659711061",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256899640/movie_max_vp9.webm?t=1659711061"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256899640/movie480.mp4?t=1659711061",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256899640/movie_max.mp4?t=1659711061"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256795570,
-        "name": "PC Launch Trailer #2 (PEGI)",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256795570/movie.293x165.jpg?t=1596814664",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256795570/movie480_vp9.webm?t=1596814664",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256795570/movie_max_vp9.webm?t=1596814664"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256795570/movie480.mp4?t=1596814664",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256795570/movie_max.mp4?t=1596814664"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256791705,
-        "name": "PC Post-Launch Trailer (EN)",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256791705/movie.293x165.jpg?t=1605570730",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256791705/movie480_vp9.webm?t=1605570730",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256791705/movie_max_vp9.webm?t=1605570730"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256791705/movie480.mp4?t=1605570730",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256791705/movie_max.mp4?t=1605570730"
-        },
-        "highlight": true
-      },
-      {
-        "id": 256777357,
-        "name": "Story Trailer",
-        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256777357/movie.293x165.jpg?t=1583852856",
-        "webm": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256777357/movie480.webm?t=1583852856",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256777357/movie_max.webm?t=1583852856"
-        },
-        "mp4": {
-          "480": "http://cdn.akamai.steamstatic.com/steam/apps/256777357/movie480.mp4?t=1583852856",
-          "max": "http://cdn.akamai.steamstatic.com/steam/apps/256777357/movie_max.mp4?t=1583852856"
-        },
-        "highlight": true
-      }
-    ],
-    "recommendations": {
-      "total": 71830
-    },
-    "achievements": {
-      "total": 79,
-      "highlighted": [
-        {
-          "name": "All achievements obtained",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/90105bcb9db3651e3830bf56a45834eab69ac01d.jpg"
-        },
-        {
-          "name": "Stealth killed 10 machines",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/5d65440e26762aacc11dd98ff61691061120921a.jpg"
-        },
-        {
-          "name": "3 Strikes From Above",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/e6899af06e731bbe898de9814113a712997589cf.jpg"
-        },
-        {
-          "name": "Tore off 10 components",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/31f8f4469a483bf8f27110f186d88797ca7e6d98.jpg"
-        },
-        {
-          "name": "10 Vulnerable machine kills",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/9a61ea9030720bd4c7e24ef317fdd4e27c4aa426.jpg"
-        },
-        {
-          "name": "Tore off 5 heavy weapons",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/443817224273003cab44ba5540785b5d118a8bf9.jpg"
-        },
-        {
-          "name": "7 types of machine overridden",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/be1cd82b540a778a0468625b2b09f066107e87db.jpg"
-        },
-        {
-          "name": "Headshot 30 human enemies",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/7c5dceffcbc21028a87bfe146e9499c6a54cb220.jpg"
-        },
-        {
-          "name": "Downed 23 Grazer dummies",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/f8f70f59168f72f9674bb8504af309753a454323.jpg"
-        },
-        {
-          "name": "First Modification",
-          "path": "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1151640/c84b5025e82c7d35e10422fda00526d8584bb0fa.jpg"
-        }
-      ]
-    },
-    "release_date": {
-      "coming_soon": false,
-      "date": "7 Aug, 2020"
-    },
-    "support_info": {
-      "url": "https://www.guerrilla-games.com/play/horizon/faq",
-      "email": "customersupport@guerrilla-games.com"
-    },
-    "background": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/page_bg_generated_v6b.jpg?t=1667297464",
-    "background_raw": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/page.bg.jpg?t=1667297464",
-    "content_descriptors": {
-      "ids": [],
-      "notes": null
     }
   }
 ];
