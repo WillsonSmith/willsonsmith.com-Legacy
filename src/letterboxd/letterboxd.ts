@@ -23,7 +23,7 @@ export async function parseXML(xmlString: string) {
     const descriptionDoc = parser.parseFromString(descriptionMarkup || '', 'text/html');
     let image = descriptionDoc.querySelector('img')?.getAttribute('src') || '';
 
-    // image = image?.replace('0-600-0-900', '0-200-0-300');
+    image = image?.replace('0-600-0-900', '0-300-0-450');
 
     const description = descriptionDoc.querySelector('p')?.textContent || '';
 
