@@ -2,6 +2,8 @@ import { html, isServer } from 'lit';
 export const title = "Willson's fun times website place";
 export const description = 'Willson is a front-end developer and likes to make fun things.';
 
+// import { fetchLetterboxd } from './letterboxd/letterboxd.js';
+
 export const links = [
   {
     rel: 'stylesheet',
@@ -11,10 +13,11 @@ export const links = [
 
 export const styles = isServer ? (await import('./index.css.js')).styles : undefined;
 
+// import { movies } from './data/movies.js';
 import { steam } from './data/steam.js';
 
 export const initialData = {
-  movies: await fetchLetterboxd(),
+  // movies,
   steam,
 };
 
@@ -32,7 +35,7 @@ import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
 export default async (data = initialData) => {
-  const movies = data.movies;
+  // const movies = data.movies;
   const steam = data.steam;
 
   return html`
@@ -117,15 +120,7 @@ export default async (data = initialData) => {
         <reading-column>
           <header><h2>What I'm watching</h2></header>
         </reading-column>
-        <movie-block>
-          ${movies.map((movie) => {
-            return html`<movie-block-movie
-              title=${movie.title}
-              url=${movie.link}
-              image=${movie.image}
-            ></movie-block-movie>`;
-          })}
-        </movie-block>
+        <movie-block></movie-block>
       </section>
       <section class="section">
         <reading-column>
@@ -139,75 +134,3 @@ export default async (data = initialData) => {
     </main>
   `;
 };
-
-// export const update = async () => {
-//   const movies = await fetchLetterboxd();
-//   return { movies, steam: initialData.steam };
-// };
-
-async function parseXML(xmlString: string) {
-  let parser: DOMParser;
-
-  if (isServer) {
-    const { JSDOM } = await import('jsdom');
-    const dom = new JSDOM();
-
-    parser = new dom.window.DOMParser();
-  } else {
-    parser = new DOMParser();
-  }
-
-  const doc = parser.parseFromString(xmlString, 'text/xml');
-
-  const items = Array.from(doc.querySelectorAll('item'));
-
-  const movies = [];
-
-  for (const item of items) {
-    const descriptionMarkup = item.querySelector('description')?.textContent;
-    const descriptionDoc = parser.parseFromString(descriptionMarkup || '', 'text/html');
-    let image = descriptionDoc.querySelector('img')?.getAttribute('src');
-
-    image = image?.replace('0-600-0-900', '0-200-0-300');
-
-    const description = descriptionDoc.querySelector('p')?.textContent;
-
-    const title = item.querySelector('title')?.textContent;
-    const link = item.querySelector('link')?.textContent;
-    const date = item.querySelector('pubDate')?.textContent;
-
-    const movie = {
-      title,
-      link,
-      image,
-      description,
-      date,
-    };
-
-    movies.push(movie);
-  }
-
-  return movies.filter((movie) => movie.image);
-}
-
-async function fetchLetterboxd() {
-  let response: Response;
-
-  if (isServer) {
-    const rssFeed = 'https://letterboxd.com/willsonsmith/rss/';
-
-    response = await fetch(rssFeed, {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
-      mode: 'no-cors',
-    });
-  } else {
-    response = await fetch('/letterboxd');
-  }
-
-  const xml = await response.text();
-
-  const parsed = await parseXML(xml);
-  return parsed;
-}
