@@ -1,5 +1,5 @@
 import { saveWatchedFilms } from './functions/functions/src/movies/saveWatchedFilms.js';
-import { saveSteamGames } from './functions/steam/saveSteamGames.js';
+import { saveSteamGames } from './functions/functions/src/steam/saveSteamGames.js';
 
 export default async () => {
   await saveWatchedFilms();

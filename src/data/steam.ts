@@ -202,7 +202,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 90970
+      "total": 90988
     },
     "achievements": {
       "total": 56,
@@ -809,7 +809,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 4969
+      "total": 4971
     },
     "achievements": {
       "total": 43,
@@ -1046,7 +1046,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 9408
+      "total": 9412
     },
     "achievements": {
       "total": 19,
@@ -1347,7 +1347,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 166529
+      "total": 166562
     },
     "achievements": {
       "total": 34,
@@ -1424,23 +1424,23 @@ export const steam = [
       2230760,
       2169090
     ],
-    "detailed_description": "Réduisez des milliers de créatures de la nuit en bouillie pour survivre jusqu'à l'aurore !<br><ul class=\"bb_ul\"><li> </li></ul>Vampire Survivors est un jeu d'horreur gothique teinté d'éléments de roguelite, dans lequel vos choix vous permettent de lutter contre des hordes de monstres qui vous assaillent de toute part.<br><br><br>Vampire Survivors est un jeu de survie dans lequel chaque seconde compte, qui s'appuie sur un gameplay minimaliste semé d'éléments de roguelite.<br>Ces jours-ci, l'enfer est plutôt calme... parce que tous ses occupants sont ici ! Vous ne pouvez ni fuir ni vous cacher. Il ne vous reste plus qu'à survivre aussi longtemps que possible, jusqu'à ce que la Faucheuse vienne inexorablement mettre un terme à vos souffrances. En récupérant de l'or à chaque partie, vous pourrez acheter des améliorations qui faciliteront la tâche au prochain survivant.<br><br><i>Le phénomène indé dans lequel vous ne faites plus qu'un avec le genre bullet hell !</i><br><br><br><ul class=\"bb_ul\"><li>Les souris, claviers, manettes et écrans tactiles sont pris en charge.</li></ul><h2 class=\"bb_tag\">Astuces de base</h2><ul class=\"bb_ul\"><li>Les gemmes et les objets ne disparaissent pas ; vous pouvez prendre votre temps pour les récupérer.<br></li><li>Commencez par obtenir deux ou trois armes offensives, puis améliorez-les une par une.<br></li><li>Si vous ne savez pas quels bonus améliorer, l'armure et la chance sont de bons investissements au début du jeu.<br></li><li>Le remboursement des bonus est gratuit. N'hésitez pas à y recourir régulièrement pour tester de nouvelles combinaisons.</li></ul>",
-    "about_the_game": "Réduisez des milliers de créatures de la nuit en bouillie pour survivre jusqu'à l'aurore !<br><ul class=\"bb_ul\"><li> </li></ul>Vampire Survivors est un jeu d'horreur gothique teinté d'éléments de roguelite, dans lequel vos choix vous permettent de lutter contre des hordes de monstres qui vous assaillent de toute part.<br><br><br>Vampire Survivors est un jeu de survie dans lequel chaque seconde compte, qui s'appuie sur un gameplay minimaliste semé d'éléments de roguelite.<br>Ces jours-ci, l'enfer est plutôt calme... parce que tous ses occupants sont ici ! Vous ne pouvez ni fuir ni vous cacher. Il ne vous reste plus qu'à survivre aussi longtemps que possible, jusqu'à ce que la Faucheuse vienne inexorablement mettre un terme à vos souffrances. En récupérant de l'or à chaque partie, vous pourrez acheter des améliorations qui faciliteront la tâche au prochain survivant.<br><br><i>Le phénomène indé dans lequel vous ne faites plus qu'un avec le genre bullet hell !</i><br><br><br><ul class=\"bb_ul\"><li>Les souris, claviers, manettes et écrans tactiles sont pris en charge.</li></ul><h2 class=\"bb_tag\">Astuces de base</h2><ul class=\"bb_ul\"><li>Les gemmes et les objets ne disparaissent pas ; vous pouvez prendre votre temps pour les récupérer.<br></li><li>Commencez par obtenir deux ou trois armes offensives, puis améliorez-les une par une.<br></li><li>Si vous ne savez pas quels bonus améliorer, l'armure et la chance sont de bons investissements au début du jeu.<br></li><li>Le remboursement des bonus est gratuit. N'hésitez pas à y recourir régulièrement pour tester de nouvelles combinaisons.</li></ul>",
-    "short_description": "Réduisez des milliers de créatures de la nuit en bouillie pour survivre jusqu'à l'aurore ! Vampire Survivors est un jeu d'horreur gothique teinté d'éléments de roguelite, dans lequel vos choix vous permettent de lutter contre des hordes de monstres qui vous assaillent de toute part.",
-    "supported_languages": "Anglais, Français, Italien, Allemand, Espagnol - Espagne, Japonais, Coréen, Polonais, Portugais du Brésil, Russe, Chinois simplifié, Turc",
+    "detailed_description": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
+    "about_the_game": "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements.<br>Hell is empty, the devils are here, and there's no place to run or hide. All you can do is survive as long as you can until death inevitably puts an end to your struggles. Gather gold in each run to buy upgrades and help the next survivor. <br><br><i>The supernatural indie phenomenon that lets you be the bullet hell!</i><br><br><a href=\"https://steamcommunity.com/linkfilter/?url=https://discord.gg/vampire-survivors\" target=\"_blank\" rel=\" noopener\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1794680/extras/discord.png?t=1681394120\" /></a><br><br><ul class=\"bb_ul\"><li>Supports mouse, keyboard, controller, and touch screen.</li></ul><h2 class=\"bb_tag\">Starting Tips</h2><ul class=\"bb_ul\"><li>Take your time to grab gems and items, they won't disappear.<br></li><li>Get two or three offensive weapons at first, but focus on leveling them up one at a time.<br></li><li>Armour and Luck are good starting power-ups to spend money on.<br></li><li>Refund power-ups often, it's free, and try new upgrade paths.</li></ul><br>v0.1.0 release date:<br>- itch: Mar 31, 2021<br>- Steam: Dec 17, 2021",
+    "short_description": "Mow down thousands of night creatures and survive until dawn! Vampire Survivors is a gothic horror casual game with rogue-lite elements, where your choices can allow you to quickly snowball against the hundreds of monsters that get thrown at you.",
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Turkish",
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/header.jpg?t=1681394120",
     "website": null,
     "pc_requirements": {
-      "minimum": "<strong>Minimale :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires<br></li><li><strong>Système d'exploitation :</strong> Windows 10 64bit<br></li><li><strong>Processeur :</strong> Intel Pentium 4 processor or later that's SSE2 capable<br></li><li><strong>Mémoire vive :</strong> 1 GB de mémoire<br></li><li><strong>Espace disque :</strong> 400 MB d'espace disque disponible</li></ul>",
-      "recommended": "<strong>Recommandée :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>"
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit<br></li><li><strong>Processor:</strong> Intel Pentium 4 processor or later that's SSE2 capable<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Storage:</strong> 400 MB available space</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
     },
     "mac_requirements": {
-      "minimum": "<strong>Minimale :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>",
-      "recommended": "<strong>Recommandée :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>"
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
     },
     "linux_requirements": {
-      "minimum": "<strong>Minimale :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>",
-      "recommended": "<strong>Recommandée :</strong><br><ul class=\"bb_ul\"><li>Système d'exploitation et processeur 64 bits nécessaires</li></ul>"
+      "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>",
+      "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
     },
     "developers": [
       "poncle"
@@ -1449,12 +1449,12 @@ export const steam = [
       "poncle"
     ],
     "price_overview": {
-      "currency": "EUR",
-      "initial": 499,
-      "final": 499,
+      "currency": "CAD",
+      "initial": 599,
+      "final": 599,
       "discount_percent": 0,
       "initial_formatted": "",
-      "final_formatted": "4,99€"
+      "final_formatted": "CDN$ 5.99"
     },
     "packages": [
       644402
@@ -1462,9 +1462,9 @@ export const steam = [
     "package_groups": [
       {
         "name": "default",
-        "title": "Acheter Vampire Survivors",
+        "title": "Buy Vampire Survivors",
         "description": "",
-        "selection_text": "Option d'achat",
+        "selection_text": "Select a purchase option",
         "save_text": "",
         "display_type": 0,
         "is_recurring_subscription": "false",
@@ -1473,11 +1473,11 @@ export const steam = [
             "packageid": 644402,
             "percent_savings_text": " ",
             "percent_savings": 0,
-            "option_text": "Vampire Survivors - 4,99€",
+            "option_text": "Vampire Survivors - CDN$ 5.99",
             "option_description": "",
             "can_get_free_license": "0",
             "is_free_license": false,
-            "price_in_cents_with_discount": 499
+            "price_in_cents_with_discount": 599
           }
         ]
       }
@@ -1494,15 +1494,15 @@ export const steam = [
     "categories": [
       {
         "id": 2,
-        "description": "Solo"
+        "description": "Single-player"
       },
       {
         "id": 22,
-        "description": "Succès Steam"
+        "description": "Steam Achievements"
       },
       {
         "id": 28,
-        "description": "Compat. contrôleurs complète"
+        "description": "Full controller support"
       },
       {
         "id": 23,
@@ -1516,11 +1516,11 @@ export const steam = [
       },
       {
         "id": "4",
-        "description": "Occasionnel"
+        "description": "Casual"
       },
       {
         "id": "23",
-        "description": "Indépendant"
+        "description": "Indie"
       },
       {
         "id": "3",
@@ -1595,7 +1595,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 186022
+      "total": 186088
     },
     "achievements": {
       "total": 184,
@@ -1644,7 +1644,7 @@ export const steam = [
     },
     "release_date": {
       "coming_soon": false,
-      "date": "20 oct. 2022"
+      "date": "20 Oct, 2022"
     },
     "support_info": {
       "url": "",
@@ -2464,7 +2464,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 20018
+      "total": 20032
     },
     "achievements": {
       "total": 11,
@@ -2796,7 +2796,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 13058
+      "total": 13065
     },
     "achievements": {
       "total": 63,
