@@ -2,7 +2,7 @@ import { html, isServer } from 'lit';
 export const title = "Willson's fun times website place";
 export const description = 'Willson is a front-end developer and likes to make fun things.';
 
-import { fetchLetterboxd } from './letterboxd/letterboxd.js';
+// import { fetchLetterboxd } from './letterboxd/letterboxd.js';
 
 export const links = [
   {
@@ -13,11 +13,11 @@ export const links = [
 
 export const styles = isServer ? (await import('./index.css.js')).styles : undefined;
 
-import { movies } from './data/movies.js';
+// import { movies } from './data/movies.js';
 import { steam } from './data/steam.js';
 
 export const initialData = {
-  movies,
+  // movies,
   steam,
 };
 
@@ -35,7 +35,7 @@ import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
 export default async (data = initialData) => {
-  const movies = data.movies;
+  // const movies = data.movies;
   const steam = data.steam;
 
   return html`
@@ -120,15 +120,7 @@ export default async (data = initialData) => {
         <reading-column>
           <header><h2>What I'm watching</h2></header>
         </reading-column>
-        <movie-block>
-          ${movies.map((movie) => {
-            return html`<movie-block-movie
-              title=${movie.title}
-              url=${movie.link}
-              image=${movie.image}
-            ></movie-block-movie>`;
-          })}
-        </movie-block>
+        <movie-block></movie-block>
       </section>
       <section class="section">
         <reading-column>
@@ -143,7 +135,7 @@ export default async (data = initialData) => {
   `;
 };
 
-export const update = async () => {
-  const movies = await fetchLetterboxd();
-  return { movies, steam: initialData.steam };
-};
+// export const update = async () => {
+//   const movies = await fetchLetterboxd();
+//   return { movies, steam: initialData.steam };
+// };

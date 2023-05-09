@@ -1,12 +1,36 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+import { fetchLetterboxd } from '../../letterboxd/letterboxd.js';
+
+import { movies } from '../../data/movies.js';
+
+interface Movie {
+  title: string;
+  link: string;
+  image: string;
+}
+
 @customElement('movie-block')
 export class MovieBlock extends LitElement {
+  @property({ type: Array }) movies: Movie[] = movies;
+
+  firstUpdated() {
+    fetchLetterboxd().then((movies) => {
+      this.movies = movies;
+    });
+  }
+
   render() {
     return html`
       <div class="movie-block">
-        <slot></slot>
+        ${this.movies.map((movie) => {
+          return html`<movie-block-movie
+            title=${movie.title}
+            url=${movie.link}
+            image=${movie.image}
+          ></movie-block-movie>`;
+        })}
       </div>
     `;
   }

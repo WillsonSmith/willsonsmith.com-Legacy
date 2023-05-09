@@ -21,15 +21,15 @@ export async function parseXML(xmlString: string) {
   for (const item of items) {
     const descriptionMarkup = item.querySelector('description')?.textContent;
     const descriptionDoc = parser.parseFromString(descriptionMarkup || '', 'text/html');
-    let image = descriptionDoc.querySelector('img')?.getAttribute('src');
+    let image = descriptionDoc.querySelector('img')?.getAttribute('src') || '';
 
-    image = image?.replace('0-600-0-900', '0-200-0-300');
+    // image = image?.replace('0-600-0-900', '0-200-0-300');
 
-    const description = descriptionDoc.querySelector('p')?.textContent;
+    const description = descriptionDoc.querySelector('p')?.textContent || '';
 
-    const title = item.querySelector('title')?.textContent;
-    const link = item.querySelector('link')?.textContent;
-    const date = item.querySelector('pubDate')?.textContent;
+    const title = item.querySelector('title')?.textContent || '';
+    const link = item.querySelector('link')?.textContent || '';
+    const date = item.querySelector('pubDate')?.textContent || '';
 
     const movie = {
       title,
