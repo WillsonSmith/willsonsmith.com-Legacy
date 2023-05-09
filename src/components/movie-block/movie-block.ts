@@ -16,9 +16,17 @@ export class MovieBlock extends LitElement {
   @property({ type: Array }) movies: Movie[] = movies;
 
   firstUpdated() {
-    fetchLetterboxd().then((movies) => {
-      this.movies = movies;
-    });
+    fetchLetterboxd()
+      .then((liveMovies) => {
+        if (liveMovies.length) {
+          this.movies = liveMovies;
+          return;
+        }
+        this.movies = movies;
+      })
+      .catch((_error) => {
+        this.movies = movies;
+      });
   }
 
   render() {

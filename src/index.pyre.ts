@@ -135,7 +135,6 @@ export default async (data = initialData) => {
   `;
 };
 
-// export const update = async () => {
-//   const movies = await fetchLetterboxd();
-//   return { movies, steam: initialData.steam };
-// };
+export const update = async () => {
+  return { steam: initialData.steam };
+};
