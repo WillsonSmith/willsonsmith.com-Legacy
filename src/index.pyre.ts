@@ -134,7 +134,3 @@ export default async (data = initialData) => {
     </main>
   `;
 };
-
-export const update = async () => {
-  return { steam: initialData.steam };
-};
