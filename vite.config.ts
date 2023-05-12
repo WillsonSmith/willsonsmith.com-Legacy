@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     // Disable checi, minifyHTML does some weird things.
     // @ts-ignore-next-line
-    minifyHTML.default(),
+    // minifyHTML.default(),
     viteStaticCopy({
       targets: [
         {
