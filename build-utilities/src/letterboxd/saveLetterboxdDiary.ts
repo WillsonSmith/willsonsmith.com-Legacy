@@ -2,9 +2,9 @@ import { outputFile } from 'fs-extra';
 import { join } from 'path';
 import { cwd } from 'process';
 
-import { fetchLetterboxd } from '../../../src/letterboxd/letterboxd.js';
+import { fetchLetterboxd } from '../../../data-providers/lib/letterboxd/fetchDiary.js';
 
-export const saveWatchedFilms = async () => {
+export const saveLetterboxdDiary = async () => {
   const films = await fetchLetterboxd();
   const outputPath = join(cwd(), 'src', 'data', 'movies.ts');
   const fileContent = `

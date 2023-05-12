@@ -1,6 +1,31 @@
 import { isServer } from 'lit';
 
-export async function parseXML(xmlString: string) {
+export async function fetchLetterboxd() {
+  let response: Response;
+
+  if (isServer) {
+    response = await serverFetch();
+  } else {
+    response = await fetch('/letterboxd');
+  }
+
+  const xml = await response.text();
+  const parsed = await parseXML(xml);
+  return parsed;
+}
+
+async function serverFetch() {
+  const rssFeed = 'https://letterboxd.com/willsonsmith/rss/';
+
+  return fetch(rssFeed, {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+    mode: 'no-cors',
+  });
+}
+
+async function parseXML(xmlString: string) {
   let parser: DOMParser;
 
   if (isServer) {
@@ -43,26 +68,4 @@ export async function parseXML(xmlString: string) {
   }
 
   return movies.filter((movie) => movie.image);
-}
-
-export async function fetchLetterboxd() {
-  let response: Response;
-
-  if (isServer) {
-    const rssFeed = 'https://letterboxd.com/willsonsmith/rss/';
-
-    response = await fetch(rssFeed, {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
-      mode: 'no-cors',
-    });
-  } else {
-    response = await fetch('/letterboxd');
-  }
-
-  const xml = await response.text();
-
-  const parsed = await parseXML(xml);
-  return parsed;
 }

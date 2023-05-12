@@ -1,6 +1,20 @@
 
 export const movies = [
   {
+    "title": "Cha Cha Real Smooth, 2022 - ★★★★",
+    "link": "https://letterboxd.com/willsonsmith/film/cha-cha-real-smooth/",
+    "image": "https://a.ltrbxd.com/resized/film-poster/7/3/0/7/9/8/730798-cha-cha-real-smooth-0-300-0-450-crop.jpg?v=14f2a55378",
+    "description": "",
+    "date": "Fri, 12 May 2023 14:54:06 +1200"
+  },
+  {
+    "title": "Jin-Roh: The Wolf Brigade, 1999",
+    "link": "https://letterboxd.com/willsonsmith/film/jin-roh-the-wolf-brigade/",
+    "image": "https://a.ltrbxd.com/resized/film-poster/5/1/3/2/9/51329-jin-roh-the-wolf-brigade-0-300-0-450-crop.jpg?v=2b02eb7b15",
+    "description": "",
+    "date": "Thu, 11 May 2023 15:18:10 +1200"
+  },
+  {
     "title": "Whisper of the Heart, 1995",
     "link": "https://letterboxd.com/willsonsmith/film/whisper-of-the-heart/",
     "image": "https://a.ltrbxd.com/resized/film-poster/2/6/7/1/3/26713-whisper-of-the-heart-0-300-0-450-crop.jpg?v=d1e50d223e",
@@ -333,20 +347,6 @@ export const movies = [
     "title": "Guillermo del Toro's Pinocchio, 2022",
     "link": "https://letterboxd.com/willsonsmith/film/guillermo-del-toros-pinocchio/",
     "image": "https://a.ltrbxd.com/resized/film-poster/4/8/4/2/6/3/484263-guillermo-del-toro-s-pinocchio-0-300-0-450-crop.jpg?v=1408b5602c",
-    "description": "",
-    "date": "Tue, 4 Apr 2023 14:16:54 +1200"
-  },
-  {
-    "title": "Glass Onion, 2022",
-    "link": "https://letterboxd.com/willsonsmith/film/glass-onion/",
-    "image": "https://a.ltrbxd.com/resized/film-poster/5/8/6/7/2/3/586723-glass-onion-a-knives-out-mystery-0-300-0-450-crop.jpg?v=33896b35cf",
-    "description": "",
-    "date": "Tue, 4 Apr 2023 14:16:54 +1200"
-  },
-  {
-    "title": "The Outfit, 2022",
-    "link": "https://letterboxd.com/willsonsmith/film/the-outfit-2022/",
-    "image": "https://a.ltrbxd.com/resized/film-poster/7/1/7/5/4/1/717541-the-outfit-0-300-0-450-crop.jpg?v=f4685a3b4c",
     "description": "",
     "date": "Tue, 4 Apr 2023 14:16:54 +1200"
   }

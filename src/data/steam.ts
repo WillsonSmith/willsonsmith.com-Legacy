@@ -202,7 +202,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 90988
+      "total": 91056
     },
     "achievements": {
       "total": 56,
@@ -491,7 +491,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 505
+      "total": 504
     },
     "achievements": {
       "total": 27,
@@ -809,7 +809,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 4971
+      "total": 4978
     },
     "achievements": {
       "total": 43,
@@ -1046,7 +1046,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 9412
+      "total": 9421
     },
     "achievements": {
       "total": 19,
@@ -1347,7 +1347,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 166562
+      "total": 166681
     },
     "achievements": {
       "total": 34,
@@ -1595,7 +1595,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 186088
+      "total": 186283
     },
     "achievements": {
       "total": 184,
@@ -2213,7 +2213,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 474
+      "total": 476
     },
     "achievements": {
       "total": 21,
@@ -2464,7 +2464,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 20032
+      "total": 20071
     },
     "achievements": {
       "total": 11,
@@ -2796,7 +2796,7 @@ export const steam = [
       }
     ],
     "recommendations": {
-      "total": 13065
+      "total": 13099
     },
     "achievements": {
       "total": 63,
