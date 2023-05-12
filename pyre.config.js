@@ -1,8 +1,10 @@
 import { saveWatchedFilms } from './functions/functions/src/movies/saveWatchedFilms.js';
-import { saveSteamGames } from './functions/steam/saveSteamGames.js';
+import { saveSteamGames } from './functions/functions/src/steam/saveSteamGames.js';
+
+import { saveLetterboxdDiary } from './build-utilities/lib/letterboxd/saveLetterboxdDiary.js';
 
 export default async () => {
-  await saveWatchedFilms();
+  await saveLetterboxdDiary();
 
   await saveSteamGames();
 

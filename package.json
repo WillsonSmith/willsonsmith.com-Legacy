@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "wireit",
+    "build:utilities": "wireit",
     "development": "netlify dev",
     "dev": "wireit",
     "clean": "wireit",
@@ -25,11 +26,18 @@
       "command": "pyre build && npm run copy-shoelace-assets && vite build",
       "dependencies": [
         "clean",
-        "./functions:build"
+        "./functions:build",
+        "build:utilities"
+      ]
+    },
+    "build:utilities": {
+      "command": "npm run build -w build-utilities",
+      "dependencies": [
+        "./data-providers:build"
       ]
     },
     "dev": {
-      "command": "concurrently \"npm run watch -w functions\" \"npm run components:watch\" \" wds \" \"pyre watch\""
+      "command": "npm run build -w build-utilities && concurrently \"npm run watch -w data-providers\" \"npm run watch -w functions\" \"npm run components:watch\" \" wds \" \"pyre watch\""
     },
     "components:watch": {
       "dependencies": [
@@ -78,7 +86,9 @@
   },
   "workspaces": [
     "components",
-    "functions"
+    "functions",
+    "data-providers",
+    "build-utilities"
   ],
   "engines": {
     "node": ">=16.13.0"

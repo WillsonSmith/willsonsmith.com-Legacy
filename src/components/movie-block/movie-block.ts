@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import { fetchLetterboxd } from '../../letterboxd/letterboxd.js';
+import { fetchLetterboxd } from '../../../data-providers/lib/letterboxd/fetchDiary.js';
 
 import { movies } from '../../data/movies.js';
 
@@ -24,7 +24,8 @@ export class MovieBlock extends LitElement {
         }
         this.movies = movies;
       })
-      .catch((_error) => {
+      .catch((error) => {
+        console.error(error);
         this.movies = movies;
       });
   }

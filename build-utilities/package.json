@@ -1,0 +1,22 @@
+{
+  "name": "build-utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillsonSmith/willsonsmith.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillsonSmith/willsonsmith.com/issues"
+  },
+  "homepage": "https://github.com/WillsonSmith/willsonsmith.com#readme"
+}
