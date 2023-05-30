@@ -2,6 +2,8 @@ import { html, isServer } from 'lit';
 export const title = "Willson's fun times website place";
 export const description = 'Willson is a front-end developer and likes to make fun things.';
 
+// import { fetchLetterboxd } from './letterboxd/letterboxd.js';
+
 export const links = [
   {
     rel: 'stylesheet',
@@ -11,6 +13,14 @@ export const links = [
 
 export const styles = isServer ? (await import('./index.css.js')).styles : undefined;
 
+// import { movies } from './data/movies.js';
+import { steam } from './data/steam.js';
+
+export const initialData = {
+  // movies,
+  steam,
+};
+
 if (!isServer) {
   await import('./index.js');
 }
@@ -19,13 +29,15 @@ import './components/reading-column/reading-column.js';
 import './components/site-header/site-header.js';
 
 import './components/movie-block/movie-block.js';
-import './components/game-block/games-block.js';
+import './components/games-block/games-block.js';
 
-import './components/game-block/games-block.js';
-import './components/game-block/game-block.js';
+import './components/games-block/games-block.js';
 import './components/time-since/time-since.js';
 
-export default async () => {
+export default async (data = initialData) => {
+  // const movies = data.movies;
+  const steam = data.steam;
+
   return html`
     <site-header></site-header>
     <main class="page">
@@ -116,7 +128,7 @@ export default async () => {
         </reading-column>
 
         <reading-column>
-          <game-block></games-block>
+          <games-block games=${JSON.stringify(steam)}></games-block>
         </reading-column>
       </section>
     </main>
