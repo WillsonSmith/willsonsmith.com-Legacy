@@ -128,7 +128,6 @@ export const handler: Handler = async (event, context) => {
       const latestGames = games.slice(0, 10);
       const gameDetails = await Promise.all(
         latestGames.map(async (game) => {
-          console.log(game, 'game');
           const details = await getGameDetails(game.appid.toString());
           return details.data;
         }),
@@ -159,14 +158,14 @@ export const handler: Handler = async (event, context) => {
 async function getGameDetails(appId: string): Promise<SteamGameDetails> {
   const detailsUrl = `https://store.steampowered.com/api/appdetails?appids=${appId}`;
   try {
-    const response = await this.fetch(detailsUrl, {
+    const response = await fetch(detailsUrl, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         // cache for 1 day
         'Cache-Control': 'max-age=86400',
       },
     });
-    return response.json().then((data) => {
+    return response.json().then((data: any) => {
       return { success: true, data: data[appId].data } as SteamGameDetails;
     });
   } catch (error) {
