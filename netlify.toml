@@ -7,3 +7,8 @@ functions = "netlify-functions"
 from = "/letterboxd"
 to = "/.netlify/functions/fetch-letterboxd"
 status = 200
+
+[[redirects]]
+from = "/steam"
+to = "/.netlify/functions/fetch-steam"
+status = 200
