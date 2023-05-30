@@ -1,8 +1,6 @@
 import { config } from 'dotenv';
 config();
 
-import fetch from 'node-fetch';
-
 const steamApiKey = process.env.STEAM_API_KEY || '';
 const steamUserId = process.env.STEAM_USER_ID || '';
 
